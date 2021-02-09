@@ -1,0 +1,56 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:barrier",
+          "weight": 7,
+          "functions": [
+            {
+              "function": "seT.nbt",
+              "tag": "{T.Hard_Random:1b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:barrier",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "seT.nbt",
+              "tag": "{T.Hard_Spawn:Frost,T.Hard_Random:1b,T.Hard_Replace:1b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:barrier",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "seT.nbt",
+              "tag": "{T.Hard_Spawn:Ghast,T.Hard_Random:1b,T.Hard_Replace:1b}"
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:barrier",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "seT.nbt",
+              "tag": "{T.Hard_Spawn:Elite_Stray,T.Hard_Random:1b,T.Hard_Replace:1b}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

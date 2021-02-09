@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:ender_dragon",
+    "minecraft:armor_stand",
+    "minecraft:item",
+    "minecraft:item_frame",
+    "minecraft:arrow",
+    "minecraft:spectral_arrow",
+    "minecraft:painting",
+    "minecraft:experience_orb",
+    "minecraft:experience_bottle",
+    "minecraft:evoker_fangs",
+    "minecraft:area_effect_cloud",
+    "minecraft:dragon_fireball",
+    "minecraft:firework_rocket",
+    "minecraft:fishing_bobber",
+    "minecraft:snowball",
+    "minecraft:egg",
+    "minecraft:eye_of_ender",
+    "minecraft:ender_pearl"
+  ]
+}

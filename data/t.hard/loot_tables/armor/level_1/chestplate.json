@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchanT.with_levels",
+              "levels": 2,
+              "treasure": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:chainmail_chestplate",
+          "functions": [
+            {
+              "function": "minecraft:enchanT.with_levels",
+              "levels": 2,
+              "treasure": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:leather_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 1,
+          "name": "minecraft:chainmail_chestplate"
+        },
+        {
+          "type": "minecraft:looT.table",
+          "weight": 1,
+          "name": "minecraft:empty"
+        }
+      ]
+    }
+  ]
+}

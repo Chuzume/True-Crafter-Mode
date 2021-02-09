@@ -1,0 +1,52 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 16
+      },
+      "bonus_rolls": {
+        "min": 0,
+        "max": 4
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:ice",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "seT.count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:snowball",
+          "weight": 3,
+          "functions": [
+            {
+              "function": "seT.count",
+              "count": {
+                "min": 2,
+                "max": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:blue_ice",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "seT.count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

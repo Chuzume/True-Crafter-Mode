@@ -1,0 +1,6 @@
+{
+    "datapack.lint.strictObjectiveCheck": [
+        "warning",
+        true
+    ]
+}
