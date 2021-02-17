@@ -1,3 +1,3 @@
 
 # 火の玉をなんか別のものに変換
-    execute as @e[type=fireball,limit=1,distance=..6,sort=nearest,tag=!T.Hard_GhastBullet] at @s run function t.hard:enemy/ghast/shoot_fireball 
+    execute as @e[type=fireball,limit=1,distance=..6,sort=nearest,tag=!T.Hard_GhastBulletDisplay] at @s run function t.hard:enemy/ghast/shoot_fireball 

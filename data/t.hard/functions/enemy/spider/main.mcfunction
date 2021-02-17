@@ -1,4 +1,6 @@
+
 #スポーン時
-execute if entity @s[tag=!T.Hard_Already] run function t.hard:enemy/spider/spider_change
+execute if entity @s[tag=!T.Hard_AlreadyInit] run function t.hard:enemy/spider/init
+
 #周囲に敵がいるなら
-execute if entity @s if entity @a[tag=!T.Hard_Exception,distance=..30] run function t.hard:enemy/spider/attack
+execute if entity @s[predicate=t.hard:battle_mode] run function t.hard:enemy/spider/moveset

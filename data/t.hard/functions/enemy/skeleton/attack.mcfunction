@@ -30,7 +30,7 @@ execute if entity @s[tag=T.Hard_Ske_Ranged2,nbt={OnGround:1b}] if entity @a[dist
 #背後チェックしてダッシュ/バックステップ
 execute if entity @s[tag=T.Hard_Ske_Melee] if entity @a[distance=..5,tag=!T.Hard_Exception] run scoreboard players add @s T.Hard_Moveset1 1
 execute if entity @s[tag=T.Hard_Ske_Ranged2] if entity @a[distance=..5,tag=!T.Hard_Exception] run scoreboard players add @s T.Hard_Moveset1 1
-scoreboard players set @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] Motion_Speed 7
+scoreboard players set @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] ChuzSpeed 7
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #t.hard:no_collision if block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/back_step
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @p eyes rotated ~ 0 if block ^ ^-1 ^-3 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
@@ -42,7 +42,7 @@ execute if entity @s[tag=T.Hard_Ske_Melee2] positioned ^ ^ ^-0.5 facing entity @
 #前方にブロックがあればスコアリセット
 execute rotated ~ 0 unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s T.Hard_Moveset2
 execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s T.Hard_Moveset2
-scoreboard players set @s[scores={T.Hard_Moveset2=40}] Motion_Speed 8
+scoreboard players set @s[scores={T.Hard_Moveset2=40}] ChuzSpeed 8
 execute if entity @s[scores={T.Hard_Moveset2=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
 scoreboard players reset @s[scores={T.Hard_Moveset2=40..}] T.Hard_Moveset2
 

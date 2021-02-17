@@ -5,16 +5,21 @@ tag @a[gamemode=!spectator,gamemode=!creative] remove T.Hard_Exception
 #ゾンビ系
 execute as @e[type=#t.hard:zombies,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/zombie/main
 
+# テスト
+    #execute as @e[tag=T.Hard_Rotater] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
+    
 #スケルトン系
 execute as @e[type=#minecraft:skeletons,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/skeleton/main
 
 #スパイダー
 execute as @e[type=spider,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/spider/main
+
 #ネット
 execute as @e[type=item,tag=T.Hard_Net] at @s run function t.hard:enemy/spider/spider_net
 
 #ケイブスパイダー
 execute as @e[type=cave_spider,tag=!UniqueEnemy] at @s if entity @a[distance=..30,tag=!T.Hard_Exception] run function t.hard:enemy/cave_spider/attack
+
 #ポイズンボール
 execute as @e[type=item,tag=T.Hard_Poison_Ball] at @s run function t.hard:enemy/cave_spider/poison_ball
 
@@ -23,6 +28,7 @@ execute as @e[type=creeper] at @s if entity @a[distance=..80] run function t.har
 
 #エンダーマン
 execute as @e[type=enderman] at @s if entity @a[distance=..80] run function t.hard:enemy/enderman/main
+
 #エンダーアイ
 execute as @e[type=vex,tag=T.Hard_Ender_Eye] at @s if entity @a[distance=..30] run function t.hard:enemy/enderman/ender_eye
 execute as @e[type=item,nbt={Item:{tag:{ItemEvent:T.Hard_Ender_Eye}}}] at @s run function t.hard:death_event/ender_eye

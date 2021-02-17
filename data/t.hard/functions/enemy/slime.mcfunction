@@ -1,6 +1,6 @@
 #自身のサイズを取得
-execute store result score @s[tag=!T.Hard_Already] T.Hard_Moveset2 run data get entity @s Size
-tag @s[tag=!T.Hard_Already] add T.Hard_Already
+execute store result score @s[tag=!T.Hard_AlreadyInit] T.Hard_Moveset2 run data get entity @s Size
+tag @s[tag=!T.Hard_AlreadyInit] add T.Hard_AlreadyInit
 
 #付近にプレイヤーがいたら謎パワーで巨大化
 execute if entity @a[distance=..10,tag=!T.Hard_Exception] unless entity @s[scores={T.Hard_Moveset1=80..}] run scoreboard players add @s[nbt=!{Size:0},nbt=!{Size:5}] T.Hard_Moveset1 1

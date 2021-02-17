@@ -1,0 +1,4 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {}
+}

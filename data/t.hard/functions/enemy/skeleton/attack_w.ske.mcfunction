@@ -18,11 +18,11 @@ tag @e[tag=T.Hard_Ske_Melee] remove T.Hard_Ske_Ranged
 #背後チェックして飛びかかり/バックステップ
 execute if entity @s[tag=T.Hard_Ske_Ranged2] if entity @e[type=#t.hard:w.skeleton_enemy,distance=..5,tag=!T.Hard_Exception] run scoreboard players add @s T.Hard_Moveset1 1
 execute if entity @s[tag=T.Hard_Ske_Ranged] positioned ^ ^ ^-0.5 facing entity @e[type=#t.hard:w.skeleton_enemy,distance=..16,tag=!T.Hard_Exception,limit=1,sort=nearest] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s T.Hard_Moveset1 1
-scoreboard players set @s[tag=T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] Motion_Speed 8
+scoreboard players set @s[tag=T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] ChuzSpeed 8
 execute if entity @s[tag=T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
 
 execute if entity @s[tag=T.Hard_Ske_Melee] if entity @e[type=#t.hard:w.skeleton_enemy,distance=..5,tag=!T.Hard_Exception] run scoreboard players add @s T.Hard_Moveset1 1
-scoreboard players set @s[tag=T.Hard_Ske_Melee,scores={T.Hard_Moveset1=40}] Motion_Speed 8
+scoreboard players set @s[tag=T.Hard_Ske_Melee,scores={T.Hard_Moveset1=40}] ChuzSpeed 8
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @e[type=#t.hard:w.skeleton_enemy,limit=1,sort=nearest] eyes rotated ~ 0 unless block ^ ^-1 ^-3 #t.hard:no_collision if block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/back_step
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @e[type=#t.hard:w.skeleton_enemy,limit=1,sort=nearest] eyes rotated ~ 0 unless block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
 execute if entity @s[tag=!T.Hard_Ske_Ranged,scores={T.Hard_Moveset1=40}] facing entity @e[type=#t.hard:w.skeleton_enemy,limit=1,sort=nearest] eyes rotated ~ 0 if block ^ ^-1 ^-3 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
