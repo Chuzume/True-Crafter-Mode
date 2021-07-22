@@ -32,6 +32,9 @@
     scoreboard objectives add T.HardFa.Resist dummy
     scoreboard objectives add T.HardInstall dummy
     scoreboard objectives add T.HardDiffculty dummy
+    scoreboard objectives add T.HardRecursion dummy
+    scoreboard objectives add T.HardRange dummy
+    scoreboard objectives add T.HardSpeed dummy
 
 # Const定義
     scoreboard players set $31743 Chuz_Const 31743

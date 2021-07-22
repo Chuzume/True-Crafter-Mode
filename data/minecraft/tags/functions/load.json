@@ -1,5 +1,5 @@
 {
   "values": [
-    "t.hard:load"
+    "t.hard:load","t.hard_score_damage:core/init"
   ]
 }

@@ -6,12 +6,12 @@ execute if entity @s[nbt={HandItems:[{id:"minecraft:bow",Count:1b,tag:{Enchantme
 execute unless entity @s[nbt={HandItems:[{id:"minecraft:stone_sword",Count:1b},{}]}] unless entity @s[nbt={HandItems:[{id:"minecraft:bow",Count:1b}]}] run tag @s add T.HardSke_NoSwitch
 
 #離れてる時は弓
-execute if entity @s[tag=T.HardSke_Melee,tag=!T.HardSke_NoSwitch] if entity @e[type=#t.hard:w.skeleton_enemy,distance=5..16,tag=!T.HardException] run replaceitem entity @s weapon.mainhand minecraft:bow
+execute if entity @s[tag=T.HardSke_Melee,tag=!T.HardSke_NoSwitch] if entity @e[type=#t.hard:w.skeleton_enemy,distance=5..16,tag=!T.HardException] run item replace entity @s weapon.mainhand with minecraft:bow
 execute if entity @s[tag=T.HardSke_Melee] if entity @e[type=#t.hard:w.skeleton_enemy,distance=5..16,tag=!T.HardException] run tag @s add T.HardSke_Ranged
 tag @e[tag=T.HardSke_Ranged] remove T.HardSke_Melee
 
 #近い時は近接武器
-execute if entity @s[tag=T.HardSke_Ranged,tag=!T.HardSke_NoSwitch] if entity @e[type=#t.hard:w.skeleton_enemy,distance=..5,tag=!T.HardException] run replaceitem entity @s weapon.mainhand minecraft:stone_sword
+execute if entity @s[tag=T.HardSke_Ranged,tag=!T.HardSke_NoSwitch] if entity @e[type=#t.hard:w.skeleton_enemy,distance=..5,tag=!T.HardException] run item replace entity @s weapon.mainhand with minecraft:stone_sword
 execute if entity @s[tag=T.HardSke_Ranged] if entity @e[type=#t.hard:w.skeleton_enemy,distance=..5,tag=!T.HardException] run tag @s add T.HardSke_Melee
 tag @e[tag=T.HardSke_Melee] remove T.HardSke_Ranged
 

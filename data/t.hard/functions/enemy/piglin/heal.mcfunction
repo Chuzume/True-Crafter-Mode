@@ -1,6 +1,6 @@
 #むしゃむしゃ
 tag @s add T.HardPiglin_Heal
-replaceitem entity @s weapon.mainhand cooked_porkchop
+item replace entity @s weapon.mainhand with cooked_porkchop
 playsound minecraft:entity.generic.eat hostile @a ~ ~ ~ 1 1
 effect give @s slowness 2 1 true
 #近くにプレイヤーがいるなら飛び退く

@@ -39,4 +39,4 @@
     execute unless block ~ ~0.25 ~ #t.hard:liquid run function t.hard:enemy/piglin/swim_cancel
 
 # チャージ済みなら火の矢を装填
-    replaceitem entity @s[nbt={HandItems:[{id:"minecraft:crossbow",tag:{Charged:1b}}]}] weapon.mainhand crossbow{ItemName:Piglin_Firebow,ChargedProjectiles:[{id:"minecraft:tipped_arrow",Count:1b,tag:{CustomPotionEffects:[{Id:27b,Amplifier:3b,Duration:1}],CustomPotionColor:16746496}},{},{}],Charged:1b} 1
+    item replace entity @s[nbt={HandItems: [{id: "minecraft:crossbow", tag: {Charged: 1b}}]}] weapon.mainhand with crossbow{ItemName: Piglin_Firebow, ChargedProjectiles: [{id: "minecraft:tipped_arrow", Count: 1b, tag: {CustomPotionEffects: [{Id: 27b, Amplifier: 3b, Duration: 1}], CustomPotionColor: 16746496}}, {}, {}], Charged: 1b} 1

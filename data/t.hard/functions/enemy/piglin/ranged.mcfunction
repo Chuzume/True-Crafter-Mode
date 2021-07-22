@@ -1,11 +1,11 @@
 
 #離れてる時は弓
-execute if entity @s[tag=T.HardPiglin_Crossbow_Melee] if entity @e[type=#t.hard:piglin_enemy,distance=4..16,tag=!T.HardException] run replaceitem entity @s weapon.mainhand crossbow
+execute if entity @s[tag=T.HardPiglin_Crossbow_Melee] if entity @e[type=#t.hard:piglin_enemy,distance=4..16,tag=!T.HardException] run item replace entity @s weapon.mainhand with crossbow
 execute if entity @s[tag=T.HardPiglin_Crossbow_Melee] if entity @e[type=#t.hard:piglin_enemy,distance=4..16,tag=!T.HardException] run tag @s add T.HardPiglin_Crossbow_Ranged
 tag @s[tag=T.HardPiglin_Crossbow_Ranged] remove T.HardPiglin_Crossbow_Melee
 
 #近い時は近接武器
-execute if entity @s[tag=T.HardPiglin_Crossbow_Ranged] if entity @e[type=#t.hard:piglin_enemy,distance=..4,tag=!T.HardException] run replaceitem entity @s weapon.mainhand minecraft:golden_axe{display:{Name:'{"text":"Pig Busher","italic":false}'},Enchantments:[{id:"minecraft:knockback",lvl:2}],AttributeModifiers:[{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: -2.4d, Operation: 0, UUID: [I; 0, 752434, 0, 295765], Slot: "mainhand"},{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 4.0d, Operation: 0, UUID: [I; 0, 759233, 0, 533], Slot: "mainhand"}]}
+execute if entity @s[tag=T.HardPiglin_Crossbow_Ranged] if entity @e[type=#t.hard:piglin_enemy,distance=..4,tag=!T.HardException] run item replace entity @s weapon.mainhand with minecraft:golden_axe{display: {Name: '{"text":"Pig Busher","italic":false}'}, Enchantments: [{id: "minecraft:knockback", lvl: 2}], AttributeModifiers: [{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: -2.4d, Operation: 0, UUID: [I; 0, 752434, 0, 295765], Slot: "mainhand"}, {AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 4.0d, Operation: 0, UUID: [I; 0, 759233, 0, 533], Slot: "mainhand"}]}
 execute if entity @s[tag=T.HardPiglin_Crossbow_Ranged] if entity @e[type=#t.hard:piglin_enemy,distance=..4,tag=!T.HardException] run tag @s add T.HardPiglin_Crossbow_Melee
 tag @s[tag=T.HardPiglin_Crossbow_Melee] remove T.HardPiglin_Crossbow_Ranged
 

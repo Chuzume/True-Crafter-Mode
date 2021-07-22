@@ -13,12 +13,12 @@
     execute unless entity @s[nbt={HandItems:[{id:"minecraft:stone_axe",Count:1b,tag:{display:{Name:'{"text":"Shield Crasher","italic":false}'}}},{}]}] unless entity @s[nbt={HandItems:[{id:"minecraft:bow",Count:1b}]}] run tag @s add T.HardSke_Melee2
 
 # 離れてる時は弓
-    execute if entity @s[tag=T.HardSke_Melee] if entity @a[distance=5..16] run replaceitem entity @s weapon.mainhand minecraft:bow
+    execute if entity @s[tag=T.HardSke_Melee] if entity @a[distance=5..16] run item replace entity @s weapon.mainhand with minecraft:bow
     execute if entity @s[tag=T.HardSke_Melee] if entity @a[distance=5..16] run tag @s add T.HardSke_Ranged
     tag @s[tag=T.HardSke_Ranged] remove T.HardSke_Melee
 
 # 近い時は近接武器
-    execute if entity @s[tag=T.HardSke_Ranged] if entity @a[distance=..5] run replaceitem entity @s weapon.mainhand minecraft:stone_axe{display:{Name:'{"text":"Shield Crasher","italic":false}'},Enchantments:[{id:"minecraft:knockback",lvl:2}],AttributeModifiers:[{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: -2.4d, Operation: 0, UUID: [I; 0, 752434, 0, 295765], Slot: "mainhand"},{AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 4.0d, Operation: 0, UUID: [I; 0, 759233, 0, 533], Slot: "mainhand"}]}
+    execute if entity @s[tag=T.HardSke_Ranged] if entity @a[distance=..5] run item replace entity @s weapon.mainhand with minecraft:stone_axe{display: {Name: '{"text":"Shield Crasher","italic":false}'}, Enchantments: [{id: "minecraft:knockback", lvl: 2}], AttributeModifiers: [{AttributeName: "generic.attack_speed", Name: "generic.attackSpeed", Amount: -2.4d, Operation: 0, UUID: [I; 0, 752434, 0, 295765], Slot: "mainhand"}, {AttributeName: "generic.attack_damage", Name: "generic.attackDamage", Amount: 4.0d, Operation: 0, UUID: [I; 0, 759233, 0, 533], Slot: "mainhand"}]}
     execute if entity @s[tag=T.HardSke_Ranged] if entity @a[distance=..5] run tag @s add T.HardSke_Melee
     tag @s[tag=T.HardSke_Melee] remove T.HardSke_Ranged
 
