@@ -8,8 +8,8 @@
           "name": "minecraft:porkchop",
           "functions": [
             {
-              "function": "minecraft:seT.nbt",
-              "tag": "{ItemEvent:T.Hard_Swiming_Piglin}"
+              "function": "minecraft:set_nbt",
+              "tag": "{ItemEvent:T.HardSwiming_Piglin}"
             }
           ]
         }

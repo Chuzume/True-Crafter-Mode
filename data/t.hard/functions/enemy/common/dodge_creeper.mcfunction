@@ -1,6 +1,5 @@
 
 #起爆の近いクリーパーから逃げる
-scoreboard players set @s ChuzSpeed -3
-execute facing entity @e[type=creeper,limit=1,sort=nearest] eyes run summon area_effect_cloud ^ ^ ^0.1 {Duration:1,Radius:0f,Tags:[pos]}
+scoreboard players set @s Chuz_Speed -3
 function t.hard:move_xz
-scoreboard players reset @s ChuzSpeed
+scoreboard players reset @s Chuz_Speed

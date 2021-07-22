@@ -1,0 +1,3 @@
+execute unless score #t.hard_Gamerule T.HardGamerule4 matches 2 run execute as @s[tag=!T.HardAlreadyInit] run data merge entity @s {Fuse:9999,Attributes:[{Name:"generic.movement_speed",Base:0.3}]}
+execute if score #t.hard_Gamerule T.HardGamerule4 matches 2 run execute as @s[tag=!T.HardAlreadyInit] run data merge entity @s {Attributes:[{Name:"generic.movement_speed",Base:0.3}]}
+tag @s add T.HardAlreadyInit

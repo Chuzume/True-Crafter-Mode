@@ -1,6 +1,11 @@
-#ガストとかフロストになる
-loot spawn ~ ~ ~ loot t.hard:random/skeleton_change
-execute if entity @e[type=item,sort=nearest,limit=1,nbt={Item:{tag:{T.Hard_Spawn:Elite_Skeleton}}}] run summon minecraft:skeleton ~ ~ ~ {Tags:["T.Hard_AlreadyInit","T.Hard_Ske_Ranged","T.Hard_Shielder"],HandItems:[{id:"minecraft:bow",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:iron_leggings",Count:1b},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:11250603}}},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:11250603}}}]}
-execute if entity @e[sort=nearest,limit=1,type=item,nbt={Item:{tag:{T.Hard_Replace:1b}}}] run tag @s add T.Hard_GoToVoid
-execute if entity @e[sort=nearest,limit=1,type=item,nbt={Item:{tag:{T.Hard_Replace:1b}}}] run function t.hard:enemy/common/go_to_void
-kill @e[sort=nearest,limit=1,type=item,nbt={Item:{id:"minecraft:barrier",tag:{T.Hard_Random:1b}}}]
+
+# 疑似乱数取得
+    execute store result score $Random Chuz_Temporary run function t.hard:random
+# ほしい範囲に剰余算
+    scoreboard players operation $Random Chuz_Temporary %= $4 Chuz_Const
+
+# 1/5の確率でエリートに
+    execute if score $Random Chuz_Temporary matches 0 run summon minecraft:skeleton ~ ~ ~ {Tags:["T.HardAlreadyInit","T.HardSke_Ranged","T.HardShielder"],HandItems:[{id:"minecraft:bow",Count:1b},{id:"minecraft:shield",Count:1b}],ArmorItems:[{id:"minecraft:iron_boots",Count:1b},{id:"minecraft:iron_leggings",Count:1b},{id:"minecraft:leather_chestplate",Count:1b,tag:{display:{color:11250603}}},{id:"minecraft:leather_helmet",Count:1b,tag:{display:{color:11250603}}}]}
+
+# 置き換えを引いたら消える
+    execute if score $Random Chuz_Temporary matches 0 run function t.hard:enemy/common/go_to_void

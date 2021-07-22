@@ -2,5 +2,9 @@
     "datapack.lint.strictObjectiveCheck": [
         "warning",
         true
-    ]
+    ],
+    "[mcfunction]": {
+
+        "editor.semanticHighlighting.enabled": true
+    }
 }

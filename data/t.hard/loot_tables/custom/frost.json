@@ -16,7 +16,7 @@
           "weight": 3,
           "functions": [
             {
-              "function": "seT.count",
+              "function": "set_count",
               "count": 1
             }
           ]
@@ -27,7 +27,7 @@
           "weight": 3,
           "functions": [
             {
-              "function": "seT.count",
+              "function": "set_count",
               "count": {
                 "min": 2,
                 "max": 2
@@ -41,7 +41,7 @@
           "weight": 2,
           "functions": [
             {
-              "function": "seT.count",
+              "function": "set_count",
               "count": 1
             }
           ]

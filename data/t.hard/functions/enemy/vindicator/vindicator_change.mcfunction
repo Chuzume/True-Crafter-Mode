@@ -1,6 +1,14 @@
-#イリュージョナーになる
-loot spawn ~ ~ ~ loot t.hard:random/vindicator_change
-execute if entity @e[type=item,sort=nearest,limit=1,nbt={Item:{tag:{T.Hard_Spawn:Illusioner}}}] run summon illusioner ~ ~ ~
-execute if entity @e[sort=nearest,limit=1,type=item,nbt={Item:{tag:{T.Hard_Replace:1b}}}] run function t.hard:enemy/common/go_to_void
-kill @e[sort=nearest,limit=1,type=item,nbt={Item:{id:"minecraft:barrier",tag:{T.Hard_Random:1b}}}]
-tag @s add T.Hard_AlreadyInit
+
+# 疑似乱数取得
+    execute store result score $Random Chuz_Temporary run function t.hard:random
+# ほしい範囲に剰余算
+    scoreboard players operation $Random Chuz_Temporary %= $2 Chuz_Const
+
+# 1/3の確率で変化
+    execute if score $Random Chuz_Temporary matches 0 run summon illusioner
+
+# 置き換えを引いたら消える
+    execute if score $Random Chuz_Temporary matches 0 run function t.hard:enemy/common/go_to_void
+
+# Init完了
+    tag @s add T.HardAlreadyInit

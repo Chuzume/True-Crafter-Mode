@@ -8,41 +8,50 @@
     scoreboard objectives add ChuzF.Check_Z dummy
     scoreboard objectives add ChuzF.Check_Y dummy
 
-    scoreboard objectives add ChuzConst dummy
-    scoreboard objectives add ChuzGlobal dummy
-    scoreboard objectives add ChuzTemporary dummy
-    scoreboard objectives add ChuzRandom dummy
-    scoreboard objectives add ChuzSpeed dummy
-    scoreboard objectives add ChuzCalc dummy
+    scoreboard objectives add Chuz_Const dummy
+    scoreboard objectives add Chuz_Global dummy
+    scoreboard objectives add Chuz_Temporary dummy
+    scoreboard objectives add Chuz_Random dummy
+    scoreboard objectives add Chuz_Speed dummy
+    scoreboard objectives add Chuz_Calc dummy
     scoreboard objectives add BulletRemain dummy
 
 # 必要なスコアボード
     scoreboard objectives add Armor_Check dummy
-    scoreboard objectives add T.Hard_Moveset1 dummy
-    scoreboard objectives add T.Hard_Moveset2 dummy
-    scoreboard objectives add T.Hard_Moveset3 dummy
-    scoreboard objectives add T.Hard_Torch dummy
-    scoreboard objectives add T.Hard_Door dummy
-    scoreboard objectives add T.Hard_Door2 dummy
-    scoreboard objectives add T.Hard_Door3 dummy
-    scoreboard objectives add T.Hard_Y_Check dummy
-    scoreboard objectives add T.Hard_Place dummy
-    scoreboard objectives add T.Hard_Dig dummy
-    scoreboard objectives add T.Hard_Health dummy
-    scoreboard objectives add T.Hard_Fa.Resist dummy
-    scoreboard objectives add T.Hard_Install dummy
-    scoreboard objectives add T.Hard_Diffculty dummy
+    scoreboard objectives add T.HardMoveset1 dummy
+    scoreboard objectives add T.HardMoveset2 dummy
+    scoreboard objectives add T.HardMoveset3 dummy
+    scoreboard objectives add T.HardTorch dummy
+    scoreboard objectives add T.HardDoor dummy
+    scoreboard objectives add T.HardDoor2 dummy
+    scoreboard objectives add T.HardDoor3 dummy
+    scoreboard objectives add T.HardY_Check dummy
+    scoreboard objectives add T.HardPlace dummy
+    scoreboard objectives add T.HardDig dummy
+    scoreboard objectives add T.HardHealth dummy
+    scoreboard objectives add T.HardFa.Resist dummy
+    scoreboard objectives add T.HardInstall dummy
+    scoreboard objectives add T.HardDiffculty dummy
 
 # Const定義
-    scoreboard players set $31743 ChuzConst 31743
-    scoreboard players set $65535 ChuzConst 65535
-    scoreboard players set $4 ChuzConst 4
+    scoreboard players set $31743 Chuz_Const 31743
+    scoreboard players set $65535 Chuz_Const 65535
+    scoreboard players set $1 Chuz_Const 1
+    scoreboard players set $2 Chuz_Const 2
+    scoreboard players set $3 Chuz_Const 3
+    scoreboard players set $4 Chuz_Const 4
+    scoreboard players set $5 Chuz_Const 5
+    scoreboard players set $6 Chuz_Const 6
+    scoreboard players set $7 Chuz_Const 7
+    scoreboard players set $8 Chuz_Const 8
+    scoreboard players set $9 Chuz_Const 9
+    scoreboard players set $10 Chuz_Const 10
 
 # 乱数の種
-    summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["ChuzRandom"]}
-    execute store result score $Random.Base ChuzGlobal run data get entity @e[type=area_effect_cloud,tag=ChuzRandom,limit=1] UUID[1]
-    execute store result score $Random.Curray ChuzGlobal run data get entity @e[type=area_effect_cloud,tag=ChuzRandom,limit=1] UUID[3]
-    kill @e[type=area_effect_cloud,tag=ChuzRandom,limit=1]
+    summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["Chuz_Random"]}
+    execute store result score $Random.Base Chuz_Global run data get entity @e[type=area_effect_cloud,tag=Chuz_Random,limit=1] UUID[1]
+    execute store result score $Random.Curray Chuz_Global run data get entity @e[type=area_effect_cloud,tag=Chuz_Random,limit=1] UUID[3]
+    kill @e[type=area_effect_cloud,tag=Chuz_Random,limit=1]
 
 # フォースロード
     forceload add 0 0 0 0
@@ -51,17 +60,31 @@
     execute unless entity @e[type=area_effect_cloud,tag=ChuzVector0] run summon minecraft:area_effect_cloud 0 0 0 {Tags:["ChuzVector0"],Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 
 # Gamerule1 モブ破壊オンオフ
-    scoreboard objectives add T.Hard_Gamerule1 dummy
-    execute unless score #t.hard_Gamerule T.Hard_Gamerule1 = #t.hard_Gamerule T.Hard_Gamerule1 run scoreboard players set #t.hard_Gamerule T.Hard_Gamerule1 1
+    scoreboard objectives add T.HardGamerule1 dummy
+    execute unless score #t.hard_Gamerule T.HardGamerule1 = #t.hard_Gamerule T.HardGamerule1 run scoreboard players set #t.hard_Gamerule T.HardGamerule1 1
 
 # Gamerule2 ゾンビブロック設置オンオフ
-    scoreboard objectives add T.Hard_Gamerule2 dummy
-    execute unless score #t.hard_Gamerule T.Hard_Gamerule2 = #t.hard_Gamerule T.Hard_Gamerule2 run scoreboard players set #t.hard_Gamerule T.Hard_Gamerule2 1
+    scoreboard objectives add T.HardGamerule2 dummy
+    execute unless score #t.hard_Gamerule T.HardGamerule2 = #t.hard_Gamerule T.HardGamerule2 run scoreboard players set #t.hard_Gamerule T.HardGamerule2 1
 
 # Gamerule3 鉄ドアを壊すかどうか
-    scoreboard objectives add T.Hard_Gamerule3 dummy
-    execute unless score #t.hard_Gamerule T.Hard_Gamerule3 = #t.hard_Gamerule T.Hard_Gamerule3 run scoreboard players set #t.hard_Gamerule T.Hard_Gamerule3 0
+    scoreboard objectives add T.HardGamerule3 dummy
+    execute unless score #t.hard_Gamerule T.HardGamerule3 = #t.hard_Gamerule T.HardGamerule3 run scoreboard players set #t.hard_Gamerule T.HardGamerule3 0
 
 # Gamerule4 クリーパーの爆発変更
-    scoreboard objectives add T.Hard_Gamerule4 dummy
-    execute unless score #t.hard_Gamerule T.Hard_Gamerule4 = #t.hard_Gamerule T.Hard_Gamerule4 run scoreboard players set #t.hard_Gamerule T.Hard_Gamerule4 1
+    scoreboard objectives add T.HardGamerule4 dummy
+    execute unless score #t.hard_Gamerule T.HardGamerule4 = #t.hard_Gamerule T.HardGamerule4 run scoreboard players set #t.hard_Gamerule T.HardGamerule4 1
+
+#declare tag ChuzVector0
+#declare tag Chuz_Random
+#declare tag ChuzOnGround
+#declare tag ChuzHurtEntity
+#declare tag ChuzHurtEntity9s
+#declare tag ChuzStandstill
+#declare tag T.HardAlreadyInit
+#declare tag T.HardPoisonBall
+#declare tag T.HardPoisonBallInit
+#declare tag T.HardException
+#declare tag T.HardIgnited
+#declare tag T.HardStealthMove
+#declare tag 
