@@ -17,54 +17,54 @@
     tag @e[tag=!ChuzStandstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add ChuzStandstill
 
 # ゾンビ系
-    execute as @e[type=#t.hard:zombies,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/zombie/tick
+    execute as @e[type=#t.hard:zombies,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/zombie/tick
 
 # テスト
     #execute as @e[tag=T.HardRotater] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 # スケルトン系
-    execute as @e[type=#minecraft:skeletons,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/skeleton/tick
+    execute as @e[type=#minecraft:skeletons,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/skeleton/tick
 
 # スパイダー
-    execute as @e[type=spider,tag=!UniqueEnemy] at @s if entity @a[distance=..80] run function t.hard:enemy/spider/tick
+    execute as @e[type=spider,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/spider/tick
 # ネット
     execute as @e[type=item,tag=T.Hard_Net] at @s run function t.hard:enemy/spider/net/tick
 
 # ケイブスパイダー
-    execute as @e[type=cave_spider,tag=!UniqueEnemy] at @s if entity @a[distance=..30] run function t.hard:enemy/cave_spider/tick
+    execute as @e[type=cave_spider,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..30] run function t.hard:enemy/cave_spider/tick
 # 毒弾
     execute as @e[type=item,tag=T.Hard_PoisonBall] at @s run function t.hard:enemy/cave_spider/poison_ball/tick
 
 # クリーパー
-    execute as @e[type=creeper] at @s if entity @a[distance=..80] run function t.hard:enemy/creeper/tick
+    execute as @e[type=creeper,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/creeper/tick
 
 # エンダーマン
-    execute as @e[type=enderman] at @s if entity @a[distance=..80] run function t.hard:enemy/enderman/main
+    execute as @e[type=enderman,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/enderman/main
 
 # エンダーアイ
     execute as @e[type=vex,tag=T.HardEnder_Eye] at @s if entity @a[distance=..30] run function t.hard:enemy/enderman/ender_eye
     execute as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardEnder_Eye}}}] at @s run function t.hard:death_event/ender_eye
 
 # ブレイズ
-    execute if entity @e[type=blaze,limit=1] as @e[type=blaze] at @s if entity @a[distance=..80] run function t.hard:enemy/blaze/attack
+    execute if entity @e[type=blaze,limit=1] as @e[type=blaze,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/blaze/attack
 # ブレイズの火の玉
     execute if entity @e[type=armor_stand,tag=T.Hard_BlazeBullet,limit=1] as @e[type=armor_stand,tag=T.Hard_BlazeBullet] at @s run function t.hard:enemy/blaze/fireball/tick
 
 # スライム/マグマキューブ
-    execute if entity @e[type=slime,limit=1] as @e[type=slime] at @s if entity @a[distance=..30] run function t.hard:enemy/slime/main
-    execute if entity @e[type=magma_cube,limit=1] as @e[type=magma_cube] at @s if entity @a[distance=..30] run function t.hard:enemy/magma_cube
+    execute if entity @e[type=slime,limit=1] as @e[type=slime,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..30] run function t.hard:enemy/slime/main
+    execute if entity @e[type=magma_cube,limit=1] as @e[type=magma_cube,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..30] run function t.hard:enemy/magma_cube
 
 # エヴォーカー
-    execute if entity @e[type=evoker,limit=1] as @e[type=evoker] at @s if entity @a[distance=..30] run function t.hard:enemy/evoker/main
+    execute if entity @e[type=evoker,limit=1] as @e[type=evoker,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..30] run function t.hard:enemy/evoker/main
 
 # ヴィンディケーター
-    execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator] at @s if entity @a[distance=..80] run function t.hard:enemy/vindicator/main
+    execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/vindicator/main
 
 # ピリジャー
-    execute if entity @e[type=pillager,limit=1] as @e[type=pillager] at @s if entity @a[distance=..80] run function t.hard:enemy/pillager/main
+    execute if entity @e[type=pillager,limit=1] as @e[type=pillager,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/pillager/main
 
 # イリュージョナー
-    execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner] at @s if entity @a[distance=..30] run function t.hard:enemy/illusioner
+    execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..30] run function t.hard:enemy/illusioner
 
 # ウィッチ
     execute as @e[type=witch] at @s if entity @a[distance=..30] run function t.hard:enemy/witch/main
@@ -77,22 +77,22 @@
     execute if entity @e[type=armor_stand,tag=T.HardFrostShot,limit=1] as @e[type=armor_stand,tag=T.HardFrostShot] at @s run function t.hard:enemy/frost/frost_shot
 
 # ピグリン
-    execute if entity @e[type=piglin,limit=1] as @e[type=piglin] at @s if entity @a[distance=..80] run function t.hard:enemy/piglin/tick
+    execute if entity @e[type=piglin,limit=1] as @e[type=piglin,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/piglin/tick
 # 炎の矢
     execute if entity @e[type=arrow,nbt={CustomPotionEffects:[{Id:27b,Amplifier:3b,Duration:1}]},limit=1] as @e[type=arrow,nbt={CustomPotionEffects:[{Id:27b,Amplifier:3b,Duration:1}]}] run data merge entity @s {Fire:9999s,crit:1b,CustomPotionEffects:[{}]}
 
 # ピグリンブルート
-    execute if entity @e[type=piglin_brute,limit=1] as @e[type=piglin_brute] at @s if entity @a[distance=..80] run function t.hard:enemy/piglin_brute/main
+    execute if entity @e[type=piglin_brute,limit=1] as @e[type=piglin_brute,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/piglin_brute/main
 
 # ピグリンが泳いでる間に倒された場合
     execute if entity @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}},limit=1] as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}}] at @s run function t.hard:death_event/piglin_swimming
 
 # ガスト
-    execute if entity @e[type=ghast,limit=1] as @e[type=ghast] at @s run function t.hard:enemy/ghast/main
+    execute if entity @e[type=ghast,limit=1] as @e[type=ghast,tag=!Chuz_NonVanillaMob] at @s run function t.hard:enemy/ghast/main
     execute if entity @e[type=armor_stand,tag=T.HardGhastBullet,limit=1] as @e[type=armor_stand,tag=T.HardGhastBullet] at @s run function t.hard:enemy/ghast/fireball/bullet
 
 # エンドラ
-    execute if entity @e[type=ender_dragon,limit=1] as @e[type=ender_dragon] at @s if entity @a[distance=0..] run function t.hard:enemy/ender_dragon/attack
+    execute if entity @e[type=ender_dragon,limit=1] as @e[type=ender_dragon,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=0..] run function t.hard:enemy/ender_dragon/attack
 # エンドラの使う技
     execute if entity @e[type=fireball,tag=T.HardDragonfire,limit=1] as @e[type=fireball,tag=T.HardDragonfire] at @s run function t.hard:enemy/ender_dragon/dragon_fireball
     execute if entity @e[type=armor_stand,tag=T.HardDragonShot,limit=1] as @e[type=armor_stand,tag=T.HardDragonShot] at @s run function t.hard:enemy/ender_dragon/ender_flame

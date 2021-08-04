@@ -3,7 +3,7 @@
     particle minecraft:dust 0.7 1 1 1 ~ ~1 ~ 0.25 0.5 0.25 0 1
 
 # サウンド
-    execute if entity @a[distance=..15] run scoreboard players add @s T.HardMoveset2 1
+    execute if predicate t.hard:battle_mode run scoreboard players add @s T.HardMoveset2 1
     execute if entity @s[scores={T.HardMoveset2=80..}] run playsound minecraft:entity.blaze.ambient hostile @a ~ ~ ~ 1.5 1
     execute if entity @s[scores={T.HardMoveset2=80..}] run playsound minecraft:entity.player.breath hostile @a ~ ~ ~ 1.5 1
     scoreboard players reset @e[scores={T.HardMoveset2=80..}] T.HardMoveset2
