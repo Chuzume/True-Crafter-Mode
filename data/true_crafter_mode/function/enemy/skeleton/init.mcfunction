@@ -1,6 +1,6 @@
-execute as @s[type=#t.hard:no_sun_undead] run function t.hard:enemy/common/undead_hat
-execute if entity @s[type=skeleton] run function t.hard:enemy/skeleton/skeleton_change
-execute if entity @s[type=stray] run function t.hard:enemy/skeleton/stray_change
+execute as @s[type=#true_crafter_mode:no_sun_undead] run function true_crafter_mode:enemy/common/undead_hat
+execute if entity @s[type=skeleton] run function true_crafter_mode:enemy/skeleton/skeleton_change
+execute if entity @s[type=stray] run function true_crafter_mode:enemy/skeleton/stray_change
 
 # ウィザスケ
     execute as @e[type=wither_skeleton] run data merge entity @s {Health:30s,Attributes:[{Name:"generic.max_health",Base:30}]}

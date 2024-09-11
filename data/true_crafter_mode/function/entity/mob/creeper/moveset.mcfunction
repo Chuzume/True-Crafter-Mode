@@ -10,7 +10,7 @@
 
 # 3回で死ぬ
     scoreboard players add @s[scores={TrueCrafterMode.Tick=30}] t.hardMoveset3 1
-    execute if score @s t.hardMoveset3 matches 3 run function t.hard:entity/mob/common_moveset/void_kill
+    execute if score @s t.hardMoveset3 matches 3 run function true_crafter_mode:entity/mob/common_moveset/void_kill
 
 # 行動値リセット
     scoreboard players reset @s[scores={TrueCrafterMode.Tick=45..}] TrueCrafterMode.Tick
@@ -18,11 +18,11 @@
     execute unless entity @a[distance=..7,tag=!t.hardException] run tag @s remove t.hardIgnited
 
 # 起爆中なら近くのエンティティを逃がす
-    execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#t.hard:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function t.hard:enemy/common/dodge_creeper
+    execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#true_crafter_mode:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
 
 # 着火されちゃった場合はFuseを30に
     data merge entity @s[nbt={ignited:1b}] {Fuse:30} 
     tag @s[nbt={ignited:1b}] add t.hardIgnited
 
 # 段差飛び越え
-    execute if entity @s[tag=ChuzOnGround] run function t.hard:enemy/common/jump_gap/tick
+    execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick

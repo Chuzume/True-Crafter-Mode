@@ -1,9 +1,9 @@
 
 # 移動
-    execute at @s if block ~ ~ ~ #t.hard:no_collision run tp ^ ^ ^0.26
-    execute at @s if block ~ ~ ~ #t.hard:no_collision run tp ^ ^ ^0.26
-    execute at @s if block ~ ~ ~ #t.hard:no_collision run tp ^ ^ ^0.26
-    execute at @s if block ~ ~ ~ #t.hard:no_collision run tp ^ ^ ^0.26
+    execute at @s if block ~ ~ ~ #true_crafter_mode:no_collision run tp ^ ^ ^0.26
+    execute at @s if block ~ ~ ~ #true_crafter_mode:no_collision run tp ^ ^ ^0.26
+    execute at @s if block ~ ~ ~ #true_crafter_mode:no_collision run tp ^ ^ ^0.26
+    execute at @s if block ~ ~ ~ #true_crafter_mode:no_collision run tp ^ ^ ^0.26
 
 # 誘導
     execute rotated as @s positioned as @a[distance=..100] positioned ^-100 ^ ^ positioned as @s[distance=..100] run tp @s ~ ~ ~ ~-1 ~
@@ -12,10 +12,10 @@
     execute rotated as @s positioned as @a[distance=..100] positioned ^ ^100 ^ positioned as @s[distance=..100] run tp @s ~ ~ ~ ~ ~1
 
 # 地形接触
-    execute at @s unless block ~ ~ ~ #t.hard:no_collision positioned ^ ^ ^-1 run function t.hard:enemy/blaze/fireball/hit
+    execute at @s unless block ~ ~ ~ #true_crafter_mode:no_collision positioned ^ ^ ^-1 run function true_crafter_mode:enemy/blaze/fireball/hit
 
 # エンティティに接触
-    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[dx=0] run function t.hard:enemy/blaze/fireball/hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @p[dx=0] run function true_crafter_mode:enemy/blaze/fireball/hit
 
 # 時間切れ
     scoreboard players add @s BulletRemain 1

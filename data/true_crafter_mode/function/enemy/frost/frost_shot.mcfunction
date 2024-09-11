@@ -17,7 +17,7 @@ scoreboard players add @s BulletRemain 1
 kill @e[tag=T.HardShot,scores={BulletRemain=100..}] 
 execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[dx=0] run tag @s add T.HardHit
 execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @a[dx=0] run tag @s add T.HardHiT.Player
-execute unless block ^ ^ ^0.5 #t.hard:no_collision run tag @s add T.HardHit
+execute unless block ^ ^ ^0.5 #true_crafter_mode:no_collision run tag @s add T.HardHit
 execute if entity @s[tag=T.HardHiT.Player] run effect give @p slowness 10 1
 execute if entity @s[tag=T.HardHiT.Player] run effect give @p resistance 1 0 true
 execute if entity @s[tag=T.HardHiT.Player] run effect give @p instant_damage 1

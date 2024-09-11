@@ -14,16 +14,16 @@ execute if entity @a[distance=..6,tag=!T.HardException] run scoreboard players a
 #ただしオプションで封じられてる場合を除く
 execute if score #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy matches 0 run scoreboard players reset @s T.HardMoveset2
 #スコアが30で破壊
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^1 ^ ^1 #t.hard:no_dig run setblock ^0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^-1 ^ ^1 #t.hard:no_dig run setblock ^-0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^ ^ ^1 #t.hard:no_dig run setblock ^ ^ ^1 air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^1 ^ ^1 #true_crafter_mode:no_dig run setblock ^0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^-1 ^ ^1 #true_crafter_mode:no_dig run setblock ^-0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~ ~ unless block ^ ^ ^1 #true_crafter_mode:no_dig run setblock ^ ^ ^1 air destroy 
 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^1 ^ ^1 #t.hard:no_dig run setblock ^0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^-1 ^ ^1 #t.hard:no_dig run setblock ^-0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #t.hard:no_dig run setblock ^ ^ ^1 air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^1 ^ ^1 #true_crafter_mode:no_dig run setblock ^0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^-1 ^ ^1 #true_crafter_mode:no_dig run setblock ^-0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_dig run setblock ^ ^ ^1 air destroy 
 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^1 ^ ^1 #t.hard:no_dig run setblock ^0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^-1 ^ ^1 #t.hard:no_dig run setblock ^-0.5 ^ ^ air destroy 
-execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^ ^ ^1 #t.hard:no_dig run setblock ^ ^ ^1 air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^1 ^ ^1 #true_crafter_mode:no_dig run setblock ^0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^-1 ^ ^1 #true_crafter_mode:no_dig run setblock ^-0.5 ^ ^ air destroy 
+execute if entity @s[scores={T.HardMoveset2=30..}] facing entity @p eyes rotated ~ 0 positioned ~ ~2 ~ unless block ^ ^ ^1 #true_crafter_mode:no_dig run setblock ^ ^ ^1 air destroy 
 
 scoreboard players reset @s[scores={T.HardMoveset2=30..}] T.HardMoveset2

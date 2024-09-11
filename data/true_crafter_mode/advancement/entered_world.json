@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "t.hard:install_check"
+    "function": "true_crafter_mode:install_check"
   }
 }
