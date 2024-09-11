@@ -1,28 +1,29 @@
 
 # 付近にだれかいるなら起爆準備
-    execute if entity @a[distance=..3,tag=!t.hardException,tag=ChuzStandstill] run tag @s add t.hardIgnited
-    scoreboard players add @s[tag=t.hardIgnited] TrueCrafterMode.Tick 1
-    effect give @s[scores={TrueCrafterMode.Tick=30..}] resistance 1 4 true
+    # 20tick以下の場合は、付近に誰かいるならスコア加算
+        execute if entity @a[distance=..7] unless score @s TrueCrafterMode.Tick matches 20.. run scoreboard players add @s[tag=ChuzStandstill] TrueCrafterMode.Tick 1
+    # ある程度準備すると勝手に加算されるようになる！
+        execute if score @s TrueCrafterMode.Tick matches 20.. run scoreboard players add @s TrueCrafterMode.Tick 1
+    # し、おまけに体からモクモクする！
+        execute if score @s[tag=ChuzStandstill] TrueCrafterMode.Tick matches 0.. run function true_crafter_mode:entity/mob/creeper/ignited_particle
+    # スコア0ならリセット
+        scoreboard players reset @s[scores={TrueCrafterMode.Tick=..0}] TrueCrafterMode.Tick
 
-# 爆発を起こす 帯電時は強化される
-    execute if entity @s[nbt=!{powered:1b},scores={TrueCrafterMode.Tick=30}] run summon fireball ~ ~1 ~ {ExplosionPower:3,Motion:[0.0,-3.0,0.0]} 
-    execute if entity @s[nbt={powered:1b},scores={TrueCrafterMode.Tick=30}] run summon fireball ~ ~1 ~ {ExplosionPower:4,Motion:[0.0,-3.0,0.0]} 
+# 20tick未満の場合は離れられるとスコアリセットする
+        execute unless entity @a[distance=..7] if score @s TrueCrafterMode.Tick matches 1..19 run scoreboard players remove @s TrueCrafterMode.Tick 1
 
-# 3回で死ぬ
-    scoreboard players add @s[scores={TrueCrafterMode.Tick=30}] t.hardMoveset3 1
-    execute if score @s t.hardMoveset3 matches 3 run function true_crafter_mode:entity/mob/common_moveset/void_kill
+# 爆発を起こす
+    execute if score @s TrueCrafterMode.Tick matches 30 run function true_crafter_mode:entity/mob/creeper/explosion
 
-# 行動値リセット
-    scoreboard players reset @s[scores={TrueCrafterMode.Tick=45..}] TrueCrafterMode.Tick
-    execute unless entity @a[distance=..7] run scoreboard players reset @s TrueCrafterMode.Tick
-    execute unless entity @a[distance=..7,tag=!t.hardException] run tag @s remove t.hardIgnited
+# 爆発が終わったあとに無敵を解除し、スコアリセット
+    execute if score @s TrueCrafterMode.Tick matches 31.. run function true_crafter_mode:entity/mob/creeper/return_to_normal
 
 # 起爆中なら近くのエンティティを逃がす
-    execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#true_crafter_mode:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
+    #execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#true_crafter_mode:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
 
-# 着火されちゃった場合はFuseを30に
-    data merge entity @s[nbt={ignited:1b}] {Fuse:30} 
-    tag @s[nbt={ignited:1b}] add t.hardIgnited
+# 着火されちゃった場合はFuseを30にし、スコアを常時リセットする
+    data modify entity @s[nbt={ignited:1b}] Fuse set value 30
+    scoreboard players reset @s[nbt={ignited:1b}] TrueCrafterMode.Tick
 
 # 段差飛び越え
     execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick
