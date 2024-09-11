@@ -1,20 +1,14 @@
 
-# ブロックを置く
+# 自身と付近のプレイヤーのY座標の差を取得
+    execute if entity @a[distance=..16,tag=!t.hardException] store result score @s t.hardY_Check run data get entity @s Pos[1] 1
+    execute as @a[distance=..16] store result score @s t.hardY_Check run data get entity @s Pos[1] 1
+    scoreboard players operation @s t.hardY_Check -= @p[distance=..16,tag=!t.hardException] t.hardY_Check
 
-# 内部にマーカー仕込む
-    execute align xyz run summon minecraft:marker ~0.5 ~0.5 ~0.5 {Tags:["TrueCrafterMode.Entity.EnemyBlock"]}
+# Y座標がプレイヤーのほうが高く、自分が止まっているならブロック設置
+    scoreboard players add @s[scores={t.hardPlace=0..}] t.hardPlace 1
+    execute if entity @s[scores={t.hardY_Check=..-1},tag=ChuzOnGround,tag=ChuzStandstill] rotated ~ 0 if block ~ ~ ~ #t.hard:can_place unless block ~ ~2 ~ #t.hard:no_dig run function t.hard:enemy/block/place_down
+    execute if entity @s[scores={t.hardPlace=0..}] if block ~ ~-1 ~ #t.hard:can_place positioned ~ ~-1 ~ run function t.hard:entity/mob/common_moveset/place_block/place
+    scoreboard players reset @s[scores={t.hardPlace=5..}] t.hardPlace
 
-# ブロック設置
-    execute if biome ~ ~ ~ desert run function t.hard:entity/mob/common_moveset/place_block/desert
-    execute if biome ~ ~ ~ crimson_forest run function t.hard:entity/mob/common_moveset/place_block/crimson_forest
-    execute if biome ~ ~ ~ warped_forest run function t.hard:entity/mob/common_moveset/place_block/warped_forest
-    execute if biome ~ ~ ~ nether_wastes run function t.hard:entity/mob/common_moveset/place_block/nether_wastes
-    execute if biome ~ ~ ~ soul_sand_valley run function t.hard:entity/mob/common_moveset/place_block/soul_sand_valley
-    execute if biome ~ ~ ~ basalt_deltas run function t.hard:entity/mob/common_moveset/place_block/basalt_deltas
-
-# 全く成功してない、つまりリストにないバイオームだった場合は共通のブロックを設置
-    execute unless entity @s[tag=TrueCrafterMode.Success] run function t.hard:entity/mob/common_moveset/place_block/generic
-
-# リセット
-    tag @s remove TrueCrafterMode.Success
-    
+# 水平方向に設置
+    execute if entity @s[scores={t.hardY_Check=0},tag=ChuzOnGround] positioned ^ ^ ^1 rotated ~ 0 if block ~ ~-1 ~ #t.hard:can_place if block ~ ~-2 ~ #t.hard:can_place positioned ^ ^-1 ^ run function t.hard:entity/mob/common_moveset/place_block/place
