@@ -1,8 +1,4 @@
-
-# 謎パワーで落下無効化
-
-# 飛びかかり
-<<<<<<<< HEAD:data/t.hard/functions/entity/mob/zombie/moveset.mcfunction
+# Tick加算
     scoreboard players add @s TrueCrafterMode.Tick 1
 
 # 前方にブロックがあればスコアリセット
@@ -11,27 +7,9 @@
     scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz_Speed 10
     execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
     scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
-========
-    scoreboard players add @s T.HardMoveset1 1
-
-# 前方にブロックがあればスコアリセット
-    execute rotated ~ 0 unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s T.HardMoveset1
-    execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s T.HardMoveset1
-    scoreboard players set @s[scores={T.HardMoveset1=40}] Chuz_Speed 10
-    execute if entity @s[scores={T.HardMoveset1=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
-    scoreboard players reset @s[scores={T.HardMoveset1=40..}] T.HardMoveset1
->>>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/enemy/zombie/moveset.mcfunction
-
-# 向き調整テスト
-    #execute if entity @s run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=T.HardRotater,limit=1,sort=nearest] Rotation
 
 # オプションで封じられてなければブロック設置
-<<<<<<<< HEAD:data/t.hard/functions/entity/mob/zombie/moveset.mcfunction
     execute if score #t.hard_Gamerule t.hardGamerule2 matches 1 run function t.hard:entity/mob/common_moveset/place_block/
-========
-    execute if entity @s[type=!zombified_piglin] if score #t.hard_Gamerule T.HardGamerule2 matches 1 run function t.hard:enemy/common/block_place
-    execute if entity @s[type=zombified_piglin] if score #t.hard_Gamerule T.HardGamerule2 matches 1 run function t.hard:enemy/common/block_place_nether
->>>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/enemy/zombie/moveset.mcfunction
 
 # 静止していて、なおかつプレイヤーが近ければその方向のブロック破壊
     execute if entity @s[tag=ChuzOnGround,tag=ChuzStandstill] run scoreboard players add @s T.HardDig 1

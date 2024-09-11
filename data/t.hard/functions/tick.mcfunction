@@ -17,14 +17,7 @@
     tag @e[tag=!ChuzStandstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add ChuzStandstill
 
 # ゾンビ系
-<<<<<<<< HEAD:data/t.hard/functions/tick.mcfunction
     execute as @e[type=#t.hard:zombies,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:entity/mob/zombie/tick
-========
-    execute as @e[type=#t.hard:zombies,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/zombie/tick
-
-# テスト
-    #execute as @e[tag=T.HardRotater] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
->>>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/main.mcfunction
 
 # スケルトン系
     execute as @e[type=#minecraft:skeletons,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/skeleton/tick
@@ -107,13 +100,7 @@
     execute if entity @e[type=vex,tag=T.HardDragon_Eye,limit=1] as @e[type=vex,tag=T.HardDragon_Eye] at @s if entity @a[distance=..30] run function t.hard:enemy/ender_dragon/dragon_eye
 
 # 敵ブロック
-<<<<<<<< HEAD:data/t.hard/functions/tick.mcfunction
     execute as @e[type=marker,tag=TrueCrafterMode.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function t.hard:entity/enemy_block/
-========
-    execute if entity @e[type=item_frame,tag=T.HardEnemy_Block] as @e[type=item_frame,tag=T.HardEnemy_Block] at @s if entity @a[distance=..30] run function t.hard:enemy/block/stone/tick
-# 敵ブロック(ネザー)
-    execute if entity @e[type=item_frame,tag=T.HardEnemy_Block_Nether] as @e[type=item_frame,tag=T.HardEnemy_Block_Nether] at @s if entity @a[distance=..30] run function t.hard:enemy/block/nether/tick
->>>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/main.mcfunction
 
 # T.HardShielderタグ持ちなら矢を跳ね返す（共通タグ）
     execute as @e[tag=T.HardShielder] at @s if entity @e[type=arrow,nbt={inGround:0b,PierceLevel:0b},distance=..4] run data merge entity @s {Invulnerable:1b}

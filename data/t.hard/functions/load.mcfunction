@@ -18,7 +18,6 @@
 
 # 必要なスコアボード
     scoreboard objectives add Armor_Check dummy
-<<<<<<< HEAD:data/t.hard/function/load.mcfunction
     scoreboard objectives add TrueCrafterMode.Tick dummy
     scoreboard objectives add t.hardMoveset2 dummy
     scoreboard objectives add t.hardMoveset3 dummy
@@ -36,25 +35,6 @@
     scoreboard objectives add t.hardRecursion dummy
     scoreboard objectives add t.hardRange dummy
     scoreboard objectives add t.hardSpeed dummy
-=======
-    scoreboard objectives add T.HardMoveset1 dummy
-    scoreboard objectives add T.HardMoveset2 dummy
-    scoreboard objectives add T.HardMoveset3 dummy
-    scoreboard objectives add T.HardTorch dummy
-    scoreboard objectives add T.HardDoor dummy
-    scoreboard objectives add T.HardDoor2 dummy
-    scoreboard objectives add T.HardDoor3 dummy
-    scoreboard objectives add T.HardY_Check dummy
-    scoreboard objectives add T.HardPlace dummy
-    scoreboard objectives add T.HardDig dummy
-    scoreboard objectives add T.HardHealth dummy
-    scoreboard objectives add T.HardFa.Resist dummy
-    scoreboard objectives add T.HardInstall dummy
-    scoreboard objectives add T.HardDiffculty dummy
-    scoreboard objectives add T.HardRecursion dummy
-    scoreboard objectives add T.HardRange dummy
-    scoreboard objectives add T.HardSpeed dummy
->>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/load.mcfunction
 
 # Const定義
     scoreboard players set $31743 Chuz_Const 31743
