@@ -1,5 +1,6 @@
-
 # 敵が設置してくる、勝手に壊れるブロック
+
+# Tick加算
     scoreboard players add @s TrueCrafterMode.Tick 1
     execute as @s[scores={TrueCrafterMode.Tick=60..}] run setblock ~ ~ ~ air destroy
     
