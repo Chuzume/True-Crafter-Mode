@@ -25,9 +25,9 @@
     scoreboard objectives add t.hardDoor dummy
     scoreboard objectives add t.hardDoor2 dummy
     scoreboard objectives add t.hardDoor3 dummy
-    scoreboard objectives add t.hardY_Check dummy
+    scoreboard objectives add TrueCrafterMode.PosCheck.Y dummy
     scoreboard objectives add t.hardPlace dummy
-    scoreboard objectives add t.hardDig dummy
+    scoreboard objectives add TrueCrafterMode.Move.Dig dummy
     scoreboard objectives add t.hardHealth dummy
     scoreboard objectives add t.hardFa.Resist dummy
     scoreboard objectives add t.hardInstall dummy
@@ -63,12 +63,12 @@
     execute unless entity @e[type=area_effect_cloud,tag=ChuzVector0] run summon minecraft:area_effect_cloud 0 0 0 {Tags:["ChuzVector0"],Duration:-1,Age:-2147483648,WaitTime:-2147483648}
 
 # Gamerule1 モブ破壊オンオフ
-    scoreboard objectives add T.HardGamerule1 dummy
-    execute unless score #t.hard_Gamerule T.HardGamerule1 = #t.hard_Gamerule T.HardGamerule1 run scoreboard players set #t.hard_Gamerule T.HardGamerule1 1
+    scoreboard objectives add TrueCrafterMode.Gamerule.BlockDestroy dummy
+    execute unless score #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy = #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy run scoreboard players set #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy 1
 
 # Gamerule2 ゾンビブロック設置オンオフ
-    scoreboard objectives add T.HardGamerule2 dummy
-    execute unless score #t.hard_Gamerule T.HardGamerule2 = #t.hard_Gamerule T.HardGamerule2 run scoreboard players set #t.hard_Gamerule T.HardGamerule2 1
+    scoreboard objectives add TrueCrafterMode.Gamerule.PlaceBlock dummy
+    execute unless score #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock = #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock run scoreboard players set #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock 1
 
 # Gamerule3 鉄ドアを壊すかどうか
     scoreboard objectives add T.HardGamerule3 dummy
