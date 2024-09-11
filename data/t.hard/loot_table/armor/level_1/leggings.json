@@ -10,7 +10,7 @@
           "name": "minecraft:leather_leggings",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "function": "minecraft:enchanT.with_levels",
               "levels": 2,
               "treasure": false
             }
@@ -22,7 +22,7 @@
           "name": "minecraft:chainmail_leggings",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
+              "function": "minecraft:enchanT.with_levels",
               "levels": 2,
               "treasure": false
             }
@@ -39,7 +39,7 @@
           "name": "minecraft:chainmail_leggings"
         },
         {
-          "type": "minecraft:loot_table",
+          "type": "minecraft:looT.table",
           "weight": 1,
           "name": "minecraft:empty"
         }
