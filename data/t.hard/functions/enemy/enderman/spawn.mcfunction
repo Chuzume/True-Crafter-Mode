@@ -1,0 +1,2 @@
+data merge entity @s {ArmorItems:[{id:"minecraft:ice",Count:1b,tag:{Enchantments:[{id:"minecraft:frost_walker",lvl:1s}]}},{},{},{}],ArmorDropChances:[-1.000F,0.085F,0.085F,0.085F]}
+tag @s add T.HardAlreadyInit

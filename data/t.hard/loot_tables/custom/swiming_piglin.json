@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:porkchop",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ItemEvent:T.HardSwiming_Piglin}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
