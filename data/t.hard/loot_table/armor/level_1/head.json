@@ -10,7 +10,7 @@
           "name": "minecraft:leather_helmet",
           "functions": [
             {
-              "function": "minecraft:enchanT.with_levels",
+              "function": "minecraft:enchant_with_levels",
               "levels": 2,
               "treasure": false
             }
@@ -22,7 +22,7 @@
           "name": "minecraft:chainmail_helmet",
           "functions": [
             {
-              "function": "minecraft:enchanT.with_levels",
+              "function": "minecraft:enchant_with_levels",
               "levels": 2,
               "treasure": false
             }
@@ -39,7 +39,7 @@
           "name": "minecraft:chainmail_helmet"
         },
         {
-          "type": "minecraft:looT.table",
+          "type": "minecraft:loot_table",
           "weight": 1,
           "name": "minecraft:empty"
         }
