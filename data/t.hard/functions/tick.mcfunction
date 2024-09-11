@@ -33,7 +33,7 @@
     execute as @e[type=item,tag=T.Hard_PoisonBall] at @s run function t.hard:enemy/cave_spider/poison_ball/tick
 
 # クリーパー
-    execute as @e[type=creeper,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/creeper/tick
+    execute as @e[type=creeper,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:entity/mob/creeper/tick
 
 # エンダーマン
     execute as @e[type=enderman,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/enderman/main
