@@ -1,6 +1,5 @@
 
 # 謎パワーで落下無効化
-    execute if entity @s[nbt={OnGround:0b}] run function t.hard:enemy/common/fall_resist
 
 # 飛びかかり
     scoreboard players add @s TrueCrafterMode.Tick 1
@@ -16,8 +15,7 @@
     #execute if entity @s run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=t.hardRotater,limit=1,sort=nearest] Rotation
 
 # オプションで封じられてなければブロック設置
-    execute if entity @s[type=!zombified_piglin] if score #t.hard_Gamerule t.hardGamerule2 matches 1 run function t.hard:enemy/common/block_place
-    execute if entity @s[type=zombified_piglin] if score #t.hard_Gamerule t.hardGamerule2 matches 1 run function t.hard:enemy/common/block_place_nether
+    execute if score #t.hard_Gamerule t.hardGamerule2 matches 1 run function t.hard:entity/mob/common_moveset/place_block/
 
 # 静止していて、なおかつプレイヤーが近ければその方向のブロック破壊
     execute if entity @s[tag=ChuzOnGround,tag=ChuzStandstill] run scoreboard players add @s t.hardDig 1

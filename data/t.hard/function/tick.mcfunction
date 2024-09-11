@@ -17,10 +17,7 @@
     tag @e[tag=!ChuzStandstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add ChuzStandstill
 
 # ゾンビ系
-    execute as @e[type=#t.hard:zombies,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/zombie/tick
-
-# テスト
-    #execute as @e[tag=t.hardRotater] at @s facing entity @p eyes run tp @s ~ ~ ~ ~ ~
+    execute as @e[type=#t.hard:zombies,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:entity/mob/zombie/tick
 
 # スケルトン系
     execute as @e[type=#minecraft:skeletons,tag=!Chuz_NonVanillaMob] at @s if entity @a[distance=..80] run function t.hard:enemy/skeleton/tick
