@@ -1,20 +1,20 @@
 
 # 付近にだれかいるなら起爆準備
     execute if entity @a[distance=..3,tag=!t.hardException,tag=ChuzStandstill] run tag @s add t.hardIgnited
-    scoreboard players add @s[tag=t.hardIgnited] t.hardMoveset1 1
-    effect give @s[scores={t.hardMoveset1=30..}] resistance 1 4 true
+    scoreboard players add @s[tag=t.hardIgnited] TrueCrafterMode.Tick 1
+    effect give @s[scores={TrueCrafterMode.Tick=30..}] resistance 1 4 true
 
 # 爆発を起こす 帯電時は強化される
-    execute if entity @s[nbt=!{powered:1b},scores={t.hardMoveset1=30}] run summon fireball ~ ~1 ~ {ExplosionPower:3,Motion:[0.0,-3.0,0.0]} 
-    execute if entity @s[nbt={powered:1b},scores={t.hardMoveset1=30}] run summon fireball ~ ~1 ~ {ExplosionPower:4,Motion:[0.0,-3.0,0.0]} 
+    execute if entity @s[nbt=!{powered:1b},scores={TrueCrafterMode.Tick=30}] run summon fireball ~ ~1 ~ {ExplosionPower:3,Motion:[0.0,-3.0,0.0]} 
+    execute if entity @s[nbt={powered:1b},scores={TrueCrafterMode.Tick=30}] run summon fireball ~ ~1 ~ {ExplosionPower:4,Motion:[0.0,-3.0,0.0]} 
 
 # 難易度によっては3回で死ぬ
-    execute if score #t.hard_Gamerule t.hardGamerule4 matches 1 run scoreboard players add @s[scores={t.hardMoveset1=30}] t.hardMoveset3 1
+    execute if score #t.hard_Gamerule t.hardGamerule4 matches 1 run scoreboard players add @s[scores={TrueCrafterMode.Tick=30}] t.hardMoveset3 1
     execute if score @s t.hardMoveset3 matches 3 run function t.hard:enemy/common/go_to_void
 
 # 行動値リセット
-    scoreboard players reset @s[scores={t.hardMoveset1=45..}] t.hardMoveset1
-    execute unless entity @a[distance=..7] run scoreboard players reset @s t.hardMoveset1
+    scoreboard players reset @s[scores={TrueCrafterMode.Tick=45..}] TrueCrafterMode.Tick
+    execute unless entity @a[distance=..7] run scoreboard players reset @s TrueCrafterMode.Tick
     execute unless entity @a[distance=..7,tag=!t.hardException] run tag @s remove t.hardIgnited
 
 # 起爆中なら近くのエンティティを逃がす

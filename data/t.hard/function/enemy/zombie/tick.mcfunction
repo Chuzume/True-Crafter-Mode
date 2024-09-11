@@ -8,4 +8,4 @@
     data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!t.hardException] UUID
 
 # スコアリセット
-    execute unless entity @s[predicate=t.hard:battle_mode] run scoreboard players reset @s t.hardMoveset1
+    execute unless entity @s[predicate=t.hard:battle_mode] run scoreboard players reset @s TrueCrafterMode.Tick

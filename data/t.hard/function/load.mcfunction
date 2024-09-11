@@ -18,7 +18,7 @@
 
 # 必要なスコアボード
     scoreboard objectives add Armor_Check dummy
-    scoreboard objectives add t.hardMoveset1 dummy
+    scoreboard objectives add TrueCrafterMode.Tick dummy
     scoreboard objectives add t.hardMoveset2 dummy
     scoreboard objectives add t.hardMoveset3 dummy
     scoreboard objectives add t.hardTorch dummy

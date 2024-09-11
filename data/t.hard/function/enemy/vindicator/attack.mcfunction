@@ -1,9 +1,9 @@
 
 #前をチェックして飛びかかり
-execute positioned ^ ^ ^-0.5 facing entity @e[type=#t.hard:human,distance=5..16,limit=1,sort=nearest] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s[nbt={OnGround:1b}] t.hardMoveset1 1
-scoreboard players set @s[scores={t.hardMoveset1=40}] Chuz_Speed 6
-execute if entity @s[scores={t.hardMoveset1=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
-scoreboard players reset @s[scores={t.hardMoveset1=40..}] t.hardMoveset1
+execute positioned ^ ^ ^-0.5 facing entity @e[type=#t.hard:human,distance=5..16,limit=1,sort=nearest] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s[nbt={OnGround:1b}] TrueCrafterMode.Tick 1
+scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz_Speed 6
+execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
+scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
 
 #近接当てたら即座にバックステップ
 execute if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s t.hardMoveset2 59

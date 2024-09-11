@@ -6,4 +6,4 @@
     execute if entity @s[predicate=t.hard:battle_mode] run function t.hard:enemy/cave_spider/moveset
 
 # スコアリセット
-    execute unless entity @s[predicate=t.hard:battle_mode] run scoreboard players reset @s t.hardMoveset1
+    execute unless entity @s[predicate=t.hard:battle_mode] run scoreboard players reset @s TrueCrafterMode.Tick

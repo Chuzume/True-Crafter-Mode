@@ -3,14 +3,14 @@
     execute if entity @s[nbt={OnGround:0b}] run function t.hard:enemy/common/fall_resist
 
 # 飛びかかり
-    scoreboard players add @s t.hardMoveset1 1
+    scoreboard players add @s TrueCrafterMode.Tick 1
 
 # 前方にブロックがあればスコアリセット
-    execute rotated ~ 0 unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s t.hardMoveset1
-    execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s t.hardMoveset1
-    scoreboard players set @s[scores={t.hardMoveset1=40}] Chuz_Speed 10
-    execute if entity @s[scores={t.hardMoveset1=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
-    scoreboard players reset @s[scores={t.hardMoveset1=40..}] t.hardMoveset1
+    execute rotated ~ 0 unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
+    execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #t.hard:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
+    scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz_Speed 10
+    execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
+    scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
 
 # 向き調整テスト
     #execute if entity @s run data modify entity @s Rotation set from entity @e[type=area_effect_cloud,tag=t.hardRotater,limit=1,sort=nearest] Rotation

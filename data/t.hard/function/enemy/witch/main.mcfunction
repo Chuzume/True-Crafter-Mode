@@ -14,13 +14,13 @@
     execute as @e[type=#t.hard:hostiles,type=!witch,distance=0.1..8] at @s run function t.hard:enemy/witch/buff
 
 # ワープ
-    execute positioned ^ ^ ^-0.5 facing entity @p[distance=..16,tag=!t.hardException] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] unless entity @s[scores={t.hardMoveset1=40..}] run scoreboard players add @s t.hardMoveset1 1
-    execute if entity @a[distance=..5,tag=!t.hardException] unless entity @s[scores={t.hardMoveset1=40..}] run scoreboard players add @s t.hardMoveset1 1
-    execute if entity @s[scores={t.hardMoveset1=40}] run function t.hard:enemy/witch/teleport
-    scoreboard players add @s[scores={t.hardMoveset1=40..}] t.hardMoveset1 1
-    execute if entity @s[scores={t.hardMoveset1=42}] run particle witch ~ ~0.5 ~ 0.25 0.5 0.25 0 5
-    execute if entity @s[scores={t.hardMoveset1=42}] run particle explosion ~ ~1 ~ 0 0 0 0 0
-    scoreboard players reset @s[scores={t.hardMoveset1=80..}] t.hardMoveset1
+    execute positioned ^ ^ ^-0.5 facing entity @p[distance=..16,tag=!t.hardException] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] unless entity @s[scores={TrueCrafterMode.Tick=40..}] run scoreboard players add @s TrueCrafterMode.Tick 1
+    execute if entity @a[distance=..5,tag=!t.hardException] unless entity @s[scores={TrueCrafterMode.Tick=40..}] run scoreboard players add @s TrueCrafterMode.Tick 1
+    execute if entity @s[scores={TrueCrafterMode.Tick=40}] run function t.hard:enemy/witch/teleport
+    scoreboard players add @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick 1
+    execute if entity @s[scores={TrueCrafterMode.Tick=42}] run particle witch ~ ~0.5 ~ 0.25 0.5 0.25 0 5
+    execute if entity @s[scores={TrueCrafterMode.Tick=42}] run particle explosion ~ ~1 ~ 0 0 0 0 0
+    scoreboard players reset @s[scores={TrueCrafterMode.Tick=80..}] TrueCrafterMode.Tick
 
 # 段差飛び越え
     execute if entity @s[tag=ChuzOnGround] run function t.hard:enemy/common/jump_gap/tick

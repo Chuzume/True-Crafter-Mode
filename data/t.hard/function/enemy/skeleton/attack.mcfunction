@@ -23,17 +23,17 @@
     tag @s[tag=t.hardSke_Melee] remove t.hardSke_Ranged
 
 # 近接当てたら即座にバックステップ
-    execute if entity @s[tag=t.hardSke_Melee,nbt={OnGround:1b}] if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s t.hardMoveset1 39
-    execute if entity @s[tag=t.hardSke_Ranged2,nbt={OnGround:1b}] if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s t.hardMoveset1 39
+    execute if entity @s[tag=t.hardSke_Melee,nbt={OnGround:1b}] if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s TrueCrafterMode.Tick 39
+    execute if entity @s[tag=t.hardSke_Ranged2,nbt={OnGround:1b}] if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s TrueCrafterMode.Tick 39
 
 # 背後チェックしてダッシュ/バックステップ
-    execute if entity @s[tag=t.hardSke_Melee] if entity @a[distance=..5] run scoreboard players add @s t.hardMoveset1 1
-    execute if entity @s[tag=t.hardSke_Ranged2] if entity @a[distance=..5] run scoreboard players add @s t.hardMoveset1 1
-    scoreboard players set @s[tag=!t.hardSke_Ranged,scores={t.hardMoveset1=40}] Chuz_Speed -7
-    execute if entity @s[tag=!t.hardSke_Ranged,scores={t.hardMoveset1=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #t.hard:no_collision if block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/back_step
-    execute if entity @s[tag=!t.hardSke_Ranged,scores={t.hardMoveset1=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
-    execute if entity @s[tag=!t.hardSke_Ranged,scores={t.hardMoveset1=40}] facing entity @p eyes rotated ~ 0 if block ^ ^-1 ^-3 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
-    scoreboard players reset @s[scores={t.hardMoveset1=40..}] t.hardMoveset1
+    execute if entity @s[tag=t.hardSke_Melee] if entity @a[distance=..5] run scoreboard players add @s TrueCrafterMode.Tick 1
+    execute if entity @s[tag=t.hardSke_Ranged2] if entity @a[distance=..5] run scoreboard players add @s TrueCrafterMode.Tick 1
+    scoreboard players set @s[tag=!t.hardSke_Ranged,scores={TrueCrafterMode.Tick=40}] Chuz_Speed -7
+    execute if entity @s[tag=!t.hardSke_Ranged,scores={TrueCrafterMode.Tick=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #t.hard:no_collision if block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/back_step
+    execute if entity @s[tag=!t.hardSke_Ranged,scores={TrueCrafterMode.Tick=40}] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^-1 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
+    execute if entity @s[tag=!t.hardSke_Ranged,scores={TrueCrafterMode.Tick=40}] facing entity @p eyes rotated ~ 0 if block ^ ^-1 ^-3 #t.hard:no_collision run function t.hard:enemy/common/leap_attack
+    scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
 
 # 前をチェックして飛びかかり
     execute if entity @s[tag=t.hardSke_Melee2] positioned ^ ^ ^-0.5 facing entity @p[distance=..16] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s t.hardMoveset2 1
