@@ -103,9 +103,7 @@
     execute if entity @e[type=vex,tag=t.hardDragon_Eye,limit=1] as @e[type=vex,tag=t.hardDragon_Eye] at @s if entity @a[distance=..30] run function t.hard:enemy/ender_dragon/dragon_eye
 
 # 敵ブロック
-    execute if entity @e[type=item_frame,tag=t.hardEnemy_Block] as @e[type=item_frame,tag=t.hardEnemy_Block] at @s if entity @a[distance=..30] run function t.hard:enemy/block/stone/tick
-# 敵ブロック(ネザー)
-    execute if entity @e[type=item_frame,tag=t.hardEnemy_Block_Nether] as @e[type=item_frame,tag=t.hardEnemy_Block_Nether] at @s if entity @a[distance=..30] run function t.hard:enemy/block/nether/tick
+    execute as @e[type=marker,tag=TrueCrafterMode.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function t.hard:entity/enemy_block/
 
 # t.hardShielderタグ持ちなら矢を跳ね返す（共通タグ）
     execute as @e[tag=t.hardShielder] at @s if entity @e[type=arrow,nbt={inGround:0b,PierceLevel:0b},distance=..4] run data merge entity @s {Invulnerable:1b}
