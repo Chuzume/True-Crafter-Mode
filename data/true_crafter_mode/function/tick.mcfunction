@@ -20,7 +20,9 @@
     execute as @e[type=#true_crafter_mode:zombie,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/zombie/tick
 
 # スケルトン系
-    execute as @e[type=#minecraft:skeletons,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:enemy/skeleton/tick
+    execute as @e[type=#minecraft:skeletons,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/skeleton/tick
+# 腰についてるアイテムの処理
+    execute as @e[type=item_display,tag=TrueCrafterMode.Other.Sheath] at @s run function true_crafter_mode:entity/other/sheath
 
 # スパイダー
     execute as @e[type=spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/spider/tick
@@ -28,9 +30,9 @@
     execute as @e[type=armor_stand,tag=TrueCrafterMode.Projectile.Web] at @s run function true_crafter_mode:entity/projectile/spider_web/tick
 
 # ケイブスパイダー
-    execute as @e[type=cave_spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:enemy/cave_spider/tick
+    execute as @e[type=cave_spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/cave_spider/tick
 # 毒弾
-    execute as @e[type=item,tag=T.Hard_PoisonBall] at @s run function true_crafter_mode:enemy/cave_spider/poison_ball/tick
+    execute as @e[type=armor_stand,tag=TrueCrafterMode.Projectile.PoisonBall] at @s run function true_crafter_mode:entity/projectile/poison_ball/tick
 
 # クリーパー
     execute as @e[type=creeper,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/creeper/tick
