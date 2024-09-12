@@ -36,6 +36,11 @@
     scoreboard objectives add t.hardRange dummy
     scoreboard objectives add t.hardSpeed dummy
 
+# モブ固有
+    # クリーパーの自爆カウント
+        scoreboard objectives add TrueCrafterMode.Creeper.Count dummy
+    # スケルトンなど、メイン攻撃とは別でバックステップ処理持ってる奴用
+        scoreboard objectives add TrueCrafterMode.Mob.BackStep dummy
 # Const定義
     scoreboard players set $31743 Chuz.Const 31743
     scoreboard players set $65535 Chuz.Const 65535
@@ -52,15 +57,15 @@
 
 # 乱数の種
     summon minecraft:area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["Chuz.Random"]}
-    execute store result score $Random.Base Chuz.Global run data get entity @e[type=area_effect_cloud,tag=Chuz.Random,limit=1] UUID[1]
-    execute store result score $Random.Curray Chuz.Global run data get entity @e[type=area_effect_cloud,tag=Chuz.Random,limit=1] UUID[3]
-    kill @e[type=area_effect_cloud,tag=Chuz.Random,limit=1]
+    execute store result score $Random.Base Chuz.Global run data get entity @n[type=area_effect_cloud,tag=Chuz.Random] UUID[1]
+    execute store result score $Random.Curray Chuz.Global run data get entity @n[type=area_effect_cloud,tag=Chuz.Random] UUID[3]
+    kill @n[type=area_effect_cloud,tag=Chuz.Random]
 
 # フォースロード
     forceload add 0 0 0 0
 
 # ChuzVector0が存在しなければ召喚
-    execute unless entity @e[type=area_effect_cloud,tag=ChuzVector0] run summon minecraft:area_effect_cloud 0 0 0 {Tags:["ChuzVector0"],Duration:-1,Age:-2147483648,WaitTime:-2147483648}
+    execute unless entity @e[type=marker,tag=Chuz.Vector0] run summon marker 0 0 0 {Tags:["Chuz.Vector0"]}
 
 # Gamerule1 モブ破壊オンオフ
     scoreboard objectives add TrueCrafterMode.Gamerule.BlockDestroy dummy
@@ -87,7 +92,7 @@
 #declare tag T.HardAlreadyInit
 #declare tag T.HardPoisonBall
 #declare tag T.HardPoisonBallInit
-#declare tag T.HardException
+#declare tag TrueCrafterMode.Exception
 #declare tag T.HardIgnited
 #declare tag T.HardStealthMove
 #declare tag 

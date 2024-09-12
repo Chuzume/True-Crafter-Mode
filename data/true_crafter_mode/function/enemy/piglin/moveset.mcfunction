@@ -1,10 +1,10 @@
 
 # 何かと敵対してると本気出す
-    execute if entity @s[predicate=true_crafter_mode:battle_mode] run function true_crafter_mode:enemy/piglin/true_power
+    execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:enemy/piglin/true_power
 
 # プレイヤーが範囲外なら回復の使用制限を解除
-    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!T.HardException,distance=..25] run tag @s remove T.HardNoHeal
-    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!T.HardException,distance=..25] run tag @s remove T.HardNoF.Resist
+    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!TrueCrafterMode.Exception,distance=..25] run tag @s remove T.HardNoHeal
+    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!TrueCrafterMode.Exception,distance=..25] run tag @s remove T.HardNoF.Resist
 
 # 着火したら耐火ポーション使用
     execute if entity @s[nbt=!{Fire:-1s},tag=!T.HardPiglin_F.Resist] if entity @s[nbt=!{ActiveEffects:[{Id:12b}]},tag=!T.HardNoF.Resist] run function true_crafter_mode:enemy/piglin/potion_fire_resist
@@ -19,7 +19,7 @@
 # 体力をスコア化
     execute store result score @s T.HardHealth run data get entity @s Health 1
 # スコア化された体力が半分以下かつ、プレイヤーとの距離が開いていれば、一度のみ回復する
-    execute if entity @s[scores={T.HardHealth=..10},tag=!T.HardNoHeal,tag=!T.HardPiglin_Heal] unless entity @e[type=#true_crafter_mode:piglin_enemy,distance=..8,tag=!T.HardException] run function true_crafter_mode:enemy/piglin/heal
+    execute if entity @s[scores={T.HardHealth=..10},tag=!T.HardNoHeal,tag=!T.HardPiglin_Heal] unless entity @e[type=#true_crafter_mode:piglin_enemy,distance=..8,tag=!TrueCrafterMode.Exception] run function true_crafter_mode:enemy/piglin/heal
 # t.hard_Piglin_Healタグ持ってれば肉食う
     scoreboard players add @s[tag=T.HardPiglin_Heal] T.HardMoveset2 1
     execute if entity @s[tag=T.HardPiglin_Heal,scores={T.HardMoveset2=10}] run playsound minecraft:entity.generic.eat hostile @a ~ ~ ~ 1 1
@@ -29,7 +29,7 @@
     execute if entity @s[tag=T.HardPiglin_Heal,scores={T.HardMoveset2=30}] run function true_crafter_mode:enemy/piglin/heal_finish
 
 # 泳ぐ。ただし泳ぎがヘタクソなので水泳中には攻撃ができない
-    execute if entity @a[distance=..30,tag=!T.HardException] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim
+    execute if entity @a[distance=..30,tag=!TrueCrafterMode.Exception] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim
 
 # 泳ぎ中に殴られた場合。前述の通りヘタクソなので情けない声になる
     execute if entity @s[tag=T.HardPiglin_Silent,nbt={HurtTime:9s}] run playsound minecraft:entity.piglin.retreat hostile @a ~ ~ ~ 2 1

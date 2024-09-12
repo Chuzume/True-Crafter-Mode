@@ -1,7 +1,7 @@
 scoreboard players add @s BulletRemain 1
 #飛ばす
 execute facing entity @p eyes run summon area_effect_cloud ^ ^ ^0.1 {Duration:1,Tags:["pos"]}
-scoreboard players set @s[scores={BulletRemain=1}] Chuz_Speed 3
+scoreboard players set @s[scores={BulletRemain=1}] Chuz.Speed 3
 execute if entity @s[scores={BulletRemain=1}] run function true_crafter_mode:move_fb_2
 execute if entity @s[scores={BulletRemain=1..},tag=!T.HardNoHoming] run function true_crafter_mode:move_fb_2
 kill @s[scores={BulletRemain=100}]

@@ -1,8 +1,8 @@
 
 #近づかれたらできるだけ距離を取ろうとする
-execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!T.HardException] run scoreboard players set @s Chuz_Speed 3
-execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!T.HardException] rotated ~ 0 if block ^ ^ ^-1 #true_crafter_mode:no_collision_safe run function true_crafter_mode:enemy/common/ranged_move
-execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!T.HardException] rotated ~ 0 unless block ^ ^ ^-1 #true_crafter_mode:no_collision_safe run function true_crafter_mode:enemy/common/dash
+execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!TrueCrafterMode.Exception] run scoreboard players set @s Chuz.Speed 3
+execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!TrueCrafterMode.Exception] rotated ~ 0 if block ^ ^ ^-1 #true_crafter_mode:no_collision_safe run function true_crafter_mode:enemy/common/ranged_move
+execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow",Count:1b,tag:{Charged:1b}},{}]}] if entity @a[distance=..5,tag=!TrueCrafterMode.Exception] rotated ~ 0 unless block ^ ^ ^-1 #true_crafter_mode:no_collision_safe run function true_crafter_mode:enemy/common/dash
 
 #段差飛び越え
 execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick
@@ -11,4 +11,4 @@ execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/comm
 execute if score #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
 
 #水の中ですいすい
-execute if entity @a[distance=..30,tag=!T.HardException] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
+execute if entity @a[distance=..30,tag=!TrueCrafterMode.Exception] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim

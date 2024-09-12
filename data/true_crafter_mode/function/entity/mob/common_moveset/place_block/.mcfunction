@@ -1,8 +1,8 @@
 
 # 自身と付近のプレイヤーのY座標の差を取得
-    execute if entity @a[distance=..16,tag=!t.hardException] store result score @s TrueCrafterMode.PosCheck.Y run data get entity @s Pos[1] 1
+    execute if entity @a[distance=..16,tag=!TrueCrafterMode.Exception] store result score @s TrueCrafterMode.PosCheck.Y run data get entity @s Pos[1] 1
     execute as @a[distance=..16] store result score @s TrueCrafterMode.PosCheck.Y run data get entity @s Pos[1] 1
-    scoreboard players operation @s TrueCrafterMode.PosCheck.Y -= @p[distance=..16,tag=!t.hardException] TrueCrafterMode.PosCheck.Y
+    scoreboard players operation @s TrueCrafterMode.PosCheck.Y -= @p[distance=..16,tag=!TrueCrafterMode.Exception] TrueCrafterMode.PosCheck.Y
 
 # Y座標がプレイヤーのほうが高く、自分が止まっているならブロック設置
     scoreboard players add @s[scores={t.hardPlace=0..}] t.hardPlace 1

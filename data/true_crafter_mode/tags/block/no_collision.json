@@ -5,7 +5,7 @@
 	"minecraft:tripwire",
     "minecraft:air",
     "minecraft:cave_air",
-    "minecraft:grass",
+    "minecraft:short_grass",
     "minecraft:tall_grass",
     "minecraft:fern",
     "minecraft:large_fern",
@@ -48,14 +48,15 @@
     "minecraft:kelp_plant",
     "minecraft:seagrass",
     "minecraft:tall_seagrass",
+    "minecraft:moss_carpet",
     "#minecraft:buttons",
-    "#minecraft:carpets",
+    "#minecraft:wool_carpets",
     "#minecraft:corals",
     "#minecraft:rails",
     "#minecraft:saplings",
     "#minecraft:small_flowers",
     "#minecraft:wooden_pressure_plates",
     "#minecraft:banners",
-	"#minecraft:signs"    
+	  "#minecraft:signs"    
   ]
 }

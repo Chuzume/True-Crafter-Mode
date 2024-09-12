@@ -4,7 +4,7 @@
 # 前方にブロックがあればスコアリセット
     execute rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
     execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
-    scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz_Speed 10
+    scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz.Speed 10
     execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
     scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
 
@@ -22,12 +22,12 @@
     scoreboard players reset @s[tag=!ChuzStandstill] TrueCrafterMode.Move.Dig 
 
 # 静止していてれば上下のブロック破壊
-    execute if entity @s[scores={TrueCrafterMode.Move.Dig=40,TrueCrafterMode.PosCheck.Y=..-1},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!T.HardException] unless block ~ ~2 ~ #true_crafter_mode:no_dig run setblock ~ ~2 ~ air destroy 
-    execute if entity @s[scores={TrueCrafterMode.Move.Dig=40,TrueCrafterMode.PosCheck.Y=1..},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!T.HardException] unless block ~ ~-1 ~ #true_crafter_mode:no_dig run setblock ~ ~-1 ~ air destroy 
+    execute if entity @s[scores={TrueCrafterMode.Move.Dig=40,TrueCrafterMode.PosCheck.Y=..-1},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TrueCrafterMode.Exception] unless block ~ ~2 ~ #true_crafter_mode:no_dig run setblock ~ ~2 ~ air destroy 
+    execute if entity @s[scores={TrueCrafterMode.Move.Dig=40,TrueCrafterMode.PosCheck.Y=1..},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TrueCrafterMode.Exception] unless block ~ ~-1 ~ #true_crafter_mode:no_dig run setblock ~ ~-1 ~ air destroy 
 
 # 付近にプレイヤーがいなければY座標を消去
-    execute unless entity @a[distance=..16,tag=!T.HardException] run scoreboard players reset @s TrueCrafterMode.PosCheck.Y 
-    execute unless entity @a[distance=..16,tag=!T.HardException] run scoreboard players reset @s TrueCrafterMode.Move.Dig
+    execute unless entity @a[distance=..16,tag=!TrueCrafterMode.Exception] run scoreboard players reset @s TrueCrafterMode.PosCheck.Y 
+    execute unless entity @a[distance=..16,tag=!TrueCrafterMode.Exception] run scoreboard players reset @s TrueCrafterMode.Move.Dig
 
 # 採掘カウント削除
     scoreboard players reset @s[scores={TrueCrafterMode.Move.Dig=40..}] TrueCrafterMode.Move.Dig
@@ -39,4 +39,4 @@
     execute if score #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
 
 # 泳ぐ
-    execute if entity @a[distance=..30,tag=!T.HardException] if entity @s[type=!drowned,nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
+    execute if entity @a[distance=..30,tag=!TrueCrafterMode.Exception] if entity @s[type=!drowned,nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
