@@ -17,7 +17,7 @@
     tag @e[tag=!ChuzStandstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add ChuzStandstill
 
 # ゾンビ系
-    execute as @e[type=#true_crafter_mode:zombie,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/zombie/tick
+    execute as @e[type=#minecraft:zombies,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/zombie/tick
 
 # スケルトン系
     execute as @e[type=#minecraft:skeletons,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/skeleton/tick
