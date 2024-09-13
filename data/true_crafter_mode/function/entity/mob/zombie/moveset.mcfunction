@@ -1,12 +1,17 @@
-# Tick加算
-    scoreboard players add @s TrueCrafterMode.Tick 1
 
-# 前方にブロックがあればスコアリセット
-    execute rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
-    execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
-    scoreboard players set @s[scores={TrueCrafterMode.Tick=40}] Chuz.Speed 10
-    execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
-    scoreboard players reset @s[scores={TrueCrafterMode.Tick=40..}] TrueCrafterMode.Tick
+# 飛びかかり攻撃
+    # 付近にプレイヤーがいたらスコア加算、ただし飛びかかり中は加算しない
+        execute unless score @s[tag=!TrueCrafterMode.Leaping] TrueCrafterMode.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TrueCrafterMode.Tick 1
+    # 途中で予備動作を行い、スコアが止まらなくなる
+        execute if score @s TrueCrafterMode.Tick matches 30 run function true_crafter_mode:entity/mob/zombie/leap_attack/windup
+        execute if score @s TrueCrafterMode.Tick matches 30.. run scoreboard players add @s TrueCrafterMode.Tick 1
+    # 前方にブロックがあるならスコアをリセット
+        execute rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
+        execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TrueCrafterMode.Tick
+    # 実行
+        execute if entity @s[scores={TrueCrafterMode.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #true_crafter_mode:no_collision run function true_crafter_mode:entity/mob/zombie/leap_attack/
+    # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット
+        execute if score @s TrueCrafterMode.Tick matches 60.. run scoreboard players reset @s TrueCrafterMode.Tick
 
 # オプションで封じられてなければブロック設置
     execute if score #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/

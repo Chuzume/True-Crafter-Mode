@@ -41,6 +41,8 @@
         scoreboard objectives add TrueCrafterMode.Creeper.Count dummy
     # スケルトンなど、メイン攻撃とは別でバックステップ処理持ってる奴用
         scoreboard objectives add TrueCrafterMode.Mob.BackStep dummy
+    # 前方への突進処理を持つ奴が使うスコア
+        scoreboard objectives add TrueCrafterMode.Mob.FixLeapRotation dummy
 # Const定義
     scoreboard players set $31743 Chuz.Const 31743
     scoreboard players set $65535 Chuz.Const 65535
