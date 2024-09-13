@@ -1,6 +1,5 @@
 {
   "values": [
-    "true_crafter_mode:load",
-    "personal_storage:load"
-  ]
+    "true_crafter_mode:load"
+    ]
 }
