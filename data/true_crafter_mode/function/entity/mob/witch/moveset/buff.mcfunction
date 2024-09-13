@@ -16,4 +16,5 @@
     effect clear @s wither
 
 # 演出
-    particle witch ~ ~0.5 ~ 0.25 0.5 0.25 0 1
+    particle minecraft:trial_spawner_detection ~ ~1 ~ 0.3 0.5 0.3 0 1
+    particle minecraft:witch ~ ~1 ~ 0.2 0.5 0.2 0 1

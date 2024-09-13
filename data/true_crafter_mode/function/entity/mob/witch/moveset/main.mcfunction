@@ -9,10 +9,10 @@
     effect clear @s slowness
 
 # クリーパーを強化する
-    execute as @e[type=creeper,nbt=!{powered:1b},distance=..8] at @s run function true_crafter_mode:entity/mob/witch/moveset/charge_creeper
+    execute as @e[type=creeper,nbt=!{powered:1b},distance=..16] at @s run function true_crafter_mode:entity/mob/witch/moveset/charge_creeper
 
 # 付近の自分以外の敵対モブにバフを配る
-    execute as @e[type=#true_crafter_mode:hostile,type=!witch,distance=0.1..8] at @s run function true_crafter_mode:entity/mob/witch/moveset/buff
+    execute as @e[type=#true_crafter_mode:hostile,type=!witch,distance=0.1..16] at @s run function true_crafter_mode:entity/mob/witch/moveset/buff
 
 # ワープ
     execute if entity @p[distance=..16] run scoreboard players add @s TrueCrafterMode.Tick 1
