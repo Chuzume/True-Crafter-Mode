@@ -21,13 +21,13 @@ scoreboard players reset @s[tag=T.HardDra1] TMCM.Tick
 tag @s[tag=T.HardDra1] remove T.HardDra1
 
 #どらごんさんだー Dra2 長引いた場合はショットへ戻る
-execute unless entity @s[scores={T.HardMoveset2=6..}] run tag @s[scores={TMCM.Tick=40..},nbt={DragonPhase:2}] add T.HardDra2
-execute if entity @s[scores={T.HardMoveset2=6..}] run tag @s[scores={TMCM.Tick=40..},nbt={DragonPhase:2}] add T.HardDra0
+execute unless entity @s[scores={TMCM.SubAction=6..}] run tag @s[scores={TMCM.Tick=40..},nbt={DragonPhase:2}] add T.HardDra2
+execute if entity @s[scores={TMCM.SubAction=6..}] run tag @s[scores={TMCM.Tick=40..},nbt={DragonPhase:2}] add T.HardDra0
 execute if entity @s[tag=T.HardDra2] run function true_crafter_mode:enemy/ender_dragon/dragon_thunder
-scoreboard players add @s[tag=T.HardDra2] T.HardMoveset2 1
+scoreboard players add @s[tag=T.HardDra2] TMCM.SubAction 1
 scoreboard players reset @s[tag=T.HardDra2] TMCM.Tick
 tag @s[tag=T.HardDra2] remove T.HardDra2
-scoreboard players reset @s[nbt=!{DragonPhase:2}] T.HardMoveset2 
+scoreboard players reset @s[nbt=!{DragonPhase:2}] TMCM.SubAction 
 
 #めんたま召喚 Dra3
 execute if entity @s[nbt={DragonPhase:3},tag=!T.HardDra3_No] run function true_crafter_mode:enemy/ender_dragon/summon_eyes

@@ -2,7 +2,7 @@
 # 敵対対象がいるならこのfunctionを使用する。真の力を見せてやる。
 
 # 遠距離タイプはバックステップ
-    execute if entity @s[tag=TMCM.Piglin.Crossbow,tag=!TMCM.Piglin.F.Resist,tag=!TMCM.Piglin.Heal] run function true_crafter_mode:enemy/piglin/ranged
+    execute if entity @s[tag=TMCM.Piglin.Crossbow,tag=!TMCM.Piglin.FireResist,tag=!TMCM.Piglin.Heal] run function true_crafter_mode:enemy/piglin/ranged
 
 # 謎パワーで落下無効化
     execute if entity @s[nbt={OnGround:0b}] run function true_crafter_mode:enemy/common/fall_resist

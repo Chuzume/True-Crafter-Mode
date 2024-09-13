@@ -7,4 +7,4 @@
 
 # スコアリセット
     execute unless entity @s[predicate=true_crafter_mode:in_hostile] run scoreboard players reset @s TMCM.Tick
-    execute unless entity @s[predicate=true_crafter_mode:in_hostile] run scoreboard players reset @s t.hardMoveset2
+    execute unless entity @s[predicate=true_crafter_mode:in_hostile] run scoreboard players reset @s TMCM.SubAction

@@ -13,15 +13,15 @@ scoreboard players reset @s[scores={TMCM.Tick=40..}] TMCM.Tick
 >>>>>>> parent of 07c23e5 (全てをアップデート):data/t.hard/functions/enemy/vindicator/attack.mcfunction
 
 #近接当てたら即座にバックステップ
-execute if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s T.HardMoveset2 59
+execute if entity @a[distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s TMCM.SubAction 59
 #時々バクステで距離を取る
-execute if entity @a[distance=..5,tag=!TMCM.Exception] run scoreboard players add @s T.HardMoveset2 1
-scoreboard players set @s[scores={T.HardMoveset2=60}] Chuz.Speed 7
-execute if entity @s[scores={T.HardMoveset2=60..}] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/back_step
-execute if entity @s[scores={T.HardMoveset2=60..}] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
-execute if entity @s[scores={T.HardMoveset2=60..}] facing entity @p eyes rotated ~ 0 if block ^ ^-1 ^-3 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
-scoreboard players reset @s[scores={T.HardMoveset2=60..}] T.HardMoveset2
-execute unless entity @a[distance=..5,tag=!TMCM.Exception] run scoreboard players reset @s[scores={T.HardMoveset2=60..}] T.HardMoveset2
+execute if entity @a[distance=..5,tag=!TMCM.Exception] run scoreboard players add @s TMCM.SubAction 1
+scoreboard players set @s[scores={TMCM.SubAction=60}] Chuz.Speed 7
+execute if entity @s[scores={TMCM.SubAction=60..}] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/back_step
+execute if entity @s[scores={TMCM.SubAction=60..}] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
+execute if entity @s[scores={TMCM.SubAction=60..}] facing entity @p eyes rotated ~ 0 if block ^ ^-1 ^-3 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/leap_attack
+scoreboard players reset @s[scores={TMCM.SubAction=60..}] TMCM.SubAction
+execute unless entity @a[distance=..5,tag=!TMCM.Exception] run scoreboard players reset @s[scores={TMCM.SubAction=60..}] TMCM.SubAction
 
 #静止していて、なおかつプレイヤーが近ければその方向のブロック破壊
 execute if entity @s[nbt={OnGround:1b,Motion:[0.0,-0.0784000015258789d,0.0]}] if entity @a[distance=..20,tag=!TMCM.Exception] run scoreboard players add @s TMCM.Move.Dig 1

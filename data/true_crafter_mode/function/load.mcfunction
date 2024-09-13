@@ -19,7 +19,9 @@
 # 必要なスコアボード
     scoreboard objectives add Armor_Check dummy
     scoreboard objectives add TMCM.Tick dummy
-    scoreboard objectives add t.hardMoveset2 dummy
+    scoreboard objectives add TMCM.SubAction dummy
+
+    scoreboard objectives add TMCM.SubAction dummy
     scoreboard objectives add t.hardMoveset3 dummy
     scoreboard objectives add t.hardTorch dummy
     scoreboard objectives add t.hardDoor dummy
@@ -43,6 +45,8 @@
         scoreboard objectives add TMCM.Mob.BackStep dummy
     # 前方への突進処理を持つ奴が使うスコア
         scoreboard objectives add TMCM.Mob.FixLeapRotation dummy
+    #
+
 # Const定義
     scoreboard players set $31743 Chuz.Const 31743
     scoreboard players set $65535 Chuz.Const 65535

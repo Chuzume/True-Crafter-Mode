@@ -1,4 +1,4 @@
-tag @s add TMCM.Piglin.F.Resist
+tag @s add TMCM.Piglin.FireResist
 item replace entity @s weapon.mainhand with potion{Potion: "minecraft:fire_resistance"} 1
 playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
 effect give @s slowness 2 1 true

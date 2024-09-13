@@ -1,5 +1,5 @@
 # 自身のサイズを取得
-    execute store result score @s[tag=!TMCM.AlreadyInit] T.HardMoveset2 run data get entity @s Size
+    execute store result score @s[tag=!TMCM.AlreadyInit] TMCM.SubAction run data get entity @s Size
     tag @s[tag=!TMCM.AlreadyInit] add TMCM.AlreadyInit
 
 # 付近にプレイヤーがいたら謎パワーで巨大化
