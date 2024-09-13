@@ -1,5 +1,5 @@
 # スポーン時
-    execute if entity @s[tag=!t.hardAlreadyInit] run function true_crafter_mode:entity/mob/zombie/init
+    execute if entity @s[tag=!TrueCrafterMode.AlreadyInit] run function true_crafter_mode:entity/mob/zombie/init
 
 # 敵対状態なら
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/zombie/moveset

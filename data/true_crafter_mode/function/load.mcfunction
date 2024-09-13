@@ -91,7 +91,7 @@
 #declare tag ChuzHurtEntity
 #declare tag ChuzHurtEntity9s
 #declare tag ChuzStandstill
-#declare tag T.HardAlreadyInit
+#declare tag TrueCrafterMode.AlreadyInit
 #declare tag T.HardPoisonBall
 #declare tag T.HardPoisonBallInit
 #declare tag TrueCrafterMode.Exception

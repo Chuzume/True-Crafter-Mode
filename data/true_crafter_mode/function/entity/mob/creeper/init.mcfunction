@@ -6,4 +6,4 @@
     data modify entity @s Fuse set value 9999
 
 # Init終了
-    tag @s add t.hardAlreadyInit
+    tag @s add TrueCrafterMode.AlreadyInit

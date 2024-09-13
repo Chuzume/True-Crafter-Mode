@@ -1,6 +1,6 @@
 
 # スポーン時
-    execute if entity @s[tag=!t.hardAlreadyInit] run function true_crafter_mode:entity/mob/creeper/init
+    execute if entity @s[tag=!TrueCrafterMode.AlreadyInit] run function true_crafter_mode:entity/mob/creeper/init
 
 # 攻撃行動
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/creeper/moveset

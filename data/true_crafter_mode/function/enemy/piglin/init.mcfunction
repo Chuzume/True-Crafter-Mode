@@ -7,4 +7,4 @@ tag @s[type=minecraft:piglin,nbt={HandItems:[{id:"minecraft:crossbow",Count:1b}]
 tag @s[type=minecraft:piglin,nbt={HandItems:[{id:"minecraft:crossbow",Count:1b}]}] add T.HardPiglin_Crossbow_Ranged
 
 #次回以降は実行しないためにタグ付け
-tag @s add T.HardAlreadyInit
+tag @s add TrueCrafterMode.AlreadyInit

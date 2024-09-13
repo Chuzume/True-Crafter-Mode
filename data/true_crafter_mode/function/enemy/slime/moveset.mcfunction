@@ -1,6 +1,6 @@
 # 自身のサイズを取得
-    execute store result score @s[tag=!T.HardAlreadyInit] T.HardMoveset2 run data get entity @s Size
-    tag @s[tag=!T.HardAlreadyInit] add T.HardAlreadyInit
+    execute store result score @s[tag=!TrueCrafterMode.AlreadyInit] T.HardMoveset2 run data get entity @s Size
+    tag @s[tag=!TrueCrafterMode.AlreadyInit] add TrueCrafterMode.AlreadyInit
 
 # 付近にプレイヤーがいたら謎パワーで巨大化
     execute if entity @a[distance=..10] unless entity @s[scores={TrueCrafterMode.Tick=100..}] run scoreboard players add @s[nbt=!{Size:0},nbt=!{Size:5}] TrueCrafterMode.Tick 1

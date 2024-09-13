@@ -21,4 +21,4 @@
     tag @s add TrueCrafterMode.Skeleton.Ranged
 
 # Init終了
-    tag @s add T.HardAlreadyInit
+    tag @s add TrueCrafterMode.AlreadyInit
