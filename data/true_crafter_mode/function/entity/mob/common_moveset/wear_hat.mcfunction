@@ -7,6 +7,7 @@
     item replace entity @s[type=zombie_villager,tag=!TrueCrafterMode.AlreadyInit,scores={Armor_Check=0}] armor.head with minecraft:leather_helmet[dyed_color=6177334] 1
     item replace entity @s[type=skeleton,tag=!TrueCrafterMode.AlreadyInit,scores={Armor_Check=0}] armor.head with minecraft:leather_helmet[dyed_color=11250603] 1
     item replace entity @s[type=stray,tag=!TrueCrafterMode.AlreadyInit,scores={Armor_Check=0}] armor.head with minecraft:leather_helmet[dyed_color=6387319] 1
+    item replace entity @s[type=bogged,tag=!TrueCrafterMode.AlreadyInit,scores={Armor_Check=0}] armor.head with minecraft:leather_helmet[dyed_color=3887645] 1
     item replace entity @s[type=drowned,tag=!TrueCrafterMode.AlreadyInit,scores={Armor_Check=0}] armor.head with minecraft:leather_helmet[dyed_color=7887164] 1
 
 # リセット
