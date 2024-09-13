@@ -25,4 +25,4 @@
     execute at @s run function true_crafter_mode:entity/mob/witch/moveset/teleport/vfx
 
 # リセット
-    scoreboard players reset @s TrueCrafterMode.Tick
+    scoreboard players reset @s TMCM.Tick

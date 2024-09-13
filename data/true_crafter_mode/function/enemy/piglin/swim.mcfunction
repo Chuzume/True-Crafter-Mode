@@ -8,6 +8,6 @@
 
 # このタグ付与とルートテーブル書き換えがピグリン専用な理由
 # 色々ややこしい理由があるのだ
-    tag @s add T.HardPiglin_Silent
+    tag @s add TMCM.Piglin.Silent
     data merge entity @s {Silent:1b}
     data merge entity @s {DeathLootTable:"true_crafter_mode:custom/swiming_piglin"}

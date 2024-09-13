@@ -11,4 +11,4 @@
     execute if score $Random Chuz.Temporary matches 0 run function true_crafter_mode:enemy/common/go_to_void
 
 # Init完了
-    tag @s add TrueCrafterMode.AlreadyInit
+    tag @s add TMCM.AlreadyInit

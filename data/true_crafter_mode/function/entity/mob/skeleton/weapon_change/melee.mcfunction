@@ -7,5 +7,5 @@
     playsound minecraft:item.armor.equip_iron hostile @a ~ ~ ~ 1.5 1
 
 # タグを調整
-    tag @s add TrueCrafterMode.Skeleton.Melee
-    tag @s remove TrueCrafterMode.Skeleton.Ranged
+    tag @s add TMCM.Skeleton.Melee
+    tag @s remove TMCM.Skeleton.Ranged

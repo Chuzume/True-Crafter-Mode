@@ -8,4 +8,4 @@
     data merge entity @s {ArmorItems:[{id:"minecraft:ice",count:1,components:{"minecraft:enchantments":{levels:{"minecraft:frost_walker":1}}}},{},{},{}],ArmorDropChances:[0.000F,0.085F,0.085F,0.085F]}
 
 # Init終了
-    tag @s add TrueCrafterMode.AlreadyInit
+    tag @s add TMCM.AlreadyInit

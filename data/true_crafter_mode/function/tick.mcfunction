@@ -1,7 +1,7 @@
 
 # クリエとスペクテイターの奴を除外
-    execute as @a if entity @s[gamemode=!survival,gamemode=!adventure] run tag @s add TrueCrafterMode.Exception
-    tag @a[gamemode=!spectator,gamemode=!creative] remove TrueCrafterMode.Exception
+    execute as @a if entity @s[gamemode=!survival,gamemode=!adventure] run tag @s add TMCM.Exception
+    tag @a[gamemode=!spectator,gamemode=!creative] remove TMCM.Exception
 
 
 # 敵モブNBTリセット
@@ -22,17 +22,17 @@
 # スケルトン系
     execute as @e[type=#minecraft:skeletons,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/skeleton/tick
 # 腰についてるアイテムの処理
-    execute as @e[type=item_display,tag=TrueCrafterMode.Other.Sheath] at @s run function true_crafter_mode:entity/other/sheath
+    execute as @e[type=item_display,tag=TMCM.Other.Sheath] at @s run function true_crafter_mode:entity/other/sheath
 
 # スパイダー
     execute as @e[type=spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/spider/tick
 # ウェブ弾
-    execute as @e[type=armor_stand,tag=TrueCrafterMode.Projectile.Web] at @s run function true_crafter_mode:entity/projectile/spider_web/tick
+    execute as @e[type=armor_stand,tag=TMCM.Projectile.Web] at @s run function true_crafter_mode:entity/projectile/spider_web/tick
 
 # ケイブスパイダー
     execute as @e[type=cave_spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/cave_spider/tick
 # 毒弾
-    execute as @e[type=armor_stand,tag=TrueCrafterMode.Projectile.PoisonBall] at @s run function true_crafter_mode:entity/projectile/poison_ball/tick
+    execute as @e[type=armor_stand,tag=TMCM.Projectile.PoisonBall] at @s run function true_crafter_mode:entity/projectile/poison_ball/tick
 
 # クリーパー
     execute as @e[type=creeper,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/creeper/tick
@@ -102,7 +102,7 @@
     execute if entity @e[type=vex,tag=T.HardDragon_Eye,limit=1] as @e[type=vex,tag=T.HardDragon_Eye] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/ender_dragon/dragon_eye
 
 # 敵ブロック
-    execute as @e[type=marker,tag=TrueCrafterMode.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
+    execute as @e[type=marker,tag=TMCM.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
 
 # T.HardShielderタグ持ちなら矢を跳ね返す（共通タグ）
     execute as @e[tag=T.HardShielder] at @s if entity @e[type=arrow,nbt={inGround:0b,PierceLevel:0b},distance=..4] run data merge entity @s {Invulnerable:1b}

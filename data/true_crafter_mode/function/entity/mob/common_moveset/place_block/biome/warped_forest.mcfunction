@@ -3,5 +3,5 @@
     execute align xyz run setblock ~0.5 ~0.5 ~0.5 warped_hyphae
 
 # 成功したことを伝える
-    tag @s add TrueCrafterMode.Success
+    tag @s add TMCM.Success
     

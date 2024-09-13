@@ -13,14 +13,14 @@
     execute if entity @s[nbt={HurtTime:10s}] run playsound minecraft:block.glass.break hostile @a ~ ~ ~ 1 1
 
 # 攻撃パターン
-    execute unless entity @s[scores={TrueCrafterMode.Tick=30..}] at @s positioned ^ ^ ^-0.5 facing entity @p[distance=..20,tag=!TrueCrafterMode.Exception] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s TrueCrafterMode.Tick 1
-    scoreboard players add @s[scores={TrueCrafterMode.Tick=30..}] TrueCrafterMode.Tick 1
-    execute unless entity @p[distance=..20] run scoreboard players set @s TrueCrafterMode.Tick 0
-    execute if entity @s[scores={TrueCrafterMode.Tick=30..40}] run data modify entity @s Motion[1] set value 0.2
+    execute unless entity @s[scores={TMCM.Tick=30..}] at @s positioned ^ ^ ^-0.5 facing entity @p[distance=..20,tag=!TMCM.Exception] feet positioned ^ ^ ^0.5 if entity @s[distance=..0.22] run scoreboard players add @s TMCM.Tick 1
+    scoreboard players add @s[scores={TMCM.Tick=30..}] TMCM.Tick 1
+    execute unless entity @p[distance=..20] run scoreboard players set @s TMCM.Tick 0
+    execute if entity @s[scores={TMCM.Tick=30..40}] run data modify entity @s Motion[1] set value 0.2
 
 # 射撃
-    execute if entity @s[scores={TrueCrafterMode.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^ ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot1,T.HardShot0],DisabledSlots:4144959}
-    execute if entity @s[scores={TrueCrafterMode.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^0.25 ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot2,T.HardShot0],DisabledSlots:4144959}
-    execute if entity @s[scores={TrueCrafterMode.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^-0.25 ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot3,T.HardShot0],DisabledSlots:4144959}
-    execute if entity @s[scores={TrueCrafterMode.Tick=40}] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
-    scoreboard players set @s[scores={TrueCrafterMode.Tick=60..}] TrueCrafterMode.Tick 0
+    execute if entity @s[scores={TMCM.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^ ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot1,T.HardShot0],DisabledSlots:4144959}
+    execute if entity @s[scores={TMCM.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^0.25 ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot2,T.HardShot0],DisabledSlots:4144959}
+    execute if entity @s[scores={TMCM.Tick=40}] positioned ~ ~1 ~ run summon armor_stand ^-0.25 ^ ^1 {Marker:1b,Invisible:1b,Tags:[T.HardFrostShot,T.HardShot3,T.HardShot0],DisabledSlots:4144959}
+    execute if entity @s[scores={TMCM.Tick=40}] run playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1.5
+    scoreboard players set @s[scores={TMCM.Tick=60..}] TMCM.Tick 0

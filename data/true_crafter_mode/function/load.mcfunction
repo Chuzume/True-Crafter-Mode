@@ -18,16 +18,16 @@
 
 # 必要なスコアボード
     scoreboard objectives add Armor_Check dummy
-    scoreboard objectives add TrueCrafterMode.Tick dummy
+    scoreboard objectives add TMCM.Tick dummy
     scoreboard objectives add t.hardMoveset2 dummy
     scoreboard objectives add t.hardMoveset3 dummy
     scoreboard objectives add t.hardTorch dummy
     scoreboard objectives add t.hardDoor dummy
     scoreboard objectives add t.hardDoor2 dummy
     scoreboard objectives add t.hardDoor3 dummy
-    scoreboard objectives add TrueCrafterMode.PosCheck.Y dummy
-    scoreboard objectives add TrueCrafterMode.BlockPlace dummy
-    scoreboard objectives add TrueCrafterMode.Move.Dig dummy
+    scoreboard objectives add TMCM.PosCheck.Y dummy
+    scoreboard objectives add TMCM.BlockPlace dummy
+    scoreboard objectives add TMCM.Move.Dig dummy
     scoreboard objectives add t.hardHealth dummy
     scoreboard objectives add t.hardFa.Resist dummy
     scoreboard objectives add t.hardInstall dummy
@@ -38,11 +38,11 @@
 
 # モブ固有
     # クリーパーの自爆カウント
-        scoreboard objectives add TrueCrafterMode.Creeper.Count dummy
+        scoreboard objectives add TMCM.Creeper.Count dummy
     # スケルトンなど、メイン攻撃とは別でバックステップ処理持ってる奴用
-        scoreboard objectives add TrueCrafterMode.Mob.BackStep dummy
+        scoreboard objectives add TMCM.Mob.BackStep dummy
     # 前方への突進処理を持つ奴が使うスコア
-        scoreboard objectives add TrueCrafterMode.Mob.FixLeapRotation dummy
+        scoreboard objectives add TMCM.Mob.FixLeapRotation dummy
 # Const定義
     scoreboard players set $31743 Chuz.Const 31743
     scoreboard players set $65535 Chuz.Const 65535
@@ -70,12 +70,12 @@
     execute unless entity @e[type=marker,tag=Chuz.Vector0] run summon marker 0 0 0 {Tags:["Chuz.Vector0"]}
 
 # Gamerule1 モブ破壊オンオフ
-    scoreboard objectives add TrueCrafterMode.Gamerule.BlockDestroy dummy
-    execute unless score #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy = #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy run scoreboard players set #t.hard_Gamerule TrueCrafterMode.Gamerule.BlockDestroy 1
+    scoreboard objectives add TMCM.Gamerule.BlockDestroy dummy
+    execute unless score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy = #t.hard_Gamerule TMCM.Gamerule.BlockDestroy run scoreboard players set #t.hard_Gamerule TMCM.Gamerule.BlockDestroy 1
 
 # Gamerule2 ゾンビブロック設置オンオフ
-    scoreboard objectives add TrueCrafterMode.Gamerule.PlaceBlock dummy
-    execute unless score #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock = #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock run scoreboard players set #t.hard_Gamerule TrueCrafterMode.Gamerule.PlaceBlock 1
+    scoreboard objectives add TMCM.Gamerule.PlaceBlock dummy
+    execute unless score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock = #t.hard_Gamerule TMCM.Gamerule.PlaceBlock run scoreboard players set #t.hard_Gamerule TMCM.Gamerule.PlaceBlock 1
 
 # Gamerule3 鉄ドアを壊すかどうか
     scoreboard objectives add T.HardGamerule3 dummy
@@ -91,10 +91,10 @@
 #declare tag ChuzHurtEntity
 #declare tag ChuzHurtEntity9s
 #declare tag ChuzStandstill
-#declare tag TrueCrafterMode.AlreadyInit
+#declare tag TMCM.AlreadyInit
 #declare tag T.HardPoisonBall
 #declare tag T.HardPoisonBallInit
-#declare tag TrueCrafterMode.Exception
+#declare tag TMCM.Exception
 #declare tag T.HardIgnited
 #declare tag T.HardStealthMove
 #declare tag 

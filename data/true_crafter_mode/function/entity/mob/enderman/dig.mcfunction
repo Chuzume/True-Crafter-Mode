@@ -16,4 +16,4 @@
     execute positioned ~ ~2 ~ unless block ^ ^ ^1 #true_crafter_mode:no_dig run setblock ^ ^ ^1 air destroy 
 
 # リセット
-    scoreboard players reset @s TrueCrafterMode.Tick
+    scoreboard players reset @s TMCM.Tick

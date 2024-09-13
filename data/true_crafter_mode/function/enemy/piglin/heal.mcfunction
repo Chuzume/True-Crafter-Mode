@@ -1,5 +1,5 @@
 #むしゃむしゃ
-tag @s add T.HardPiglin_Heal
+tag @s add TMCM.Piglin.Heal
 item replace entity @s weapon.mainhand with cooked_porkchop
 playsound minecraft:entity.generic.eat hostile @a ~ ~ ~ 1 1
 effect give @s slowness 2 1 true

@@ -8,4 +8,4 @@
     data modify entity @s Motion[2] set value 0.0d
 
 # リセット
-    scoreboard players reset @s TrueCrafterMode.Tick
+    scoreboard players reset @s TMCM.Tick

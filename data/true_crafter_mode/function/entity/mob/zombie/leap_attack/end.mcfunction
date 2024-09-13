@@ -5,9 +5,9 @@
 # @within function true_crafter_mode:entity/mob/zombie/tick
 
 # 着地テスト
-    tag @s remove TrueCrafterMode.Leaping
-    tag @s remove TrueCrafterMode.CanEndLeap
-    scoreboard players reset @s TrueCrafterMode.Mob.FixLeapRotation
+    tag @s remove TMCM.Leaping
+    tag @s remove TMCM.CanEndLeap
+    scoreboard players reset @s TMCM.Mob.FixLeapRotation
 
 # こっち向く
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~

@@ -11,4 +11,4 @@
     particle minecraft:lava ~ ~ ~ 0 0 0 0 25 force
     
 # 元の火の玉は削除
-    tag @s add TrueCrafterMode.AlreadyInit
+    tag @s add TMCM.AlreadyInit
