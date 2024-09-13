@@ -66,7 +66,7 @@
     execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/illusioner
 
 # ウィッチ
-    execute as @e[type=witch] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/witch/main
+    execute as @e[type=witch] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/witch/tick
 
 # フロスト（ゲスト出演）
     execute if entity @e[type=stray,tag=T.HardFrost,limit=1] as @e[type=stray,tag=T.HardFrost] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/frost/main
