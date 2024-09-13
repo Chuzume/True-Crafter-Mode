@@ -26,7 +26,7 @@
     scoreboard objectives add t.hardDoor2 dummy
     scoreboard objectives add t.hardDoor3 dummy
     scoreboard objectives add TrueCrafterMode.PosCheck.Y dummy
-    scoreboard objectives add t.hardPlace dummy
+    scoreboard objectives add TrueCrafterMode.BlockPlace dummy
     scoreboard objectives add TrueCrafterMode.Move.Dig dummy
     scoreboard objectives add t.hardHealth dummy
     scoreboard objectives add t.hardFa.Resist dummy

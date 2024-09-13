@@ -1,7 +1,7 @@
 
 # 飛びかかり攻撃
     # 付近にプレイヤーがいたらスコア加算、ただし飛びかかり中は加算しない
-        execute unless score @s[tag=!TrueCrafterMode.Leaping] TrueCrafterMode.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TrueCrafterMode.Tick 1
+        execute unless score @s[tag=!TrueCrafterMode.Leaping,tag=ChuzStandstill] TrueCrafterMode.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TrueCrafterMode.Tick 1
     # 途中で予備動作を行い、スコアが止まらなくなる
         execute if score @s TrueCrafterMode.Tick matches 30 run function true_crafter_mode:entity/mob/zombie/leap_attack/windup
         execute if score @s TrueCrafterMode.Tick matches 30.. run scoreboard players add @s TrueCrafterMode.Tick 1
