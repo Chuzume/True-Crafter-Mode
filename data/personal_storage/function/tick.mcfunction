@@ -1,4 +1,4 @@
-#> true_crafter_mode:personal_storage/tick
+#> personal_storage:tick
 #
 # IDを割り振るなどする
 #

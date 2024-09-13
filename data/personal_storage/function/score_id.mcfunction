@@ -1,8 +1,8 @@
-#> true_crafter_mode:personal_storage/score_id
+#> personal_storage:score_id
 #
 # 
 #
-# @within function true_crafter_mode:personal_storage/tick
+# @within function personal_storage:tick
 
 # 数値IDを割り振る
     scoreboard players add $PersonalStorage.Core PersonalStorage.Core 1

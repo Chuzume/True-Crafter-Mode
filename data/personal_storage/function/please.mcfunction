@@ -1,4 +1,4 @@
-#> true_crafter_mode:personal_storage/please
+#> personal_storage:please
 #
 # 実行者のUUIDでストレージ作る
 #
@@ -10,4 +10,4 @@
     data modify storage personal_storage: UUID set from entity @s UUID
 
 # 移したUUIDで専用のストレージ作ってそこに
-    function true_crafter_mode:personal_storage/please with storage personal_storage:
+    function personal_storage:please with storage personal_storage:

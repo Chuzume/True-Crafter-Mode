@@ -1,7 +1,7 @@
 {
   "values": [
     "true_crafter_mode:tick",
-    "true_crafter_mode:personal_storage/tick"
+    "personal_storage:tick"
 
   ]
 }

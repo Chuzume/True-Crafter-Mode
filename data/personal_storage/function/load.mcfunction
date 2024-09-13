@@ -1,4 +1,4 @@
-#> true_crafter_mode:personal_storage/load
+#> personal_storage:load
 #
 # 必要なものリスト
 #
