@@ -4,6 +4,10 @@
 #
 # @within function true_crafter_mode:entity/mob/witch/tick
 
+# 自爆してやかましいので毒と鈍足を消してしまう
+    effect clear @s poison
+    effect clear @s slowness
+
 # クリーパーを強化する
     execute as @e[type=creeper,nbt={powered:1b},distance=..8] at @s run function true_crafter_mode:entity/mob/witch/moveset/charge_creeper
 
@@ -13,7 +17,7 @@
 # ワープ
     execute if entity @p[distance=..16] run scoreboard players add @s TrueCrafterMode.Tick 1
 # 前後が塞がれていないならワープ実行
-    execute if entity @s[scores={TrueCrafterMode.Tick=40..}] facing entity @p eyes rotated ~ 0 if block ^ ^ ^-1 #true_crafter_mode:no_collision if block ^ ^ ^1 #true_crafter_mode:no_collision run function true_crafter_mode:entity/mob/witch/moveset/teleport/
+    execute if entity @s[scores={TrueCrafterMode.Tick=60..}] facing entity @p eyes rotated ~ 0 run function true_crafter_mode:entity/mob/witch/moveset/teleport/
 
 # 段差飛び越え
     execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick
