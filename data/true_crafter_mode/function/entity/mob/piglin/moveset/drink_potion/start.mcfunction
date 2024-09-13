@@ -7,8 +7,12 @@
 # タグ付与
     tag @s add TMCM.Piglin.FireResist
 
+# 現在の手持ちをストレージに移す
+    function #oh_my_dat:please
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from entity @s HandItems[0]
+
 # アイテムを持つ
-    item replace entity @s weapon.offhand with potion
+    item replace entity @s weapon.mainhand with potion[potion_contents={potion:"minecraft:fire_resistance"}]
 
 # 演出
     playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
@@ -17,5 +21,5 @@
     effect give @s slowness 2 1 true
 
 #近くにプレイヤーがいるなら飛び退く
-    #scoreboard players set @s Chuz.Speed 10
-    #execute if entity @a[distance=..7] facing entity @e[type=#true_crafter_mode:piglin_enemy,limit=1,sort=nearest] eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:enemy/common/back_step
+    execute if entity @a[distance=..7] run playsound minecraft:entity.piglin.jealous hostile @a ~ ~ ~ 1 1.5
+    execute if entity @a[distance=..7] facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:entity/mob/common_moveset/back_step
