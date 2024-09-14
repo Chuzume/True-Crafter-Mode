@@ -1,4 +1,4 @@
-#> true_crafter_mode:entity/mob/piglin/moveset/init/crossbow
+#> true_crafter_mode:entity/mob/piglin/init/crossbow
 #
 # クロスボウ型はちょっと処理が多いので
 #

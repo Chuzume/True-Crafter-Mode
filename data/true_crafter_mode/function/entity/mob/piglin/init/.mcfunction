@@ -1,6 +1,6 @@
-#> true_crafter_mode:entity/mob/piglin/moveset/init/
+#> true_crafter_mode:entity/mob/piglin/init/
 #
-# 
+# 召喚時の処理
 #
 # @within function true_crafter_mode:entity/mob/piglin/tick
 
@@ -13,7 +13,7 @@
     # 近接型
         tag @s[nbt={HandItems:[{id:"minecraft:golden_sword"}]}] add TMCM.Piglin.Sword
     # 遠距離型
-        execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow"}]}] run function true_crafter_mode:entity/mob/piglin/moveset/init/crossbow
+        execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow"}]}] run function true_crafter_mode:entity/mob/piglin/init/crossbow
 
 # 初期化終了
     tag @s add TMCM.AlreadyInit

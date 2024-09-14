@@ -5,7 +5,7 @@
 # @within function true_crafter_mode:tick
 
 # Init
-    execute if entity @s[tag=!TMCM.AlreadyInit] run function true_crafter_mode:entity/mob/piglin/init
+    execute if entity @s[tag=!TMCM.AlreadyInit] run function true_crafter_mode:entity/mob/piglin/init/
 
 # 耐火ポーション
     # 自分が燃えてたら使う
