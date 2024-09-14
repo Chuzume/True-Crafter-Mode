@@ -11,3 +11,6 @@
 
 # 持ち主からタグを奪う
     tag @n[tag=SheathOwner] remove TMCM.SheathOwner
+
+# 誰にも乗ってなかったら消える
+    execute unless predicate true_crafter_mode:on_vehicle run kill @s
