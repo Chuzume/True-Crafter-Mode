@@ -5,10 +5,10 @@
 # @within function true_crafter_mode:entity/mob/piglin/moveset/
 
 # 離れてる時は弓
-    execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=5..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged
+    execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=4..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged
 
 # 近い時は近接武器
-    execute if entity @s[tag=TMCM.RangedMode] if entity @n[tag=TMCM.Target,distance=..5] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/melee
+    execute if entity @s[tag=TMCM.RangedMode] if entity @n[tag=TMCM.Target,distance=..4] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/melee
 
 # 近接当てたら即座にバックステップ
     execute if entity @s[tag=TMCM.MeleeMode,nbt={OnGround:1b}] if entity @n[tag=TMCM.Target,distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s TMCM.Mob.BackStep 39
