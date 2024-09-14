@@ -1,4 +1,8 @@
-# 腰のアイテムを交換する
+#> true_crafter_mode:entity/mob/common_moveset/swap_sheath_item
+#
+# 腰のアイテムと手持ちを交換する
+#
+# @within function true_crafter_mode:entity/mob/**
 
 # 手持ちをストレージに移す
     data modify storage chuz:storage SheathItem set from entity @s HandItems[0]
