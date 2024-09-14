@@ -18,7 +18,7 @@
     effect give @s[type=wither_skeleton] instant_damage 1 100 true
 
 # デフォルトでは遠距離モードでスタート
-    tag @s add TMCM.Skeleton.Ranged
+    tag @s add TMCM.RangedMode
 
 # Init終了
     tag @s add TMCM.AlreadyInit
