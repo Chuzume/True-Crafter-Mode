@@ -6,7 +6,9 @@
 
 # タグ
     tag @s add TMCM.Piglin.Crossbow
-    tag @s add TMCM.Piglin.Crossbow.Ranged
+    tag @s add TMCM.RangedMode
+
+# 手持ちにフレイムを付与
 
 # 腰のアイテム
     # 鞘を召喚
