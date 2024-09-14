@@ -14,9 +14,6 @@
 # アイテムを持つ
     item replace entity @s weapon.mainhand with potion[potion_contents={potion:"minecraft:fire_resistance"}]
 
-# 演出
-    playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
-
 # 足を止める
     effect give @s slowness 2 1 true
 
