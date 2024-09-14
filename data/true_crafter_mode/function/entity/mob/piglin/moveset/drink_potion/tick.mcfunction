@@ -11,7 +11,6 @@
     execute if score @s TMCM.SubAction matches 10 run playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
     execute if score @s TMCM.SubAction matches 15 run playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
     execute if score @s TMCM.SubAction matches 20 run playsound minecraft:entity.generic.drink hostile @a ~ ~ ~ 1 1
-    effect give @s[tag=TMCM.Piglin.FireResist,scores={TMCM.SubAction=20}] fire_resistance 120 0
 
 # 耐火ポーション飲み終わり
     execute if score @s TMCM.SubAction matches 30 run function true_crafter_mode:entity/mob/piglin/moveset/drink_potion/end
