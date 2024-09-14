@@ -1,4 +1,5 @@
-# メインの攻撃動作
+
+
 
 # 自分の鞘にタグを付与
     execute on passengers if entity @s[type=item_display,tag=TMCM.Other.Sheath] run tag @s add This
@@ -16,7 +17,7 @@
     execute if entity @s[tag=TMCM.Skeleton.Melee] if entity @a[distance=..5] run scoreboard players add @s TMCM.Mob.BackStep 1
 
 # スコアが一定以上かつ、飛び退き先にブロックがあるなら飛ぶ
-        execute if score @s TMCM.Mob.BackStep matches 40.. run playsound minecraft:entity.skeleton.death hostile @a ~ ~ ~ 1 2
+    execute if score @s TMCM.Mob.BackStep matches 40 run playsound minecraft:entity.skeleton.death hostile @a ~ ~ ~ 1 2
     execute if score @s TMCM.Mob.BackStep matches 40.. facing entity @p eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function true_crafter_mode:entity/mob/common_moveset/back_step
 
 # 段差飛び越え
