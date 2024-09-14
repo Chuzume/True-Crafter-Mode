@@ -12,6 +12,7 @@
 # 腰にアイテム装着する
     summon item_display ~ ~ ~ {teleport_duration:1,Tags:["TMCM.Other.Sheath","Chuz.Init"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]},item:{id:"minecraft:stone_axe",count:1}}
     ride @n[type=item_display,tag=Chuz.Init] mount @s
+    tag @n[type=item_display,tag=Chuz.Init] remove Chuz.Init
 
 # ウィザースケルトンの場合、更にヘルスも強くなる
     attribute @s[type=wither_skeleton] generic.max_health base set 30 
