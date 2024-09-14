@@ -2,9 +2,6 @@
 # 自身の敵対者にタグ付与
     execute on target run tag @s add TMCM.Target
 
-# 自分の鞘にタグを付与
-    execute on passengers if entity @s[type=item_display,tag=TMCM.Other.Sheath] run tag @s add This
-
 # 離れてる時は弓
     execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=5..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged
 
@@ -29,9 +26,6 @@
 
 # 水の中ですいすい
     execute if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
-
-# 鞘からタグを外す
-    tag @n[type=item_display,tag=TMCM.Sheath,tag=This] remove This
 
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target

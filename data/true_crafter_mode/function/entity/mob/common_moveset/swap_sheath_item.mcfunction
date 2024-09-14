@@ -4,6 +4,9 @@
 #
 # @within function true_crafter_mode:entity/mob/**
 
+# 自分の鞘にタグを付与
+    execute on passengers if entity @s[type=item_display,tag=TMCM.Other.Sheath] run tag @s add This
+
 # 手持ちをストレージに移す
     data modify storage chuz:storage SheathItem set from entity @s HandItems[0]
     
@@ -15,3 +18,6 @@
 
 # リセット
     data remove storage chuz:storage SheathItem
+
+# 鞘からタグを外す
+    tag @n[type=item_display,tag=TMCM.Sheath,tag=This] remove This
