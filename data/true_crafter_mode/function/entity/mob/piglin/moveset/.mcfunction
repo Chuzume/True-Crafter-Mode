@@ -4,9 +4,23 @@
 #
 # @within function true_crafter_mode:entity/mob/piglin/tick
 
-
 # 自身の敵対者にタグ付与
     execute on target run tag @s add TMCM.Target
+
+# タイプ別行動
+    # 剣持ち
+        #execute if entity @s[tag=TMCM.Piglin.Sword,tag=!TMCM.Piglin.FireResist,tag=!TMCM.Piglin.Heal] run function 
+    # クロスボウ持ち
+        execute if entity @s[tag=TMCM.Piglin.Crossbow,tag=!TMCM.Piglin.FireResist,tag=!TMCM.Piglin.Heal] run function true_crafter_mode:entity/mob/piglin/moveset/ranged
+
+# 近くにいる非敵対ピグリンに自身の敵を知らせる
+    execute as @e[type=piglin,predicate=!true_crafter_mode:in_hostile,distance=0.1..15] run function true_crafter_mode:enemy/piglin/enemy_report
+
+# 採掘カウント削除
+    scoreboard players reset @s[scores={TMCM.Move.Dig=30..}] TMCM.Move.Dig
+
+# 段差飛び越え
+    function true_crafter_mode:enemy/common/jump_gap/tick
 
 # 回復行動
     # 体力をスコア化
