@@ -12,7 +12,7 @@
         execute rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TMCM.Tick
         execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s TMCM.Tick
     # 実行
-        execute if entity @s[scores={TMCM.Tick=40}] rotated ~ 0 unless block ^ ^-1 ^2 #true_crafter_mode:no_collision run function true_crafter_mode:entity/mob/zombie/leap_attack/
+        execute if entity @s[scores={TMCM.Tick=40}] rotated ~ 0 run function true_crafter_mode:entity/mob/zombie/leap_attack/
     # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット
         execute if score @s TMCM.Tick matches 60.. run scoreboard players reset @s TMCM.Tick
 
@@ -43,7 +43,7 @@
     execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
 
 # 泳ぐ
-    execute if entity @a[distance=..30,tag=!TMCM.Exception] if entity @s[type=!drowned,nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
+    #execute if entity @a[distance=..30,tag=!TMCM.Exception] if entity @s[type=!drowned,nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
 
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target

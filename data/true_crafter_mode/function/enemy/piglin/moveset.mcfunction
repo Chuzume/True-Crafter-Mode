@@ -3,7 +3,7 @@
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:enemy/piglin/true_power
 
 # プレイヤーが範囲外なら回復の使用制限を解除
-    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!TMCM.Exception,distance=..25] run tag @s remove T.HardNoHeal
+    execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!TMCM.Exception,distance=..25] run tag @s remove TMCM.Piglin.CannotHeal
     execute unless entity @e[type=#true_crafter_mode:piglin_enemy,tag=!TMCM.Exception,distance=..25] run tag @s remove T.HardNoFireResist
 
 # 着火したら耐火ポーション使用
@@ -17,9 +17,9 @@
     execute if entity @s[tag=TMCM.Piglin.FireResist,scores={TMCM.SubAction=30}] run function true_crafter_mode:enemy/piglin/fire_resist_finish
 
 # 体力をスコア化
-    execute store result score @s T.HardHealth run data get entity @s Health 1
+    execute store result score @s TMCM.Health run data get entity @s Health 1
 # スコア化された体力が半分以下かつ、プレイヤーとの距離が開いていれば、一度のみ回復する
-    execute if entity @s[scores={T.HardHealth=..10},tag=!T.HardNoHeal,tag=!TMCM.Piglin.Heal] unless entity @e[type=#true_crafter_mode:piglin_enemy,distance=..8,tag=!TMCM.Exception] run function true_crafter_mode:enemy/piglin/heal
+    execute if entity @s[scores={TMCM.Health=..10},tag=!TMCM.Piglin.CannotHeal,tag=!TMCM.Piglin.Heal] unless entity @e[type=#true_crafter_mode:piglin_enemy,distance=..8,tag=!TMCM.Exception] run function true_crafter_mode:enemy/piglin/heal
 # t.hard_Piglin_Healタグ持ってれば肉食う
     scoreboard players add @s[tag=TMCM.Piglin.Heal] TMCM.SubAction 1
     execute if entity @s[tag=TMCM.Piglin.Heal,scores={TMCM.SubAction=10}] run playsound minecraft:entity.generic.eat hostile @a ~ ~ ~ 1 1
