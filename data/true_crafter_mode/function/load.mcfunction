@@ -21,7 +21,8 @@
     scoreboard objectives add TMCM.Tick dummy
     scoreboard objectives add TMCM.SubAction dummy
 
-    scoreboard objectives add TMCM.SubAction dummy
+    scoreboard objectives add TMCM.Action.Leap dummy
+
     scoreboard objectives add t.hardMoveset3 dummy
     scoreboard objectives add t.hardTorch dummy
     scoreboard objectives add t.hardDoor dummy

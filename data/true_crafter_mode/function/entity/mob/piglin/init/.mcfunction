@@ -11,7 +11,7 @@
 
 # タグ付与
     # 近接型
-        tag @s[nbt={HandItems:[{id:"minecraft:golden_sword"}]}] add TMCM.Piglin.Sword
+        execute if entity @s[nbt={HandItems:[{id:"minecraft:golden_sword"}]}] run function true_crafter_mode:entity/mob/piglin/init/sword
     # 遠距離型
         execute if entity @s[nbt={HandItems:[{id:"minecraft:crossbow"}]}] run function true_crafter_mode:entity/mob/piglin/init/crossbow
 
