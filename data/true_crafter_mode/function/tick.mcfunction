@@ -60,7 +60,7 @@
     execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/vindicator/main
 
 # ピリジャー
-    execute if entity @e[type=pillager,limit=1] as @e[type=pillager,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/pillager/main
+    execute if entity @e[type=pillager,limit=1] as @e[type=pillager,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/pillager/tick
 
 # イリュージョナー
     execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/illusioner
