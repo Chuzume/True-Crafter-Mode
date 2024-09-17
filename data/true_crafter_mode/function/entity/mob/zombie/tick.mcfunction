@@ -16,4 +16,4 @@
         execute if entity @s[tag=TMCM.CanEndLeap,tag=ChuzOnGround] run function true_crafter_mode:entity/mob/zombie/leap_attack/end
 
 # 誰とも敵対していない場合、スコアリセット
-    execute unless entity @s[predicate=true_crafter_mode:in_hostile] run scoreboard players reset @s TMCM.Tick
+    execute unless entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/common_moveset/reset

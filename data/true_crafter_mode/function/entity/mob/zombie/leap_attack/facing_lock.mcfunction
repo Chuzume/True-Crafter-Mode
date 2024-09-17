@@ -12,7 +12,7 @@
     summon marker ~ ~ ~ {Tags:["Marker.Facing"]}
 
 # マーカーの向き
-    execute as @n[type=marker,tag=Marker.Facing] at @s facing entity @p feet run tp @s ~ ~ ~ ~ ~
+    execute as @n[type=marker,tag=Marker.Facing] at @s facing entity @n[tag=TMCM.Target] feet run tp @s ~ ~ ~ ~ ~
 
 # 自信の向きをマーカーのやつにする
     data modify entity @s Rotation[0] set from entity @n[type=marker,tag=Marker.Facing] Rotation[0]

@@ -1,7 +1,10 @@
 
+# 自身の敵対者にタグ付与
+    execute on target run tag @s add TMCM.Target
+
 # 飛びかかり攻撃
     # 付近にプレイヤーがいたらスコア加算、ただし飛びかかり中は加算しない
-        execute unless score @s[tag=!TMCM.Leaping,tag=!ChuzStandstill] TMCM.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TMCM.Tick 1
+        execute unless score @s[tag=!TMCM.Leaping,tag=!ChuzStandstill] TMCM.Tick matches 30.. if entity @n[tag=TMCM.Target,distance=..10] run scoreboard players add @s TMCM.Tick 1
     # 途中で予備動作を行い、スコアが止まらなくなる
         execute if score @s TMCM.Tick matches 30 run function true_crafter_mode:entity/mob/zombie/leap_attack/windup
         execute if score @s TMCM.Tick matches 30.. run scoreboard players add @s TMCM.Tick 1
@@ -30,10 +33,6 @@
     execute if entity @s[scores={TMCM.Move.Dig=40,TMCM.PosCheck.Y=..-1},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~2 ~ #true_crafter_mode:no_dig run setblock ~ ~2 ~ air destroy 
     execute if entity @s[scores={TMCM.Move.Dig=40,TMCM.PosCheck.Y=1..},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~-1 ~ #true_crafter_mode:no_dig run setblock ~ ~-1 ~ air destroy 
 
-# 付近にプレイヤーがいなければY座標を消去
-    execute unless entity @a[distance=..16,tag=!TMCM.Exception] run scoreboard players reset @s TMCM.PosCheck.Y 
-    execute unless entity @a[distance=..16,tag=!TMCM.Exception] run scoreboard players reset @s TMCM.Move.Dig
-
 # 採掘カウント削除
     scoreboard players reset @s[scores={TMCM.Move.Dig=40..}] TMCM.Move.Dig
 
@@ -45,3 +44,6 @@
 
 # 泳ぐ
     execute if entity @a[distance=..30,tag=!TMCM.Exception] if entity @s[type=!drowned,nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
+
+# ターゲットからタグを外す
+    tag @n[tag=TMCM.Target] remove TMCM.Target
