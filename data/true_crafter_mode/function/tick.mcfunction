@@ -49,7 +49,7 @@
     execute as @e[type=slime,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/slime/tick
 
 # エヴォーカー
-    execute if entity @e[type=evoker,limit=1] as @e[type=evoker,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/evoker/main
+    execute as @e[type=evoker,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/evoker/tick
 
 # ヴィンディケーター
     execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/vindicator/tick
