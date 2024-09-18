@@ -50,7 +50,7 @@
     execute if entity @e[type=armor_stand,tag=T.Hard_BlazeBullet,limit=1] as @e[type=armor_stand,tag=T.Hard_BlazeBullet] at @s run function true_crafter_mode:entity/mob/blaze/fireball/tick
 
 # スライム/マグマキューブ
-    execute if entity @e[type=slime,limit=1] as @e[type=slime,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/slime/main
+    execute if entity @e[type=slime,limit=1] as @e[type=slime,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/slime/tick
     execute if entity @e[type=magma_cube,limit=1] as @e[type=magma_cube,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/magma_cube
 
 # エヴォーカー

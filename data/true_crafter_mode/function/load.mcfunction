@@ -46,7 +46,8 @@
         scoreboard objectives add TMCM.Mob.BackStep dummy
     # 前方への突進処理を持つ奴が使うスコア
         scoreboard objectives add TMCM.Mob.FixLeapRotation dummy
-    #
+    # スライム
+        scoreboard objectives add TMCM.Slime.Count dummy
 
 # Const定義
     scoreboard players set $31743 Chuz.Const 31743
