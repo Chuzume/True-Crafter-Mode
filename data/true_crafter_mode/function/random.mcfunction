@@ -6,4 +6,4 @@
     scoreboard players operation $Random.Curray Chuz.Global /= $65535 Chuz.Const
     scoreboard players operation $Random.Base Chuz.Global %= $65535 Chuz.Const
 
-    scoreboard players get $Random.Base Chuz.Global
+    return run scoreboard players get $Random.Base Chuz.Global
