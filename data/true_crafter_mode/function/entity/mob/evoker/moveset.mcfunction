@@ -15,6 +15,14 @@
 # 前後が塞がれていないならワープ実行
     execute if entity @s[scores={TMCM.Tick=60..}] facing entity @n[tag=TMCM.Target,distance=..16] eyes rotated ~ 0 run function true_crafter_mode:entity/mob/evoker/warp_fang/
 
+# ヘルス半分での行動
+    # 体力をスコア化
+        execute store result score @s TMCM.Health run data get entity @s Health 1
+    # スコア化された体力が半分以下で行動を起こす
+        execute if entity @s[tag=!TMCM.Evoker.SummonUsed,scores={TMCM.Health=..25}] run function true_crafter_mode:entity/mob/evoker/final_summon/start
+    # Tick処理
+        execute if entity @s[tag=TMCM.Evoker.Summoning] run function true_crafter_mode:entity/mob/evoker/final_summon/tick
+
 # ドア破壊、ただしオプションで封じられてる場合を除く
     execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
 

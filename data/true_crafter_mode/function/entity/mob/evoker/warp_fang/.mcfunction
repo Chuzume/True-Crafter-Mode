@@ -25,9 +25,9 @@
     execute at @s run function true_crafter_mode:entity/mob/evoker/warp_fang/vfx
 
 # ワープ後の場所でファング設置
-    execute at @s rotated ~ 0 run summon evoker_fangs ^ ^ ^2
-    execute at @s rotated ~ 0 run summon evoker_fangs ^1 ^ ^2
-    execute at @s rotated ~ 0 run summon evoker_fangs ^-1 ^ ^2
+    execute at @s facing entity @n[tag=TMCM.Target] feet rotated ~ 0 run summon evoker_fangs ^ ^ ^2
+    execute at @s facing entity @n[tag=TMCM.Target] feet rotated ~ 0 run summon evoker_fangs ^1 ^ ^2
+    execute at @s facing entity @n[tag=TMCM.Target] feet rotated ~ 0 run summon evoker_fangs ^-1 ^ ^2
 
 # リセット
     scoreboard players reset @s TMCM.Tick
