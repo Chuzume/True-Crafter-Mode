@@ -40,24 +40,19 @@
 # エンダーマン
     execute as @e[type=enderman,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/enderman/tick
 
-# エンダーアイ
-    execute as @e[type=vex,tag=T.HardEnder_Eye] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/enderman/ender_eye
-    execute as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardEnder_Eye}}}] at @s run function true_crafter_mode:death_event/ender_eye
-
 # ブレイズ
     execute if entity @e[type=blaze,limit=1] as @e[type=blaze,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/blaze/attack
 # ブレイズの火の玉
     execute if entity @e[type=armor_stand,tag=T.Hard_BlazeBullet,limit=1] as @e[type=armor_stand,tag=T.Hard_BlazeBullet] at @s run function true_crafter_mode:entity/mob/blaze/fireball/tick
 
 # スライム/マグマキューブ
-    execute if entity @e[type=slime,limit=1] as @e[type=slime,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/slime/tick
-    execute if entity @e[type=magma_cube,limit=1] as @e[type=magma_cube,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/magma_cube
+    execute as @e[type=slime,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/slime/tick
 
 # エヴォーカー
     execute if entity @e[type=evoker,limit=1] as @e[type=evoker,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/evoker/main
 
 # ヴィンディケーター
-    execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/vindicator/main
+    execute if entity @e[type=vindicator,limit=1] as @e[type=vindicator,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/vindicator/tick
 
 # ピリジャー
     execute if entity @e[type=pillager,limit=1] as @e[type=pillager,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/pillager/tick
@@ -68,23 +63,14 @@
 # ウィッチ
     execute as @e[type=witch] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/witch/tick
 
-# フロスト（ゲスト出演）
-    execute if entity @e[type=stray,tag=T.HardFrost,limit=1] as @e[type=stray,tag=T.HardFrost] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/frost/main
-# フロスト死亡
-    execute if entity @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardFrost}}},limit=1] as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardFrost}}}] at @s run function true_crafter_mode:death_event/frost
-# フロストの弾
-    execute if entity @e[type=armor_stand,tag=T.HardFrostShot,limit=1] as @e[type=armor_stand,tag=T.HardFrostShot] at @s run function true_crafter_mode:entity/mob/frost/frost_shot
-
 # ピグリン
-    execute if entity @e[type=piglin,limit=1] as @e[type=piglin,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/piglin/tick
-# 炎の矢
-    execute if entity @e[type=arrow,nbt={CustomPotionEffects:[{Id:27b,Amplifier:3b,Duration:1}]},limit=1] as @e[type=arrow,nbt={CustomPotionEffects:[{Id:27b,Amplifier:3b,Duration:1}]}] run data merge entity @s {Fire:9999s,crit:1b,CustomPotionEffects:[{}]}
+    execute as @e[type=piglin,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/piglin/tick
 
 # ピグリンブルート
-    execute if entity @e[type=piglin_brute,limit=1] as @e[type=piglin_brute,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/piglin_brute/main
+    execute as @e[type=piglin_brute,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/piglin_brute/main
 
 # ピグリンが泳いでる間に倒された場合
-    execute if entity @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}},limit=1] as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}}] at @s run function true_crafter_mode:death_event/piglin_swimming
+    #execute if entity @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}},limit=1] as @e[type=item,nbt={Item:{tag:{ItemEvent:T.HardSwiming_Piglin}}}] at @s run function true_crafter_mode:death_event/piglin_swimming
 
 # ガスト
     execute if entity @e[type=ghast,limit=1] as @e[type=ghast,tag=!Chuz.NonVanillaMob] at @s run function true_crafter_mode:entity/mob/ghast/main
