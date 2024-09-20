@@ -26,14 +26,13 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!armor_stand,type=!item_display,team=!null,dx=0] run function true_crafter_mode:entity/projectile/frost_ball/hit/
 
 # 飛翔
-    #scoreboard players set @s Chuz.Speed 10
-    #function true_crafter_mode:entity/motion
+    scoreboard players set @s Chuz.Speed 10
+    function true_crafter_mode:entity/motion
 
 # 衝突チェック
     execute if entity @s[tag=Chuz.MotionChecked] run function true_crafter_mode:api/collide_check/
 
 # 衝突してたら消える
-    execute if entity @s[tag=Chuz.Collide] run say ぶつかった！
     execute if entity @s[tag=Chuz.Collide] run function true_crafter_mode:entity/projectile/frost_ball/kill
 
 # 消える

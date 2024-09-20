@@ -4,15 +4,15 @@
 #
 # @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/shoot
 
+
 # Motion関連
-    # 持ち主が召喚したマーカーを狙う
+    # マーカーの方を向く
         execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes run tp @s ~ ~ ~ ~ ~
     # 最初にちょっと飛ばしてMotionの初期値を取得
         scoreboard players set @s Chuz.Speed 10
-        function true_crafter_mode:entity/motion
+        execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes rotated ~ ~ run function true_crafter_mode:entity/motion
         function true_crafter_mode:api/collide_check/get_first_motion
-        data modify storage chuz:storage test set from entity @s Motion
-        # マーカーキル
+    # マーカーキル
         kill @n[type=marker,tag=TMCM.Marker.Aim]
 
 # 乗ってるItem_Displayの向きを自分と同じに
