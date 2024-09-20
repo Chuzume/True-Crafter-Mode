@@ -6,12 +6,12 @@
 
 # 初期Motion0だったらタグ付与
     execute store result score @s Chuz.FirstMotion.X run data get entity @s Motion[0] 1000
-    execute if score @s Chuz.FirstMotion.X matches -5..5 run tag @s add Chuz.Disablecollide.X
+    execute if score @s Chuz.FirstMotion.X matches -5..5 run tag @s add Chuz.DisableCollide.X
 
     execute store result score @s Chuz.FirstMotion.Y run data get entity @s Motion[1] 1000
-    execute if score @s Chuz.FirstMotion.Y matches 0 run tag @s add Chuz.Disablecollide.Y
+    execute if score @s Chuz.FirstMotion.Y matches 0 run tag @s add Chuz.DisableCollide.Y
 
     execute store result score @s Chuz.FirstMotion.Z run data get entity @s Motion[2] 1000
-    execute if score @s Chuz.FirstMotion.Z matches -5..5 run tag @s add Chuz.Disablecollide.Z
+    execute if score @s Chuz.FirstMotion.Z matches -5..5 run tag @s add Chuz.DisableCollide.Z
 
     tag @s[tag=!Chuz.MotionChecked] add Chuz.MotionChecked

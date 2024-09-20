@@ -24,9 +24,9 @@
     scoreboard players operation @s Chuz.Temporary = @s Chuz.CollideCheck.Z
 
 # Chuz.No(X/Y/Z)_Checkで各軸のチェックを無効化
-    execute if entity @s[tag=!Chuz.DisableCollide.X] if score @s Chuz.CollideCheck.X matches 0 run tag @s add Chuz.Collide
-    execute if entity @s[tag=!Chuz.DisableCollide.Y] if score @s Chuz.CollideCheck.Y matches 0 run tag @s add Chuz.Collide
-    execute if entity @s[tag=!Chuz.DisableCollide.Z] if score @s Chuz.CollideCheck.Z matches 0 run tag @s add Chuz.Collide
+    execute if entity @s[tag=!Chuz.DisableCollide.X] if score @s Chuz.CollideCheck.X matches 0 run say X
+    execute if entity @s[tag=!Chuz.DisableCollide.Y] if score @s Chuz.CollideCheck.Y matches 0 run say Y
+    execute if entity @s[tag=!Chuz.DisableCollide.Z] if score @s Chuz.CollideCheck.Z matches 0 run say Z
 
     scoreboard players operation @s Chuz.CollideCheck.X = $Col_Temp Chuz.CollideCheck.X
     scoreboard players operation @s Chuz.CollideCheck.Y = $Col_Temp Chuz.CollideCheck.Y

@@ -30,11 +30,11 @@
     #function true_crafter_mode:entity/motion
 
 # 衝突チェック
-    function true_crafter_mode:api/collide_check/
+    execute if entity @s[tag=Chuz.MotionChecked] run function true_crafter_mode:api/collide_check/
 
 # 衝突してたら消える
-    execute if entity @s[tag=Chuz.Colide] run say ぶつかった！
-    execute if entity @s[tag=Chuz.Colide] run function true_crafter_mode:entity/projectile/frost_ball/kill
+    execute if entity @s[tag=Chuz.Collide] run say ぶつかった！
+    execute if entity @s[tag=Chuz.Collide] run function true_crafter_mode:entity/projectile/frost_ball/kill
 
 # 消える
     execute if score @s TMCM.Tick matches 200.. run function true_crafter_mode:entity/projectile/frost_ball/kill
