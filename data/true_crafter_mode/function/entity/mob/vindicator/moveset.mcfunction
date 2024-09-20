@@ -23,21 +23,21 @@
     #execute if score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/
 
 # 静止していて、なおかつプレイヤーが近ければその方向のブロック破壊
-    execute if entity @s[tag=ChuzOnGround,tag=ChuzStandstill] run scoreboard players add @s TMCM.Move.Dig 1
+    execute if entity @s[tag=ChuzOnGround,tag=ChuzStandstill] run scoreboard players add @s TMCM.Action.Dig 1
 
 # ただしオプションで封じられてる場合を除く
-    execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 0 run scoreboard players reset @s TMCM.Move.Dig
+    execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 0 run scoreboard players reset @s TMCM.Action.Dig
 
 # t.hard_Digが40になったらブロック粉々
-    execute if entity @s[scores={TMCM.PosCheck.Y=0,TMCM.Move.Dig=40},tag=ChuzOnGround,tag=ChuzStandstill] facing entity @e[type=#true_crafter_mode:zombie_enemy,distance=..16,sort=nearest,limit=1] eyes rotated ~ 0 run function true_crafter_mode:enemy/common/break_block_forward
-    scoreboard players reset @s[tag=!ChuzStandstill] TMCM.Move.Dig 
+    execute if entity @s[scores={TMCM.PosCheck.Y=0,TMCM.Action.Dig=40},tag=ChuzOnGround,tag=ChuzStandstill] facing entity @e[type=#true_crafter_mode:zombie_enemy,distance=..16,sort=nearest,limit=1] eyes rotated ~ 0 run function true_crafter_mode:enemy/common/break_block_forward
+    scoreboard players reset @s[tag=!ChuzStandstill] TMCM.Action.Dig 
 
 # 静止していてれば上下のブロック破壊
-    execute if entity @s[scores={TMCM.Move.Dig=40,TMCM.PosCheck.Y=..-1},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~2 ~ #true_crafter_mode:no_dig run setblock ~ ~2 ~ air destroy 
-    execute if entity @s[scores={TMCM.Move.Dig=40,TMCM.PosCheck.Y=1..},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~-1 ~ #true_crafter_mode:no_dig run setblock ~ ~-1 ~ air destroy 
+    execute if entity @s[scores={TMCM.Action.Dig=40,TMCM.PosCheck.Y=..-1},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~2 ~ #true_crafter_mode:no_dig run setblock ~ ~2 ~ air destroy 
+    execute if entity @s[scores={TMCM.Action.Dig=40,TMCM.PosCheck.Y=1..},tag=ChuzOnGround,tag=ChuzStandstill] if entity @a[distance=..7,tag=!TMCM.Exception] unless block ~ ~-1 ~ #true_crafter_mode:no_dig run setblock ~ ~-1 ~ air destroy 
 
 # 採掘カウント削除
-    scoreboard players reset @s[scores={TMCM.Move.Dig=40..}] TMCM.Move.Dig
+    scoreboard players reset @s[scores={TMCM.Action.Dig=40..}] TMCM.Action.Dig
 
 # 段差飛び越え
     execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick

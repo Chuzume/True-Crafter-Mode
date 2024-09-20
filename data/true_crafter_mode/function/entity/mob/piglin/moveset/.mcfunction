@@ -28,7 +28,7 @@
     execute as @e[type=piglin,predicate=!true_crafter_mode:in_hostile,distance=0.1..15] run function true_crafter_mode:enemy/piglin/enemy_report
 
 # 採掘カウント削除
-    scoreboard players reset @s[scores={TMCM.Move.Dig=30..}] TMCM.Move.Dig
+    scoreboard players reset @s[scores={TMCM.Action.Dig=30..}] TMCM.Action.Dig
 
 # 段差飛び越え
     function true_crafter_mode:enemy/common/jump_gap/tick

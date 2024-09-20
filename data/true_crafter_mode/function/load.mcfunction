@@ -36,7 +36,7 @@
     scoreboard objectives add t.hardDoor3 dummy
     scoreboard objectives add TMCM.PosCheck.Y dummy
     scoreboard objectives add TMCM.BlockPlace dummy
-    scoreboard objectives add TMCM.Move.Dig dummy
+    scoreboard objectives add TMCM.Action.Dig dummy
     scoreboard objectives add TMCM.Health dummy
     scoreboard objectives add t.hardFa.Resist dummy
     scoreboard objectives add t.hardInstall dummy
