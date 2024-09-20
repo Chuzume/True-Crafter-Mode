@@ -1,8 +1,8 @@
 
 # 時たま使い回されるスコアボード
-    scoreboard objectives add Chuz.ColideCheck.X dummy
-    scoreboard objectives add Chuz.ColideCheck.Y dummy
-    scoreboard objectives add Chuz.ColideCheck.Z dummy
+    scoreboard objectives add Chuz.CollideCheck.X dummy
+    scoreboard objectives add Chuz.CollideCheck.Y dummy
+    scoreboard objectives add Chuz.CollideCheck.Z dummy
 
     scoreboard objectives add Chuz.FirstMotion.X dummy
     scoreboard objectives add Chuz.FirstMotion.Z dummy
