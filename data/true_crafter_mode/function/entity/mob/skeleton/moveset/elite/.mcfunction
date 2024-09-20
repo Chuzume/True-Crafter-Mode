@@ -4,7 +4,11 @@
 #
 # @within function true_crafter_mode:entity/mob/skeleton/moveset/
 
-# 射撃検知
+# 同Tickの場合、他の場所でThisタグ持ちを指定するとコイツになる
     tag @s add This
-    execute as @n[type=arrow,tag=!TMCM.AlreadyInit] on origin if entity @s[tag=This] run function true_crafter_mode:entity/mob/skeleton/moveset/elite/shoot
+
+# 射撃検知
+    execute as @n[type=arrow,tag=!TMCM.Projectile.EliteArrow,distance=..3] on origin if entity @s[tag=This] run function true_crafter_mode:entity/mob/skeleton/moveset/elite/shoot
+ 
+# リセット 
     tag @s remove This
