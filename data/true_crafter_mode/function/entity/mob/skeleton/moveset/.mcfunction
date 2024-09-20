@@ -1,6 +1,14 @@
+#> true_crafter_mode:entity/mob/skeleton/moveset/
+#
+# メインの敵対処理
+#
+# @within function true_crafter_mode:entity/mob/skeleton/tick
 
 # 自身の敵対者にタグ付与
     execute on target run tag @s add TMCM.Target
+
+# 亜種の処理
+    execute if entity @s[tag=TMCM.Mob.EltieSkeleton] run function true_crafter_mode:entity/mob/skeleton/moveset/elite/
 
 # 離れてる時は弓
     execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=5..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged
@@ -23,9 +31,6 @@
 
 # ドア破壊、ただしオプションで封じられてる場合を除く
     execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
-
-# 水の中ですいすい
-    #execute if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/common/swim
 
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target
