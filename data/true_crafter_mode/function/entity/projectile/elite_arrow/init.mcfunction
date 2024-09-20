@@ -9,7 +9,7 @@
     execute as @n[type=marker,tag=Marker.Facing] at @s anchored eyes facing entity @n[tag=TMCM.Target] eyes run tp @s ~ ~ ~ ~ ~
 
 # 無理やり狙った方向に飛ぶ
-    scoreboard players set @s Chuz.Speed 10
+    scoreboard players set @s Chuz.Speed 15
     execute rotated as @n[type=marker,tag=Marker.Facing] run function true_crafter_mode:entity/motion
 
 # 矢のデータを変更

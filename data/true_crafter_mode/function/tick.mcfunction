@@ -23,6 +23,8 @@
     execute as @e[type=#minecraft:skeletons,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/skeleton/tick
 # 腰についてるアイテムの処理
     execute as @e[type=item_display,tag=TMCM.Other.Sheath] at @s run function true_crafter_mode:entity/other/sheath
+# 矢
+    execute as @e[type=arrow,tag=TMCM.Projectile.EliteArrow] at @s run function true_crafter_mode:entity/projectile/elite_arrow/tick
 
 # スパイダー
     execute as @e[type=spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/spider/tick
@@ -58,7 +60,7 @@
     execute if entity @e[type=pillager,limit=1] as @e[type=pillager,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/pillager/tick
 
 # イリュージョナー
-    execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/illusioner
+#    execute if entity @e[type=illusioner,limit=1] as @e[type=illusioner,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/illusioner
 
 # ウィッチ
     execute as @e[type=witch] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/witch/tick
@@ -89,7 +91,3 @@
 
 # 敵ブロック
     execute as @e[type=marker,tag=TMCM.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
-
-# T.HardShielderタグ持ちなら矢を跳ね返す（共通タグ）
-    execute as @e[tag=T.HardShielder] at @s if entity @e[type=arrow,nbt={inGround:0b,PierceLevel:0b},distance=..4] run data merge entity @s {Invulnerable:1b}
-    execute as @e[tag=T.HardShielder] at @s unless entity @e[type=arrow,nbt={inGround:0b,PierceLevel:0b},distance=..4] run data merge entity @s {Invulnerable:0b}

@@ -23,6 +23,11 @@
 
     scoreboard objectives add TMCM.Action.Leap dummy
 
+    scoreboard objectives add TMCM.Action.Burst dummy
+
+    scoreboard objectives add TMCM.Cooltime dummy
+
+
     scoreboard objectives add t.hardMoveset3 dummy
     scoreboard objectives add t.hardTorch dummy
     scoreboard objectives add t.hardDoor dummy
