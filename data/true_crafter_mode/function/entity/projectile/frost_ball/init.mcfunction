@@ -8,11 +8,15 @@
     # 持ち主が召喚したマーカーを狙う
         execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes run tp @s ~ ~ ~ ~ ~
     # 最初にちょっと飛ばしてMotionの初期値を取得
-        scoreboard players set @s Chuz.Speed 1
+        scoreboard players set @s Chuz.Speed 10
         function true_crafter_mode:entity/motion
-        function true_crafter_mode:api/colide_check/get_first_motion
-    # マーカーキル
+        function true_crafter_mode:api/collide_check/get_first_motion
+        data modify storage chuz:storage test set from entity @s Motion
+        # マーカーキル
         kill @n[type=marker,tag=TMCM.Marker.Aim]
+
+# 乗ってるItem_Displayの向きを自分と同じに
+    data modify entity @n[type=item_display] Rotation set from entity @s Rotation
 
 # オーナーを記録
     # 記録用AECを召喚
@@ -21,10 +25,6 @@
         data modify entity @n[type=area_effect_cloud] Owner set from entity @n[tag=This,distance=..100] UUID
     # 自分の上に乗せる
         ride @n[type=area_effect_cloud] mount @s
-    # 個人ストレージ呼び出し
-        #function oh_my_dat:please
-    # オーナーのUUIDを入れる
-        #data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Owner set from entity @n[tag=This] UUID
 
 # Init完了
     tag @s remove Chuz.Init

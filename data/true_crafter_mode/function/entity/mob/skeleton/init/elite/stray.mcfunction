@@ -16,3 +16,6 @@
     item replace entity @s armor.feet with iron_boots
 # タグ付与
     tag @s add TMCM.Mob.EltieStray
+# エフェクトなど
+    attribute @s generic.gravity base set 0.04
+    attribute @s generic.fall_damage_multiplier base set 0.0
