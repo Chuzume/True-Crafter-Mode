@@ -4,7 +4,9 @@
 #
 # @within function true_crafter_mode:tick
 
-
+# 持ち主にタグを付与
+    execute on passengers if entity @s[type=area_effect_cloud] on origin run tag @s add This
+    
 # スコア加算
     scoreboard players add @s TMCM.Tick 1
 
@@ -13,7 +15,7 @@
     particle minecraft:falling_dust{block_state:"minecraft:snow"} ~ ~ ~ 0.1 0.1 0.1 0 2
 
 # ヒット判定
-    execute at @s positioned ~-0.5 ~-0.5 ~-0.5 as @n[tag=TMCM.Target,dx=0] run function true_crafter_mode:entity/projectile/frost_ball/hit
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!armor_stand,team=!null,dx=0] run function true_crafter_mode:entity/projectile/frost_ball/hit/
 
 # 飛翔
     scoreboard players set @s Chuz.Speed 10
@@ -27,3 +29,7 @@
 
 # 消える
     execute if score @s TMCM.Tick matches 200.. run function true_crafter_mode:entity/projectile/frost_ball/kill
+
+# 持ち主のタグを解除
+    execute on passengers if entity @s[type=area_effect_cloud] on origin run tag @s remove This
+    

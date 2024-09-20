@@ -2,9 +2,7 @@
 #
 # 消滅処理
 #
-# @within function 
-#   true_crafter_mode:entity/projectile/frost_ball/tick
-#   true_crafter_mode:entity/projectile/frost_ball/hit
+# @within function true_crafter_mode:entity/projectile/frost_ball/hit/
 
 # 演出
     playsound minecraft:block.glass.break neutral @a ~ ~ ~ 1 1
