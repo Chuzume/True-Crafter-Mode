@@ -1,6 +1,6 @@
-#> true_crafter_mode:entity/mob/skeleton/init/elite/skeleton/skeleton
+#> true_crafter_mode:entity/mob/skeleton/init/elite/stray
 #
-# 通常種のエリートタイプ
+# ストレイのエリートタイプ
 #
 # @within function true_crafter_mode:entity/mob/skeleton/init/elite/skeleton/
 
@@ -15,4 +15,4 @@
 # 足装備
     item replace entity @s armor.feet with iron_boots
 # タグ付与
-    tag @s add TMCM.Mob.EltieSkeleton
+    tag @s add TMCM.Mob.EltieStray

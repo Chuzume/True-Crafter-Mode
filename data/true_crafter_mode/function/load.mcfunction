@@ -1,12 +1,12 @@
 
 # 時たま使い回されるスコアボード
-    scoreboard objectives add Col_Check_X dummy
-    scoreboard objectives add Col_Check_Y dummy
-    scoreboard objectives add Col_Check_Z dummy
+    scoreboard objectives add Chuz.ColideCheck.X dummy
+    scoreboard objectives add Chuz.ColideCheck.Y dummy
+    scoreboard objectives add Chuz.ColideCheck.Z dummy
 
-    scoreboard objectives add ChuzF.Check_X dummy
-    scoreboard objectives add ChuzF.Check_Z dummy
-    scoreboard objectives add ChuzF.Check_Y dummy
+    scoreboard objectives add Chuz.FirstMotion.X dummy
+    scoreboard objectives add Chuz.FirstMotion.Z dummy
+    scoreboard objectives add Chuz.FirstMotion.Y dummy
 
     scoreboard objectives add Chuz.Const dummy
     scoreboard objectives add Chuz.Global dummy

@@ -19,14 +19,14 @@
     scoreboard players operation @s Chuz.ColideCheck.Y -= $Col_Temp Chuz.ColideCheck.Y
     scoreboard players operation @s Chuz.ColideCheck.Z -= $Col_Temp Chuz.ColideCheck.Z
 
-    scoreboard players operation @s Chuz.ColideCheck.Temp = @s Chuz.ColideCheck.X
-    scoreboard players operation @s Chuz.ColideCheck.Temp = @s Chuz.ColideCheck.Y
-    scoreboard players operation @s Chuz.ColideCheck.Temp = @s Chuz.ColideCheck.Z
+    scoreboard players operation @s Chuz.Temporary = @s Chuz.ColideCheck.X
+    scoreboard players operation @s Chuz.Temporary = @s Chuz.ColideCheck.Y
+    scoreboard players operation @s Chuz.Temporary = @s Chuz.ColideCheck.Z
 
 # Chuz.No(X/Y/Z)_Checkで各軸のチェックを無効化
-    execute if entity @s[tag=!Chuz.NoX_Check] if score @s Chuz.ColideCheck.X matches 0 run tag @s add Col_Hit_X
-    execute if entity @s[tag=!Chuz.NoY_Check] if score @s Chuz.ColideCheck.Y matches 0 run tag @s add Col_Hit_Y
-    execute if entity @s[tag=!Chuz.NoZ_Check] if score @s Chuz.ColideCheck.Z matches 0 run tag @s add Col_Hit_Z
+    execute if entity @s[tag=!Chuz.DisableColide.X] if score @s Chuz.ColideCheck.X matches 0 run tag @s add Chuz.Colide
+    execute if entity @s[tag=!Chuz.DisableColide.Y] if score @s Chuz.ColideCheck.Y matches 0 run tag @s add Chuz.Colide
+    execute if entity @s[tag=!Chuz.DisableColide.Z] if score @s Chuz.ColideCheck.Z matches 0 run tag @s add Chuz.Colide
 
     scoreboard players operation @s Chuz.ColideCheck.X = $Col_Temp Chuz.ColideCheck.X
     scoreboard players operation @s Chuz.ColideCheck.Y = $Col_Temp Chuz.ColideCheck.Y

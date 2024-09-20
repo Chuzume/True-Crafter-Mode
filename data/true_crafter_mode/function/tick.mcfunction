@@ -25,6 +25,9 @@
     execute as @e[type=item_display,tag=TMCM.Other.Sheath] at @s run function true_crafter_mode:entity/other/sheath
 # 矢
     execute as @e[type=arrow,tag=TMCM.Projectile.EliteArrow] at @s run function true_crafter_mode:entity/projectile/elite_arrow/tick
+# 氷結弾
+    execute as @e[type=armor_stand,tag=TMCM.Projectile.FrostBall] at @s run function true_crafter_mode:entity/projectile/frost_ball/tick
+
 
 # スパイダー
     execute as @e[type=spider,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/spider/tick

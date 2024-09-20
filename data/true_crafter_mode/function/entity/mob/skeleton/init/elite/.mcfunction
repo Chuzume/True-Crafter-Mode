@@ -1,4 +1,4 @@
-#> true_crafter_mode:entity/mob/skeleton/init/elite/
+#> true_crafter_mode:entity/mob/skeleton/init/elite/skeleton/
 #
 # エリート化
 #
@@ -6,3 +6,6 @@
 
 # スケルトン
     execute if entity @s[type=skeleton] run function true_crafter_mode:entity/mob/skeleton/init/elite/skeleton
+
+# ストレイ
+    execute if entity @s[type=stray] run function true_crafter_mode:entity/mob/skeleton/init/elite/stray

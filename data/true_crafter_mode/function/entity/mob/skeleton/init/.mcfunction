@@ -13,7 +13,7 @@
 # デバッグ用
     scoreboard players set $Random Chuz.Temporary 0
 
-# 乱数に応じてセリフを言う
+# 1/5の確率でエリートになる
     execute if score $Random Chuz.Temporary matches 0 run function true_crafter_mode:entity/mob/skeleton/init/elite/
 
 # 帽子を被る
