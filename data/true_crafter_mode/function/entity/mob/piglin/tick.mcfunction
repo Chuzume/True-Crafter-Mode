@@ -13,8 +13,5 @@
     # Tick処理
         execute if entity @s[tag=TMCM.Piglin.FireResist] run function true_crafter_mode:entity/mob/piglin/moveset/drink_potion/tick
 
-# ジャンプ攻撃関連
-    function true_crafter_mode:entity/mob/common_moveset/leap_attack/tick
-
 # 敵対時のメイン処理
     execute if predicate true_crafter_mode:in_hostile run function true_crafter_mode:entity/mob/piglin/moveset/
