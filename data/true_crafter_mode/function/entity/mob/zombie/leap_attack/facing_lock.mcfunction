@@ -8,6 +8,9 @@
 # @private
     #declare tag Marker.Facing
 
+# 自身の敵対者にタグ付与
+    execute on target run tag @s add TMCM.Target
+
 # マーカー召喚
     summon marker ~ ~ ~ {Tags:["Marker.Facing"]}
 
