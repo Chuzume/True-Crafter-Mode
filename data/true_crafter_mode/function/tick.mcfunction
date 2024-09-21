@@ -94,3 +94,6 @@
 
 # 敵ブロック
     execute as @e[type=marker,tag=TMCM.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
+
+# カスタムAIのパーツ
+    execute as @e[type=#true_crafter_mode:custom_ai,tag=TMCM.CustomAI] at @s run function true_crafter_mode:entity/mob/common_moveset/custom_ai/tick
