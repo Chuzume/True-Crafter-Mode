@@ -9,6 +9,7 @@
 
 # 採掘カウント20tickでカウントが減らなくなって壊してくる
     execute if score @s TMCM.Action.Dig matches 20.. run scoreboard players add @s TMCM.Action.Dig 1
-    
+    execute if score @s TMCM.Action.Dig matches 20.. run function true_crafter_mode:entity/mob/common_moveset/dig/tick
+
 # プレイヤーの方をめがけてブロック破壊実行
     execute if score @s TMCM.Action.Dig matches 40.. facing entity @p eyes rotated ~ 0 run function true_crafter_mode:entity/mob/common_moveset/dig/

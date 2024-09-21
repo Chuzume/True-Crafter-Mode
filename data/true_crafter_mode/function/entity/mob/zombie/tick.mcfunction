@@ -5,19 +5,11 @@
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/zombie/moveset
 
 # 自身がゾンビピグリンなら常時敵対
-    #data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
+    data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
 
-# 誰とも敵対しておらず、かつ付近に誰かいるならそいつを探す
-    execute if entity @p[tag=!TMCM.Exception,distance=..16] unless entity @s[tag=TMCM.UsingPiglinAI] unless predicate true_crafter_mode:in_hostile run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/start
-    execute on passengers if entity @s[type=piglin,tag=TMCM.PiglinAI.Search] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick
-
-# 乗られてる側の処理
-    execute on passengers if entity @s[type=piglin,tag=TMCM.PiglinAI.Search] on vehicle if entity @s[tag=TMCM.UsingPiglinAI] at @s run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick_owner
-
-# やること終わったらピグリン片付ける
-    execute if entity @s[tag=TMCM.UsingPiglinAI,predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/end
-    execute if entity @s[tag=TMCM.UsingPiglinAI] unless entity @p[tag=!TMCM.Exception,distance=..16] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/end
-
+# 壁越し検知処理
+    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
+    
 # ジャンプ攻撃関連
     # 跳んだら向き修正処理を実行
         execute if entity @s[tag=TMCM.Leaping] run function true_crafter_mode:entity/mob/zombie/leap_attack/facing_lock
@@ -27,5 +19,5 @@
         execute if entity @s[tag=TMCM.CanEndLeap,tag=ChuzOnGround] run function true_crafter_mode:entity/mob/zombie/leap_attack/end
 
 # 誰とも敵対していない場合、スコアリセット
-    #execute unless entity @s[predicate=true_crafter_mode:in_hostile] unless entity @s[tag=!TMCM.UsingPiglinAI,] run function true_crafter_mode:entity/mob/common_moveset/reset
-    execute if entity @s[predicate=!true_crafter_mode:in_hostile,tag=!TMCM.UsingPiglinAI] run function true_crafter_mode:entity/mob/common_moveset/reset
+    #execute unless entity @s[predicate=true_crafter_mode:in_hostile] unless entity @s[tag=!TMCM.UsingCustomAI,] run function true_crafter_mode:entity/mob/common_moveset/reset
+    execute if entity @s[predicate=!true_crafter_mode:in_hostile,tag=!TMCM.UsingCustomAI] run function true_crafter_mode:entity/mob/common_moveset/reset
