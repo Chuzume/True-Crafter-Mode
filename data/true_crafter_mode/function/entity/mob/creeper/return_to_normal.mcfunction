@@ -9,3 +9,4 @@
 
 # リセット
     scoreboard players reset @s TMCM.Tick
+    scoreboard players reset @s TMCM.Action.Dig
