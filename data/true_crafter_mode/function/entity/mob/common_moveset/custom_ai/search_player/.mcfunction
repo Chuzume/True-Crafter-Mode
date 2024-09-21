@@ -9,7 +9,7 @@
     execute on passengers if entity @s[type=zombified_piglin,tag=TMCM.CustomAI.Search] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick
 
 # 乗られてる側の処理
-    execute on passengers if entity @s[type=zombified_piglin,tag=TMCM.CustomAI.Search] on vehicle if entity @s[tag=TMCM.UsingCustomAI] at @s run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick_owner
+    execute if entity @s[tag=TMCM.UsingCustomAI] at @s run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick_owner
 
 # やること終わったら解除
     execute if entity @s[tag=TMCM.UsingCustomAI,predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/end

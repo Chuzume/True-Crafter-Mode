@@ -7,8 +7,8 @@
 # 自身がゾンビピグリンなら常時敵対
     data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
 
-# 壁越し検知処理
-    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
+# 壁越し検知処理、ただしこのAIはゾンビピグリン由来のものなので、本人は使わない
+    execute unless entity @s[type=zombified_piglin] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
     
 # ジャンプ攻撃関連
     # 跳んだら向き修正処理を実行

@@ -13,3 +13,4 @@
 
 # プレイヤーの方をめがけてブロック破壊実行
     execute if score @s TMCM.Action.Dig matches 40.. facing entity @p eyes rotated ~ 0 run function true_crafter_mode:entity/mob/common_moveset/dig/
+    
