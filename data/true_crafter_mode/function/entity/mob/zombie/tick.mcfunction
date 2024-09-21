@@ -5,7 +5,7 @@
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/zombie/moveset
 
 # 自身がゾンビピグリンなら常時敵対
-    data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
+    #data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
 
 # 誰とも敵対しておらず、かつ付近に誰かいるならそいつを探す
     execute if entity @p[tag=!TMCM.Exception,distance=..16] unless entity @s[tag=TMCM.UsingPiglinAI] unless predicate true_crafter_mode:in_hostile run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/start
