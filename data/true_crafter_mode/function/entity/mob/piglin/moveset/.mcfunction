@@ -24,6 +24,9 @@
 # オプションで封じられてなければブロック設置
     execute if score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/
 
+# 壁破壊処理
+    function true_crafter_mode:entity/mob/piglin/moveset/dig
+
 # 段差飛び越え
     function true_crafter_mode:enemy/common/jump_gap/tick
 
