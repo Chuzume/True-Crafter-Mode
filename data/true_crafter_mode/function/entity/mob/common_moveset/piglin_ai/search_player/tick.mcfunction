@@ -1,4 +1,4 @@
-#> true_crafter_mode:entity/mob/common_moveset/piglin_ai/search_player/tick
+#> true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/tick
 #
 # 
 #
