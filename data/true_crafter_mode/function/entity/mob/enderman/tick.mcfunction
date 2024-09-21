@@ -5,7 +5,7 @@
 # @within function true_crafter_mode:tick
 
 # Init
-    execute if entity @s[tag=TMCM.AlreadyInit] run function true_crafter_mode:entity/mob/enderman/init
+    execute if entity @s[tag=!TMCM.AlreadyInit] run function true_crafter_mode:entity/mob/enderman/init
 
 # 接近すると勝手に敵対化する
     # かぼちゃ被って無い時
