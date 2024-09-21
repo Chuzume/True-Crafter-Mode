@@ -24,12 +24,6 @@
 # オプションで封じられてなければブロック設置
     execute if score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/
 
-# 近くにいる非敵対ピグリンに自身の敵を知らせる
-    execute as @e[type=piglin,predicate=!true_crafter_mode:in_hostile,distance=0.1..15] run function true_crafter_mode:enemy/piglin/enemy_report
-
-# 採掘カウント削除
-    scoreboard players reset @s[scores={TMCM.Action.Dig=30..}] TMCM.Action.Dig
-
 # 段差飛び越え
     function true_crafter_mode:enemy/common/jump_gap/tick
 
