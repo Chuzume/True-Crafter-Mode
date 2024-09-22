@@ -32,8 +32,5 @@
 # 段差飛び越え
     execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick
 
-# ドア破壊、ただしオプションで封じられてる場合を除く
-    execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
-
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target

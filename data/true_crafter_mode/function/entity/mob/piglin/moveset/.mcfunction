@@ -21,14 +21,11 @@
     # Tick処理
         execute if entity @s[tag=TMCM.Piglin.Heal] run function true_crafter_mode:entity/mob/piglin/moveset/heal/tick
 
-# オプションで封じられてなければブロック設置
-    execute if score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/
-
 # 壁破壊処理
     function true_crafter_mode:entity/mob/piglin/moveset/dig
 
-# 段差飛び越え
-    function true_crafter_mode:enemy/common/jump_gap/tick
+# 立ち往生したらブロック設置
+    function true_crafter_mode:entity/mob/common_moveset/place_block/check
 
 # 泳ぐ。ただし泳ぎがヘタクソなので水泳中には攻撃ができない
     execute if entity @a[distance=..30,tag=!TMCM.Exception] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim
