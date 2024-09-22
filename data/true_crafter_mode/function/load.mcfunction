@@ -26,6 +26,8 @@
     scoreboard objectives add TMCM.Action.Burst dummy
     scoreboard objectives add TMCM.Action.Delay dummy
 
+    scoreboard objectives add TMCM.Action.PlaceStart dummy
+
     scoreboard objectives add TMCM.Cooltime dummy
 
 

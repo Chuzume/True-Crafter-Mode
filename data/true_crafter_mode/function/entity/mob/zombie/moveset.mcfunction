@@ -16,5 +16,8 @@
     # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット
         execute if score @s TMCM.Tick matches 60.. run scoreboard players reset @s TMCM.Tick
 
+# 立ち往生したらブロック設置
+    function true_crafter_mode:entity/mob/common_moveset/place_block/check
+
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target
