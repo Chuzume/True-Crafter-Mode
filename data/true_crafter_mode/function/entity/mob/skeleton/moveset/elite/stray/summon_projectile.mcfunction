@@ -1,8 +1,8 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/summon_projectile
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/summon_projectile
 #
 # 
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/
 
 # エイム用マーカーをターゲットの位置に設置
     execute as @n[tag=TMCM.Target] at @s anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["TMCM.Marker.Aim"]}

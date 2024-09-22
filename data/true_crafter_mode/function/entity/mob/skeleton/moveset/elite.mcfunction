@@ -1,4 +1,4 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies
 #
 # エリートスケルトンの処理
 #

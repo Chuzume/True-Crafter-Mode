@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/shoot
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/shoot
 
 
 # Motion関連

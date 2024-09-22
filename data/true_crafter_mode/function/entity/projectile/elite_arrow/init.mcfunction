@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/shoot
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/shoot
 
 # 対象の頭を狙う
     summon marker ~ ~ ~ {Tags:["Marker.Facing"]}

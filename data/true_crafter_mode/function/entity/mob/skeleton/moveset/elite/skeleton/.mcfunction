@@ -1,4 +1,4 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/
 #
 # エリートタイプの動作
 #
@@ -8,7 +8,7 @@
     tag @s add This
 
 # 射撃検知
-    execute as @n[type=arrow,tag=!TMCM.Projectile.EliteArrow,distance=..3] on origin if entity @s[tag=This] anchored eyes positioned ^ ^ ^ run function true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/shoot
+    execute as @n[type=arrow,tag=!TMCM.Projectile.EliteArrow,distance=..3] on origin if entity @s[tag=This] anchored eyes positioned ^ ^ ^ run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/shoot
 
 # クールタイムに入ってたらスコアを減らす
     scoreboard players remove @s[scores={TMCM.Cooltime=0..}] TMCM.Cooltime 1

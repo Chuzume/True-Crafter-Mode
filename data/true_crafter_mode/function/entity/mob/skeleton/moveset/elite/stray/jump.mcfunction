@@ -1,8 +1,8 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/jump
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/jump
 #
 # 謎ジャンプ
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/
 
 # 演出
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2

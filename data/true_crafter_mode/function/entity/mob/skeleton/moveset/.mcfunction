@@ -9,9 +9,9 @@
 
 # 亜種の処理
     # エリートスケルトン
-        execute if entity @s[tag=TMCM.Mob.EltieSkeleton] run function true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/
+        execute if entity @s[tag=TMCM.Mob.EltieSkeleton] run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/
     # エリートストレイ
-        execute if entity @s[tag=TMCM.Mob.EltieStray] run function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/
+        execute if entity @s[tag=TMCM.Mob.EltieStray] run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/
 
 # 離れてる時は弓
     execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=5..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged

@@ -1,8 +1,8 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/shoot
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/shoot
 #
 # 射撃時に実行
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/skeleton/
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/
 
 # 最寄りの矢にタグ付与
     execute as @n[type=arrow,tag=!TMCM.AlreadyInit] run function true_crafter_mode:entity/projectile/elite_arrow/init

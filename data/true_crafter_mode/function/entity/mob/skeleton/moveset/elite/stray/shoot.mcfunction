@@ -1,8 +1,8 @@
-#> true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/shoot
+#> true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/shoot
 #
 # フロストからもらってきた氷結弾を撃つ
 #
-# @within function true_crafter_mode:entity/mob/skeleton/moveset/elite/stray/
+# @within function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/
 
 # 最寄りの矢をキル
     kill @n[type=arrow]
