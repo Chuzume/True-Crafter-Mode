@@ -4,4 +4,5 @@
 #
 # @within function true_crafter_mode:entity/mob/pillager/tick
 
-# 放った矢を
+# 立ち往生したらブロック設置
+    function true_crafter_mode:entity/mob/common_moveset/place_block/check

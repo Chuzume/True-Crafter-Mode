@@ -8,7 +8,10 @@
     execute if entity @s[tag=!TMCM.AlreadyInit] run function true_crafter_mode:entity/mob/pillager/init
 
 # 敵対状態なら
-    #execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/pillager/moveset
+    execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/pillager/moveset
+
+# 壁越し検知処理
+    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
 
 # 誰とも敵対していない場合、スコアリセット
-    #execute unless entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/common_moveset/reset
+    execute unless entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/common_moveset/reset
