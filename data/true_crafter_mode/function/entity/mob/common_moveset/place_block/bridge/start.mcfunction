@@ -6,4 +6,3 @@
 
 tag @s add TMCM.Action.Bridge
 scoreboard players reset @s TMCM.Action.PlaceStart
-say お前！
