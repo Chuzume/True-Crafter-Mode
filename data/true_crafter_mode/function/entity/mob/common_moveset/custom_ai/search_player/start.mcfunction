@@ -21,6 +21,9 @@
     execute as @e[tag=TemporaryDismount,distance=..3] run ride @s mount @n[tag=This,distance=..3]
     execute on passengers run tag @s remove TemporaryDismount
 
+# 頭に乗せたモブをプレイヤーに敵対させる
+    execute on passengers if entity @s[type=zombified_piglin,tag=Chuz.Init] run data modify entity @s AngryAt set from entity @p UUID
+
 # ピグリンからタグを外す
     execute on passengers if entity @s[type=zombified_piglin,tag=Chuz.Init] run tag @s remove Chuz.Init
 

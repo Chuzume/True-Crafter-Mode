@@ -4,6 +4,9 @@
 #
 # @within function true_crafter_mode:entity/mob/**
 
+# パーティクル
+    execute anchored eyes positioned ^ ^ ^ run particle dust{color:[0.5,0.0,0.5],scale:1.0} ~ ~ ~ 0.2 0.2 0.2 0 1 force @a[distance=..32]
+
 # プレイヤーが近くにいて、その方向にブロックがある状態が長く続いた場合、ブロック破壊モードに移行する
     execute unless score @s TMCM.Action.Dig matches 20.. if entity @p[distance=..16] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_dig run scoreboard players add @s TMCM.Action.Dig 1 
 

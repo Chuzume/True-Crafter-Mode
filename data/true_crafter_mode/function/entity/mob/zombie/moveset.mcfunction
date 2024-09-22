@@ -16,11 +16,5 @@
     # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット
         execute if score @s TMCM.Tick matches 60.. run scoreboard players reset @s TMCM.Tick
 
-# オプションで封じられてなければブロック設置
-    execute if score #t.hard_Gamerule TMCM.Gamerule.PlaceBlock matches 1 run function true_crafter_mode:entity/mob/common_moveset/place_block/
-
-# ドア破壊、ただしオプションで封じられてる場合を除く
-    execute if score #t.hard_Gamerule TMCM.Gamerule.BlockDestroy matches 1 run function true_crafter_mode:enemy/common/break_door
-
 # ターゲットからタグを外す
     tag @n[tag=TMCM.Target] remove TMCM.Target
