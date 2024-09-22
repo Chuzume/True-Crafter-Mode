@@ -13,4 +13,4 @@
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~
 
 # リセット
-    attribute @s minecraft:generic.attack_knockback base set 1
+    attribute @s minecraft:generic.attack_knockback base set 0.0
