@@ -620,12 +620,12 @@
                         "",
                         "#> 定義類はここに",
                         "# @within function asset:mob/%namespace%/**",
-                        "    scoreboard mobives add "
+                        "    scoreboard objectives add "
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/mob/load.json",
+                    "rel": "data/asset/tags/function/mob/load.json",
                     "content": {
                         "values": [
                             "asset:mob/%namespace%/load"
