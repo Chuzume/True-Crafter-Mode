@@ -1,9 +1,0 @@
-#> blessing_engine:asset_manager/spawner/register/process_spawn_potentials/from_weighted_list/
-#
-# SpawnPotentialsを正規化しWeightのSumを計算する
-#
-# @within function blessing_engine:asset_manager/spawner/register/process_spawn_potentials/
-
-scoreboard players set $SpawnPotentialsWeightSum Temporary 0
-data modify storage asset:spawner NormalizedSpawnPotentials set from storage asset:spawner SpawnPotentials
-function blessing_engine:asset_manager/spawner/register/process_spawn_potentials/from_weighted_list/for_each

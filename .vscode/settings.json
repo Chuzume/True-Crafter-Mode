@@ -1040,7 +1040,7 @@
                         "#",
                         "# Objectのデータ指定処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/summon/register.m",
+                        "# @within blessing_engine:asset_manager/object/summon/register.m",
                         "",
                         "# 元の登録処理を呼び出す",
                         "    function asset:object/%namespace%/register"
@@ -1100,7 +1100,7 @@
                         "#",
                         "# Object召喚処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/summon/summon.m",
+                        "# @within blessing_engine:asset_manager/object/summon/summon.m",
                         "",
                         "# 元の召喚処理を呼び出す",
                         "    function asset:object/%namespace%/summon/"
@@ -1153,7 +1153,7 @@
                         "#",
                         "# Tick時処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
+                        "# @within blessing_engine:asset_manager/object/tick/tick.m",
                         "",
                         "# 元のTick処理を呼び出す",
                         "    function asset:object/%namespace%/tick/"
@@ -1192,7 +1192,7 @@
                         "#",
                         "# Init処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/init/init.m",
+                        "# @within blessing_engine:asset_manager/object/init/init.m",
                         "",
                         "# 元のInit処理を呼び出す",
                         "    function asset:object/%namespace%/init/"
@@ -1284,7 +1284,7 @@
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
-                        "# @within asset_manager:object/tick/tick.m",
+                        "# @within blessing_engine:asset_manager/object/tick/tick.m",
                         "",
                         "# 元のメソッド処理を呼び出す",
                         "    function asset:object/%namespace%/%method_name%/"
