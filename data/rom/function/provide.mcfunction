@@ -9,6 +9,8 @@
 # @private
 #declare score_holder $Address
 
+say 動いてる
+
 # IDを取得する
     execute store result score $Address Temporary run data get storage api: Argument.Address
 
