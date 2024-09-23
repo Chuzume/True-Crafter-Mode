@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "blocked": true,
+                    "source_entity": {}
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,6 @@
 
 Oh! My Dat!: 赤石愛様
 https://github.com/Ai-Akaishi/OhMyDat
+
+The Sky Blessingのコア動作や継承オブジェクトの一部: TSBチーム
+https://github.com/ProjectTSB/TheSkyBlessing
