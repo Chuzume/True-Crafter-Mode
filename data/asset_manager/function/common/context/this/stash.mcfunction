@@ -1,4 +1,4 @@
-#> asset_manager::common/context/this/stash
+#> asset_manager:common/context/this/stash
 #
 # thisを一旦保持しておく
 #
@@ -9,14 +9,14 @@
 #   asset:*/super.*
 #   api:artifact/*/from_id
 #   api:entity/mob/effect/core/give
-#   asset_manager::mob/triggers/death/manual
-#   asset_manager::effect/events/*/call_super_method
-#   asset_manager::mob/triggers/*/call_super_method
-#   asset_manager::artifact/give
+#   asset_manager:mob/triggers/death/manual
+#   asset_manager:effect/events/*/call_super_method
+#   asset_manager:mob/triggers/*/call_super_method
+#   asset_manager:artifact/give
 #   api:spawner/subtract_hp
-#   asset_manager::object/summon/
+#   asset_manager:object/summon/
 #   api:object/core/summon
-#   asset_manager::object/*/call_super_method
+#   asset_manager:object/*/call_super_method
 #   asset:object/call.m
 
 # スタックに新しい空間を追加する

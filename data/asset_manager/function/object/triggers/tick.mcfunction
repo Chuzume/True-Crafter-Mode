@@ -1,4 +1,4 @@
-#> asset_manager::object/triggers/tick
+#> asset_manager:object/triggers/tick
 #
 # Tickトリガー処理
 #
@@ -16,7 +16,7 @@
     data modify storage asset:context this set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ObjectField
 
 # Tick処理を実行
-    function asset_manager::object/tick/
+    function asset_manager:object/tick/
 
 # EntityStorage呼び出し(Asset側処理内でポインタが変わっている可能性があるので)
 # 死んでいたら呼び出さないようにする

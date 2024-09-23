@@ -1,8 +1,8 @@
-#> asset_manager::mob/triggers/
+#> asset_manager:mob/triggers/
 #
 # トリガー処理
 #
-# @within function asset_manager::mob/tick/
+# @within function asset_manager:mob/tick/
 
 # thisタグ
     tag @s add this
@@ -17,11 +17,11 @@
 
 # トリガーの呼び出し
     # Tickトリガー
-        function asset_manager::mob/triggers/tick/
+        function asset_manager:mob/triggers/tick/
     # attackトリガー
-        execute if entity @s[tag=AttackingEntity] run function asset_manager::mob/triggers/attack/
+        execute if entity @s[tag=AttackingEntity] run function asset_manager:mob/triggers/attack/
     # hurtトリガー
-        execute if entity @s[tag=AttackedEntity] run function asset_manager::mob/triggers/hurt/
+        execute if entity @s[tag=AttackedEntity] run function asset_manager:mob/triggers/hurt/
 
 # EntityStorage呼び出し(Asset側処理内でポインタが変わっている可能性があるので)
 # 死んでいたら呼び出さないようにする

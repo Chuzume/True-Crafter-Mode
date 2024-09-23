@@ -1,4 +1,4 @@
-#> asset_manager::mob/summon/set_data
+#> asset_manager:mob/summon/set_data
 #
 # 召喚されたAssetMobのデータを初期化します
 #
@@ -67,7 +67,7 @@
         execute if data storage asset:mob Name run data modify entity @s CustomName set from storage asset:mob Name
         data modify entity @s CustomNameVisible set value 0b
 # タグ周り
-    function asset_manager::mob/summon/set_tag
+    function asset_manager:mob/summon/set_tag
 # Enemyのチーム設定
     execute if data storage asset:mob {Type:"Enemy"} run team join Enemy
     execute if data storage asset:mob {Type:"Enemy.Boss"} run team join Enemy
@@ -86,7 +86,7 @@
     function api:rom/please
     data modify storage rom: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.Lore set from storage asset:mob Lore
 # ボスバーの表示
-    execute if data storage asset:mob {Type:"Enemy.Boss"} run function asset_manager::mob/bossbar/init
+    execute if data storage asset:mob {Type:"Enemy.Boss"} run function asset_manager:mob/bossbar/init
 # データ初期化
     function mob_manager:init/
 # リセット

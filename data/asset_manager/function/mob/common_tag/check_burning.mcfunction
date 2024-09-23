@@ -1,8 +1,8 @@
-#> asset_manager::mob/common_tag/check_burning
+#> asset_manager:mob/common_tag/check_burning
 #
 # FireNBTをチェックします
 #
-# @within function asset_manager::mob/common_tag/
+# @within function asset_manager:mob/common_tag/
 
 #> Temp
 # @private

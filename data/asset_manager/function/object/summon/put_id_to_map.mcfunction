@@ -1,10 +1,10 @@
-#> asset_manager::object/summon/put_id_to_map
+#> asset_manager:object/summon/put_id_to_map
 #
 #
 #
 # @within function
 #   api:object/core/summon
-#   asset_manager::object/summon/put_id_to_map
+#   asset_manager:object/summon/put_id_to_map
 
 # ID:1, Extends: [2, 3, 4] => 1 -> 2, 2 -> 3, 3 -> 4
 
@@ -23,4 +23,4 @@
     data remove storage asset:object Extends[-1]
 
 # まだExtendsが残っていれば再帰する
-    execute if data storage asset:object Extends[0] run function asset_manager::object/summon/put_id_to_map
+    execute if data storage asset:object Extends[0] run function asset_manager:object/summon/put_id_to_map

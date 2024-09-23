@@ -1,4 +1,4 @@
-#> asset_manager::object/summon/register.m
+#> asset_manager:object/summon/register.m
 #
 #
 #

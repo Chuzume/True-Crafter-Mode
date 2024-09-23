@@ -1,8 +1,8 @@
-#> asset_manager::mob/common_tag/check_fall_distance
+#> asset_manager:mob/common_tag/check_fall_distance
 #
 # FallDistanceNBTをチェックします
 #
-# @within function asset_manager::mob/common_tag/
+# @within function asset_manager:mob/common_tag/
 
 #> Temp
 # @private

@@ -1,4 +1,4 @@
-#> asset_manager::object/summon/init
+#> asset_manager:object/summon/init
 #
 #
 #
@@ -21,7 +21,7 @@
     function oh_my_dat:please
 
 # Object側に実装されてるInitを実行
-    function asset_manager::object/init/ with storage asset:context
+    function asset_manager:object/init/ with storage asset:context
 
 # フィールドを元に戻す
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ObjectField set from storage asset:context this

@@ -13,7 +13,7 @@
 
 # 末尾を取り出す
     data modify storage asset:effect ID set from storage asset:effect IDList[-1]
-    function asset_manager::effect/common/try_pop_effect_data
+    function asset_manager:effect/common/try_pop_effect_data
 
 # 存在する場合
     data modify storage asset:effect CanRemove set value true

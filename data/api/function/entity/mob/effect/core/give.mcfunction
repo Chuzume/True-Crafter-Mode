@@ -5,7 +5,7 @@
 # @within function api:entity/mob/effect/give
 
 # 既存にasset:context idが存在する場合に備えて退避させる
-    function asset_manager::common/context/id/stash
+    function asset_manager:common/context/id/stash
 
 # ID
     data modify storage asset:context id set from storage api: Argument.ID
@@ -31,7 +31,7 @@
 # 継承が行われている場合そのデータを追加する
     execute if data storage asset:effect ID if data storage asset:effect Extends[0] run function api:entity/mob/effect/core/put_id_to_map
 # データが正しくあれば呼び出す
-    execute if data storage asset:effect ID run function asset_manager::effect/give/
+    execute if data storage asset:effect ID run function asset_manager:effect/give/
 
 # リセット
     data remove storage asset:effect ID
@@ -50,4 +50,4 @@
     data remove storage asset:effect Field
 
 # 退避させたasset:context idを戻す
-    function asset_manager::common/context/id/pop
+    function asset_manager:common/context/id/pop

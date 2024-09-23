@@ -1,4 +1,4 @@
-#> asset_manager::common/reset_all_context
+#> asset_manager:common/reset_all_context
 #
 # すべてのcontextを削除します
 #

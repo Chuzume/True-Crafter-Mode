@@ -1,4 +1,4 @@
-#> asset_manager::mob/_index.d
+#> asset_manager:mob/_index.d
 # @private
 
 #> storage
@@ -8,7 +8,7 @@
 #   asset:mob/*/*/
 #   asset:mob/extends
 #   asset:mob/super.*
-#   asset_manager::mob/**
+#   asset_manager:mob/**
 #   asset:mob/*/summon/2.summon
 #   asset:mob/common/**
     #declare storage asset:mob
@@ -26,7 +26,7 @@
 #   core:tick/
 #   mob_manager:init/
 #   asset:mob/**
-#   asset_manager::mob/**
+#   asset_manager:mob/**
     #declare tag AssetMob
 
 #> MobAsset以外のEntityにCommonTagを実行させるためのタグ
@@ -37,14 +37,14 @@
 
 #> this
 # @within *
-#   asset_manager::mob/triggers/
-#   asset_manager::mob/triggers/death/
+#   asset_manager:mob/triggers/
+#   asset_manager:mob/triggers/death/
 #   asset:mob/**
     #declare tag this
 
 #> Killer
 # @within *
-#   asset_manager::mob/triggers/death/*
+#   asset_manager:mob/triggers/death/*
 #   api:damage/core/health_subtract/non-player
 #   player_manager:vanilla_attack
 #   asset:mob/*/death/**
@@ -52,19 +52,19 @@
 
 #> Victim
 # @within *
-#   asset_manager::mob/triggers/
+#   asset_manager:mob/triggers/
 #   asset:mob/*/attack/**
     #declare tag Victim
 
 #> Attacker
 # @within *
-#   asset_manager::mob/triggers/
+#   asset_manager:mob/triggers/
 #   asset:mob/*/hurt/**
     #declare tag Attacker
 
 #> 汎用タグ類
 # @within function
-#   asset_manager::mob/common_tag/*
+#   asset_manager:mob/common_tag/*
 #   asset:**
     #declare tag AllowRideBannedVehicle
     #declare tag AntiFallDamage
@@ -80,7 +80,7 @@
 
 #> 汎用奈落耐性処理用タグ
 # @within function
-#   asset_manager::mob/common_tag/anti_void_action/**
+#   asset_manager:mob/common_tag/anti_void_action/**
     #declare tag AntiVoidTargets
     #declare tag AntiVoidTarget
     #declare tag DefaultNoGravity
@@ -89,6 +89,6 @@
 
 #> Bossbar用のタグ
 # @within function
-#   asset_manager::mob/tick/*
-#   asset_manager::mob/bossbar/*
+#   asset_manager:mob/tick/*
+#   asset_manager:mob/bossbar/*
     #declare tag BossbarTarget

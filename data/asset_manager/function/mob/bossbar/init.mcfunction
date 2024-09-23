@@ -1,8 +1,8 @@
-#> asset_manager::mob/bossbar/init
+#> asset_manager:mob/bossbar/init
 #
 #
 #
-# @within function asset_manager::mob/summon/set_data
+# @within function asset_manager:mob/summon/set_data
 
 #> Val
 # @private
