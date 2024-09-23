@@ -8,10 +8,10 @@
 
 
 # 敵モブNBT関連
-    tag @e[tag=!OnGround,nbt={OnGround:1b}] add OnGround
-    tag @e[tag=!HurtEntity,nbt=!{HurtTime:0s}] add HurtEntity
-    tag @e[tag=!HurtEntity9s,nbt={HurtTime:9s}] add HurtEntity9s
-    tag @e[tag=!Standstill,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
+    tag @s[tag=!OnGround,nbt={OnGround:1b}] add OnGround
+    tag @s[tag=!HurtEntity,nbt=!{HurtTime:0s}] add HurtEntity
+    tag @s[tag=!HurtEntity9s,nbt={HurtTime:9s}] add HurtEntity9s
+    tag @s[tag=!Standstill,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
 
 # 汎用タグの処理
     function asset_manager:mob/common_tag/
