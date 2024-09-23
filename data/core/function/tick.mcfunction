@@ -14,13 +14,13 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        execute as @e[type=#lib:living,type=!player,tag=!AlreadyInitMob] run function mob_manager:init/
+        execute as @e[type=#lib:living,type=!player,tag=!AlreadyInitMob] run function mob_manager:init
     # MobAsset処理
         execute as @e[tag=AllowProcessingCommonTag] at @s run function asset_manager:mob/common_tag/
         execute as @e[tag=AssetMob] at @s run function asset_manager:mob/tick/
 
 # Mob処理
-    execute as @e[tag=AssetMob] at @s run function asset_manager:object/triggers/tick
+    execute as @e[tag=AssetMob] at @s run function asset_manager:mob/tick/
 
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
