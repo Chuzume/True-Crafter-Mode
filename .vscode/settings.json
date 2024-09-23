@@ -413,7 +413,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/register.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/register.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/register",
                         "#",
@@ -437,7 +437,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/mob/alias/%id%/register.mcfunction",
                     "content": [
                         "#> asset:mob/alias/%id%/register",
                         "#",
@@ -451,7 +451,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/summon/debug.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/summon/debug.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/summon/debug",
                         "#",
@@ -480,7 +480,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/summon/.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/summon/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/summon/",
                         "#",
@@ -497,7 +497,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/mob/alias/%id%/summon.mcfunction",
                     "content": [
                         "#> asset:mob/alias/%id%/summon",
                         "#",
@@ -530,7 +530,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/tick/.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/tick/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/tick/",
                         "#",
@@ -544,7 +544,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/mob/alias/%id%/tick.mcfunction",
                     "content": [
                         "#> asset:mob/alias/%id%/tick",
                         "#",
@@ -571,7 +571,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/init/.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/init/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/init/",
                         "#",
@@ -583,7 +583,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/mob/alias/%id%/init.mcfunction",
                     "content": [
                         "#> asset:mob/alias/%id%/init",
                         "#",
@@ -610,7 +610,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/load.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/load.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/load",
                         "#",
@@ -625,7 +625,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/function/mob/load.json",
+                    "rel": "data/asset/function/tags/function/mob/load.json",
                     "content": {
                         "values": [
                             "asset:mob/%namespace%/load"
@@ -644,7 +644,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/_index.d.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/_index.d.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/_index.d",
                         "# @private",
@@ -661,7 +661,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/%namespace%/%method_name%/.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/%method_name%/.mcfunction",
                     "content": [
                         "#> asset:mob/%namespace%/%method_name%/",
                         "#",
@@ -675,7 +675,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/mob/alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/mob/alias/%id%/%method_name%.mcfunction",
                     "content": [
                         "#> asset:mob/alias/%id%/%method_name%",
                         "#",
@@ -708,7 +708,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/register.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/register.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/register",
                         "#",
@@ -732,7 +732,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/object/alias/%id%/register.mcfunction",
                     "content": [
                         "#> asset:object/alias/%id%/register",
                         "#",
@@ -746,7 +746,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/summon/debug.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/summon/debug.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/summon/debug",
                         "#",
@@ -775,7 +775,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/summon/.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/summon/.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/summon/",
                         "#",
@@ -792,7 +792,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/object/alias/%id%/summon.mcfunction",
                     "content": [
                         "#> asset:object/alias/%id%/summon",
                         "#",
@@ -825,7 +825,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/tick/.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/tick/.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/tick/",
                         "#",
@@ -845,7 +845,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/object/alias/%id%/tick.mcfunction",
                     "content": [
                         "#> asset:object/alias/%id%/tick",
                         "#",
@@ -872,7 +872,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/init/.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/init/.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/init/",
                         "#",
@@ -884,7 +884,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/object/alias/%id%/init.mcfunction",
                     "content": [
                         "#> asset:object/alias/%id%/init",
                         "#",
@@ -911,7 +911,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/load.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/load.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/load",
                         "#",
@@ -926,7 +926,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/tags/functions/object/load.json",
+                    "rel": "data/asset/function/tags/functions/object/load.json",
                     "content": {
                         "values": [
                             "asset:object/%namespace%/load"
@@ -945,7 +945,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/_index.d.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/_index.d.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/_index.d",
                         "# @private",
@@ -962,7 +962,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/object/%namespace%/%method_name%/.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/%method_name%/.mcfunction",
                     "content": [
                         "#> asset:object/%namespace%/%method_name%/",
                         "#",
@@ -976,7 +976,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/object/alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/object/alias/%id%/%method_name%.mcfunction",
                     "content": [
                         "#> asset:object/alias/%id%/%method_name%",
                         "#",
