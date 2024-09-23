@@ -1,4 +1,4 @@
-#> asset:mob/0002.abstract_chaser_ai/tick/
+#> asset:mob/0002.abstract_attacker_ai/tick/
 #
 # 敵対時専用のメソッドを持つAI
 #

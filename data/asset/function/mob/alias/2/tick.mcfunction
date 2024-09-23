@@ -5,4 +5,4 @@
 # @within asset_manager:mob/tick/tick.m
 
 # 元のTick処理を呼び出す
-    function asset:mob/0002.abstract_chaser_ai/tick/
+    function asset:mob/0002.abstract_attacker_ai/tick/

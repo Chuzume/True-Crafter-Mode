@@ -1,4 +1,4 @@
-#> asset:mob/0002.abstract_chaser_ai/register
+#> asset:mob/0002.abstract_attacker_ai/register
 #
 # Mobのデータを指定
 #
