@@ -29,7 +29,7 @@
     function asset_manager:mob/summon/
 
 # 初期化処理を実行
-    execute as @e[tag=ObjectInit,distance=..0.01] run function asset_manager:mob/summon/init
+    execute as @e[tag=MobInit,distance=..0.01] run function asset_manager:mob/summon/init
 
 # リセット
     data remove storage asset:context id

@@ -9,18 +9,18 @@
     execute unless data storage asset:mob ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" ID","color":"red"}]
 
 # リセット
-    tag @s remove ObjectInit
+    tag @s remove MobInit
 
 # IDをそのまま付与
-    execute store result score @s ObjectID run data get storage api: Argument.ID
+    execute store result score @s MobID run data get storage api: Argument.ID
 
 # 共通タグ付与
-    tag @s add AssetObject
+    tag @s add AssetMob
 
 # EntityStorage呼び出し
     function oh_my_dat:please
 
-# Object側に実装されてるInitを実行
+# Mob側に実装されてるInitを実行
     function asset_manager:mob/init/ with storage asset:context
 
 # フィールドを元に戻す

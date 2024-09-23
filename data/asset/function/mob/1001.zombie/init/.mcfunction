@@ -3,3 +3,5 @@
 # Mobのinit時の処理
 #
 # @within asset:mob/alias/1001/init
+
+say you

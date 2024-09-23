@@ -4,5 +4,7 @@
 #
 # @within asset:mob/alias/1001/tick
 
+    say yo!
+    
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true
