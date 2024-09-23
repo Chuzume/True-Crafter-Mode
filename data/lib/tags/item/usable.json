@@ -1,0 +1,13 @@
+{
+    "values": [
+        "#lib:consumable",
+        "bow",
+        "crossbow",
+        "ender_eye",
+        "goat_horn",
+        "shield",
+        "spyglass",
+        "trident",
+        "brush"
+    ]
+}
