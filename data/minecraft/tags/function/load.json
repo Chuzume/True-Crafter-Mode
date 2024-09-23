@@ -1,6 +1,7 @@
 {
   "values": [
     "true_crafter_mode:load",
-    "oh_my_dat:sys/load"
+    "oh_my_dat:sys/load",
+    "core:load"
     ]
 }

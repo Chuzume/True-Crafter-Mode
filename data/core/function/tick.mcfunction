@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function core:load
+# @within tag/function minecraft:tick
 
 # プレイヤー処理部
 #    execute as @a at @s run function core:tick/player/
