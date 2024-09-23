@@ -1,8 +1,8 @@
-#> blessing_engine:core/tick
+#> core:tick
 #
 # 
 #
-# @within function blessing_engine:core/load
+# @within function core:load
 
 # プレイヤー処理部
 #    execute as @a at @s run function core:tick/player/

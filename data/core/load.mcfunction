@@ -1,4 +1,4 @@
-#> blessing_engine:core/load
+#> core:load
 #
 # ロード処理
 #
