@@ -1,0 +1,8 @@
+#> blessing_engine:asset_manager/teleporter/tick/vfx/teleport/to
+#
+#
+#
+# @within function blessing_engine:asset_manager/teleporter/tick/tp/move
+
+playsound entity.enderman.teleport player @a ~ ~ ~
+particle portal ~ ~1 ~ 0 0 0 1 150 force @a[distance=..15]
