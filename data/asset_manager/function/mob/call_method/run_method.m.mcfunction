@@ -4,4 +4,4 @@
 #
 # @within function asset_manager:mob/call_method/
 
-$function asset:object/alias/$(id)/$(method)
+$function asset:mob/alias/$(id)/$(method)
