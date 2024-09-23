@@ -12,6 +12,8 @@
         execute if entity @s[tag=TMCM.Mob.EltieSkeleton] run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/skeleton/
     # エリートストレイ
         execute if entity @s[tag=TMCM.Mob.EltieStray] run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/stray/
+    # ウィザースケルトン
+        execute if entity @s[type=wither_skeleton] run function true_crafter_mode:entity/mob/skeleton/moveset/subspecies/wither_skeleton/
 
 # 離れてる時は弓
     execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=5..16] run function true_crafter_mode:entity/mob/common_moveset/weapon_change/ranged
