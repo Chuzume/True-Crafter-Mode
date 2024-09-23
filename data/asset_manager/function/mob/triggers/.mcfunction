@@ -10,6 +10,7 @@
     function oh_my_dat:please
 # Contextの設定
     execute store result storage asset:context id int 1 run scoreboard players get @s MobID
+    execute store result storage asset:context originID int 1 run scoreboard players get @s MobID
     data modify storage asset:context this set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField
 # Victim / Attackerのタグ設定
 #    execute if entity @s[tag=AttackingEntity] as @a[scores={AttackingEntity=0..}] if score @s AttackingEntity = @e[tag=this,limit=1] AttackingEntity run tag @s add Victim
@@ -30,6 +31,7 @@
 #    execute if score @s MobUUID matches -2147483648..2147483647 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField set from storage asset:context this
 # リセット
     data remove storage asset:context id
+    data remove storage asset:context originID
     data remove storage asset:context this
     tag @a[tag=Victim] remove Victim
     tag @a[tag=Attacker] remove Attacker
