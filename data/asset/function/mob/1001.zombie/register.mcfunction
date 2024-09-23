@@ -6,12 +6,11 @@
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value 
+    # 継承(オプション)
+    data modify storage asset:mob Extends append value 2
+    function asset:mob/extends
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
-    # data modify storage asset:mob IsAbstract set value false
-# 継承(オプション)
-    # data modify storage asset:mob Extends append value 
-    # function asset:mob/extends
-
+    data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 1001
 # フィールド(オプション)

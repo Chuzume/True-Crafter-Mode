@@ -2,7 +2,9 @@
 #
 # 
 #
-# @within function asset_manager:object/summon/
+# @within function 
+#   asset_manager:object/summon/
+#   asset_manager:mob/summon/put_id_to_map
 
 # ID:1, Extends: [2, 3, 4] => 1 -> 2, 2 -> 3, 3 -> 4
 
@@ -15,7 +17,7 @@
     function api:rom/please
 
 # データを保存する
-    data modify storage rom: _[-4][-4][-4][-4][-4][-4][-4][-4].Object.Extends set from storage asset:mob Extends[-1]
+    data modify storage rom: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.Extends set from storage asset:mob Extends[-1]
 
 # 末尾の要素を削除する
     data remove storage asset:mob Extends[-1]

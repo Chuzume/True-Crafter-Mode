@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function api:mob/core/*
+# @within function api:mob/core/summon
 
 # ID:1, Extends: [2, 3, 4] => 1 -> 2, 2 -> 3, 3 -> 4
 
