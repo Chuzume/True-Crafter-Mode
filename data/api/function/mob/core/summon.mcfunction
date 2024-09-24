@@ -12,6 +12,7 @@
 
 # ID
     data modify storage asset:context id set from storage api: Argument.ID
+    data modify storage asset:context originID set from storage api: Argument.ID
 
 # データ登録
     function asset_manager:mob/summon/register.m with storage asset:context
@@ -33,6 +34,7 @@
 
 # リセット
     data remove storage asset:context id
+    data remove storage asset:context originID
 
 # 退避させたasset:context idを戻す
     function asset_manager:common/context/id/pop
