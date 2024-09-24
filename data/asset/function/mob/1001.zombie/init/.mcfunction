@@ -13,6 +13,6 @@
     # 頭装備がすでに存在しているのなら除外
         execute store result score @s Armor_Check run data get entity @s ArmorItems[3]
     # 装備
-        item replace entity @s[scores={Armor_Check=0}] armor.head with leather_helmet[dyed_color=43176] 1
+        execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
         scoreboard players reset @s Armor_Check
