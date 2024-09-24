@@ -5,9 +5,7 @@
 # @within asset:mob/alias/3/tick
 
 # 追跡AI
-#    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
-
-say 2
+    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
 
 # SuperTick
     function asset:mob/super.tick
