@@ -12,6 +12,8 @@
     execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value 1001
 # ハスク
     execute if entity @s[type=husk] run data modify storage api: Argument.ID set value 1002
+# ハスク
+    execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value 1003
 
 # 召喚
     function api:mob/summon
