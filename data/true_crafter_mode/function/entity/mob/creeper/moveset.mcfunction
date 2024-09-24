@@ -1,11 +1,11 @@
 
 # 付近にだれかいるなら起爆準備
     # 20tick以下の場合は、付近に誰かいるならスコア加算
-        execute if entity @a[distance=..7] unless score @s TMCM.Tick matches 20.. run scoreboard players add @s[tag=ChuzStandstill] TMCM.Tick 1
+        execute if entity @a[distance=..7] unless score @s TMCM.Tick matches 20.. run scoreboard players add @s[tag=Standstill] TMCM.Tick 1
     # ある程度準備すると勝手に加算されるようになる！
         execute if score @s TMCM.Tick matches 20.. run scoreboard players add @s TMCM.Tick 1
     # し、おまけに体からモクモクする！
-        execute if score @s[tag=ChuzStandstill] TMCM.Tick matches 0.. run function true_crafter_mode:entity/mob/creeper/ignited_particle
+        execute if score @s[tag=Standstill] TMCM.Tick matches 0.. run function true_crafter_mode:entity/mob/creeper/ignited_particle
     # スコア0ならリセット
         scoreboard players reset @s[scores={TMCM.Tick=..0}] TMCM.Tick
 
@@ -24,6 +24,3 @@
 # 着火されちゃった場合はFuseを30にし、スコアを常時リセットする
     data modify entity @s[nbt={ignited:1b}] Fuse set value 30
     scoreboard players reset @s[nbt={ignited:1b}] TMCM.Tick
-
-# 段差飛び越え
-    execute if entity @s[tag=ChuzOnGround] run function true_crafter_mode:enemy/common/jump_gap/tick

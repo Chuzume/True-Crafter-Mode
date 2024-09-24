@@ -5,10 +5,10 @@
 # @within function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/place_block
 
 # 足を止めている間スコアを加算し、一定に達するとブロック設置。ただし、橋モードのときはやらない
-    execute if entity @s[tag=ChuzStandstill,tag=!TMCM.Action.Bridge] unless score @s TMCM.Action.Dig matches 1.. unless score @s TMCM.Action.PlaceStart matches 40.. run scoreboard players add @s TMCM.Action.PlaceStart 1 
+    execute if entity @s[tag=Standstill,tag=!TMCM.Action.Bridge] unless score @s TMCM.Action.Dig matches 1.. unless score @s TMCM.Action.PlaceStart matches 40.. run scoreboard players add @s TMCM.Action.PlaceStart 1 
 
 # 条件を満たしていないときはスコアが減る
-    execute unless entity @s[tag=ChuzStandstill] run scoreboard players remove @s[scores={TMCM.Action.PlaceStart=1..}] TMCM.Action.PlaceStart 1 
+    execute unless entity @s[tag=Standstill] run scoreboard players remove @s[scores={TMCM.Action.PlaceStart=1..}] TMCM.Action.PlaceStart 1 
     scoreboard players reset @s[scores={TMCM.Action.PlaceStart=..0}] TMCM.Action.PlaceStart
 
 # スコア一定以上でブロックを設置しだす

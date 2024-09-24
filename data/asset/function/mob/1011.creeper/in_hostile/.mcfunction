@@ -6,11 +6,11 @@
 
 # 付近にだれかいるなら起爆準備
     # 20tick以下の場合は、付近に誰かいるならスコア加算
-        execute if entity @a[distance=..7] unless score @s 1011.Tick matches 20.. run scoreboard players add @s[tag=ChuzStandstill] 1011.Tick 1
+        execute if entity @a[distance=..7] unless score @s 1011.Tick matches 20.. run scoreboard players add @s[tag=Standstill] 1011.Tick 1
     # ある程度準備すると勝手に加算されるようになる！
         execute if score @s 1011.Tick matches 20.. run scoreboard players add @s 1011.Tick 1
     # スコア0以上なら起爆演出
-        execute if score @s[tag=ChuzStandstill] 1011.Tick matches 0.. run function asset:mob/1011.creeper/in_hostile/explosion/windup
+        execute if score @s[tag=Standstill] 1011.Tick matches 0.. run function asset:mob/1011.creeper/in_hostile/explosion/windup
     # スコア0ならリセット
         scoreboard players reset @s[scores={1011.Tick=..0}] 1011.Tick
 

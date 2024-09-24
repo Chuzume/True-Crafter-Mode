@@ -105,7 +105,7 @@
 #declare tag ChuzOnGround
 #declare tag ChuzHurtEntity
 #declare tag ChuzHurtEntity9s
-#declare tag ChuzStandstill
+#declare tag Standstill
 #declare tag TMCM.AlreadyInit
 #declare tag T.HardPoisonBall
 #declare tag T.HardPoisonBallInit

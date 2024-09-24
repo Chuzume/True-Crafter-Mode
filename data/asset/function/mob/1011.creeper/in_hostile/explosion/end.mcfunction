@@ -9,5 +9,5 @@
     data modify entity @s Invulnerable set value 0b
 
 # リセット
-    scoreboard players reset @s TMCM.Tick
-    scoreboard players reset @s TMCM.Action.Dig
+    scoreboard players reset @s 1011.Tick
+    scoreboard players reset @s 1011.Action.Dig

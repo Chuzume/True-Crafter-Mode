@@ -11,5 +11,8 @@
 # 近くにいれば解除
     execute if entity @s[tag=1011.Stealth] if entity @a[distance=..4,tag=!TMCM.Exception] run function asset:mob/1011.creeper/tick/stealth/deactive
 
+# Super
+    function asset:mob/super.tick
+
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

@@ -4,5 +4,12 @@
 #
 # @within asset:mob/alias/1011/init
 
+# ステータス
+    attribute @s minecraft:generic.movement_speed base set 0.3
+    attribute @s minecraft:generic.step_height base set 1
+
+# 爆発出来ないようにする
+    data modify entity @s Fuse set value 9999
+
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

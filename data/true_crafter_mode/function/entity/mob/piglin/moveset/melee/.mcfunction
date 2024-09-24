@@ -6,7 +6,7 @@
 
 # 突進攻撃
     # 付近にプレイヤーがいたらスコア加算
-        execute unless score @s[tag=!ChuzStandstill] TMCM.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TMCM.Tick 1
+        execute unless score @s[tag=!Standstill] TMCM.Tick matches 30.. if entity @a[distance=..10] run scoreboard players add @s TMCM.Tick 1
     # 途中で予備動作を行い、スコアが止まらなくなる
         execute if score @s TMCM.Tick matches 30 run function true_crafter_mode:entity/mob/piglin/moveset/melee/windup
         execute if score @s TMCM.Tick matches 30.. run scoreboard players add @s TMCM.Tick 1

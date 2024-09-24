@@ -8,13 +8,13 @@
 #    tag @e[tag=ChuzOnGround] remove ChuzOnGround
 #    tag @e[tag=ChuzHurtEntity] remove ChuzHurtEntity
 #    tag @e[tag=ChuzHurtEntity9s] remove ChuzHurtEntity9s
-#    tag @e[tag=ChuzStandstill] remove ChuzStandstill
+#    tag @e[tag=Standstill] remove Standstill
 #
 ## 敵モブNBT関連
 #    tag @e[tag=!ChuzOnGround,nbt={OnGround:1b}] add ChuzOnGround
 #    tag @e[tag=!ChuzHurtEntity,team=!null,nbt=!{HurtTime:0s}] add ChuzHurtEntity
 #    tag @e[tag=!ChuzHurtEntity9s,team=!null,nbt={HurtTime:9s}] add ChuzHurtEntity9s
-#    tag @e[tag=!ChuzStandstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add ChuzStandstill
+#    tag @e[tag=!Standstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
 #
 ## ゾンビ系
 #    execute as @e[type=#minecraft:zombies,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/zombie/tick
