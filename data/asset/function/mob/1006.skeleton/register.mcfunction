@@ -1,8 +1,8 @@
-#> asset:mob/1005.skeleton/register
+#> asset:mob/1006.skeleton/register
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/alias/1005/register
+# @within function asset:mob/alias/1006/register
 
 # 継承(オプション)
     data modify storage asset:mob Extends append value 3
@@ -12,6 +12,6 @@
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
-    data modify storage asset:mob ID set value 1005
+    data modify storage asset:mob ID set value 1006
 # フィールド(オプション)
     # data modify storage asset:mob Field.myValue set value 

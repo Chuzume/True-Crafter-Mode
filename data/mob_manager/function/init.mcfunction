@@ -13,7 +13,7 @@
 # ゾンビピグリン
     execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value 1004
 # スケルトン
-    execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1005
+    execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1006
 
 # 数値が入っていないなら処理を中断する
     execute unless data storage api: Argument.ID run tag @s remove MobInit

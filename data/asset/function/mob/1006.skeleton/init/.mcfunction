@@ -1,8 +1,8 @@
-#> asset:mob/1005.skeleton/init/
+#> asset:mob/1006.skeleton/init/
 #
 # Mobのinit時の処理
 #
-# @within asset:mob/alias/1005/init
+# @within asset:mob/alias/1006/init
 
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外
