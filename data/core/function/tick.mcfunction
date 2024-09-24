@@ -14,7 +14,7 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        execute as @e[type=#lib:living,type=!player,tag=!Chuz.NonVanillaMob,tag=!AlreadyInitMob] at @s run function mob_manager:init
+        execute as @e[type=#true_crafter_mode:enemy,type=!player,tag=!Chuz.NonVanillaMob,tag=!AlreadyInitMob] at @s run function mob_manager:init
     # MobAsset処理
         execute as @e[tag=AllowProcessingCommonTag] at @s run function asset_manager:mob/common_tag/
 
