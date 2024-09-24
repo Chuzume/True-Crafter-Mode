@@ -12,6 +12,8 @@
     execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value 1003
 # ゾンビピグリン
     execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value 1004
+# ゾンビ村人
+    execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value 1005
 # スケルトン
     execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1006
 
