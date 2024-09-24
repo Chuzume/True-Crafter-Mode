@@ -27,7 +27,7 @@
     data modify storage asset:context this merge from storage api: Argument.FieldOverride
 
 # Summon処理を実行
-    function asset_manager:mob/summon/
+    execute unless data storage asset:context {init_to_natural_spawn:true} run function asset_manager:mob/summon/
 
 # 初期化処理を実行
     execute as @e[tag=MobInit,distance=..0.01] run function asset_manager:mob/summon/init
@@ -35,6 +35,7 @@
 # リセット
     data remove storage asset:context id
     data remove storage asset:context originID
+    data remove storage asset:context init_to_natural_spawn
 
 # 退避させたasset:context idを戻す
     function asset_manager:common/context/id/pop
