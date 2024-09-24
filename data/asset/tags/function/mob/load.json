@@ -1,5 +1,7 @@
 {
     "values": [
+        "asset:mob/1011.creeper/load",
+        "asset:mob/1011.creeper/load",
         "asset:mob/0004.ranged_switcher_ai/load",
         "asset:mob/1006.skeleton/load"
     ]
