@@ -25,3 +25,4 @@
 
 # その他初期化が必要なもの
     function rom:init
+    function #asset:mob/load
