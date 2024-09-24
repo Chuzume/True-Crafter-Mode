@@ -5,4 +5,4 @@
 # @within asset_manager:mob/tick/tick.m
 
 # 元のメソッド処理を呼び出す
-    function asset:mob/0004.ranged_swithcer_ai/in_hostile/
+    function asset:mob/0004.ranged_switcher_ai/in_hostile/

@@ -10,6 +10,9 @@
 # 勢いを設定
     scoreboard players set @s Chuz.Speed 7
 
+# 少し待つ
+    effect give @s slowness 1 10 true
+
 # 自分を後ろ向きに飛ばす
     execute rotated ~180 ~ run function true_crafter_mode:entity/motion_xz
 
@@ -17,7 +20,7 @@
     data modify entity @s Motion[1] set value 0.4d
 
 # リセット
-    scoreboard players reset @s 1006.BackStep
+    scoreboard players reset @s 4.BackStep
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true
