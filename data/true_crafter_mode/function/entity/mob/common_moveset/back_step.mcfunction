@@ -17,4 +17,4 @@
     data modify entity @s Motion[1] set value 0.4d
 
 # リセット
-    scoreboard players reset @s TMCM.Mob.BackStep
+    scoreboard players reset @s 1006.BackStep
