@@ -624,7 +624,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/tags/function/mob/load.json",
+                    "rel": "data/asset/tags/function/mob/load.json",
                     "content": {
                         "values": [
                             "asset:mob/%namespace%/load"
