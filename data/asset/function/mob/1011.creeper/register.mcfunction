@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/1011/register
 
 # 継承(オプション)
-    data modify storage asset:mob Extends append value 2
+    data modify storage asset:mob Extends append value 3
     function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value 

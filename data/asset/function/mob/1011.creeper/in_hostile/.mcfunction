@@ -21,7 +21,7 @@
     execute if score @s 1011.Tick matches 30 run function asset:mob/1011.creeper/in_hostile/explosion/
 
 # 爆発が終わったあとに無敵を解除し、スコアリセット
-    execute if score @s 1011.Tick matches 31.. run function true_crafter_mode:entity/mob/creeper/return_to_normal
+    execute if score @s 1011.Tick matches 31.. run function asset:mob/1011.creeper/in_hostile/explosion/end
 
 # 起爆中なら近くのエンティティを逃がす
     #execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#true_crafter_mode:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
