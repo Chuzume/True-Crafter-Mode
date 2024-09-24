@@ -4,8 +4,8 @@
     data modify entity @s Invulnerable set value 1b
 
 # 爆発！
-    execute if entity @s[nbt=!{powered:1b}] run summon creeper ~ ~1000 ~ {Invulnerable:1b,Tags:[Chuz.Explosion,Chuz_NonVanillaMob],Fuse:0}
-    execute if entity @s[nbt={powered:1b}] run summon creeper ~ ~1000 ~ {powered:1b,Invulnerable:1b,Tags:[Chuz.Explosion,Chuz_NonVanillaMob],Fuse:0}
+    execute if entity @s[nbt=!{powered:1b}] run summon creeper ~ ~1000 ~ {Invulnerable:1b,Tags:[Chuz.Explosion,Chuz.NonVanillaMob],Fuse:0}
+    execute if entity @s[nbt={powered:1b}] run summon creeper ~ ~1000 ~ {powered:1b,Invulnerable:1b,Tags:[Chuz.Explosion,Chuz.NonVanillaMob],Fuse:0}
     tp @e[type=creeper,tag=Chuz.Explosion,limit=1] ~ ~ ~
 
 # 爆発回数加算
