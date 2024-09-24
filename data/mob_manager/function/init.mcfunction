@@ -19,23 +19,23 @@
 # ストレイ
     execute if entity @s[type=stray] run data modify storage api: Argument.ID set value 1007
 # ボグド
-    execute if entity @s[type=bogged] run data modify storage api: Argument.ID set value 1007
+    execute if entity @s[type=bogged] run data modify storage api: Argument.ID set value 1008
 # ウィザースケルトン
-    execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value 1008
+    execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value 1009
 # ウィッチ
-    execute if entity @s[type=witch] run data modify storage api: Argument.ID set value 1009
+    execute if entity @s[type=witch] run data modify storage api: Argument.ID set value 1010
 # クリーパー
-    execute if entity @s[type=creeper] run data modify storage api: Argument.ID set value 1010
+    execute if entity @s[type=creeper] run data modify storage api: Argument.ID set value 1011
 # エンダーマン
-    execute if entity @s[type=enderman] run data modify storage api: Argument.ID set value 1011
+    execute if entity @s[type=enderman] run data modify storage api: Argument.ID set value 1012
 # クモ
-    execute if entity @s[type=spider] run data modify storage api: Argument.ID set value 1012
+    execute if entity @s[type=spider] run data modify storage api: Argument.ID set value 1013
 # 洞窟グモ
-    execute if entity @s[type=cave_spider] run data modify storage api: Argument.ID set value 1013
+    execute if entity @s[type=cave_spider] run data modify storage api: Argument.ID set value 1014
 # ピグリン(剣)
-    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:golden_sword"}]}] run data modify storage api: Argument.ID set value 1014
+    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:golden_sword"}]}] run data modify storage api: Argument.ID set value 1015
 # ピグリン(クロスボウ)
-    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:crossbow"}]}] run data modify storage api: Argument.ID set value 1015
+    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:crossbow"}]}] run data modify storage api: Argument.ID set value 1016
 # ヴィンディケーター
 
 # ピリジャー
