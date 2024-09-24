@@ -4,9 +4,6 @@
 #
 # @within asset:mob/alias/1001/in_hostile
 
-# 自身の敵対者にタグ付与
-    execute on target run tag @s add TMCM.Target
-
 # 飛びかかり攻撃
     # 付近にプレイヤーがいたらスコア加算、ただし飛びかかり中は加算しない
         execute unless score @s[tag=!TMCM.Leaping,tag=!Standstill] TMCM.Tick matches 30.. if entity @n[tag=TMCM.Target,distance=..10] run scoreboard players add @s TMCM.Tick 1
@@ -23,9 +20,6 @@
 
 # 立ち往生したらブロック設置
     function true_crafter_mode:entity/mob/common_moveset/place_block/check
-
-# ターゲットからタグを外す
-    tag @n[tag=TMCM.Target] remove TMCM.Target
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true
