@@ -16,6 +16,8 @@
     execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value 1005
 # スケルトン
     execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1006
+# ストレイ
+    execute if entity @s[type=stray] run data modify storage api: Argument.ID set value 1007
 
 # 数値が入っていないなら処理を中断する
     execute unless data storage api: Argument.ID run tag @s remove MobInit
