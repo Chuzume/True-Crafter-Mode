@@ -17,5 +17,11 @@
     # @public
         scoreboard objectives add Global dummy
 
+
+    #> 定数類用スコアボード **変更厳禁**
+    # @public
+        scoreboard objectives add Const dummy
+        function core:define_const
+
 # その他初期化が必要なもの
     function rom:init
