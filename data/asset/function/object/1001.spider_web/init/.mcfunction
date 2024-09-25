@@ -9,5 +9,8 @@
     ride @n[type=item_display,tag=Chuz.Init] mount @s
     execute on passengers if entity @n[type=item_display,tag=Chuz.Init] run tag @s remove Chuz.Init
 
+# Super
+    function asset:object/super.init
+
 # 実装フラグを立てる
     data modify storage asset:object Implement set value true
