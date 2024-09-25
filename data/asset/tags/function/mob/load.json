@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/1013.spider/load",
         "asset:mob/1012.enderman/load",
         "asset:mob/0003.abstract_chaser_ai/load",
         "asset:mob/1011.creeper/load",
