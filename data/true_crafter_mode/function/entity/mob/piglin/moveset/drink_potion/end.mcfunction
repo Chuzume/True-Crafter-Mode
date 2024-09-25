@@ -18,5 +18,5 @@
 
 # リセット
     data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item
-    scoreboard players reset @s TMCM.SubAction 
+    scoreboard players reset @s 1015.Tick 
     tag @s remove TMCM.Piglin.FireResist
