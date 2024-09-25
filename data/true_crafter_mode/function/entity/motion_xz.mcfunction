@@ -10,8 +10,8 @@
     execute store result score $Z Chuz.Calc run data get storage chuz:storage Vector[2] 10000
 
 # それぞれにChuz.Speed掛ける
-    scoreboard players operation $X Chuz.Calc *= @s Chuz.Speed
-    scoreboard players operation $Z Chuz.Calc *= @s Chuz.Speed
+    scoreboard players operation $X Chuz.Calc *= $Temporary Chuz.Speed
+    scoreboard players operation $Z Chuz.Calc *= $Temporary Chuz.Speed
 
 # chuz:storageのVectorにそれぞれを戻す
     execute store result storage chuz:storage Vector[0] double -0.0001 run scoreboard players get $X Chuz.Calc
@@ -24,3 +24,4 @@
     data remove storage chuz:storage Vector
     scoreboard players reset $X Chuz.Calc
     scoreboard players reset $Z Chuz.Calc
+    scoreboard players reset $Temporary Chuz.Speed
