@@ -51,6 +51,9 @@
 # エンダードラゴン
 
 
+# エラー
+    execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている！"}]
+
 # 数値が入っていないなら処理を中断する
     execute unless data storage api: Argument.ID run tag @s remove MobInit
     execute unless data storage api: Argument.ID run return fail
