@@ -4,7 +4,6 @@
 #
 # @within asset:object/alias/2/tick
 
-
 # エンティティへの衝突
     # 判定
         function asset:object/call.m {method:detect_hit_entity}
