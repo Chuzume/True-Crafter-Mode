@@ -8,7 +8,7 @@
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     
 # 勢いを設定
-    scoreboard players set @s Chuz.Speed 7
+    scoreboard players set $Temporary Chuz.Speed 7
 
 # 少し待つ
     effect give @s slowness 1 10 true

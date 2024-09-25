@@ -8,7 +8,7 @@
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     
 # 勢いを設定
-    scoreboard players set @s Chuz.Speed 7
+    scoreboard players set $Temporary Chuz.Speed 7
 
 # 自分を後ろ向きに飛ばす
     execute rotated ~180 ~ run function true_crafter_mode:entity/motion_xz

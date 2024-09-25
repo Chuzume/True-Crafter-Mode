@@ -9,7 +9,7 @@
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5
     
 # 横方向
-    scoreboard players set @s Chuz.Speed 10
+    scoreboard players set $Temporary Chuz.Speed 10
     execute at @s run function true_crafter_mode:entity/motion_xz
 
 # 上方向

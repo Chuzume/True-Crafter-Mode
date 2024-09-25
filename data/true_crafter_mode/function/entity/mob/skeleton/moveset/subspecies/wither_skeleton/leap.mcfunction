@@ -9,7 +9,7 @@
     playsound minecraft:entity.wither_skeleton.death hostile @a ~ ~ ~ 1 2
     
 # 勢いを設定
-    scoreboard players set @s Chuz.Speed 14
+    scoreboard players set $Temporary Chuz.Speed 14
 
 # 自分を後ろ向きに飛ばす
     function true_crafter_mode:entity/motion_xz

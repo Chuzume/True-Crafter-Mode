@@ -9,7 +9,7 @@
     # マーカーの方を向く
         execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes run tp @s ~ ~ ~ ~ ~
     # 最初にちょっと飛ばしてMotionの初期値を取得
-        scoreboard players set @s Chuz.Speed 10
+        scoreboard players set $Temporary Chuz.Speed 10
         execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes rotated ~ ~ run function true_crafter_mode:entity/motion
         function true_crafter_mode:api/collide_check/get_first_motion
     # マーカーキル

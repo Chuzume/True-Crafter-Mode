@@ -18,7 +18,7 @@
     execute positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=!armor_stand,type=!item_display,team=!null,dx=0] run function true_crafter_mode:entity/projectile/frost_ball/hit/
 
 # 飛翔
-    scoreboard players set @s Chuz.Speed 10
+    scoreboard players set $Temporary Chuz.Speed 10
     function true_crafter_mode:entity/motion
 
 # 衝突チェック
