@@ -17,7 +17,6 @@
 # ターゲッティング
     #execute as @n[tag=TMCM.Target] at @s anchored eyes positioned ^ ^ ^ run summon marker ~ ~ ~ {Tags:["TMCM.Marker.Aim"]}
     execute facing entity @n[tag=TMCM.Target] eyes rotated ~ ~-10 positioned ^ ^ ^5 run summon marker ~ ~ ~ {Tags:["TMCM.Marker.Aim"]}
-    execute at @n[tag=TMCM.Marker.Aim] run particle explosion
 
 # 召喚
     data modify storage api: Argument.ID set value 1002
