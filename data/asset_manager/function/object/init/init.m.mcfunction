@@ -4,4 +4,4 @@
 #
 # @within function asset_manager:object/init/
 
-$function asset:mob/alias/$(id)/init
+$function asset:object/alias/$(id)/init
