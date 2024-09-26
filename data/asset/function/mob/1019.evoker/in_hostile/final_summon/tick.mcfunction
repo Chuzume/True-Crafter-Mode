@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function true_crafter_mode:entity/mob/evoker/moveset
+# @within function asset:mob/1019.evoker/in_hostile/
 
 # スコア加算
     scoreboard players add @s 1019.Tick.Summon 1

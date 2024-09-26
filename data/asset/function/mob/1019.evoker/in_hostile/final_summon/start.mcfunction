@@ -2,7 +2,7 @@
 #
 # 召喚スタート
 #
-# @within function true_crafter_mode:entity/mob/evoker/moveset
+# @within function asset:mob/1019.evoker/in_hostile/
 
 # 魔法がクールタイムに入る
     data modify entity @s SpellTicks set value 60
