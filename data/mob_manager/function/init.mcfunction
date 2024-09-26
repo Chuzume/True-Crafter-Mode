@@ -35,13 +35,13 @@
 # ピグリン(剣)
     execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:golden_sword"}]}] run data modify storage api: Argument.ID set value 1015
 # ピグリン(クロスボウ)
-    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:crossbow"}]}] run data modify storage api: Argument.ID set value 1016
+    execute if entity @s[type=piglin] run data modify storage api: Argument.ID set value 1016
 # ヴィンディケーター
-
+    execute if entity @s[type=vindicator] run data modify storage api: Argument.ID set value 1017
 # ピリジャー
-
+    execute if entity @s[type=pillager] run data modify storage api: Argument.ID set value 1018
 # エヴォーカー
-
+    execute if entity @s[type=evoker] run data modify storage api: Argument.ID set value 1019
 # イリュージョナー
 
 # スライム

@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/1017.vindicator/load",
         "asset:mob/1015.piglin_sword/load",
         "asset:mob/1013.spider/load",
         "asset:mob/1012.enderman/load",
