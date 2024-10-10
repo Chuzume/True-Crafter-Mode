@@ -12,7 +12,10 @@
 
 # エフェクト
     effect give @s slowness 2 10
-    effect give @s resistance 2 3
+    effect give @s resistance 2 4
+
+# 付近の対象に対するエフェクト
+    effect give @a[distance=..16] minecraft:darkness 3 0 true
 
 # 演出
     playsound minecraft:block.respawn_anchor.ambient hostile @a ~ ~ ~ 2 2

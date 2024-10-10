@@ -1,6 +1,6 @@
-#> asset:mob/1019.evoker/in_hostile/final_summon/illusioner
+#> asset:mob/1019.evoker/in_hostile/final_summon/illusioner/
 #
-# 強い兄弟を呼び出す
+# 
 #
 # @within function asset:mob/1019.evoker/in_hostile/final_summon/active
 
@@ -14,4 +14,4 @@
     effect give @s invisibility 4 0
 
 # 召喚
-    summon illusioner
+    function asset:mob/1019.evoker/in_hostile/final_summon/illusioner/summon.m with storage chuz:storage Temporary

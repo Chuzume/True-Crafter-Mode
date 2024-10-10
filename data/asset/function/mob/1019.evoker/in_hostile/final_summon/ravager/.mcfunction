@@ -1,6 +1,6 @@
-#> asset:mob/1019.evoker/in_hostile/final_summon/ravager
+#> asset:mob/1019.evoker/in_hostile/final_summon/ravager/
 #
-# ラヴェジャーに乗る
+# 
 #
 # @within function asset:mob/1019.evoker/in_hostile/final_summon/active
 
@@ -11,7 +11,7 @@
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 2
 
 # 召喚
-    summon ravager
+    function asset:mob/1019.evoker/in_hostile/final_summon/ravager/summon.m with storage chuz:storage Temporary
 
 # 乗る
     ride @s mount @n[type=ravager]
