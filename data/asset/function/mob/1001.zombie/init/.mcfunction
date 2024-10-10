@@ -16,3 +16,6 @@
         execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
         scoreboard players reset @s Armor_Check
+
+# 実装フラグを立てる
+    data modify storage asset:mob Implement set value true
