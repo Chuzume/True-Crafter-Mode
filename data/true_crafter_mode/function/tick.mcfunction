@@ -11,10 +11,10 @@
 #    tag @e[tag=Standstill] remove Standstill
 #
 ## 敵モブNBT関連
-#    tag @e[tag=!ChuzOnGround,nbt={OnGround:1b}] add ChuzOnGround
-#    tag @e[tag=!ChuzHurtEntity,team=!null,nbt=!{HurtTime:0s}] add ChuzHurtEntity
-#    tag @e[tag=!ChuzHurtEntity9s,team=!null,nbt={HurtTime:9s}] add ChuzHurtEntity9s
-#    tag @e[tag=!Standstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
+    tag @e[tag=!ChuzOnGround,nbt={OnGround:1b}] add ChuzOnGround
+    tag @e[tag=!ChuzHurtEntity,team=!null,nbt=!{HurtTime:0s}] add ChuzHurtEntity
+    tag @e[tag=!ChuzHurtEntity9s,team=!null,nbt={HurtTime:9s}] add ChuzHurtEntity9s
+    tag @e[tag=!Standstill,team=!null,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
 #
 ## ゾンビ系
 #    execute as @e[type=#minecraft:zombies,tag=!Chuz.NonVanillaMob] at @s if entity @a[distance=..80] run function true_crafter_mode:entity/mob/zombie/tick
@@ -92,8 +92,8 @@
 #    execute if entity @e[type=armor_stand,tag=T.HardEye_Place,limit=1] as @e[type=armor_stand,tag=T.HardEye_Place] at @s run function true_crafter_mode:entity/mob/ender_dragon/summon_eyes_2
 #    execute if entity @e[type=vex,tag=T.HardDragon_Eye,limit=1] as @e[type=vex,tag=T.HardDragon_Eye] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/mob/ender_dragon/dragon_eye
 #
-## 敵ブロック
-#    execute as @e[type=marker,tag=TMCM.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
+# 敵ブロック
+    execute as @e[type=marker,tag=TMCM.Entity.EnemyBlock] at @s if entity @a[distance=..30] run function true_crafter_mode:entity/enemy_block/
 
 # カスタムAIのパーツ
     execute as @e[type=#true_crafter_mode:custom_ai,tag=TMCM.CustomAI] at @s run function true_crafter_mode:entity/mob/common_moveset/custom_ai/tick
