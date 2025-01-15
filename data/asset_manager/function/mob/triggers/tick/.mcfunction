@@ -17,4 +17,3 @@
 
 # super.tick呼び出し
     execute unless data storage asset:mob {Implement:true} run function asset_manager:mob/triggers/tick/call_super_method
-    data remove storage asset:mob Implement
