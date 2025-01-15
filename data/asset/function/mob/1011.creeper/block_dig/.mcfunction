@@ -21,6 +21,3 @@
 
 # ステルス解除
     tag @s remove TMCM.Creeper.Stealth
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

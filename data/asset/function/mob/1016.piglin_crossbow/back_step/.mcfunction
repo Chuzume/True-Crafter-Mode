@@ -9,6 +9,3 @@
 
 # super
     function asset:mob/super.method
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

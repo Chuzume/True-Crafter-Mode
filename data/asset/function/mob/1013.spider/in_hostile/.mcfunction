@@ -10,6 +10,3 @@
 # ネット発射
     # 近距離
         execute if entity @s[scores={1013.Tick=40..}] run function asset:mob/call.m {method:shoot}
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

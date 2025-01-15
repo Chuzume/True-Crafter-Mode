@@ -29,6 +29,3 @@
 # 着火されちゃった場合はFuseを30にし、スコアを常時リセットする
     data modify entity @s[nbt={ignited:1b}] Fuse set value 30
     scoreboard players reset @s[nbt={ignited:1b}] 1011.Tick
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

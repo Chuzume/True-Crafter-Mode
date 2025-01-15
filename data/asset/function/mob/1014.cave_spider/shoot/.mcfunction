@@ -12,6 +12,3 @@
 
 # リセット
     scoreboard players reset @s 1013.Tick
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

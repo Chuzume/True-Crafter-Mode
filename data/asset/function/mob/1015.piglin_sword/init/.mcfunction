@@ -15,6 +15,3 @@
 
 # 手持ちに火属性を付与
     enchant @s fire_aspect
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

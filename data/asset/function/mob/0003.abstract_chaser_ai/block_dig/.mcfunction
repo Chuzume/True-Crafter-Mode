@@ -21,6 +21,3 @@
 
 # 破壊
     execute if score @s 3.Tick.Dig matches 40 at @s run function asset:mob/0003.abstract_chaser_ai/block_dig/break
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

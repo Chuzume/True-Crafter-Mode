@@ -18,6 +18,3 @@
 
 # スコアが一定以上かつ、飛び退き先にブロックがあるなら飛ぶ
     execute if score @s 4.BackStep matches 40.. facing entity @n[tag=TMCM.Target] eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function asset:mob/call.m {method:back_step}
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

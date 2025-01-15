@@ -13,6 +13,3 @@
 
 # 持ち物強化
     enchant @s multishot
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

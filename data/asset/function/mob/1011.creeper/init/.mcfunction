@@ -10,6 +10,3 @@
 
 # 爆発出来ないようにする
     data modify entity @s Fuse set value 9999
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

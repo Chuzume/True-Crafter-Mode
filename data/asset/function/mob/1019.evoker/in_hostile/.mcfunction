@@ -19,6 +19,3 @@
         execute if entity @s[tag=!1019.SummonUsed,scores={TMCM.Health=..25}] run function asset:mob/1019.evoker/in_hostile/final_summon/start
     # Tick処理
         execute if entity @s[tag=1019.Using.Summon] run function asset:mob/1019.evoker/in_hostile/final_summon/tick
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

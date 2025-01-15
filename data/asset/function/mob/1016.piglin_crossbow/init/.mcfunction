@@ -22,6 +22,3 @@
         item replace entity @n[type=item_display,tag=Chuz.Init] container.0 with golden_axe
     # 鞘のInit完了
         tag @n[type=item_display,tag=Chuz.Init] remove Chuz.Init
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

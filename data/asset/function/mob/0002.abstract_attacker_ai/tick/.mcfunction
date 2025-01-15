@@ -9,6 +9,3 @@
 
 # 誰とも敵対していない場合、スコアリセット
     execute if entity @s[predicate=!true_crafter_mode:in_hostile,tag=!TMCM.UsingCustomAI] run function asset:mob/call.m {method:reset}
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

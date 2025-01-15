@@ -8,6 +8,3 @@
     scoreboard players reset @s TMCM.Tick
     scoreboard players reset @s TMCM.PosCheck.Y
     scoreboard players reset @s TMCM.SubAction
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

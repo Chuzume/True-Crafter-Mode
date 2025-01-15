@@ -15,6 +15,3 @@
 
 # SuperTick
     function asset:mob/super.tick
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

@@ -21,9 +21,3 @@
 
 # リセット
     scoreboard players reset @s 4.BackStep
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

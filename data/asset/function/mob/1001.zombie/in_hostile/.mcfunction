@@ -20,6 +20,3 @@
 
 # 立ち往生したらブロック設置
     function true_crafter_mode:entity/mob/common_moveset/place_block/check
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

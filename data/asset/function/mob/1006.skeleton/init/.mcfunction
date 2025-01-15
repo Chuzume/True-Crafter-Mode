@@ -28,5 +28,3 @@
 # デフォルトでは遠距離モードでスタート
     tag @s add TMCM.RangedMode
     
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

@@ -26,6 +26,3 @@
 
 # リセット
     scoreboard players reset @s TMCM.Tick
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

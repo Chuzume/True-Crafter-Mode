@@ -6,6 +6,3 @@
 
 # 帽子を被る
     item replace entity @s armor.head with leather_helmet[dyed_color=4470560] 1
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true

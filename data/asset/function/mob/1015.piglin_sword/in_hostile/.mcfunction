@@ -32,6 +32,3 @@
 
 # 泳ぎ解除
 #    execute unless block ~ ~0.25 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim_cancel
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
