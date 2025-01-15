@@ -11,4 +11,3 @@
 
 # super.summon呼び出し
     execute unless data storage asset:mob {Implement:true} run function asset_manager:mob/call_method/call_super_method
-    data remove storage asset:mob Implement
