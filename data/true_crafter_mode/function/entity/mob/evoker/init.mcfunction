@@ -5,7 +5,7 @@
 # @within function true_crafter_mode:entity/mob/evoker/tick
 
 # ステータス
-    attribute @s minecraft:generic.step_height base set 1
+    attribute @s minecraft:step_height base set 1
     attribute @s generic.knockback_resistance base set 1
 
 # 体力

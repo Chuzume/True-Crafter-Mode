@@ -20,7 +20,7 @@
     tag @s add TMCM.Leaping
 
 # 攻撃のノックバック増加
-    attribute @s minecraft:generic.attack_knockback base set 1.5
+    attribute @s minecraft:attack_knockback base set 1.5
 
 # リセット
     scoreboard players reset @s Chuz.Speed

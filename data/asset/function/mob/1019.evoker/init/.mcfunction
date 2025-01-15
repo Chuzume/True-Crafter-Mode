@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1019/init
 
 # ステータス
-    attribute @s minecraft:generic.step_height base set 1
+    attribute @s minecraft:step_height base set 1
     attribute @s generic.knockback_resistance base set 1
 
 # 体力

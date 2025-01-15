@@ -5,7 +5,7 @@
 # @within function true_crafter_mode:entity/mob/slime/tick
 
 # ステータス
-    attribute @s minecraft:generic.fall_damage_multiplier base set 0
+    attribute @s minecraft:fall_damage_multiplier base set 0
 
 # サイズごと
     # 0

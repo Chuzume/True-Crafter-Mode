@@ -7,7 +7,7 @@
 # 能力強化など
     data modify entity @s IsImmuneToZombification set value true
     attribute @s generic.fall_damage_multiplier base set 0
-    attribute @s minecraft:generic.max_health base set 24
+    attribute @s minecraft:max_health base set 24
     effect give @s instant_health 1 100 true
 
 # ノックバックに強くしてみる

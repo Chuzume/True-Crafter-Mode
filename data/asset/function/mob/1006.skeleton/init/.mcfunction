@@ -13,7 +13,7 @@
         scoreboard players reset @s Armor_Check
 
 # ステータス
-    attribute @s minecraft:generic.step_height base set 1
+    attribute @s minecraft:step_height base set 1
 
 # 正直難易度上昇に貢献しなさそうで、持ち替えがある都合、これを対策すると処理が散らかるのでアイテム拾わなくする
     data modify entity @s CanPickUpLoot set value false

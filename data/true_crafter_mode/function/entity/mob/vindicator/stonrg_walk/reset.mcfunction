@@ -12,7 +12,7 @@
 
 # 能力値を戻す
     attribute @s generic.knockback_resistance base set 0
-    attribute @s minecraft:generic.movement_speed base set 0.4
+    attribute @s minecraft:movement_speed base set 0.4
 
 # スコアリセット
     scoreboard players reset @s TMCM.Tick
