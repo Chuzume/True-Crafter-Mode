@@ -36,7 +36,7 @@
 
 # ウィザースケルトンの場合
     item replace entity @s[type=wither_skeleton] weapon.mainhand with bow
-    attribute @s[type=wither_skeleton] generic.max_health base set 30 
+    attribute @s[type=wither_skeleton] max_health base set 30 
     effect give @s[type=wither_skeleton] instant_damage 1 100 true
 
 # デフォルトでは遠距離モードでスタート

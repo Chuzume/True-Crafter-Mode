@@ -18,4 +18,4 @@
     tag @s add TMCM.Mob.EltieStray
 # エフェクトなど
     attribute @s generic.gravity base set 0.04
-    attribute @s generic.fall_damage_multiplier base set 0.0
+    attribute @s fall_damage_multiplier base set 0.0

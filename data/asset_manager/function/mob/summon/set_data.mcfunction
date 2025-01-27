@@ -39,21 +39,21 @@
         data modify entity @s ArmorDropChances set from storage asset:mob ArmorDropChances
     # Attributeの事前追加
         data modify storage asset:mob Attributes set value []
-        data modify storage asset:mob Attributes append value {Name:"generic.max_health"}
+        data modify storage asset:mob Attributes append value {Name:"max_health"}
         execute if data storage asset:mob AttackDamage run data modify storage asset:mob Attributes append value {Name:"generic.attack_damage"}
         execute if data storage asset:mob Defense run data modify storage asset:mob Attributes append value {Name:"generic.armor"}
         execute if data storage asset:mob SpecialDefense run data modify storage asset:mob Attributes append value {Name:"generic.armor_toughness"}
-        execute if data storage asset:mob Speed run data modify storage asset:mob Attributes append value {Name:"generic.movement_speed"}
+        execute if data storage asset:mob Speed run data modify storage asset:mob Attributes append value {Name:"movement_speed"}
         execute if data storage asset:mob FollowRange run data modify storage asset:mob Attributes append value {Name:"generic.follow_range"}
-        execute if data storage asset:mob KnockBackResist run data modify storage asset:mob Attributes append value {Name:"generic.knockback_resistance"}
+        execute if data storage asset:mob KnockBackResist run data modify storage asset:mob Attributes append value {Name:"knockback_resistance"}
     # Attribute
-        data modify storage asset:mob Attributes[{Name:"generic.max_health"}].Base set value 1024f
+        data modify storage asset:mob Attributes[{Name:"max_health"}].Base set value 1024f
         data modify storage asset:mob Attributes[{Name:"generic.attack_damage"}].Base set from storage asset:mob AttackDamage
         data modify storage asset:mob Attributes[{Name:"generic.armor"}].Base set from storage asset:mob Defense
         data modify storage asset:mob Attributes[{Name:"generic.armor_toughness"}].Base set from storage asset:mob SpecialDefense
-        data modify storage asset:mob Attributes[{Name:"generic.movement_speed"}].Base set from storage asset:mob Speed
+        data modify storage asset:mob Attributes[{Name:"movement_speed"}].Base set from storage asset:mob Speed
         data modify storage asset:mob Attributes[{Name:"generic.follow_range"}].Base set from storage asset:mob FollowRange
-        data modify storage asset:mob Attributes[{Name:"generic.knockback_resistance"}].Base set from storage asset:mob KnockBackResist
+        data modify storage asset:mob Attributes[{Name:"knockback_resistance"}].Base set from storage asset:mob KnockBackResist
     # 適用
         data modify entity @s Attributes set from storage asset:mob Attributes
     # 体力 (e2)

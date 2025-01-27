@@ -13,7 +13,7 @@
     execute store result score $VectorMagnitude Temporary run data get storage lib: Argument.VectorMagnitude 100
 
 # ノックバック耐性を計算する
-    execute if data storage lib: Argument{KnockbackResist:1b} store result score $KnockbackResist Temporary run attribute @s generic.knockback_resistance get 100
+    execute if data storage lib: Argument{KnockbackResist:1b} store result score $KnockbackResist Temporary run attribute @s knockback_resistance get 100
     execute if data storage lib: Argument{KnockbackResist:1b} if score $KnockbackResist Temporary matches 1.. run function lib:motion/core/knockback_resistance
 
 # 適用

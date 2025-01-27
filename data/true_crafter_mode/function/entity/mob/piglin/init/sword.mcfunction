@@ -9,8 +9,7 @@
     tag @s add TMCM.MeleeMode
 
 # ノックバックに強くしてみる
-    attribute @s generic.knockback_resistance base set 0.3
+    attribute @s knockback_resistance base set 0.3
 
 # 手持ちに火属性を付与
     enchant @s fire_aspect
-

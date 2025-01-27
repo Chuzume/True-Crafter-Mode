@@ -9,13 +9,13 @@
 
 # サイズごと
     # 0
-        attribute @s[nbt={Size:0}] generic.movement_speed base set 0.5
+        attribute @s[nbt={Size:0}] movement_speed base set 0.5
         attribute @s[nbt={Size:0}] generic.jump_strength base set 0.5
     # 1
-        attribute @s[nbt={Size:1}] generic.movement_speed base set 0.7
+        attribute @s[nbt={Size:1}] movement_speed base set 0.7
         attribute @s[nbt={Size:1}] generic.jump_strength base set 0.8
     # 3
-        attribute @s[nbt={Size:3}] generic.movement_speed base set 0.9
+        attribute @s[nbt={Size:3}] movement_speed base set 0.9
         attribute @s[nbt={Size:3}] generic.jump_strength base set 1
 
 # ヘルス調整

@@ -8,7 +8,7 @@
     attribute @s minecraft:knockback_resistance base set 0.3
     attribute @s minecraft:fall_damage_multiplier base set 0
     attribute @s minecraft:step_height base set 1
-    attribute @s generic.max_health base set 30
+    attribute @s max_health base set 30
     effect give @s instant_health 1 100 true
 
 # 持ち物強化
