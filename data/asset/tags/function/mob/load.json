@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/1020.slime/load",
         "asset:mob/1019.evoker/load",
         "asset:mob/1017.vindicator/load",
         "asset:mob/1015.piglin_sword/load",

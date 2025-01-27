@@ -42,9 +42,8 @@
     execute if entity @s[type=pillager] run data modify storage api: Argument.ID set value 1018
 # エヴォーカー
     execute if entity @s[type=evoker] run data modify storage api: Argument.ID set value 1019
-# イリュージョナー
-
 # スライム
+    execute if entity @s[type=slime] run data modify storage api: Argument.ID set value 1020
 
 # マグマキューブ
 
@@ -52,7 +51,7 @@
 
 
 # エラー
-    execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている！"}]
+    execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
 
 # 数値が入っていないなら処理を中断する
     execute unless data storage api: Argument.ID run tag @s remove MobInit

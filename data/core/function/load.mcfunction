@@ -28,5 +28,11 @@
     #   asset:object/**
         scoreboard objectives add General.Object.Tick dummy {"text":"ObjectAsset内で使用できるTick用スコア"}
 
+    #> AssetManager: Mob -Public
+    # @within function
+    #   asset:mob/**
+        scoreboard objectives add General.Mob.Tick dummy {"text":"MobAsset内で使用できるTick用スコア"}
+
+
 # その他初期化が必要なもの
     function #asset:mob/load
