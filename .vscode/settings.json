@@ -488,10 +488,8 @@
                         "# @within asset:mob/alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
-                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
-                        "",
-                        "# 実装フラグを立てる",
-                        "    data modify storage asset:mob Implement set value true"
+                        "    summon %entity% ~ ~ ~",
+                        ""
                     ]
                 },
                 {
@@ -536,9 +534,7 @@
                         "# Mobのtick時の処理",
                         "#",
                         "# @within asset:mob/alias/%id%/tick",
-                        "",
-                        "# 実装フラグを立てる",
-                        "    data modify storage asset:mob Implement set value true"
+                        ""
                     ]
                 },
                 {
@@ -577,9 +573,7 @@
                         "# Mobのinit時の処理",
                         "#",
                         "# @within asset:mob/alias/%id%/init",
-                        "",
-                        "# 実装フラグを立てる",
-                        "    data modify storage asset:mob Implement set value true"
+                        ""
                     ]
                 },
                 {
@@ -669,9 +663,7 @@
                         "# 継承先などから実行される処理",
                         "#",
                         "# @within asset:mob/alias/%id%/%method_name%",
-                        "",
-                        "# 実装フラグを立てる",
-                        "    data modify storage asset:mob Implement set value true"
+                        ""
                     ]
                 },
                 {
