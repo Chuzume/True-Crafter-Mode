@@ -19,12 +19,13 @@
     data modify entity @s CanPickUpLoot set value false
 
 # 鞘の処理
+    # データ指定
+        data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:iron_axe",count:1}
+        data modify storage api: Argument.FieldOverride.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]}
     # 召喚
-        summon item_display ~ ~ ~ {teleport_duration:1,Tags:["TMCM.Other.Sheath","Chuz.Init"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]},item:{id:"minecraft:stone_axe",count:1}}
+        function api:object/summon.m {ID:2000}
     # 乗せる
-        ride @n[type=item_display,tag=Chuz.Init] mount @s
-        tag @n[type=item_display,tag=Chuz.Init] remove Chuz.Init
-
+        ride @n[type=item_display,distance=..0.1] mount @s
+    
 # デフォルトでは遠距離モードでスタート
     tag @s add TMCM.RangedMode
-    

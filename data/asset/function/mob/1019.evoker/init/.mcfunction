@@ -6,8 +6,8 @@
 
 # ステータス
     attribute @s minecraft:step_height base set 1
-    attribute @s generic.knockback_resistance base set 1
+    attribute @s knockback_resistance base set 1
 
 # 体力
-    attribute @s generic.max_health base set 50
+    attribute @s max_health base set 50
     effect give @s instant_health 1 100 true

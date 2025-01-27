@@ -6,3 +6,4 @@
 
 # 元のInit処理を呼び出す
     function asset:mob/1015.piglin_sword/init/
+    

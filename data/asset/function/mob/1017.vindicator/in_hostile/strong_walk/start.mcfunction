@@ -11,5 +11,5 @@
 
 # 能力値強化
     effect give @s strength 1 1 true
-    attribute @s generic.knockback_resistance base set 1
-    attribute @s generic.movement_speed base set 0.3
+    attribute @s knockback_resistance base set 1
+    attribute @s movement_speed base set 0.3

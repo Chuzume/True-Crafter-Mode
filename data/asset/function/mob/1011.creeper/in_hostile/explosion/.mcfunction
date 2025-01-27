@@ -5,7 +5,7 @@
 # @within function asset:mob/1011.creeper/in_hostile/
 
 # 爆発に備えて完全に無敵化
-    attribute @s generic.explosion_knockback_resistance base set 1
+    attribute @s explosion_knockback_resistance base set 1
     data modify entity @s Invulnerable set value 1b
 
 # 爆発！

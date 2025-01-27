@@ -10,7 +10,7 @@
     playsound minecraft:block.beacon.deactivate hostile @a ~ ~ ~ 1 2
 
 # 能力値を戻す
-    attribute @s generic.knockback_resistance base set 0
+    attribute @s knockback_resistance base set 0
     attribute @s minecraft:movement_speed base set 0.4
 
 # スコアリセット

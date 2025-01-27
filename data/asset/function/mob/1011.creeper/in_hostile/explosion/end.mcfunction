@@ -5,7 +5,7 @@
 # @within function asset:mob/1011.creeper/in_hostile/
 
 # 爆発終わったあとに諸々解除する
-    attribute @s generic.explosion_knockback_resistance base set 0
+    attribute @s explosion_knockback_resistance base set 0
     data modify entity @s Invulnerable set value 0b
 
 # リセット
