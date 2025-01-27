@@ -5,4 +5,4 @@
 # @within asset:object/alias/2000/summon
 
 # 元となるEntityを召喚する
-    summon item_display ~ ~ ~ {Tags:["ObjectInit"]}
+    summon item_display ~ ~ ~ {teleport_duration:1,Tags:["ObjectInit"]}

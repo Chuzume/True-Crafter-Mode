@@ -8,7 +8,7 @@
     execute on vehicle run tag @s add TMCM.SheathOwner
 
 # 持ち主と同じ向きになる
-    execute rotated as @n[tag=TMCM.SheathOwner] run tp @s ~ ~ ~ ~ 0
+    execute rotated as @n[tag=TMCM.SheathOwner] run rotate @s ~ 0
 
 # 持ち主がいないと分かったら消える
     execute unless entity @n[tag=TMCM.SheathOwner] run kill @s
