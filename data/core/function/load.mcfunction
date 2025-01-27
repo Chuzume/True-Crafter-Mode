@@ -33,6 +33,11 @@
     #   asset:mob/**
         scoreboard objectives add General.Mob.Tick dummy {"text":"MobAsset内で使用できるTick用スコア"}
 
+# フォースロード
+    forceload add 0 0 0 0
+
+# 原点を召喚
+    summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
 
 # その他初期化が必要なもの
     function #asset:mob/load
