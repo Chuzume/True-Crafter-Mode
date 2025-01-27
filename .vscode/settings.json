@@ -488,7 +488,7 @@
                         "# @within asset:mob/alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
-                        "    summon %entity% ~ ~ ~",
+                        "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
                         ""
                     ]
                 },
