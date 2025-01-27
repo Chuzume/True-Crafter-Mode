@@ -44,8 +44,8 @@
     execute if entity @s[type=evoker] run data modify storage api: Argument.ID set value 1019
 # スライム
     execute if entity @s[type=slime] run data modify storage api: Argument.ID set value 1020
-
 # マグマキューブ
+    execute if entity @s[type=magma_cube] run data modify storage api: Argument.ID set value 1021
 
 # エンダードラゴン
 
