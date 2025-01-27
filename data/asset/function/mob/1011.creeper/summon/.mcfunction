@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1011/summon
 
 # 元となるEntityを召喚する
-    summon creeper ~ ~ ~ {Tags:["MobInit"]}
+    summon creeper ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

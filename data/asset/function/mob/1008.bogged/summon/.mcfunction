@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1008/summon
 
 # 元となるEntityを召喚する
-    summon bogged ~ ~ ~ {Tags:["MobInit"]}
+    summon bogged ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

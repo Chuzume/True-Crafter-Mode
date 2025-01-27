@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1012/summon
 
 # 元となるEntityを召喚する
-    summon enderman ~ ~ ~ {Tags:["MobInit"]}
+    summon enderman ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

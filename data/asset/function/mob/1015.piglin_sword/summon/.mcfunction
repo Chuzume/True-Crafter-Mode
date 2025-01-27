@@ -5,7 +5,4 @@
 # @within asset:mob/alias/1015/summon
 
 # 元となるEntityを召喚する
-    summon piglin ~ ~ ~ {Tags:["MobInit"]}
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
+    summon piglin ~ ~ ~

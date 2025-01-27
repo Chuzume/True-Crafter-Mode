@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1002/summon
 
 # 元となるEntityを召喚する
-    summon husk ~ ~ ~ {Tags:["MobInit"]}
+    summon husk ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

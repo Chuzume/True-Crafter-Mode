@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1013/summon
 
 # 元となるEntityを召喚する
-    summon spider ~ ~ ~ {Tags:["MobInit"]}
+    summon spider ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

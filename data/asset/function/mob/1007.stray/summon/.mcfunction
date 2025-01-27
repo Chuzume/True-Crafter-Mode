@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1007/summon
 
 # 元となるEntityを召喚する
-    summon stray ~ ~ ~ {Tags:["MobInit"]}
+    summon stray ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

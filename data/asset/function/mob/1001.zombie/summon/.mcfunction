@@ -5,7 +5,7 @@
 # @within asset:mob/alias/1001/summon
 
 # 元となるEntityを召喚する
-    summon zombie ~ ~ ~ {Tags:["MobInit"]}
+    summon zombie ~ ~ ~
 
 # 実装フラグを立てる
     data modify storage asset:mob Implement set value true

@@ -5,4 +5,4 @@
 # @within asset:mob/alias/1017/summon
 
 # 元となるEntityを召喚する
-    summon vindicator ~ ~ ~ {Tags:["MobInit"]}
+    summon vindicator ~ ~ ~
