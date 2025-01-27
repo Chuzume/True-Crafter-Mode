@@ -10,5 +10,5 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+# しばらくすると落下する
+    execute if score @s General.Object.Tick matches 100 run data modify entity @s NoGravity set value false
