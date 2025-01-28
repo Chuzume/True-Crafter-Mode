@@ -23,11 +23,8 @@
     playsound minecraft:entity.evoker.prepare_summon hostile @a ~ ~ ~ 2 2
     particle explosion ~ ~1 ~
 
-# 疑似乱数取得
-    execute store result score $Random Chuz.Temporary run function true_crafter_mode:random
-
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Chuz.Temporary %= $6 Chuz.Const
+# 乱数取得
+    execute store result score $Random Chuz.Temporary run random value 0..5
 
 # デバッグ用
     #scoreboard players set $Random Chuz.Temporary 2

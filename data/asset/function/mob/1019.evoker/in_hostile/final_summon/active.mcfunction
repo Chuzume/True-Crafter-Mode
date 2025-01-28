@@ -11,11 +11,8 @@
 # 疑似乱数取得
     execute store result score $Random Chuz.Temporary run function true_crafter_mode:random
 
-# ほしい範囲に剰余算
-    scoreboard players operation $Random Chuz.Temporary %= $6 Chuz.Const
-
-# デバッグ用
-    scoreboard players set $Random Chuz.Temporary 4
+# 乱数取得
+    execute store result score $Random Chuz.Temporary run random value 0..5
 
 # 乱数に応じて敵が登場
     execute if score $Random Chuz.Temporary matches 0..1 run function asset:mob/1019.evoker/in_hostile/final_summon/vindicator/
