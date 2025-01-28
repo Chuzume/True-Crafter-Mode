@@ -24,14 +24,14 @@
     execute if data storage asset:object Extends[0] run function asset_manager:object/summon/put_id_to_map
     data modify storage asset:context this set from storage asset:object Field
     data modify storage asset:context this merge from storage api: Argument.FieldOverride
-
+    
 # Summon処理を実行
-    execute unless data storage asset:context {init_to_natural_spawn:true} run function asset_manager:object/summon/
+    execute unless data storage asset:context {init_to_natural_object:true} run function asset_manager:object/summon/
 # 初期化処理を実行
     execute as @e[tag=ObjectInit,distance=..0.01] run function asset_manager:object/summon/init
 # リセット
     data remove storage asset:context id
-    data remove storage asset:context init_to_natural_spawn
+    data remove storage asset:context init_to_natural_object
     
 # 退避させたasset:context idを戻す
     function asset_manager:common/context/id/pop

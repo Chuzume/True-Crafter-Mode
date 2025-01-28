@@ -59,7 +59,7 @@
 
 # 出現したモブを今召喚したものとしてRegisterを行う
     tag @s add MobInit
-    data modify storage asset:context init_to_natural_spawn set value true
+    data modify storage asset:context init_to_natural_mob set value true
 
 # 召喚
     function api:mob/summon

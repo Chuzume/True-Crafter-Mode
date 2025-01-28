@@ -26,6 +26,6 @@
         function api:object/summon.m {ID:2000}
     # 乗せる
         ride @n[type=item_display,distance=..0.1] mount @s
-    
+
 # デフォルトでは遠距離モードでスタート
     tag @s add TMCM.RangedMode
