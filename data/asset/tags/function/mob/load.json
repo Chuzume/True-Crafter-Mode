@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/1024.ender_dragon/load",
         "asset:mob/1022.elite_skeleton/load",
         "asset:mob/1020.slime/load",
         "asset:mob/1019.evoker/load",

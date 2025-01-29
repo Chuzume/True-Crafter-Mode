@@ -4,7 +4,6 @@
 #
 # @within function asset:mob/1001.zombie/in_hostile/
 
-
 # 演出
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5

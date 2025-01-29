@@ -48,6 +48,7 @@
     execute if entity @s[type=magma_cube] run data modify storage api: Argument.ID set value 1021
 
 # エンダードラゴン
+    execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value 1024
 
 
 # エラー
