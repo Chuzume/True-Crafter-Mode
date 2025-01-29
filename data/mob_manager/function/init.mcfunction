@@ -49,6 +49,8 @@
 
 # エンダードラゴン
     execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value 1024
+# ウィザー
+    execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value 1025
 
 
 # エラー
