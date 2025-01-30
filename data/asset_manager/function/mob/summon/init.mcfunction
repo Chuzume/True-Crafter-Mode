@@ -24,7 +24,7 @@
     function asset_manager:mob/init/ with storage asset:context
 
 # フィールドを元に戻す
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ObjectField set from storage asset:context this
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField set from storage asset:context this
 
 # リセット
     data remove storage asset:context this

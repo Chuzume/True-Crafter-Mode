@@ -14,4 +14,4 @@
 # ID (int)
     data modify storage asset:mob ID set value 1025
 # フィールド(オプション)
-    # data modify storage asset:mob Field.myValue set value 
+    data modify storage asset:mob Field.Skill.List set value [0,1,2]
