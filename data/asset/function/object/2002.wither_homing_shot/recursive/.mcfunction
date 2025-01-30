@@ -5,4 +5,4 @@
 # @within asset:object/alias/2002/recursive
 
 # particle
-    particle dust_color_transition{from_color:[1.000,1.000,1.000],scale:1,to_color:[0.341,0.341,0.341]} ~ ~ ~ 0 0 0 1 0 normal
+    particle dust_color_transition{from_color:[0.2,0.2,0.2],scale:1,to_color:[1.0,0.5,0.5]} ^ ^ ^-0.5 0 0 0 1 0 force @a[distance=..64]
