@@ -14,7 +14,7 @@
     execute if entity @s[tag=!1025.InAction] run function asset:mob/1025.wither/tick/base_move
 
 # スキル撃ってみるか
-    execute if score @s[tag=!1025.InAction] General.Mob.Tick matches 40 run function asset:mob/1025.wither/tick/skill/select/
+    execute if score @s[tag=!1025.InAction] General.Mob.Tick matches 60 run function asset:mob/1025.wither/tick/skill/select/
 
 # スキル発動
     execute if entity @s[tag=1025.InAction] run function asset:mob/1025.wither/tick/skill/branch
