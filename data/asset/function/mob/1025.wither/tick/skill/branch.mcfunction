@@ -4,5 +4,7 @@
 #
 # @within function asset:mob/1025.wither/tick/in_hostile
 
-# スキルその1
+# ホーミング弾
     execute if entity @s[tag=1025.Skill.Homing] run function asset:mob/1025.wither/tick/skill/homing/
+# 突進
+    execute if entity @s[tag=1025.Skill.Charge] run function asset:mob/1025.wither/tick/skill/charge/

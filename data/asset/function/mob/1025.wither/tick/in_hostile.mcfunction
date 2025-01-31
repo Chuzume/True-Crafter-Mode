@@ -22,5 +22,8 @@
 # 壁があったら止まる
     execute on vehicle at @s if function asset:mob/1025.wither/tick/check_collide run rotate @s ~ 0
 
+# めり込んでたら登ってくる
+    execute on vehicle at @s unless block ~ ~ ~ #lib:no_collision_without_fluid run tp @s ~ ~0.1 ~
+
 # ターゲット解除
     execute on target run tag @s[distance=..64] remove TMCM.Target

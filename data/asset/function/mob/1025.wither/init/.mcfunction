@@ -10,3 +10,6 @@
 # 召喚して乗る
     summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["Test","AutoKillWhenDiePassenger","AllowProcessingCommonTag"]}
     ride @s mount @n[type=armor_stand]
+
+# 内部的に斧持ちになる
+    item replace entity @s weapon.mainhand with netherite_axe
