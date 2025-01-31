@@ -21,4 +21,4 @@
     scoreboard players reset $Interval Temporary
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+    kill @s[scores={General.Object.Tick=400..}]
