@@ -1,6 +1,6 @@
 #> asset_manager:mob/triggers/tick/tick.m
 #
-# 
+#
 #
 # @within function asset_manager:mob/triggers/tick/
 

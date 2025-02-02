@@ -1,8 +1,10 @@
 #> asset_manager:mob/summon/init
 #
-# 
 #
-# @within function asset_manager:object/summon/init
+#
+# @within function api:mob/core/summon
+
+say yo
 
 # validate
     execute unless entity @s run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"データを適用するEntityが存在しません\nasを利用して対象のEntityを実行者にしてください"}]
@@ -17,14 +19,17 @@
 # 共通タグ付与
     tag @s add AssetMob
 
-# EntityStorage呼び出し
-    function oh_my_dat:please
+# データセット
+    function asset_manager:mob/summon/set_data
 
 # Mob側に実装されてるInitを実行
-    function asset_manager:mob/init/ with storage asset:context
+    function asset_manager:mob/triggers/init/ with storage asset:context
+
+# EntityStorage呼び出し
+    execute if score @s MobID matches -2147483648..2147483647 run function oh_my_dat:please
 
 # フィールドを元に戻す
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField set from storage asset:context this
+    execute if score @s MobID matches -2147483648..2147483647 run data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField set from storage asset:context this
 
 # リセット
     data remove storage asset:context this
