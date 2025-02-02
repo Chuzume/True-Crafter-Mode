@@ -6,8 +6,8 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add 1025.Skill.Charge
-    return fail
+#    tag @s add 1025.Skill.Thunder
+#    return fail
 
 # 技を選択
     execute if data storage asset:context this.Skill{Get:0} run tag @s add 1025.Skill.Homing

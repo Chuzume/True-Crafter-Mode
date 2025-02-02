@@ -13,8 +13,11 @@
 # スキル撃ってないときの動作
     execute if entity @s[tag=!1025.InAction] run function asset:mob/1025.wither/tick/base_move
 
-# スキル撃ってみるか
+# スキル発動、ただし技が一周してない場合
     execute if score @s[tag=!1025.InAction] General.Mob.Tick matches 60 run function asset:mob/1025.wither/tick/skill/select/
+
+# 技が一瞬してたら確定で動作を選択
+    execute if score @s[tag=!1025.InAction,tag=1025.CycleReset] General.Mob.Tick matches 60 run function asset:mob/1025.wither/tick/skill/select/cycle_reset
 
 # スキル発動
     execute if entity @s[tag=1025.InAction] run function asset:mob/1025.wither/tick/skill/branch

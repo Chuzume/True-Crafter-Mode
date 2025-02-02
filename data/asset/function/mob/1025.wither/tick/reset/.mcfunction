@@ -8,6 +8,7 @@
     tag @s remove 1025.Skill.Charge
     tag @s remove 1025.Skill.Homing
     tag @s remove 1025.Skill.Thunder
+    tag @s remove 1025.Skill.Summon
     tag @s remove 1025.InAction
 
 # スコアリセット
