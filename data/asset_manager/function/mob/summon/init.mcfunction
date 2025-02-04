@@ -14,11 +14,15 @@
 # IDをそのまま付与
     execute store result score @s MobID run data get storage api: Argument.ID
 
+# Contextの設定
+    execute store result storage asset:context id int 1 run scoreboard players get @s MobID
+    execute store result storage asset:context originID int 1 run scoreboard players get @s MobID
+
 # 共通タグ付与
     tag @s add AssetMob
 
 # データセット
-    function asset_manager:mob/summon/set_data
+#    function asset_manager:mob/summon/set_data
 
 # Mob側に実装されてるInitを実行
     function asset_manager:mob/triggers/init/ with storage asset:context
