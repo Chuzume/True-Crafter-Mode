@@ -13,5 +13,5 @@
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
     data modify storage asset:mob ID set value 1006
-# フィールド(オプション)
+
     # data modify storage asset:mob Field.myValue set value 

@@ -6,6 +6,7 @@
 #   asset_manager:mob/triggers/tick/
 #   asset:mob/super.tick
 
+
 # IDをアドレスとしてROMを呼び出す
     data modify storage api: Argument.Address set from storage asset:context id
     function api:rom/please

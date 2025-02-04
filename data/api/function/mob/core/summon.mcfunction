@@ -12,7 +12,6 @@
 
 # ID
     data modify storage asset:context id set from storage api: Argument.ID
-    data modify storage asset:context originID set from storage api: Argument.ID
 
 # データ登録
     function asset_manager:mob/summon/register.m with storage asset:context
@@ -21,21 +20,18 @@
     execute unless data storage asset:mob ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" ID","color":"red"}]
     execute unless data storage asset:mob ID run return fail
 
-# 継承が行われている場合そのデータを追加する
-    execute if data storage asset:mob Extends[0] run function asset_manager:mob/summon/put_id_to_map
+# フィールド設定
     data modify storage asset:context this set from storage asset:mob Field
     data modify storage asset:context this merge from storage api: Argument.FieldOverride
 
-# Summon処理を実行
+# Summon処理を実行、自然出現したモブを対象としている場合は実行しない
     execute unless data storage asset:context {init_to_natural_mob:true} run function asset_manager:mob/summon/
+
+# リセット
+    data remove storage asset:context init_to_natural_mob
 
 # 初期化処理を実行
     execute as @e[tag=MobInit,distance=..0.01] run function asset_manager:mob/summon/init
-
-# リセット
-    data remove storage asset:context id
-    data remove storage asset:context originID
-    data remove storage asset:context init_to_natural_mob
 
 # 退避させたasset:context idを戻す
     function asset_manager:common/context/id/pop

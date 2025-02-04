@@ -1,7 +1,7 @@
 #> asset:mob/super.method
 #
-# 
 #
-# @within function asset:mob/0004.ranged_switcher_ai/tick/
+#
+# @within function asset:mob/*/**
 
-function asset_manager:mob/call_method/call_super_method
+function asset_manager:mob/triggers/call_method/call_super_methods/

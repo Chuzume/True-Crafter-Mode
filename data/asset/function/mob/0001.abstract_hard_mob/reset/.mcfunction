@@ -5,4 +5,4 @@
 # @within asset:mob/alias/1/reset
 
 # 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
+#    data modify storage asset:mob Implement set value true
