@@ -8,9 +8,12 @@
 # @private
 #declare tag SpreadMarker
 
+# 演出
+    playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2
+    playsound minecraft:entity.breeze.idle_ground hostile @a ~ ~ ~ 1 2
+
 # 拡散させるEntityを召喚する
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
-
 
 # 拡散
     data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,8d],[16d,16d]]

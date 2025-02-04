@@ -10,3 +10,7 @@
     execute if entity @s[tag=1025.Skill.Charge] run function asset:mob/1025.wither/tick/skill/charge/
 # 設置レーザー
     execute if entity @s[tag=1025.Skill.Thunder] run function asset:mob/1025.wither/tick/skill/trap_laser/
+
+
+# １週後の行動
+    execute if entity @s[tag=1025.Skill.Summon] run function asset:mob/1025.wither/tick/skill/summon/

@@ -19,11 +19,6 @@
 # 突進
     execute if score @s General.Mob.Tick matches 15..60 run function asset:mob/1025.wither/tick/skill/charge/attack
 
-# 数Tickごとにサウンド
-    scoreboard players operation $Interval Temporary %= $3 Const
-#    execute if score @s General.Mob.Tick matches 20..40 if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ facing entity @n[tag=TMCM.Target,distance=..64] feet run function asset:mob/1025.wither/tick/skill/homing/shoot
-    scoreboard players reset $Interval Temporary
-
 # リセット
     execute if score @s General.Mob.Tick matches 80 run function asset:mob/1025.wither/tick/reset/
 
