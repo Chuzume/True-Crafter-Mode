@@ -33,6 +33,14 @@
     #   asset:mob/**
         scoreboard objectives add General.Mob.Tick dummy {"text":"MobAsset内で使用できるTick用スコア"}
 
+    #> MobManager用スコアボード - 攻撃元
+    # @within function
+    #   core:early_handler/damage
+    #   asset_manager:artifact/handler/on_damage_without_source
+    #   mob_manager:entity_finder/entity_hurt_player/fetch_entity
+        scoreboard objectives add TakenDamage custom:damage_taken
+        scoreboard objectives add AbsorbedDamage custom:damage_absorbed
+        
 # フォースロード
     forceload add 0 0 0 0
 
