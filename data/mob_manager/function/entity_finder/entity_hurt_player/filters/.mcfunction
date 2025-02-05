@@ -5,7 +5,7 @@
 # @within function mob_manager:entity_finder/entity_hurt_player/on_hurt
 
 # プレイヤーの OMD 取得
-    function oh_my_dat:please
+#    function oh_my_dat:please
 # tag付け
     tag @s add DamagedPlayer
 # フィルタ

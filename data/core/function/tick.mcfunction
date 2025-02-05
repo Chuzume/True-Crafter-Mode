@@ -14,7 +14,7 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        execute as @e[type=#true_crafter_mode:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!Chuz.NonVanillaMob,tag=!AlreadyInitMob] at @s run function mob_manager:init
+        execute as @e[type=#true_crafter_mode:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!Chuz.NonVanillaMob,tag=!AlreadyInitMob] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=AllowProcessingCommonTag] at @s run function asset_manager:mob/common_tag/
 
@@ -23,6 +23,9 @@
 
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
+
+# UserID割り振り
+    execute as @a unless score @s UserID matches 0.. run function core:give_user_id
 
 # asset:contextの明示的な全削除
 #    function asset_manager:common/reset_all_context

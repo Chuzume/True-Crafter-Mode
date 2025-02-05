@@ -41,6 +41,11 @@
         scoreboard objectives add TakenDamage custom:damage_taken
         scoreboard objectives add AbsorbedDamage custom:damage_absorbed
         
+    #> UserID
+    # @public
+        scoreboard objectives add UserID dummy {"text":"汎用固有ユーザーID"}
+        scoreboard objectives add MobUUID dummy {"text":"汎用固有MobID"}
+        
 # フォースロード
     forceload add 0 0 0 0
 

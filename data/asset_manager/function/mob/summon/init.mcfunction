@@ -24,6 +24,9 @@
 # データセット
 #    function asset_manager:mob/summon/set_data
 
+# フラグ立て
+    function asset_manager:mob/summon/add_flag
+
 # Mob側に実装されてるInitを実行
     function asset_manager:mob/triggers/init/ with storage asset:context
 
