@@ -6,7 +6,6 @@
 
 # 基本的なデータ取得処理
 
-
 # 敵モブNBT関連
     tag @s[tag=!OnGround,nbt={OnGround:1b}] add OnGround
     tag @s[tag=!HurtEntity,nbt=!{HurtTime:0s}] add HurtEntity

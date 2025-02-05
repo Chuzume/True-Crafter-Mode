@@ -9,11 +9,11 @@
 
 # ジャンプ攻撃関連
     # 跳んだら向き修正処理を実行
-        execute if entity @s[tag=TMCM.Leaping] run function true_crafter_mode:entity/mob/zombie/leap_attack/facing_lock
+        execute if entity @s[tag=TMCM.Leaping] run function asset:mob/1001.zombie/tick/leap/facing_loack
     # 跳んだ後、地面から足を離すとタグを付与
         execute if entity @s[tag=TMCM.Leaping,tag=!OnGround] run tag @s add TMCM.CanEndLeap
     # 地面から離れた後、もう一度着地でリセット
-        execute if entity @s[tag=TMCM.CanEndLeap,tag=OnGround] run function true_crafter_mode:entity/mob/zombie/leap_attack/end
+        execute if entity @s[tag=TMCM.CanEndLeap,tag=OnGround] run function asset:mob/1001.zombie/tick/leap/end
 
 # 継承元の処理を実行する
     function asset:mob/super.tick
