@@ -37,3 +37,5 @@
     data remove storage asset:context this
     data remove storage asset:context ID
     data remove storage asset:context Field
+    data remove storage asset:context id
+    data remove storage asset:context originID
