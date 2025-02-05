@@ -10,7 +10,7 @@
     
 # 速度を設定して飛ばす
     data modify storage lib: Argument.VectorMagnitude set value 1
-    function lib:motion_horizontal/
+    function lib:motion/
 
 # 上方向
     data modify entity @s Motion[1] set value 0.7d
