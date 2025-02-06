@@ -16,11 +16,11 @@
 # アラート
     execute if score @s General.Object.Tick matches 0..100 if score $Interval Temporary matches 0 run function asset:object/2003.wither_trap_laser/tick/alert/
 # アクティブ
-    execute if score @s General.Object.Tick matches 100 at @a[distance=..16] run function asset:object/2003.wither_trap_laser/tick/laser/active
+    execute if score @s General.Object.Tick matches 100 at @a[distance=..32] run function asset:object/2003.wither_trap_laser/tick/laser/active
 # 攻撃
     execute if score @s General.Object.Tick matches 100.. if score $Interval Temporary matches 0 run function asset:object/2003.wither_trap_laser/tick/laser/
 # リセット
     scoreboard players reset $Interval Temporary
 
 # 消滅処理
-    kill @s[scores={General.Object.Tick=400..}]
+    kill @s[scores={General.Object.Tick=300..}]

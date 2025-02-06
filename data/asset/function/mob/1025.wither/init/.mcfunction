@@ -8,7 +8,7 @@
 #    data modify entity @s NoAI set value true
 
 # 召喚して乗る
-    summon armor_stand ~ ~ ~ {Invisible:0b,Marker:1b,Tags:["Test","AutoKillWhenDiePassenger","AllowProcessingCommonTag"]}
+    summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["Test","AutoKillWhenDiePassenger","AllowProcessingCommonTag"]}
     ride @s mount @n[type=armor_stand]
 
 # 内部的に斧持ちになる

@@ -13,7 +13,7 @@
 
 # ステータス設定
     data modify storage lib: Argument.Distance set value 1
-    data modify storage lib: Argument.Spread set value 1
+    data modify storage lib: Argument.Spread set value 0.5
 
 # 拡散
     execute as @e[type=marker,tag=SpreadMarker,distance=..128] run function lib:forward_spreader/circle
