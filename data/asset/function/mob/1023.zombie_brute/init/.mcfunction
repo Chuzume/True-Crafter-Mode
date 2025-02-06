@@ -18,11 +18,14 @@
     item replace entity @s weapon.mainhand with iron_axe
 
 # ステータス
-    attribute @s[nbt=!{IsBaby:1b}] minecraft:movement_speed base set 0.25
+    data modify entity @s CustomName set value '{"fallback":"ゾンビブルート","translate":"entity.true_crafter_mode.zombie_brute"}'
+    attribute @s minecraft:movement_speed base set 0.25
     attribute @s minecraft:fall_damage_multiplier base set 0
     attribute @s minecraft:step_height base set 1
     attribute @s knockback_resistance base set 1
     attribute @s scale base set 1.25
+    attribute @s max_health base set 30
+    effect give @s instant_damage 1 100 true
 
 # 頭の一個上を壊しちゃう
     setblock ~ ~3 ~ air destroy

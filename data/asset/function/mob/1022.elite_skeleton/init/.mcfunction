@@ -4,6 +4,12 @@
 #
 # @within asset:mob/alias/1022/init
 
+# ステータス
+    data modify entity @s CustomName set value '{"fallback":"エリートスケルトン","translate":"entity.true_crafter_mode.elite_skeleton"}'
+    attribute @s minecraft:step_height base set 1
+    attribute @s max_health base set 30
+    effect give @s instant_damage 1 100 true
+
 # 頭装備
     item replace entity @s armor.head with player_head[profile={id:[I;567260598,-187545055,-1980291697,665045643],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk0Yjc4ODc4NzE1ZGZlZmJlZjBkOWFhMzI3NTlmNThhYzQ3OWIzYzgwYjIzODFmYzBkNDdhNDU3ODdiYjQyNyJ9fX0="}]}]
 # 胴装備
