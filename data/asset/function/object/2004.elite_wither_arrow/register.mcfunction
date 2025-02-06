@@ -1,18 +1,18 @@
-#> asset:object/2001.elite_arrow/register
+#> asset:object/2004.elite_wither_arrow/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/alias/2001/register
+# @within function asset:object/alias/2004/register
 
 # 継承(オプション)
-    # data modify storage asset:object Extends append value 
-    # function asset:object/extends
+    data modify storage asset:object Extends append value 2001
+    function asset:object/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
-    data modify storage asset:object ExtendsSafe set value true
+    # data modify storage asset:object ExtendsSafe set value 
 # 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value 2001
+    data modify storage asset:object ID set value 2004
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value 

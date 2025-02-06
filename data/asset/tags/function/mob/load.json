@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:mob/1027.wither_minion/load",
         "asset:mob/1025.wither/load",
         "asset:mob/1024.ender_dragon/load",
         "asset:mob/1022.elite_skeleton/load",
