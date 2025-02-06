@@ -4,4 +4,4 @@
 #
 # @within function asset:mob/alias/1025/hurt
 
-say ouch!
+function asset:mob/1025.wither/hurt/check_health

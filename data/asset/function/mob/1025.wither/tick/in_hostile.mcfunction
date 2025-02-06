@@ -10,8 +10,11 @@
 # スコア加算
     scoreboard players add @s General.Mob.Tick 1
 
-# スキル撃ってないときの動作
-    execute if entity @s[tag=!1025.InAction] run function asset:mob/1025.wither/tick/base_move
+# 通常時の動作
+    execute if entity @s[tag=!1025.StopBaseMove,tag=!1025.InDash] run function asset:mob/1025.wither/tick/base_move
+
+# フェイズ2以降、確率でサイドダッシュなどの動作を挟む
+    execute if score @s[tag=!1025.InAction] 1025.Phase matches 2.. if score @s General.Mob.Tick matches 0 run function asset:mob/1025.wither/tick/dash/select
 
 # スキル発動、ただし技が一周してない場合
     execute if score @s[tag=!1025.InAction,tag=!1025.CycleReset] General.Mob.Tick matches 60 run function asset:mob/1025.wither/tick/skill/select/
@@ -21,6 +24,12 @@
 
 # スキル発動
     execute if entity @s[tag=1025.InAction] run function asset:mob/1025.wither/tick/skill/branch
+
+# スキル発動開始時、移動を停止
+    execute if score @s[tag=1025.InAction] General.Mob.Tick matches 0 run tag @s add 1025.StopBaseMove
+
+# ダッシュ発動
+    execute if entity @s[tag=1025.InDash] run function asset:mob/1025.wither/tick/dash/branch
 
 # 壁があったら止まる
     execute on vehicle at @s if function asset:mob/1025.wither/tick/check_collide run rotate @s ~ 0

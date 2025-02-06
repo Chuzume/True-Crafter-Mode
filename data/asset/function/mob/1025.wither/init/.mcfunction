@@ -8,8 +8,14 @@
 #    data modify entity @s NoAI set value true
 
 # 召喚して乗る
-    summon armor_stand ~ ~ ~ {Invisible:1b,Marker:1b,Tags:["Test","AutoKillWhenDiePassenger","AllowProcessingCommonTag"]}
+    summon armor_stand ~ ~ ~ {Invisible:0b,Marker:1b,Tags:["Test","AutoKillWhenDiePassenger","AllowProcessingCommonTag"]}
     ride @s mount @n[type=armor_stand]
 
 # 内部的に斧持ちになる
     item replace entity @s weapon.mainhand with netherite_axe
+
+# フェイズ加算しとく
+    scoreboard players set @s 1025.Phase 1
+
+# スコア調整
+    scoreboard players set @s General.Mob.Tick -10

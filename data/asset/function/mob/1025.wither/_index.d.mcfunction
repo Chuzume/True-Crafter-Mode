@@ -9,3 +9,8 @@
     #declare tag 1025.Skill.Summon
     #declare tag 1025.InAction   
     #declare tag 1025.CycleReset
+    #declare tag 1025.Dash.Left
+    #declare tag 1025.Dash.Right
+    #declare tag 1025.Dash.Teleport
+    #declare tag 1025.DashUsed
+    #declare tag 1025.StopBaseMove

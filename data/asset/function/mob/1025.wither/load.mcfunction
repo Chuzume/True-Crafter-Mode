@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/1025.wither/**
-#    scoreboard objectives add 
+    scoreboard objectives add 1025.Phase dummy
