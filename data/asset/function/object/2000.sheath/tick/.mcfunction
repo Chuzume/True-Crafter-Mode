@@ -11,10 +11,10 @@
     execute rotated as @n[tag=TMCM.SheathOwner] run rotate @s ~ 0
 
 # 持ち主がいないと分かったら消える
-    execute unless entity @n[tag=TMCM.SheathOwner] run kill @s
+    execute on vehicle at @s on passengers if entity @s[scores={ObjectID=2000}] unless entity @n[tag=TMCM.SheathOwner,distance=..0.5] run kill @s
 
 # 持ち主からタグを奪う
-    tag @n[tag=SheathOwner] remove TMCM.SheathOwner
+    execute on vehicle run tag @s remove TMCM.SheathOwner
 
 # 誰にも乗ってなかったら消える
     execute unless predicate true_crafter_mode:on_vehicle run kill @s
