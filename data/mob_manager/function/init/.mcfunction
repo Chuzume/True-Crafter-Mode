@@ -52,6 +52,9 @@
 # ウィザー
     execute if entity @s[type=wither] run data modify storage api: Argument.ID set value 1025
 
+# ウィザースケルトン
+    execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value 1026
+
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
 
