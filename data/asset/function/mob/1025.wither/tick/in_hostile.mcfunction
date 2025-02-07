@@ -10,6 +10,9 @@
 # スコア加算
     scoreboard players add @s General.Mob.Tick 1
 
+# 接近されたらウィザーヘッド射出が別の技になる
+    execute if entity @n[tag=TMCM.Target,distance=..5] run function asset:mob/1025.wither/tick/thunder/
+
 # 通常時の動作
     execute if entity @s[tag=!1025.StopBaseMove,tag=!1025.InDash] run function asset:mob/1025.wither/tick/base_move
 
