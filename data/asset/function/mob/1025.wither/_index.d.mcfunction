@@ -14,3 +14,5 @@
     #declare tag 1025.Dash.Teleport
     #declare tag 1025.DashUsed
     #declare tag 1025.StopBaseMove
+    #declare tag 1025.Transition.Phase3
+    #declare tag 1025.Marker.Temp

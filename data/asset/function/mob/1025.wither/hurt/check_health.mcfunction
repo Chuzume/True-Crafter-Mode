@@ -16,9 +16,9 @@
 #    tellraw @a [{"text":"score: "},{"score":{"objective":"Temporary","name":"$Health"}}]
 
 # 75%以下
-    execute if score @s 1025.Phase matches 1 if score $Health Temporary matches ..75 run function asset:mob/1025.wither/hurt/reset
+    execute if score @s 1025.Phase matches 1 if score $Health Temporary matches ..75 run function asset:mob/1025.wither/hurt/health_75
 # HP50%以下
-    execute if score @s 1025.Phase matches 2 if score $Health Temporary matches ..50 run function asset:mob/1025.wither/hurt/reset
+    execute if score @s 1025.Phase matches 2 if score $Health Temporary matches ..50 run function asset:mob/1025.wither/hurt/health_50
 
 # リセット
     scoreboard players reset $Health

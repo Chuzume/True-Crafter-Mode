@@ -17,7 +17,6 @@
 # ウソ慣性
     execute if score @s General.Mob.Tick matches 15..20 on vehicle at @s run tp @s ^ ^ ^0.5
     execute if score @s General.Mob.Tick matches 20..25 on vehicle at @s run tp @s ^ ^ ^0.3
-    execute if score @s General.Mob.Tick matches 25..30 on vehicle at @s run tp @s ^ ^ ^0.1
 
 # リセット
-    execute if score @s General.Mob.Tick matches 35.. run function asset:mob/1025.wither/tick/reset/dash
+    execute if score @s General.Mob.Tick matches 25.. run function asset:mob/1025.wither/tick/reset/dash
