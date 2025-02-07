@@ -17,10 +17,10 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
 # 突進
-    execute if score @s General.Mob.Tick matches 15..60 run function asset:mob/1025.wither/tick/skill/charge/attack
+    execute if score @s General.Mob.Tick matches 15..50 run function asset:mob/1025.wither/tick/skill/charge/attack
 
 # リセット
-    execute if score @s General.Mob.Tick matches 80 run function asset:mob/1025.wither/tick/reset/
+    execute if score @s General.Mob.Tick matches 60 run function asset:mob/1025.wither/tick/reset/
 
 # 本体の向き変更
 #    execute facing entity @n[tag=TMCM.Target,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run rotate @s ~ ~

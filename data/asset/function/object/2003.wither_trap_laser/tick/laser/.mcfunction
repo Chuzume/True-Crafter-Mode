@@ -6,9 +6,9 @@
 #   function asset:object/2003.wither_trap_laser/tick/
 #   asset:object/2003.wither_trap_laser/tick/laser/
 # パーティクル
-    particle dust{color:[0.0,1.0,1.0],scale:1.0} ^ ^ ^ 0 0 0 0 1 force @a[distance=..32]
-    particle dust{color:[0.0,1.0,1.0],scale:1.0} ^ ^ ^0.5 0 0 0 0 1 force @a[distance=..32]
-    particle dust{color:[0.0,1.0,1.0],scale:1.0} ^ ^ ^-0.5 0 0 0 0 1 force @a[distance=..32]
+    particle dust{color:[0.878,0.969,0.576],scale:1.0} ^ ^ ^ 0 0 0 0 1 force @a[distance=..32]
+    particle dust{color:[0.878,0.969,0.576],scale:1.0} ^ ^ ^0.5 0 0 0 0 1 force @a[distance=..32]
+    particle dust{color:[0.878,0.969,0.576],scale:1.0} ^ ^ ^-0.5 0 0 0 0 1 force @a[distance=..32]
     particle electric_spark ^ ^ ^ 0 0 0 0 1 force @a[distance=..32]
 
 # ダメージ
