@@ -19,12 +19,12 @@
     execute as @e[type=marker,tag=SpreadMarker,distance=..128] run function lib:forward_spreader/circle
 
 # 召喚
+    execute store result storage api: Argument.FieldOverride.OwnerID int 1 run scoreboard players get @s MobUUID
     execute facing entity @n[type=marker,tag=SpreadMarker,distance=..128] eyes run function api:object/summon.m {ID:2002}
-    #execute at @n[type=marker,tag=SpreadMarker,distance=..128] run particle explosion
 
 # リセット
     kill @n[type=marker,tag=SpreadMarker,distance=..128]
 
 # 演出
     playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 2
-    playsound minecraft:block.respawn_anchor.deplete hostile @a ~ ~ ~ 2 2
+    playsound minecraft:entity.wither.shoot hostile @a ~ ~ ~ 1 1.5
