@@ -13,7 +13,6 @@
 # 手持ちにフレイムを付与
     item modify entity @s weapon.mainhand {function:set_enchantments,enchantments:{"minecraft:flame":1}}
     
-
 # 鞘の処理
     # データ指定
         data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:golden_axe",count:1}
