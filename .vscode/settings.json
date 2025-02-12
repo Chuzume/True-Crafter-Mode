@@ -447,22 +447,6 @@
                         "# 元の登録処理を呼び出す",
                         "    function asset:mob/%namespace%/register"
                     ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/function/mob/%namespace%/summon/debug.mcfunction",
-                    "content": [
-                        "#> asset:mob/%namespace%/summon/debug",
-                        "#",
-                        "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
-                        "#",
-                        "# @user",
-                        "# @private",
-                        "",
-                        "# 召喚",
-                        "    data modify storage api: Argument.ID set value %id%",
-                        "    function api:mob/summon"
-                    ]
                 }
             ],
             "customQuestion": [
@@ -813,22 +797,6 @@
                         "",
                         "# 元の登録処理を呼び出す",
                         "    function asset:object/%namespace%/register"
-                    ]
-                },
-                {
-                    "type": "file",
-                    "rel": "data/asset/function/object/%namespace%/summon/debug.mcfunction",
-                    "content": [
-                        "#> asset:object/%namespace%/summon/debug",
-                        "#",
-                        "# 動作チェック用の召喚処理 使い終わったら消してもいいかも",
-                        "#",
-                        "# @user",
-                        "# @private",
-                        "",
-                        "# 召喚",
-                        "    data modify storage api: Argument.ID set value %id%",
-                        "    function api:object/summon"
                     ]
                 }
             ],
