@@ -14,5 +14,10 @@
     attribute @s minecraft:step_height base set 1
     attribute @s scale base set 0.85
 
+# ふわりと降りてくる
+    effect give @s slow_falling 2
+    effect give @s slowness 2 0
+    effect give @s weakness 2 10
+
 # チーム設定
     team join TrueCrafterEnemy

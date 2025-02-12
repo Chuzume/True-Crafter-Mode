@@ -19,3 +19,6 @@
 
 # スコア調整
     scoreboard players set @s General.Mob.Tick -10
+
+# チーム設定
+    team join TrueCrafterEnemy

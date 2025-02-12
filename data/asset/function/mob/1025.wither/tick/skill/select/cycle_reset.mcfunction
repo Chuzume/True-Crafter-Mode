@@ -5,7 +5,7 @@
 # @within function asset:mob/1025.wither/tick/in_hostile
 
 # 演出
-    particle trial_spawner_detection ~ ~2 ~ 0.7 1 0.7 0 35 force @a[distance=..32]
+    particle trial_spawner_detection_ominous ~ ~2 ~ 0.7 1 0.7 0 35 force @a[distance=..32]
     particle entity_effect{color:[0.000,1.000,1.000,1.00]} ~ ~2 ~ 0.7 1 0.7 0.0 35 force @a[distance=..32]
     playsound minecraft:block.trial_spawner.about_to_spawn_item hostile @a ~ ~ ~ 3 2
     playsound minecraft:block.trial_spawner.ominous_activate hostile @a ~ ~ ~ 3 0.5
