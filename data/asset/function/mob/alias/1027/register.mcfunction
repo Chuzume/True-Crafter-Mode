@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/register.m
 
 # 元の登録処理を呼び出す
-    function asset:mob/1027.wither_minion/register
+    function asset:mob/1027.wither_knight/register

@@ -5,4 +5,4 @@
 # @within asset_manager:mob/tick/tick.m
 
 # 元のTick処理を呼び出す
-    function asset:mob/1027.wither_minion/tick/
+    function asset:mob/1027.wither_knight/tick/

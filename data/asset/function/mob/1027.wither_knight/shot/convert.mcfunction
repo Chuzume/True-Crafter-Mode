@@ -1,8 +1,8 @@
-#> asset:mob/1027.wither_minion/shot/convert
+#> asset:mob/1027.wither_knight/shot/convert
 #
 # 
 #
-# @within function asset:mob/1027.wither_minion/shot/
+# @within function asset:mob/1027.wither_knight/shot/
 
 # 出現した矢を今召喚したものとしてRegisterを行う準備
     tag @s add ObjectInit

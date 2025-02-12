@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/init/
+#> asset:mob/1027.wither_knight/init/
 #
 # Mobのinit時の処理
 #

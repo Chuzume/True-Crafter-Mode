@@ -5,4 +5,4 @@
 # @within asset_manager:mob/init/init.m
 
 # 元のInit処理を呼び出す
-    function asset:mob/1027.wither_minion/init/
+    function asset:mob/1027.wither_knight/init/

@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/register
+#> asset:mob/1027.wither_knight/register
 #
 # Mobのデータを指定
 #

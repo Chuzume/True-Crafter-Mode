@@ -5,4 +5,4 @@
 # @within asset_manager:mob/triggers/hurt/hurt.m
 
 # 本来の処理を呼び出す
-   function asset:mob/1027.wither_minion/hurt/
+   function asset:mob/1027.wither_knight/hurt/

@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/summon/
+#> asset:mob/1027.wither_knight/summon/
 #
 # Mob召喚処理の呼び出し時に実行されるfunction
 #

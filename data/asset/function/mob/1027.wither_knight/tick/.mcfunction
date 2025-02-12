@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/tick/
+#> asset:mob/1027.wither_knight/tick/
 #
 # Mobのtick時の処理
 #

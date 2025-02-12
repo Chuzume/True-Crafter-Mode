@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/hurt/
+#> asset:mob/1027.wither_knight/hurt/
 #
 # Mobのダメージ時の処理
 #

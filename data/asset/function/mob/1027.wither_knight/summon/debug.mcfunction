@@ -1,4 +1,4 @@
-#> asset:mob/1027.wither_minion/summon/debug
+#> asset:mob/1027.wither_knight/summon/debug
 #
 # 動作チェック用の召喚処理 使い終わったら消してもいいかも
 #
