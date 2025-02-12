@@ -26,7 +26,7 @@
         ride @n[type=item_display,distance=..0.1] mount @s
 
 # ステータス
-    data modify entity @s CustomName set value '{"fallback":"ウィザーのしもべ","translate":"entity.true_crafter_mode.wither_minion"}'
+    data modify entity @s CustomName set value '{"fallback":"ウィザーの騎士","translate":"entity.true_crafter_mode.wither_knight"}'
     attribute @s minecraft:fall_damage_multiplier base set 0
     attribute @s minecraft:step_height base set 1
     attribute @s knockback_resistance base set 0.5
