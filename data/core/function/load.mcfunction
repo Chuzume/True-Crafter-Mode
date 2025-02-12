@@ -51,6 +51,11 @@
         scoreboard objectives add Lib dummy {"text":"ライブラリの引数/返り値用"}
         scoreboard objectives add ForwardTargetMobUUID dummy {"text":"ダメージを転送する対象"}
 
+# チーム作成
+    team add TrueCrafterEnemy
+    team modify TrueCrafterEnemy friendlyFire false
+    team modify TrueCrafterEnemy nametagVisibility never
+    
 # フォースロード
     forceload add 0 0 0 0
 
