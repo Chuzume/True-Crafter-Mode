@@ -13,17 +13,17 @@
         execute if score @s 1024.Tick.Platform matches 20 run function asset:mob/1024.ender_dragon/tick/place_platform/place/1
         execute if score @s 1024.Tick.Platform matches 20 run function asset:mob/1024.ender_dragon/tick/place_platform/place/1
     # 2段目
-        execute if score @s 1024.Tick.Platform matches 30 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
-        execute if score @s 1024.Tick.Platform matches 30 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
-        execute if score @s 1024.Tick.Platform matches 30 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
+        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
+        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
+        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/2
     # 3段目
-        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
-        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
-        execute if score @s 1024.Tick.Platform matches 40 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
+        execute if score @s 1024.Tick.Platform matches 60 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
+        execute if score @s 1024.Tick.Platform matches 60 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
+        execute if score @s 1024.Tick.Platform matches 60 run function asset:mob/1024.ender_dragon/tick/place_platform/place/3
     # 4段目
-        execute if score @s 1024.Tick.Platform matches 50 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
-        execute if score @s 1024.Tick.Platform matches 50 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
-        execute if score @s 1024.Tick.Platform matches 50 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
+        execute if score @s 1024.Tick.Platform matches 80 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
+        execute if score @s 1024.Tick.Platform matches 80 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
+        execute if score @s 1024.Tick.Platform matches 80 run function asset:mob/1024.ender_dragon/tick/place_platform/place/4
 
 # リセット
-    execute if score @s 1024.Tick.Platform matches 120.. run scoreboard players reset @s 1024.Tick.Platform
+    execute if score @s 1024.Tick.Platform matches 200.. run scoreboard players reset @s 1024.Tick.Platform
