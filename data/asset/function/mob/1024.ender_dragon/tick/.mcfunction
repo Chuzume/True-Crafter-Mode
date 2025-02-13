@@ -13,6 +13,7 @@
 # 戦闘範囲内のプレイヤーにジャンプブーストなどを付与
     effect give @a[distance=..128] jump_boost 3 9
 
+
 # 定期的にDragonPhaseを宣言してもらう
 #    execute if score @s General.Mob.Tick matches 40 run tellraw @p {"entity":"@s","nbt":"DragonPhase"}
 #    execute if score @s General.Mob.Tick matches 40 run scoreboard players reset @s General.Mob.Tick
