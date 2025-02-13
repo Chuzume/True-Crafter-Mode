@@ -8,7 +8,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # もやもや…
-    execute if score @s General.Object.Tick matches ..40 run particle dust{color:[0.8,0.2,1.0],scale:1.0} ~ ~ ~ 1 1 1 0 2 force @a[distance=..16]
+    execute if score @s General.Object.Tick matches ..40 run particle dust{color:[0.8,0.2,1.0],scale:1.0} ~ ~ ~ 1 1 1 0 2 force @a[distance=..32]
 
 # 足場召喚
     execute if score @s General.Object.Tick matches 40 run function asset:object/2006.dragon_platform/tick/place/
