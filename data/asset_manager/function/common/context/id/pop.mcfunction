@@ -8,7 +8,7 @@
 #   asset:*/extends
 #   asset:*/super.*
 #   api:artifact/*/from_id
-#   api:entity/mob/effect/core/give
+#   api:mob/effect/core/give
 #   asset_manager:mob/triggers/death/manual
 #   asset_manager:effect/events/*/call_super_method
 #   asset_manager:mob/triggers/*/call_super_method
