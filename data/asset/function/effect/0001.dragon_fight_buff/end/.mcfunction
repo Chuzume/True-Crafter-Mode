@@ -6,3 +6,4 @@
 
 playsound minecraft:entity.breeze.idle_air neutral @a ~ ~ ~ 1 0.5
 attribute @s fall_damage_multiplier base reset
+effect clear @s jump_boost
