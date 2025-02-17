@@ -9,4 +9,5 @@
     #declare tag 1024.Skill.Thunder
     #declare tag 1024.Skill.HomingPillar
     #declare tag 1024.Skill.HomingFireball
+    #declare tag 1024.Skill.Charge
     #declare tag 1024.Skill.

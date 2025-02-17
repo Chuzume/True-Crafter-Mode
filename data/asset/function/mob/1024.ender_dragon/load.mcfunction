@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/1024.ender_dragon/**
     scoreboard objectives add 1024.Tick.Platform dummy
+    scoreboard objectives add 1024.RotaterID dummy

@@ -11,10 +11,7 @@
     scoreboard players add @s General.Mob.Tick 1
 
 # 足場設置行動
-    function asset:mob/1024.ender_dragon/tick/place_platform/
-
-# 周囲のプレイヤーのジャンプ力などを上げる
-    execute as @a[distance=..128] run function asset:mob/1024.ender_dragon/tick/buff/give
+#    function asset:mob/1024.ender_dragon/tick/place_platform/
 
 # フェイズ2以降、確率でサイドダッシュなどの動作を挟む
 #    execute if score @s[tag=!1025.InAction] 1025.Phase matches 2.. if score @s General.Mob.Tick matches 0 run function asset:mob/1025.wither/tick/dash/select
@@ -29,7 +26,7 @@
     execute if entity @s[tag=1024.InAction] run function asset:mob/1024.ender_dragon/tick/skill/branch
 
 # DragonPhaseをこっちで制御しようかな
-    data modify entity @s DragonPhase set value 0
+    data modify entity @s[tag=!1024.InAction] DragonPhase set value 0
 
 # 定期的にDragonPhaseを宣言してもらう
 #    execute if score @s General.Mob.Tick matches 40 run tellraw @p {"entity":"@s","nbt":"DragonPhase"}
