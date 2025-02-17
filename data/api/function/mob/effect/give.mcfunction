@@ -14,4 +14,5 @@
 # validate
     execute unless data storage api: Argument.ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" ID","color":"red"}]
 # 呼び出し
-    function api:mob/apply_to_forward_target/with_non-idempotent.m {CB:"api:mob/effect/core/give",Key:"api:mob/effect/give",IsForwardedOnly:true}
+    #function api:mob/apply_to_forward_target/with_non-idempotent.m {CB:"api:mob/effect/core/give",Key:"api:mob/effect/give",IsForwardedOnly:true}
+    function api:mob/effect/core/give

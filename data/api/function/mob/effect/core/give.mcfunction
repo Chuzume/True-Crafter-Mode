@@ -12,7 +12,8 @@
     data modify storage asset:effect FieldOverride set from storage api: Argument.FieldOverride
 
 # データを取得
-    function #asset:effect/register
+    function api:mob/effect/core/register.m with storage asset:context
+
 # API 側からの値指定
     execute if data storage asset:effect Duration if data storage api: Argument.Duration run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"Effect の Duration が API とデフォルト値の両方で設定されています"}]
     execute unless data storage asset:effect Duration run data modify storage asset:effect Duration set from storage api: Argument.Duration
