@@ -27,6 +27,9 @@
 # UserID割り振り
     execute as @a unless score @s UserID matches 0.. run function core:give_user_id
 
+# エフェクト処理
+    execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
+
 # asset:contextの明示的な全削除
 #    function asset_manager:common/reset_all_context
 
