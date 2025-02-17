@@ -4,6 +4,9 @@
 #
 # @within function asset:mob/1024.ender_dragon/tick/
 
+# この行動を実行している間は、付近のプレイヤーにバフを付与する
+    execute as @a[distance=..128] run function asset:mob/1024.ender_dragon/tick/place_platform/give_effect
+
 # Tick加算
     scoreboard players add @s 1024.Tick.Platform 1
 

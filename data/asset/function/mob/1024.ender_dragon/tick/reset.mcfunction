@@ -7,6 +7,7 @@
 # タグリセット
     tag @s remove 1024.InAction
     tag @s remove 1024.Skill.AimingEye
-    
+    tag @s remove 1024.Skill.HomingFireball
+
 # スコアリセット
     scoreboard players set @s General.Mob.Tick -10

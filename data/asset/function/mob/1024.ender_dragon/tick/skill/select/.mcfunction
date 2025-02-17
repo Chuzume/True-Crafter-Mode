@@ -5,10 +5,9 @@
 # @within function asset:mob/1024.ender_dragon/tick/in_hostile
 
 # 演出
-    particle trial_spawner_detection_ominous ~ ~2 ~ 0.7 1 0.7 0 35 force @a[distance=..32]
-    particle entity_effect{color:[0.000,1.000,1.000,1.00]} ~ ~2 ~ 0.7 1 0.7 0.0 35 force @a[distance=..32]
-    playsound minecraft:block.trial_spawner.about_to_spawn_item hostile @a ~ ~ ~ 3 2
-    playsound minecraft:block.trial_spawner.ominous_activate hostile @a ~ ~ ~ 3 0.5
+    playsound minecraft:block.trial_spawner.about_to_spawn_item hostile @a ~ ~ ~ 20 1.5
+    playsound minecraft:block.trial_spawner.about_to_spawn_item hostile @a ~ ~ ~ 20 1.7
+    playsound minecraft:block.trial_spawner.ominous_activate hostile @a ~ ~ ~ 20 0.5
     
 # 通常行動停止タグ付与
     tag @s add 1024.InAction

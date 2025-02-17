@@ -6,7 +6,7 @@
 
 # デバッグ用処理: 技を名指しで指定
 # TODO: ちゃんと消すんだよ！
-    tag @s add 1024.Skill.AimingEye
+    tag @s add 1024.Skill.HomingFireball
     return fail
 
 # 技を選択

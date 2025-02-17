@@ -28,15 +28,11 @@
 # スキル分岐
     execute if entity @s[tag=1024.InAction] run function asset:mob/1024.ender_dragon/tick/skill/branch
 
-# 戦闘範囲内のプレイヤーにジャンプブーストなどを付与
-#    effect give @a[distance=..128] jump_boost 3 9
-
 # DragonPhaseをこっちで制御しようかな
     data modify entity @s DragonPhase set value 0
 
 # 定期的にDragonPhaseを宣言してもらう
 #    execute if score @s General.Mob.Tick matches 40 run tellraw @p {"entity":"@s","nbt":"DragonPhase"}
-#    execute if score @s General.Mob.Tick matches 40 run scoreboard players reset @s General.Mob.Tick
 
 # ターゲット解除
     execute on target run tag @s[distance=..64] remove TMCM.Target
