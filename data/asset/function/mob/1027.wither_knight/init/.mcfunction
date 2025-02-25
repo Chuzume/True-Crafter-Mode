@@ -5,13 +5,13 @@
 # @within asset:mob/alias/1027/init
 
 # 頭装備
-    item replace entity @s armor.head with player_head[profile={id:[I;-20833550,-322485017,-1790574936,-943106443],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQ3MGZlNjQ5NjQ4ZWZjOGE2ZjdhYzQxNmUwZWViOGMxYTliNDI1YTUzYTUyZTQ1NjdmYTM3M2U4YTY3NzE2MyJ9fX0="}]}]
+    item replace entity @s armor.head with player_head[profile={id:[I;-20833550,-322485017,-1790574936,-943106443],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTMxMzkyMGJkYWIwZmFhMTI4OTk5MjE5NWRjNjRhMjE0OTA5OGIxNTNjMzVjNmJhZTc2NWJhM2IwODQyZDFhOSJ9fX0="}]}]
 # 胴装備
-#    item replace entity @s armor.chest with netherite_chestplate
+    item replace entity @s armor.chest with netherite_chestplate[trim={material:"minecraft:quartz",pattern:"minecraft:rib"}] 1
 # 脚装備
-    item replace entity @s armor.legs with netherite_leggings
+    item replace entity @s armor.legs with netherite_leggings[trim={material:"minecraft:quartz",pattern:"minecraft:rib"}] 1
 # 足装備
-    item replace entity @s armor.feet with netherite_boots
+    item replace entity @s armor.feet with netherite_boots[trim={material:"minecraft:quartz",pattern:"minecraft:rib"}] 1
 # メインハンド装備
     item replace entity @s weapon.mainhand with bow
 
