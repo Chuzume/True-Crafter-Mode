@@ -6,11 +6,11 @@
 
 
 # 回転担当がプレイヤーをゆっくり狙う
-    execute if score @s General.Mob.Tick matches 0..30 as @n[type=marker,tag=this] at @s facing entity @p[distance=..128] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-50 facing entity @s feet positioned as @s run rotate @s ~ ~
-    execute if score @s General.Mob.Tick matches 30.. as @n[type=marker,tag=this] at @s facing entity @p[distance=..128] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s run rotate @s ~ ~-2
+    execute if score @s General.Mob.Tick matches 0..39 as @n[type=marker,tag=this] at @s facing entity @p[distance=..128] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-70 facing entity @s feet positioned as @s run rotate @s ~ ~1
+    execute if score @s General.Mob.Tick matches 40.. as @n[type=marker,tag=this] at @s facing entity @p[distance=..128] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s run rotate @s ~ ~-1
 
 # 移動用マーカー召喚
-    execute at @n[type=marker,tag=this] run summon marker ^ ^ ^1 {Tags:["1024.Marker.Move"]}
+    execute at @n[type=marker,tag=this] run summon marker ^ ^ ^0.5 {Tags:["1024.Marker.Move"]}
 
 # 移動用マーカーを回転担当と同じ向きに変える
     execute as @n[type=marker,tag=1024.Marker.Move,distance=..16] at @s rotated as @n[type=marker,tag=this,distance=..64] run tp @s ~ ~ ~ ~ ~

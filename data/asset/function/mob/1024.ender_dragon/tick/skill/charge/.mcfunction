@@ -21,10 +21,10 @@
     execute at @s as @n[type=marker,tag=1024.Marker.Rotater] run tp @s ~ ~ ~
 
 # 移動処理
-    execute if score @s General.Mob.Tick matches 0..100 run function asset:mob/1024.ender_dragon/tick/skill/charge/move
+    execute if score @s General.Mob.Tick matches 0..70 run function asset:mob/1024.ender_dragon/tick/skill/charge/move
 
 # 解除
-    execute if score @s General.Mob.Tick matches 100 run function asset:mob/1024.ender_dragon/tick/skill/charge/end
+    execute if score @s General.Mob.Tick matches 70 run function asset:mob/1024.ender_dragon/tick/skill/charge/end
 
 # マーカーの識別タグをリセット
     execute on passengers on passengers run tag @s[type=marker] remove this
@@ -33,4 +33,4 @@
 #    execute if score @s General.Mob.Tick matches 160.. run scoreboard players set @s General.Mob.Tick -10
 
 # リセット
-    execute if score @s General.Mob.Tick matches 140.. run function asset:mob/1024.ender_dragon/tick/reset
+    execute if score @s General.Mob.Tick matches 100.. run function asset:mob/1024.ender_dragon/tick/reset

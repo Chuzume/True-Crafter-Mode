@@ -7,7 +7,7 @@
 # Skill.Listの要素を番号で指定
     $data modify storage asset:context this.Skill.Get set from storage asset:context this.Skill.List[-$(Roll)]
 
-# 技を選択、属性ごとに違う
+# 技を選択
     function asset:mob/1024.ender_dragon/tick/skill/select/tags
 
 # 要素を番号で指定して削除

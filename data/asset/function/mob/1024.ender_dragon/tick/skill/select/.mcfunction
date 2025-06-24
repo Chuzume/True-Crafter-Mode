@@ -16,8 +16,8 @@
     scoreboard players set @s General.Mob.Tick -20
 
 # デバッグ用、常にリストを満タンにする
-    data modify storage asset:context this.Skill.List set value [0,1,2]
-    
+#    data modify storage asset:context this.Skill.List set value [0,1,2]
+    say 1
 # 技をランダムに選択
     # ストレージの要素数を取得
         execute store result storage asset:context this.Skill.Count int 1 run data get storage asset:context this.Skill.List

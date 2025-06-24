@@ -8,8 +8,10 @@
     execute if entity @s[tag=1024.Skill.AimingEye] run function asset:mob/1024.ender_dragon/tick/skill/aiming_eyes/
 # ホーミング弾
     execute if entity @s[tag=1024.Skill.HomingFireball] run function asset:mob/1024.ender_dragon/tick/skill/homing/
-# ホーミング弾
+# 突進
     execute if entity @s[tag=1024.Skill.Charge] run function asset:mob/1024.ender_dragon/tick/skill/charge/
+# 着地
+    execute if entity @s[tag=1024.Skill.Landing] run function asset:mob/1024.ender_dragon/tick/skill/landing/
 
 
 # １週後の行動
