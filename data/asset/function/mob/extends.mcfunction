@@ -1,4 +1,4 @@
-#> asset:mob/extends
+#> asset:mob/_extends
 #
 #
 #
@@ -17,7 +17,7 @@
     data remove storage asset:mob Extends
 
 # 継承先を一つ一つ辿っていく
-    function asset:mob/extends/foreach
+    function asset:mob/_extends/foreach
 
 # リセット
     data remove storage asset:mob IsFirstExtend[-1]

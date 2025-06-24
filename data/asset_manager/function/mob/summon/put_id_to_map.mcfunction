@@ -2,7 +2,7 @@
 #
 #
 #
-# @within function asset:mob/extends
+# @within function asset:mob/_extends
 
 # ID をキーにする
     data modify storage api: Argument.Address set from storage asset:context id

@@ -4,6 +4,9 @@
 #
 # @within function api:object/core/summon
 
+# エンティティストレージ呼び出し
+    function oh_my_dat:please
+
 # validate
     execute unless entity @s run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"データを適用するEntityが存在しません\nasを利用して対象のEntityを実行者にしてください"}]
     execute unless data storage asset:object ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"引数が足りません"},{"text":" ID","color":"red"}]
@@ -12,10 +15,14 @@
     tag @s remove ObjectInit
 
 # IDをそのまま付与
-    execute store result score @s ObjectID run data get storage api: Argument.ID
+    #execute store result score @s ObjectID run data get storage api: Argument.ID
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ObjectID set from storage api: Argument.ID
 
 # 共通タグ付与
     tag @s add AssetObject
+
+# ID代わりのタグを付与
+    function asset_manager:object/summon/give_id_tag.m with storage api: Argument
 
 # Tickしたくないようであれば
     execute if data storage asset:object {IsTicking:false} run tag @s add Object.DisableTicking

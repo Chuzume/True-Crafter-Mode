@@ -4,6 +4,6 @@
 #
 # @within function
 #   api:mob/core/summon
-#   asset:mob/extends/foreach
+#   asset:mob/_extends/foreach
 
-$function asset:mob/alias/$(id)/register
+$function asset:mob/$(id)/register

@@ -7,7 +7,7 @@
 #   asset:mob/*/register
 #   asset:mob/*/*/
 #   asset:mob/**
-#   asset:mob/extends
+#   asset:mob/_extends
 #   asset:mob/super.*
 #   asset_manager:mob/**
 #   asset:mob/*/summon/2.summon

@@ -9,8 +9,12 @@
 # EntityStorage呼び出し
     function oh_my_dat:please
 # Contextの設定
-    execute store result storage asset:context id int 1 run scoreboard players get @s MobID
-    execute store result storage asset:context originID int 1 run scoreboard players get @s MobID
+    # execute store result storage asset:context id int 1 run scoreboard players get @s MobID
+    # execute store result storage asset:context originID int 1 run scoreboard players get @s MobID
+
+    data modify storage asset:context id set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobID
+    data modify storage asset:context originID set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobID
+
     data modify storage asset:context this set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobField
 # イベント情報を取得
     data modify storage asset:mob MobEvents set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].MobEvents
