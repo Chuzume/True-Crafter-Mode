@@ -20,4 +20,4 @@
 
 # やること終わったら解除
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function asset:mob/abstract.chaser_ai/tick/search/end
-    execute unless entity @p[tag=!TMCM.Exception,distance=..64] run function asset:mob/abstract.chaser_ai/tick/search/end
+    execute unless entity @p[tag=!PlayerShouldInvulnerable,distance=..64] run function asset:mob/abstract.chaser_ai/tick/search/end

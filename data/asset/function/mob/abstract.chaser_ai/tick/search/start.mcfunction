@@ -21,6 +21,9 @@
     execute as @e[tag=TemporaryDismount,distance=..3] run ride @s mount @n[tag=This,distance=..3]
     execute on passengers run tag @s remove TemporaryDismount
 
+# 頭に乗せたモブの追跡範囲を変更
+    execute on passengers if entity @s[type=piglin_brute,tag=Init] run attribute @s follow_range base set 64
+
 # 頭に乗せたモブをプレイヤーに敵対させる
     execute on passengers if entity @s[type=piglin_brute,tag=Init] run data modify entity @s Brain.memories."minecraft:angry_at".value set from entity @p UUID
 
