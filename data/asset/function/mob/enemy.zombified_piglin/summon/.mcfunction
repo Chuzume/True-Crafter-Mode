@@ -5,7 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon zombified_piglin ~ ~ ~
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
+    summon zombified_piglin ~ ~ ~ {Tags:["MobInit"]}

@@ -5,7 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon drowned ~ ~ ~
-
-# 実装フラグを立てる
-    data modify storage asset:mob Implement set value true
+    summon drowned ~ ~ ~ {Tags:["MobInit"]}
