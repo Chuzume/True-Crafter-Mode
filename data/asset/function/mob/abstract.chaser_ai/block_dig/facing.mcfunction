@@ -1,8 +1,8 @@
-#> asset:mob/abstract_chaser_ai/block_dig/facing
+#> asset:mob/abstract.chaser_ai/block_dig/facing
 #
 # 
 #
-# @within function asset:mob/abstract_chaser_ai/block_dig/
+# @within function asset:mob/abstract.chaser_ai/block_dig/
 
 # 向き
     # マーカー召喚

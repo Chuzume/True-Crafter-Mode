@@ -1,4 +1,4 @@
-#> asset:mob/abstract_chaser_ai/in_hostile/
+#> asset:mob/abstract.chaser_ai/in_hostile/
 #
 # 継承先などから実行される処理
 #

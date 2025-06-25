@@ -1,8 +1,8 @@
-#> asset:mob/abstract_chaser_ai/block_dig/break
+#> asset:mob/abstract.chaser_ai/block_dig/break
 #
 # 
 #
-# @within function asset:mob/abstract_chaser_ai/block_dig/
+# @within function asset:mob/abstract.chaser_ai/block_dig/
 
 # 前のブロックを粉砕する
     execute anchored eyes positioned ^ ^ ^1 unless block ~ ~ ~ #true_crafter_mode:no_dig run setblock ~ ~ ~ air destroy

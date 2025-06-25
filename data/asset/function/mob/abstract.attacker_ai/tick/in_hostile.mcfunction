@@ -1,8 +1,8 @@
-#> asset:mob/abstract_attacker_ai/tick/in_hostile
+#> asset:mob/abstract.attacker_ai/tick/in_hostile
 #
 # 敵対者にタグ付与して、メソッド実行
 #
-# @within function asset:mob/abstract_attacker_ai/tick/
+# @within function asset:mob/abstract.attacker_ai/tick/
 
 # 自身の敵対者にタグ付与
     execute on target run tag @s add TMCM.Target

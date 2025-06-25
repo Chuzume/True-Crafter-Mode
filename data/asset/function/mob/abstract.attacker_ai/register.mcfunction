@@ -1,4 +1,4 @@
-#> asset:mob/abstract_attacker_ai/register
+#> asset:mob/abstract.attacker_ai/register
 #
 # Mobのデータを指定
 #
@@ -12,6 +12,6 @@
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value true
 # ID (int)
-    data modify storage asset:mob ID set value 2
+    data modify storage asset:mob ID set value "abstract.attacker_ai"
 # フィールド(オプション)
     # data modify storage asset:mob Field.myValue set value 

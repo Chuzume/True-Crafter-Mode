@@ -1,8 +1,8 @@
-#> asset:mob/abstract_chaser_ai/tick/search/tick
+#> asset:mob/abstract.chaser_ai/tick/search/tick
 #
 # 
 #
-# @within function asset:mob/abstract_chaser_ai/tick/
+# @within function asset:mob/abstract.chaser_ai/tick/
 
 # パーティクル
     execute anchored eyes positioned ^ ^ ^ run particle dust{color:[0.5,0.0,0.5],scale:1.0} ~ ~ ~ 0.2 0.2 0.2 0 1 force @a[distance=..32]
@@ -19,5 +19,5 @@
         execute if score @s 3.Tick.Dig matches 20.. run function asset:mob/call.m {method:block_dig}
 
 # やること終わったら解除
-    execute if entity @s[predicate=true_crafter_mode:in_hostile] run function asset:mob/abstract_chaser_ai/tick/search/end
-    execute unless entity @p[tag=!TMCM.Exception,distance=..64] run function asset:mob/abstract_chaser_ai/tick/search/end
+    execute if entity @s[predicate=true_crafter_mode:in_hostile] run function asset:mob/abstract.chaser_ai/tick/search/end
+    execute unless entity @p[tag=!TMCM.Exception,distance=..64] run function asset:mob/abstract.chaser_ai/tick/search/end

@@ -1,8 +1,8 @@
-#> asset:mob/abstract_chaser_ai/tick/search/end
+#> asset:mob/abstract.chaser_ai/tick/search/end
 #
 # 
 #
-# @within function asset:mob/abstract_chaser_ai/tick/
+# @within function asset:mob/abstract.chaser_ai/tick/
 
 # 頭の上をキル
     execute on passengers if entity @s[tag=TMCM.CustomAI] run function true_crafter_mode:entity/mob/common_moveset/void_kill

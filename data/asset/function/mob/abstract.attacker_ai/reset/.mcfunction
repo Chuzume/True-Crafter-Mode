@@ -1,4 +1,4 @@
-#> asset:mob/abstract_attacker_ai/reset/
+#> asset:mob/abstract.attacker_ai/reset/
 #
 # 継承先などから実行される処理
 #

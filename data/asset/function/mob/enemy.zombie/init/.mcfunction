@@ -11,7 +11,7 @@
 
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外
-        #execute store result score @s Armor_Check run data get entity @s ArmorItems[3]
+        execute store result score @s Armor_Check run data get entity @s equipment.head
     # 装備
         execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
