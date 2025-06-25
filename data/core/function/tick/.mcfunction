@@ -14,7 +14,7 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        # execute as @e[type=#true_crafter_mode:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!Chuz.NonVanillaMob,tag=!AlreadyInitMob] at @s run function mob_manager:init/
+        execute as @e[type=#true_crafter_mode:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
 
@@ -31,7 +31,7 @@
 #    execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
 
 # ワールドイベント
-    function world_manager:event/tick
+#    function world_manager:event/tick
 
 # asset:contextの明示的な全削除
 #    function asset_manager:common/reset_all_context
