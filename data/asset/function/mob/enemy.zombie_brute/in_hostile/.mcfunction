@@ -6,7 +6,7 @@
 
 # 飛びかかり攻撃
     # 付近にプレイヤーがいたらスコア加算、ただし飛びかかり中は加算しない
-        execute unless score @s[tag=!TMCM.Leaping,tag=!Standstill] General.Mob.Tick matches 30.. if entity @n[tag=TMCM.Target,distance=..16] run scoreboard players add @s General.Mob.Tick 1
+        execute if entity @s[tag=!TMCM.Leaping] unless score @s General.Mob.Tick matches 30.. if entity @n[tag=TMCM.Target,distance=..16] run scoreboard players add @s General.Mob.Tick 1
     # 途中で予備動作を行い、スコアが止まらなくなる
         execute if score @s General.Mob.Tick matches 30 run function asset:mob/enemy.zombie_brute/in_hostile/windup
         execute if score @s General.Mob.Tick matches 30.. run scoreboard players add @s General.Mob.Tick 1

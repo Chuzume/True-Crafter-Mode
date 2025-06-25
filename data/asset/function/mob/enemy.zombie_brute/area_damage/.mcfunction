@@ -22,3 +22,4 @@
 
 # リセット
     tag @s remove This
+    tag @s remove TMCM.Leaping

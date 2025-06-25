@@ -18,7 +18,7 @@
     item replace entity @s weapon.mainhand with iron_axe
 
 # ステータス
-    data modify entity @s CustomName set value '{"fallback":"ゾンビブルート","translate":"entity.true_crafter_mode.zombie_brute"}'
+    data modify entity @s CustomName set value {"fallback":"ゾンビブルート","translate":"entity.true_crafter_mode.zombie_brute"}
     attribute @s minecraft:movement_speed base set 0.25
     attribute @s minecraft:fall_damage_multiplier base set 0
     attribute @s minecraft:step_height base set 1
