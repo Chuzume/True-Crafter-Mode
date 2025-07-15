@@ -5,15 +5,15 @@
 # @within function core:tick
 
 # ゾンビ
-    execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value 1001
+    execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value enemy.zombie
 # ハスク
-    execute if entity @s[type=husk] run data modify storage api: Argument.ID set value 1002
-# ハスク
-    execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value 1003
+    execute if entity @s[type=husk] run data modify storage api: Argument.ID set value enemy.husk
+# ドラウンド
+    execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value enemy.drowned
 # ゾンビピグリン
-    execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value 1004
+    execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value enemy.zombified_piglin
 # ゾンビ村人
-    execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value 1005
+    execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value enemy.zombie_villager
 # スケルトン
     execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1006
 # ストレイ
