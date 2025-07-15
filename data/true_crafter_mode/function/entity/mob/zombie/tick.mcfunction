@@ -5,7 +5,7 @@
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function true_crafter_mode:entity/mob/zombie/moveset
 
 # 自身がゾンビピグリンなら常時敵対
-    data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!TMCM.Exception] UUID
+    data modify entity @s[type=zombified_piglin] AngryAt set from entity @p[tag=!PlayerShouldInvulnerable] UUID
 
 # 壁越し検知処理、ただしこのAIはゾンビピグリン由来のものなので、本人は使わない
     execute unless entity @s[type=zombified_piglin] run function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
