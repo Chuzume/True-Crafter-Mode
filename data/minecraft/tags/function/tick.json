@@ -1,6 +1,5 @@
 {
   "values": [
-    "core:tick",
-    "true_crafter_mode:tick"
+    "core:tick/"
     ]
 }
