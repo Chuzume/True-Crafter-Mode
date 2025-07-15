@@ -7,3 +7,4 @@
 #   asset:mob/_extends/foreach
 
 $function asset:mob/$(id)/register
+$say function asset:mob/$(id)/register
