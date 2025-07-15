@@ -1,4 +1,4 @@
-#> asset:object/extends/foreach
+#> asset:object/_extends/foreach
 #
 #
 #
@@ -26,4 +26,4 @@
     data modify storage asset:object IsFirstExtend[-1]._._ set value false
 
 # 要素があれば再帰
-    execute if data storage asset:object CopiedExtends[-1][0] run function asset:object/extends/foreach
+    execute if data storage asset:object CopiedExtends[-1][0] run function asset:object/_extends/foreach
