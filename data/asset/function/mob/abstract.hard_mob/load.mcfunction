@@ -1,9 +1,9 @@
-#> asset:mob/abstract_hard_mob/load
+#> asset:mob/abstract.hard_mob/load
 #
 # Mobに利用するスコアボード等の初期化処理
 #
 # @within tag/function asset:mob/load
 
 #> 定義類はここに
-# @within function asset:mob/abstract_hard_mob/**
+# @within function asset:mob/abstract.hard_mob/**
     scoreboard objectives add 1.Tick dummy

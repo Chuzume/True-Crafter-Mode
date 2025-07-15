@@ -1,4 +1,4 @@
-#> asset:mob/abstract_hard_mob/tick/
+#> asset:mob/abstract.hard_mob/tick/
 #
 # Mobのtick時の処理
 #

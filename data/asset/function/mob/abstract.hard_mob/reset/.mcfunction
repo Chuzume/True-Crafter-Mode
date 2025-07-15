@@ -1,4 +1,4 @@
-#> asset:mob/abstract_hard_mob/reset/
+#> asset:mob/abstract.hard_mob/reset/
 #
 # 継承先などから実行される処理
 #

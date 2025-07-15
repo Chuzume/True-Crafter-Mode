@@ -1,4 +1,4 @@
-#> asset:mob/abstract_hard_mob/register
+#> asset:mob/abstract.hard_mob/register
 #
 # Mobのデータを指定
 #
