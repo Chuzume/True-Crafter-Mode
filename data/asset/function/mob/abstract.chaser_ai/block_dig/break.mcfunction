@@ -12,4 +12,4 @@
     execute anchored feet positioned ^ ^1 ^1 unless block ~ ~ ~ #true_crafter_mode:no_dig run setblock ~ ~ ~ air destroy
 
 # スコアリセット
-    scoreboard players reset @s 3.Tick.Dig
+    scoreboard players reset @s abstract.chaser_ai.Dig

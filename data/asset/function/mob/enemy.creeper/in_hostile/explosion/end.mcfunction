@@ -10,4 +10,4 @@
 
 # リセット
     scoreboard players reset @s 1011.Tick
-    scoreboard players reset @s 3.Tick.Dig
+    scoreboard players reset @s abstract.chaser_ai.Dig

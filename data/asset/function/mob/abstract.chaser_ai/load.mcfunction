@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/abstract.chaser_ai/**
-    scoreboard objectives add 3.Tick.Dig dummy
+    scoreboard objectives add abstract.chaser_ai.Dig dummy

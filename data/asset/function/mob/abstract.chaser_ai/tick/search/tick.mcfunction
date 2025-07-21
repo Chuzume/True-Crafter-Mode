@@ -12,11 +12,11 @@
 
 # ブロック破壊処理
     # プレイヤーが近くにいて、その方向にブロックがある状態が長く続いた場合、ブロック破壊モードに移行する
-        execute unless score @s 3.Tick.Dig matches 20.. if entity @p[distance=..32] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_dig run scoreboard players add @s 3.Tick.Dig 1 
+        execute unless score @s abstract.chaser_ai.Dig matches 20.. if entity @p[distance=..32] facing entity @p eyes rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_dig run scoreboard players add @s abstract.chaser_ai.Dig 1 
     # 条件を満たしていない場合はスコアが減る
-        execute facing entity @p eyes rotated ~ 0 if block ^ ^ ^1 #true_crafter_mode:no_dig run scoreboard players reset @s 3.Tick.Dig
+        execute facing entity @p eyes rotated ~ 0 if block ^ ^ ^1 #true_crafter_mode:no_dig run scoreboard players reset @s abstract.chaser_ai.Dig
     # 採掘カウント20tickでブロック破壊メソッドを開始する
-        execute if score @s 3.Tick.Dig matches 20.. run function asset:mob/call.m {method:block_dig}
+        execute if score @s abstract.chaser_ai.Dig matches 20.. run function asset:mob/call.m {method:block_dig}
 
 # やること終わったら解除
     execute if entity @s[predicate=true_crafter_mode:in_hostile] run function asset:mob/abstract.chaser_ai/tick/search/end
