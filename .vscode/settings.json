@@ -547,7 +547,7 @@
                         "",
                         "#> 定義類はここに",
                         "# @within function asset:mob/%namespace%/**",
-                        "    scoreboard objectives add "
+                        "    scoreboard objectives add %namespace%."
                     ]
                 },
                 {

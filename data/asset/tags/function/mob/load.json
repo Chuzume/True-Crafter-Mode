@@ -1,18 +1,19 @@
 {
     "values": [
-        "asset:mob/1025.wither/load",
-        "asset:mob/1024.ender_dragon/load",
-        "asset:mob/1022.elite_skeleton/load",
-        "asset:mob/1020.slime/load",
-        "asset:mob/1019.evoker/load",
-        "asset:mob/1017.vindicator/load",
-        "asset:mob/1015.piglin_sword/load",
-        "asset:mob/1013.spider/load",
-        "asset:mob/1012.enderman/load",
-        "asset:mob/0003.abstract_chaser_ai/load",
-        "asset:mob/1011.creeper/load",
-        "asset:mob/1011.creeper/load",
-        "asset:mob/0004.ranged_switcher_ai/load",
-        "asset:mob/1006.skeleton/load"
+        "asset:mob/enemy.wither/load",
+        "asset:mob/enemy.ender_dragon/load",
+        "asset:mob/enemy.elite_skeleton/load",
+        "asset:mob/enemy.slime/load",
+        "asset:mob/enemy.evoker/load",
+        "asset:mob/enemy.vindicator/load",
+        "asset:mob/enemy.piglin_sword/load",
+        "asset:mob/enemy.spider/load",
+        "asset:mob/enemy.enderman/load",
+        "asset:mob/enemy.creeper/load",
+        "asset:mob/enemy.creeper/load",
+        "asset:mob/enemy.skeleton/load",
+        "asset:mob/abstract.ranged_switcher_ai/load",
+        "asset:mob/abstract.chaser_ai/load"
+
     ]
 }
