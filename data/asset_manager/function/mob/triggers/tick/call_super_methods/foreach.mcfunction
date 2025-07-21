@@ -8,7 +8,6 @@
 
 # IDを取得
     data modify storage asset:context id set from storage asset:mob CopiedExtends[-1][0]
-    tellraw @p {"nbt":"CopiedExtends[-1][0]","storage":"asset:mob"}
 
 # super.tick呼び出し
     function asset_manager:mob/triggers/tick/
