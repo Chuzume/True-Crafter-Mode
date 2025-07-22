@@ -17,7 +17,7 @@
     execute rotated ~180 ~ run function true_crafter_mode:entity/motion_xz
 
 # 上方向は固定値
-    data modify entity @s Motion[1] set value 0.abstract.ranged_switcher_ai.
+    data modify entity @s Motion[1] set value 0.4d
 
 # リセット
     scoreboard players reset @s abstract.ranged_switcher_ai.BackStep

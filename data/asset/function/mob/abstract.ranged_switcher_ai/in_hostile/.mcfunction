@@ -14,7 +14,7 @@
     execute if entity @s[tag=TMCM.MeleeMode] if entity @n[tag=TMCM.Target,distance=..5] run scoreboard players add @s abstract.ranged_switcher_ai.BackStep 1
 
 # 近接当てたら即座にバックステップ
-    execute if entity @s[tag=TMCM.MeleeMode,tag=OnGround] if entity @n[tag=TMCM.Target,distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s abstract.ranged_switcher_ai.BackStep abstract.ranged_switcher_ai.
+    execute if entity @s[tag=TMCM.MeleeMode,tag=OnGround] if entity @n[tag=TMCM.Target,distance=..2,nbt=!{HurtTime:0s}] run scoreboard players set @s abstract.ranged_switcher_ai.BackStep 40
 
 # スコアが一定以上かつ、飛び退き先にブロックがあるなら飛ぶ
-    execute if score @s abstract.ranged_switcher_ai.BackStep matches abstract.ranged_switcher_ai... facing entity @n[tag=TMCM.Target] eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function asset:mob/call.m {method:back_step}
+    execute if score @s abstract.ranged_switcher_ai.BackStep matches 40.. facing entity @n[tag=TMCM.Target] eyes rotated ~ 0 unless block ^ ^-1 ^-3 #true_crafter_mode:no_collision if block ^ ^ ^-1 #true_crafter_mode:no_collision run function asset:mob/call.m {method:back_step}
