@@ -1,8 +1,8 @@
-#> asset:mob/ranged_switcher_ai/register
+#> asset:mob/abstract.ranged_switcher_ai/register
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/alias/4/register
+# @within function asset:mob/alias/abstract.ranged_switcher_ai.register
 
 # 継承(オプション)
     data modify storage asset:mob Extends append value "abstract.attacker_ai"

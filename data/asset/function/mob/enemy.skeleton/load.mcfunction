@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.skeleton/**
-    scoreboard objectives add 1006.BackStep dummy
+    scoreboard objectives add enemy.skeleton.BackStep dummy

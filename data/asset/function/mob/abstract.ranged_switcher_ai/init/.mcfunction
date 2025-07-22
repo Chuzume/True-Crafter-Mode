@@ -1,5 +1,5 @@
-#> asset:mob/ranged_switcher_ai/init/
+#> asset:mob/abstract.ranged_switcher_ai/init/
 #
 # Mobのinit時の処理
 #
-# @within asset:mob/alias/4/init
+# @within asset:mob/alias/abstract.ranged_switcher_ai.init

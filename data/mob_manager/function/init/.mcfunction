@@ -15,7 +15,7 @@
 # ゾンビ村人
     execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value enemy.zombie_villager
 # スケルトン
-    execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value 1006
+    execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.skeleton"
 # ストレイ
     execute if entity @s[type=stray] run data modify storage api: Argument.ID set value 1007
 # ボグド

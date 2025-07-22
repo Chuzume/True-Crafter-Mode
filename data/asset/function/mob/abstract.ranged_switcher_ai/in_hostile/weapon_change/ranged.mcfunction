@@ -1,11 +1,11 @@
-#> asset:mob/ranged_switcher_ai/in_hostile/weapon_change/ranged
+#> asset:mob/abstract.ranged_switcher_ai/in_hostile/weapon_change/ranged
 #
 # 
 #
-# @within function asset:mob/ranged_switcher_ai/in_hostile/
+# @within function asset:mob/abstract.ranged_switcher_ai/in_hostile/
 
 # 交換処理
-    function asset:mob/ranged_switcher_ai/in_hostile/weapon_change/swap_holder
+    function asset:mob/abstract.ranged_switcher_ai/in_hostile/weapon_change/swap_holder
 
 # VFX
     playsound minecraft:item.armor.equip_generic hostile @a ~ ~ ~ 1.5 1
