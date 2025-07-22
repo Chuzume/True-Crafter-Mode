@@ -10,4 +10,4 @@
 # 弾速の指定
     data modify storage api: Argument.FieldOverride.Speed set value 1.5
 # 召喚
-    execute facing entity @n[tag=TMCM.Target,distance=..32] eyes run function api:object/summon.m {ID:2001}
+    execute facing entity @n[tag=TMCM.Target,distance=..32] eyes run function api:object/summon.m {ID:"projectile.elite_arrow"}
