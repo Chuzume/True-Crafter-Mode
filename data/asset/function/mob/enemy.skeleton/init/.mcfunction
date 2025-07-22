@@ -9,7 +9,6 @@
         execute store result score @s Armor_Check run data get entity @s equipment.head
     # 装備
         execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
-        item replace entity @s weapon.mainhand with bow
     # スコアリセット
         scoreboard players reset @s Armor_Check
 
