@@ -9,7 +9,7 @@
     particle minecraft:dragon_breath ~ ~ ~ 0.5 0.5 0.5 0.3 50
 
 # オブジェクト召喚
-    #function api:object/summon.m {ID:2009}
+    function api:object/summon.m {ID:"projectile.dragon_sphere_aoe"}
 
 # 消失
     function asset:object/call.m {method:kill}
