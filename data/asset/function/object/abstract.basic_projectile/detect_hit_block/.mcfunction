@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/detect_hit_block/
+#> asset:object/abstract.basic_projectile/detect_hit_block/
 #
 # ブロックへの接触を判定: デフォルトではno_collisionじゃないのにぶつかったら消える
 #

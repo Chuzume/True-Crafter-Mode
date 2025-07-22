@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/register
+#> asset:object/abstract.basic_projectile/register
 #
 # Objectのデータを指定
 #
@@ -9,4 +9,4 @@
 # 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value true
 # ID (int)
-    data modify storage asset:object ID set value 1
+    data modify storage asset:object ID set value abstract.basic_projectile

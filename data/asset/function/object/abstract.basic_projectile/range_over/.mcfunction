@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/range_over/
+#> asset:object/abstract.basic_projectile/range_over/
 #
 # 継承先などから実行される処理
 #

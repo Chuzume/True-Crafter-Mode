@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/init/
+#> asset:object/abstract.basic_projectile/init/
 #
 # Objectのinit時の処理
 #

@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/hit_entity/
+#> asset:object/abstract.basic_projectile/hit_entity/
 #
 # entity にヒットした時の処理
 #

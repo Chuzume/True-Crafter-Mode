@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/detect_hit_entity/
+#> asset:object/abstract.basic_projectile/detect_hit_entity/
 #
 # 指定した条件を満たすとヒット時の処理を実行する
 #

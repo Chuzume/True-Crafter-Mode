@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/hit_block/
+#> asset:object/abstract.basic_projectile/hit_block/
 #
 # ブロックにヒットした時の処理
 #

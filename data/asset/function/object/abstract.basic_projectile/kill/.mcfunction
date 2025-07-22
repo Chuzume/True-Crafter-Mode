@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/kill/
+#> asset:object/abstract.basic_projectile/kill/
 #
 # 消失処理
 #

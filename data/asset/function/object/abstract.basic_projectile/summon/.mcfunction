@@ -1,4 +1,4 @@
-#> asset:object/0001.abstract_projectile/summon/
+#> asset:object/abstract.basic_projectile/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
