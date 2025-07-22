@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のメソッド処理を呼び出す
-   function asset:object/0001.abstract_projectile/kill/
+   function asset:object/abstract.basic_projectile/kill/

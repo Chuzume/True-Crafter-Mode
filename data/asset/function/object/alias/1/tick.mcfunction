@@ -5,4 +5,4 @@
 # @within asset_manager:object/tick/tick.m
 
 # 元のTick処理を呼び出す
-   function asset:object/0001.abstract_projectile/tick/
+   function asset:object/abstract.basic_projectile/tick/

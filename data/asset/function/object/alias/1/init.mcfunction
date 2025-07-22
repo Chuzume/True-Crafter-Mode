@@ -5,4 +5,4 @@
 # @within asset_manager:object/init/init.m
 
 # 元のInit処理を呼び出す
-   function asset:object/0001.abstract_projectile/init/
+   function asset:object/abstract.basic_projectile/init/

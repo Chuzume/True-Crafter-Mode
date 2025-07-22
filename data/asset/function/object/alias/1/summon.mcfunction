@@ -5,4 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元の召喚処理を呼び出す
-   function asset:object/0001.abstract_projectile/summon/
+   function asset:object/abstract.basic_projectile/summon/

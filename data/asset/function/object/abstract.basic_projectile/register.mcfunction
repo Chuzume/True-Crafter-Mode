@@ -9,4 +9,4 @@
 # 継承されることを前提とした、抽象的なオブジェクトであるかどうか(boolean)
     data modify storage asset:object IsAbstract set value true
 # ID (int)
-    data modify storage asset:object ID set value abstract.basic_projectile
+    data modify storage asset:object ID set value "abstract.basic_projectile"
