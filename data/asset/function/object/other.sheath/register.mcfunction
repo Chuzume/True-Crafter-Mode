@@ -1,4 +1,4 @@
-#> asset:object/2000.sheath/register
+#> asset:object/other.sheath/register
 #
 # Objectのデータを指定
 #
@@ -13,6 +13,6 @@
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value 2000
+    data modify storage asset:object ID set value "other.sheath"
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value 

@@ -1,4 +1,4 @@
-#> asset:object/2000.sheath/init/
+#> asset:object/other.sheath/init/
 #
 # Objectのinit時の処理
 #

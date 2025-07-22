@@ -1,4 +1,4 @@
-#> asset:object/2000.sheath/summon/
+#> asset:object/other.sheath/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

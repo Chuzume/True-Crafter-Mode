@@ -1,4 +1,4 @@
-#> asset:object/2000.sheath/tick/
+#> asset:object/other.sheath/tick/
 #
 # Objectのtick時の処理
 #

@@ -1,4 +1,4 @@
-#> asset:object/2000.sheath/summon/debug
+#> asset:object/other.sheath/summon/debug
 #
 # 
 #
