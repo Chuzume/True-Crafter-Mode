@@ -15,13 +15,13 @@
 
 # 射撃間隔縮めるためにデータ書き換え: FallFlyingは勝手に戻るので都合がいい
 # ただしクールタイム中はやらない
-    execute unless score @s 1027.CoolTime matches 0.. run function asset:mob/enemy.wither_knight/shot/step
+    execute unless score @s enemy.wither_knight.CoolTime matches 0.. run function asset:mob/enemy.wither_knight/shot/step
 # クールタイムに入ってなければクールタイムのカウントを増やす
-    execute unless score @s 1027.CoolTime matches 0.. run scoreboard players add @s 1027.ShotCount 1
+    execute unless score @s enemy.wither_knight.CoolTime matches 0.. run scoreboard players add @s enemy.wither_knight.ShotCount 1
 
 # 数回ごとに休憩する
-    scoreboard players set @s[scores={1027.ShotCount=4}] 1027.CoolTime 140
-    scoreboard players reset @s[scores={1027.ShotCount=4}] 1027.ShotCount
+    scoreboard players set @s[scores={enemy.wither_knight.ShotCount=4}] enemy.wither_knight.CoolTime 140
+    scoreboard players reset @s[scores={enemy.wither_knight.ShotCount=4}] enemy.wither_knight.ShotCount
 
 # リセット
     tag @n[tag=TMCM.Target,distance=..32] remove TMCM.Target
