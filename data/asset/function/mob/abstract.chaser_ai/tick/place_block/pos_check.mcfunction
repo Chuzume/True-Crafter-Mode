@@ -1,6 +1,6 @@
-#> asset:mob/abstract.chaser_ai/tick/place_block/place
+#> asset:mob/abstract.chaser_ai/tick/place_block/pos_check
 #
-# 
+# Y座標チェック
 #
 # @within function asset:mob/abstract.chaser_ai/tick/place_block/
 
