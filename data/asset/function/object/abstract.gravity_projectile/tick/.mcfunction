@@ -10,6 +10,3 @@
     # メソッド実行
         execute if data storage asset:context {IsHitEntity:true} run function asset:object/call.m {method:hit_entity}
         data remove storage asset:context IsHitEntity
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

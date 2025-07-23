@@ -5,8 +5,7 @@
 # @within function asset:mob/enemy.spider/shoot/spread/
 
 # 速度設定
-    scoreboard players set $Temporary Chuz.Speed 10
+    data modify storage lib: Argument.VectorMagnitude set value 1
 
 # 召喚
-    data modify storage api: Argument.ID set value 1001
-    function api:object/summon
+    function api:object/summon.m {ID:"projectile.spider_web"}

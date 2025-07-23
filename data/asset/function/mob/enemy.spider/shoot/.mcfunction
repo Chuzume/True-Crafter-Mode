@@ -15,4 +15,4 @@
         execute if entity @p[distance=..7] rotated ~ 0 positioned ^ ^ ^-1 run function asset:mob/enemy.spider/shoot/spread/
 
 # リセット
-    scoreboard players reset @s 1013.Tick
+    scoreboard players reset @s General.Mob.Tick

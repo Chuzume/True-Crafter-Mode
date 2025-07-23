@@ -6,6 +6,3 @@
 
 # 元となるEntityを召喚する
     summon armor_stand ~ ~ ~ {Silent:1b,Small:1b,Invisible:1b,Tags:["ObjectInit"],attributes:[{id:"minecraft:scale",base:0.0625}]}
-
-# 実装フラグを立てる
-    data modify storage asset:object Implement set value true

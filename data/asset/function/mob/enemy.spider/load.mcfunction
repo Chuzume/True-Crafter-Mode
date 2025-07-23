@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.spider/**
-    scoreboard objectives add 1013.Tick dummy
+#    scoreboard objectives add General.Mob.Tick dummy
