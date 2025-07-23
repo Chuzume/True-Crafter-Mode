@@ -72,24 +72,13 @@
         scoreboard objectives add UseBowEvent used:bow {"text":"イベント: 弓の使用"}
 
 # チーム作成と設定
-    # 赤チーム
-        team add Team.Red
-        team modify Team.Red displayName {"color":"red","text":"赤チーム","underlined":true}
-        team modify Team.Red prefix [{"color":"red","text":"[Red] "}]
-        team modify Team.Red seeFriendlyInvisibles true
-        team modify Team.Red nametagVisibility hideForOtherTeams
-        team modify Team.Red friendlyFire false
-        team modify Team.Red collisionRule pushOtherTeams
-        team modify Team.Red color red
-    # 青チーム
-        team add Team.Blue
-        team modify Team.Blue displayName {"color":"aqua","text":"青チーム","underlined":true}
-        team modify Team.Blue prefix [{"color":"aqua","text":"[Blue] "}]
-        team modify Team.Blue seeFriendlyInvisibles true
-        team modify Team.Blue nametagVisibility hideForOtherTeams
-        team modify Team.Blue friendlyFire false
-        team modify Team.Blue collisionRule pushOtherTeams
-        team modify Team.Blue color aqua
+    # 敵キャラども
+        team add TrueCrafterEnemy
+        team modify TrueCrafterEnemy displayName {"color":"red","text":"敵","underlined":true}
+        team modify TrueCrafterEnemy seeFriendlyInvisibles true
+        team modify TrueCrafterEnemy nametagVisibility never
+        team modify TrueCrafterEnemy friendlyFire false
+        team modify TrueCrafterEnemy color red
 
 # フォースロード
     forceload add 0 0 0 0

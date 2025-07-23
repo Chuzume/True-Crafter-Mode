@@ -13,5 +13,5 @@
     execute if score @s General.Mob.Tick matches 40 run function asset:mob/enemy.wither/tick/skill/summon/summon/
 
 # リセット
-    execute if score @s General.Mob.Tick matches 140.. run tag @s remove 1025.CycleReset
+    execute if score @s General.Mob.Tick matches 140.. run tag @s remove enemy.wither.CycleReset
     execute if score @s General.Mob.Tick matches 140.. run function asset:mob/enemy.wither/tick/reset/

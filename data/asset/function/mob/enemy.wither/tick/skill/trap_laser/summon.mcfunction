@@ -20,7 +20,7 @@
     execute as @n[type=marker,tag=SpreadMarker] at @r[gamemode=!spectator,distance=..64] positioned ~ ~2 ~ run function lib:spread_entity/
 
 # 召喚
-    execute at @n[type=marker,tag=SpreadMarker,distance=..128] facing entity @p[distance=..64] feet run function api:object/summon.m {ID:2003}
+    execute at @n[type=marker,tag=SpreadMarker,distance=..128] facing entity @p[distance=..64] feet run function api:object/summon.m {ID:"projectile.wither_trap_laser"}
 
 # リセット
     kill @n[type=marker,tag=SpreadMarker,distance=..128]

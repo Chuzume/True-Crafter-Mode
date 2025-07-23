@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.wither/**
-    scoreboard objectives add 1025.Phase dummy
+    scoreboard objectives add enemy.wither.Phase dummy

@@ -5,12 +5,12 @@
 # @within function asset:mob/enemy.wither/tick/in_hostile
 
 # ホーミング弾
-    execute if entity @s[tag=1025.Skill.Homing] run function asset:mob/enemy.wither/tick/skill/homing/
+    execute if entity @s[tag=enemy.wither.Skill.Homing] run function asset:mob/enemy.wither/tick/skill/homing/
 # 突進
-    execute if entity @s[tag=1025.Skill.Charge] run function asset:mob/enemy.wither/tick/skill/charge/
+    execute if entity @s[tag=enemy.wither.Skill.Charge] run function asset:mob/enemy.wither/tick/skill/charge/
 # 設置レーザー
-    execute if entity @s[tag=1025.Skill.Thunder] run function asset:mob/enemy.wither/tick/skill/trap_laser/
+    execute if entity @s[tag=enemy.wither.Skill.Thunder] run function asset:mob/enemy.wither/tick/skill/trap_laser/
 
 
 # １週後の行動
-    execute if entity @s[tag=1025.Skill.Summon] run function asset:mob/enemy.wither/tick/skill/summon/
+    execute if entity @s[tag=enemy.wither.Skill.Summon] run function asset:mob/enemy.wither/tick/skill/summon/

@@ -16,8 +16,8 @@
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick
 
 # 数Tickごとに射出
-    execute if score @s 1025.Phase matches 1 run scoreboard players operation $Interval Temporary %= $6 Const
-    execute if score @s 1025.Phase matches 2.. run scoreboard players operation $Interval Temporary %= $3 Const
+    execute if score @s enemy.wither.Phase matches 1 run scoreboard players operation $Interval Temporary %= $6 Const
+    execute if score @s enemy.wither.Phase matches 2.. run scoreboard players operation $Interval Temporary %= $3 Const
     execute if score @s General.Mob.Tick matches 0..24 if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ facing entity @n[tag=TMCM.Target,distance=..64] feet run function asset:mob/enemy.wither/tick/skill/homing/shoot
     scoreboard players reset $Interval Temporary
 

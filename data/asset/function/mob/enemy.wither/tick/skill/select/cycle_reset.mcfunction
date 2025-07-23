@@ -11,10 +11,10 @@
     playsound minecraft:block.trial_spawner.ominous_activate hostile @a ~ ~ ~ 3 0.5
     
 # 通常行動停止タグ付与
-    tag @s add 1025.InAction
+    tag @s add enemy.wither.InAction
 
 # タグ付与
-    tag @s add 1025.Skill.Summon
+    tag @s add enemy.wither.Skill.Summon
 
 # スキルリストを再生
     data modify storage asset:context this.Skill.List set value [0,1,2]

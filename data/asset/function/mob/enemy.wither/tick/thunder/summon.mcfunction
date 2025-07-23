@@ -13,4 +13,4 @@
 
 # ターゲットの座標に召喚
     execute store result storage api: Argument.FieldOverride.OwnerID int 1 run scoreboard players get @s MobUUID
-    execute at @n[tag=TMCM.Target] run function api:object/summon.m {ID:2005}
+    execute at @n[tag=TMCM.Target] run function api:object/summon.m {ID:"projectile.wither_thunder"}

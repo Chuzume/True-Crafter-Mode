@@ -16,7 +16,7 @@
     scoreboard players set @s General.Mob.Tick -20
 
 # フェイズ移行動作のタグを削除
-    tag @s remove 1025.Transition.Phase3
+    tag @s remove enemy.wither.Transition.Phase3
 
 # リセット
     function asset:mob/enemy.wither/tick/reset/

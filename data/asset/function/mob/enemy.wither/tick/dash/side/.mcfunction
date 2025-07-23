@@ -5,8 +5,8 @@
 # @within function asset:mob/enemy.wither/tick/dash/branch
 
 # ダッシュ開始
-    execute if score @s[tag=1025.Dash.Left] General.Mob.Tick matches 0 on vehicle run rotate @s ~-75 ~
-    execute if score @s[tag=1025.Dash.Right] General.Mob.Tick matches 0 on vehicle run rotate @s ~75 ~
+    execute if score @s[tag=enemy.wither.Dash.Left] General.Mob.Tick matches 0 on vehicle run rotate @s ~-75 ~
+    execute if score @s[tag=enemy.wither.Dash.Right] General.Mob.Tick matches 0 on vehicle run rotate @s ~75 ~
 
 # 本体の向き変更
     execute facing entity @n[tag=TMCM.Target,distance=..64] feet run rotate @s ~ ~

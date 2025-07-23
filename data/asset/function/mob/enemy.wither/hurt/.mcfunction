@@ -8,5 +8,5 @@
     function asset:mob/enemy.wither/hurt/check_health
 
 # 耐性上昇モード時、殴ると硬い音がなる
-    execute if entity @s[tag=1025.Shield] run playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1 1.5
-    execute if entity @s[tag=1025.Shield] run playsound minecraft:block.anvil.place hostile @a ~ ~ ~ 1 1.5
+    execute if entity @s[tag=enemy.wither.Shield] run playsound minecraft:entity.blaze.hurt hostile @a ~ ~ ~ 1 1.5
+    execute if entity @s[tag=enemy.wither.Shield] run playsound minecraft:block.anvil.place hostile @a ~ ~ ~ 1 1.5

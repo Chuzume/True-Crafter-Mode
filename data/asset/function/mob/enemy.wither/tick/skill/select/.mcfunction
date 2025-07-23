@@ -11,7 +11,7 @@
     playsound minecraft:block.trial_spawner.ominous_activate hostile @a ~ ~ ~ 3 0.5
     
 # 通常行動停止タグ付与
-    tag @s add 1025.InAction
+    tag @s add enemy.wither.InAction
 
 # スコアを0に戻す
     scoreboard players set @s General.Mob.Tick -20

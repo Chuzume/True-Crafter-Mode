@@ -18,10 +18,10 @@
     scoreboard players set @s General.Mob.Tick 0
 
 # フェイズ移行動作のタグを付与
-    tag @s add 1025.Transition.Phase3
+    tag @s add enemy.wither.Transition.Phase3
 
 # リセット
     function asset:mob/enemy.wither/tick/reset/
 
 # フェイズ加算
-    scoreboard players add @s 1025.Phase 1
+    scoreboard players add @s enemy.wither.Phase 1

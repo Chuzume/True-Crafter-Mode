@@ -14,4 +14,4 @@
     function asset:mob/enemy.wither/tick/reset/
 
 # フェイズ加算
-    scoreboard players add @s 1025.Phase 1
+    scoreboard players add @s enemy.wither.Phase 1
