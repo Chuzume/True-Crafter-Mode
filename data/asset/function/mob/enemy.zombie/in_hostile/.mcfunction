@@ -17,6 +17,3 @@
         execute if entity @s[scores={General.Mob.Tick=40}] rotated ~ 0 run function asset:mob/enemy.zombie/in_hostile/leap
     # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット
         execute if score @s General.Mob.Tick matches 80.. run scoreboard players reset @s General.Mob.Tick
-
-# 立ち往生したらブロック設置
-    function true_crafter_mode:entity/mob/common_moveset/place_block/check
