@@ -13,5 +13,8 @@
 # 乗られてる側の処理
     execute if entity @s[tag=3.UsingSeachAI] at @s run function asset:mob/abstract.chaser_ai/tick/search/tick
 
+# 立ち往生したらブロック設置
+    function asset:mob/abstract.chaser_ai/tick/place_block/
+
 # SuperTick
     function asset:mob/super.tick
