@@ -12,6 +12,6 @@
 # 継承されることを前提とした、抽象的なモブであるかどうか(boolean)
     data modify storage asset:mob IsAbstract set value false
 # ID (int)
-    data modify storage asset:mob ID set value 1010
+    data modify storage asset:mob ID set value "enemy.witch"
 # フィールド(オプション)
     # data modify storage asset:mob Field.myValue set value 
