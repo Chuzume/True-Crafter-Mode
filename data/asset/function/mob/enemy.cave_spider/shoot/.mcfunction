@@ -11,4 +11,4 @@
         #execute if entity @p[distance=..7] rotated ~ 0 positioned ^ ^ ^-1 run return fail
 
 # リセット
-    scoreboard players reset @s 1013.Tick
+    scoreboard players reset @s General.Mob.Tick
