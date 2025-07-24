@@ -1,0 +1,23 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": {
+        "translate": "gui.true_crafter_mode.difficulty_setting",
+        "fallback": "難易度設定"
+    },
+    "exit_action": {
+        "label": {
+            "translate": "gui.back",
+            "fallback": "戻る"
+        },
+        "width": 100
+    },
+    "pause": false,
+    "columns": 2,
+    "dialogs": [
+        "asset:bonfire/0",
+        "asset:bonfire/1",
+        "asset:bonfire/2",
+        "asset:bonfire/3",
+        "asset:bonfire/4"
+    ]
+}
