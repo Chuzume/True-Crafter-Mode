@@ -24,7 +24,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "焚き火は静かに燃えている…",
+        "text": "火は静かに燃えている…",
         "color": "green"
       }
     },

@@ -12,7 +12,7 @@
         "width": 100
     },
     "pause": false,
-    "columns": 2,
+    "columns": 1,
     "dialogs": [
         "asset:bonfire/0",
         "asset:bonfire/1",
