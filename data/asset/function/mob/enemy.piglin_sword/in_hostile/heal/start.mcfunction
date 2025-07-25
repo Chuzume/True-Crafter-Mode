@@ -9,7 +9,7 @@
 
 # 現在の手持ちをストレージに移す
     function #oh_my_dat:please
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from entity @s HandItems[0]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from entity @s equipment.mainhand
 
 # アイテムを持つ
     item replace entity @s weapon.mainhand with cooked_porkchop
