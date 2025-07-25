@@ -7,7 +7,7 @@
   "external_title": [
     {
       "translate": "gui.true_crafter_mode.fire_power",
-      "fallback": "焚き火の熱量: "
+      "fallback": "焚き火の熱: "
     },
     {
       "text": "2",
@@ -26,7 +26,7 @@
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "text": "[厳しい旅路を求める人へ]\n\n「熱量: "
+          "text": "[厳しい旅路を求める人へ]\n\n「焚き火の熱: "
         },
         {
           "text": "1",

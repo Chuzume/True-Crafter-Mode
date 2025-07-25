@@ -8,9 +8,6 @@
     execute facing entity @p eyes run tp @s ~ ~ ~ ~ ~
     data modify storage chuz:storage Temporary.Rotation set from entity @s Rotation
 
-# 疑似乱数取得
-    execute store result score $Random Chuz.Temporary run function true_crafter_mode:random
-
 # 乱数取得
     execute store result score $Random Chuz.Temporary run random value 0..5
 

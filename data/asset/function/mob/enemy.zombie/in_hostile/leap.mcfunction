@@ -8,9 +8,9 @@
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
     playsound minecraft:entity.witch.throw hostile @a ~ ~ ~ 1 0.5
     
-# 横方向
-    scoreboard players set $Temporary Chuz.Speed 10
-    execute at @s run function true_crafter_mode:entity/motion_xz
+# 速度を設定して飛ばす
+    data modify storage lib: Argument.VectorMagnitude set value 1
+    function lib:motion/
 
 # 上方向
     data modify entity @s Motion[1] set value 0.4

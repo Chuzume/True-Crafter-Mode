@@ -7,7 +7,7 @@
   "external_title": [
     {
       "translate": "gui.true_crafter_mode.fire_power",
-      "fallback": "焚き火の熱量: "
+      "fallback": "焚き火の熱: "
     },
     {
       "text": "0",
