@@ -9,7 +9,7 @@
     execute on passengers if entity @s[type=item_display,tag=TMCM.Other.Sheath] run tag @s add MySheath
 
 # 手持ちをストレージに移す
-    data modify storage chuz:storage SheathItem set from entity @s HandItems[0]
+    data modify storage chuz:storage SheathItem set from entity @s equipment.mainhand
     
 # 腰のアイテムを装備する
     item replace entity @s weapon.mainhand from entity @n[type=item_display,tag=TMCM.Other.Sheath,tag=MySheath] container.0

@@ -12,7 +12,7 @@
     item replace entity @s weapon.mainhand with air
 
 # ストレージから手持ちを回収
-    data modify entity @s HandItems[0] set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand
+    data modify entity @s equipment.mainhand set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand
 
 # 演出
     playsound entity.player.burp hostile @a ~ ~ ~ 1 1
