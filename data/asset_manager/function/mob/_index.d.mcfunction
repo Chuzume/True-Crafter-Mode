@@ -38,7 +38,7 @@
 # @within function
 #   core:tick/
 #   asset:**
-    #declare tag AllowProcessingCommonTag
+    #declare tag ProcessCommonTag
 
 #> this
 # @within *
