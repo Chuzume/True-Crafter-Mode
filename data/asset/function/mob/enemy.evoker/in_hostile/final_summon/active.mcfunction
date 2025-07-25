@@ -18,6 +18,6 @@
     execute if score $Random Chuz.Temporary matches 5 run function asset:mob/enemy.evoker/in_hostile/final_summon/illusioner/
 
 # リセット
-    tag @s remove 1019.Using.Summon
-    scoreboard players reset @s 1019.Tick.Summon
+    tag @s remove enemy.evoker.Using.Summon
+    scoreboard players reset @s enemy.evoker.Summon
     data remove storage chuz:storage Temporary

@@ -5,7 +5,7 @@
 # @within function asset:mob/enemy.evoker/in_hostile/
 
 # スコア加算
-    scoreboard players add @s 1019.Tick.Summon 1
+    scoreboard players add @s enemy.evoker.Summon 1
 
 # 演出
     particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 0.3 0.5 0.3 0 1
@@ -14,4 +14,4 @@
     particle minecraft:trial_spawner_detection_ominous ~ ~2 ~ 4 4 4 0 5
 
 # 召喚
-    execute if score @s 1019.Tick.Summon matches 40 rotated ~ 0 run function asset:mob/enemy.evoker/in_hostile/final_summon/active
+    execute if score @s enemy.evoker.Summon matches 40 rotated ~ 0 run function asset:mob/enemy.evoker/in_hostile/final_summon/active

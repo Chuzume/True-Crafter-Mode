@@ -8,7 +8,7 @@
     data modify entity @s SpellTicks set value 60
 
 # テレポートもクールタイム
-    scoreboard players set @s 1019.Tick -60
+    scoreboard players set @s General.Mob.Tick -60
 
 # エフェクト
     effect give @s slowness 2 10
@@ -38,5 +38,5 @@
     execute if score $Random Chuz.Temporary matches 5 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"I'm not alone!"}]
 
 # タグ付与
-    tag @s add 1019.Using.Summon
-    tag @s add 1019.SummonUsed
+    tag @s add enemy.evoker.Using.Summon
+    tag @s add enemy.evoker.SummonUsed

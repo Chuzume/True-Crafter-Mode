@@ -6,5 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.evoker/**
-    scoreboard objectives add 1019.Tick dummy
-    scoreboard objectives add 1019.Tick.Summon dummy
+    scoreboard objectives add enemy.evoker.Summon dummy
+    scoreboard objectives add enemy.evoker.Health dummy

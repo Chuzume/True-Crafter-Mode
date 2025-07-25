@@ -30,4 +30,4 @@
     execute at @s facing entity @n[tag=TMCM.Target] feet rotated ~ 0 run summon evoker_fangs ^-1 ^ ^2
 
 # リセット
-    scoreboard players reset @s 1019.Tick
+    scoreboard players reset @s General.Mob.Tick
