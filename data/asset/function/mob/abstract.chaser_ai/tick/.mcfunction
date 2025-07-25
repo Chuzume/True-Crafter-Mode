@@ -4,9 +4,6 @@
 #
 # @within asset:mob/alias/3/tick
 
-# 追跡AI
-#    function true_crafter_mode:entity/mob/common_moveset/custom_ai/search_player/
-
 # 敵対していない状態のとき、範囲内にプレイヤーがいたら索敵AIを変更
     execute if entity @p[tag=!PlayerShouldInvulnerable,distance=..64] unless entity @s[tag=3.UsingSeachAI] unless predicate lib:in_hostile run function asset:mob/abstract.chaser_ai/tick/search/start
 
