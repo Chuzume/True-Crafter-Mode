@@ -25,4 +25,4 @@
     execute at @s run function asset:mob/enemy.witch/teleport/vfx
 
 # リセット
-    scoreboard players reset @s TMCM.Tick
+    scoreboard players reset @s General.Mob.Tick
