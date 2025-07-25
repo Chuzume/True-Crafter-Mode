@@ -5,7 +5,7 @@
 # @within asset_manager:object/init/init.m
 
 # ステータス
-    attribute @s minecraft:movement_speed base set 0.4
+    attribute @s minecraft:movement_speed base set 0.35
     attribute @s minecraft:step_height base set 1
     attribute @s max_health base set 30
     effect give @s instant_health 1 100 true

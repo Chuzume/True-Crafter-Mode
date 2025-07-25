@@ -11,7 +11,7 @@
 
 # 能力値を戻す
     attribute @s knockback_resistance base set 0
-    attribute @s minecraft:movement_speed base set 0.4
+    attribute @s minecraft:movement_speed base set 0.35
 
 # スコアリセット
     scoreboard players reset @s 1017.Tick

@@ -13,6 +13,3 @@
     # 実行
         execute if entity @s[scores={1017.Tick=60}] run function asset:mob/enemy.vindicator/in_hostile/strong_walk/start
         execute if entity @s[scores={1017.Tick=60..}] run function asset:mob/enemy.vindicator/in_hostile/strong_walk/tick
-
-# 立ち往生したらブロック設置
-    function true_crafter_mode:entity/mob/common_moveset/place_block/check
