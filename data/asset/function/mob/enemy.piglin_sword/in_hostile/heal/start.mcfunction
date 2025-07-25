@@ -5,7 +5,7 @@
 # @within function asset:mob/enemy.piglin_sword/in_hostile/
 
 # タグ付与
-    tag @s add 1015.Using.Heal
+    tag @s add enemy.piglin_sword.Using.Heal
 
 # 現在の手持ちをストレージに移す
     function #oh_my_dat:please

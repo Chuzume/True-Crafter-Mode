@@ -20,6 +20,6 @@
 
 # リセット
     data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item
-    tag @s remove 1015.Using.Heal
-    tag @s add 1015.HealUsed
-    scoreboard players reset @s 1015.Tick
+    tag @s remove enemy.piglin_sword.Using.Heal
+    tag @s add enemy.piglin_sword.HealUsed
+    scoreboard players reset @s enemy.piglin_sword.Tick

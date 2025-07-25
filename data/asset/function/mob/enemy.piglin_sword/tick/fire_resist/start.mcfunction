@@ -5,14 +5,14 @@
 # @within function asset:mob/enemy.piglin_sword/tick/
 
 # タグ付与
-    tag @s add 1015.Using.FireResist
+    tag @s add enemy.piglin_sword.Using.FireResist
 
 # 自身の敵対者にタグ付与
     execute on target run tag @s add TMCM.Target
 
 # 現在の手持ちをストレージに移す
     function #oh_my_dat:please
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from entity @s HandItems[0]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Mainhand set from entity @s equipment.mainhand
 
 # アイテムを持つ
     item replace entity @s weapon.mainhand with potion[potion_contents={potion:"minecraft:fire_resistance"}]

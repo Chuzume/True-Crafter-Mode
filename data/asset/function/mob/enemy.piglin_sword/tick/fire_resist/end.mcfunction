@@ -19,5 +19,5 @@
 
 # リセット
     data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item
-    scoreboard players reset @s 1015.Tick 
-    tag @s remove 1015.Using.FireResist
+    scoreboard players reset @s enemy.piglin_sword.Tick 
+    tag @s remove enemy.piglin_sword.Using.FireResist
