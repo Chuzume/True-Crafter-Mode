@@ -4,6 +4,13 @@
 #
 # @within function asset:object/system.ominous_bonfire/tick/
 
+# 現在のsendCommandFeedbackの状況を保存した後、一旦falseに
+    execute store result score $sendCommandFeedback Global run gamerule sendCommandFeedback
+    gamerule sendCommandFeedback false
+
+# 触ったやつがスコアボードをトリガーできるようにする
+    execute on target run scoreboard players enable @s Trigger.Difficulty
+
 # 触ったやつにダイアログを表示
     execute on target run dialog show @s asset:bonfire/main
 
