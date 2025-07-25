@@ -23,20 +23,24 @@
             "width": 320
         }
     ],
+    "can_close_with_escape": true,
     "exit_action": {
         "label": {
-            "translate": "gui.back",
-            "fallback": "戻る"
+            "translate": "gui.back"
         },
-        "width": 100
+        "width": 100,
+        "action": {
+            "type": "minecraft:run_command",
+            "command": "trigger Trigger.Difficulty add -1"
+        }
     },
     "pause": false,
     "columns": 1,
     "dialogs": [
-        "asset:bonfire/0",
         "asset:bonfire/1",
         "asset:bonfire/2",
         "asset:bonfire/3",
-        "asset:bonfire/4"
+        "asset:bonfire/4",
+        "asset:bonfire/5"
     ]
 }

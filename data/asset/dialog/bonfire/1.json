@@ -1,7 +1,7 @@
 {
   "type": "minecraft:confirmation",
   "title": {
-    "translate": "test",
+    "translate": "gui.true_crafter_mode.about_this_difficulty",
     "fallback": "この難易度の詳細"
   },
   "external_title": [
@@ -11,21 +11,21 @@
     },
     {
       "text": "1",
-      "color": "yellow"
+      "color": "green"
     }
   ],
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "薪がぱちりと弾けた…",
-        "color": "yellow"
+        "text": "炎は静かに揺らめいている…",
+        "color": "green"
       }
     },
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "[少し刺激がほしい人へ]\n\n大半の敵が強化され、特殊な行動を行ったりします。\n移動速度やヘルスといったステータスが強化される敵もいます"
+        "text": "[一旦落ち着きたい場合などに]\n\n今後出現する敵は強化されません。いつもと同じ世界です。"
       },
         "width": 320
     }
@@ -38,13 +38,17 @@
     },
     "action": {
       "type": "minecraft:run_command",
-      "command": "tp @s ~ ~10 ~"
+      "command": "trigger Trigger.Difficulty add 1"
     }
   },
   "no": {
     "label": {
       "translate": "gui.true_crafter_mode.no",
       "fallback": "やめとく"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger Trigger.Difficulty add -1"
     }
   }
 }

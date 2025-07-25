@@ -10,23 +10,33 @@
       "fallback": "焚き火の熱: "
     },
     {
-      "text": "2",
-      "color": "yellow"
+      "text": "5",
+      "color": "dark_purple"
     }
   ],
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "薪がぱちりと弾けた…",
-        "color": "yellow"
+        "text": "火勢は留まることを知らない…！",
+        "color": "dark_purple"
       }
     },
     {
       "type": "minecraft:plain_message",
-      "contents": {
-        "text": "[少し刺激がほしい人へ]\n\n大半の敵が強化され、特殊な行動を行ったりします。\n移動速度やヘルスといったステータスが強化される敵もいます"
-      },
+      "contents": [
+        {
+          "text": "[どうなっても知らないぞ]\n\n「焚き火の熱: "
+        },
+        {
+          "text": "3",
+          "color": "red"
+        },
+        {
+          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.5倍になります\n防具を着る敵の防具の質が妙に良くなります\n敵はありえないエンチャントのついた武器を平気で使用します\nついでに、敵は身につけている武器や防具をドロップしません\nそしてやっぱり、ベッドで寝ても朝になりません",
+          "color": "white"
+        }
+      ],
         "width": 320
     }
   ],
@@ -38,7 +48,7 @@
     },
     "action": {
       "type": "minecraft:run_command",
-      "command": "trigger Trigger.Difficulty add 2"
+      "command": "trigger Trigger.Difficulty add 5"
     }
   },
   "no": {

@@ -1,7 +1,7 @@
 {
   "type": "minecraft:confirmation",
   "title": {
-    "translate": "test",
+    "translate": "gui.true_crafter_mode.about_this_difficulty",
     "fallback": "この難易度の詳細"
   },
   "external_title": [
@@ -11,33 +11,33 @@
     },
     {
       "text": "3",
-      "color": "dark_red"
+      "color": "red"
     }
   ],
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "火花が荒々しく宙を舞う…",
-        "color": "dark_red"
+        "text": "炎が勢いを増していく…",
+        "color": "red"
       }
     },
     {
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "text": "[まだまだ物足りない人へ]\n\n「焚き火の熱: "
+          "text": "[厳しい旅路を求める人へ]\n\n「焚き火の熱: "
         },
         {
           "text": "2",
-          "color": "red"
+          "color": "yellow"
         },
         {
-          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.25倍になります\n敵の装備が少し強くなります\nベッドで寝ても朝になりません",
+          "text": "」までの内容に加え…\n一部の敵の追跡能力が強化され、壁越しでもこちらを感知してきます\n敵は追跡の際、必要とあらばブロックの設置と破壊を試みます\nそういった追跡を行う敵は、落下ダメージを無効化します\n時々、一部の敵がちょっと強い亜種に変わります",
           "color": "white"
         }
       ],
-        "width": 320
+      "width": 320
     }
   ],
   "pause": false,
@@ -48,13 +48,17 @@
     },
     "action": {
       "type": "minecraft:run_command",
-      "command": "tp @s ~ ~10 ~"
+      "command": "trigger Trigger.Difficulty add 3"
     }
   },
   "no": {
     "label": {
       "translate": "gui.true_crafter_mode.no",
       "fallback": "やめとく"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger Trigger.Difficulty add -1"
     }
   }
 }

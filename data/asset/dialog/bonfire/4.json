@@ -1,7 +1,7 @@
 {
   "type": "minecraft:confirmation",
   "title": {
-    "translate": "test",
+    "translate": "gui.true_crafter_mode.about_this_difficulty",
     "fallback": "この難易度の詳細"
   },
   "external_title": [
@@ -11,29 +11,29 @@
     },
     {
       "text": "4",
-      "color": "dark_purple"
+      "color": "dark_red"
     }
   ],
   "body": [
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "火勢は留まることを知らない…！",
-        "color": "dark_purple"
+        "text": "火花が荒々しく宙を舞う…",
+        "color": "dark_red"
       }
     },
     {
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "text": "[どうなっても知らないぞ]\n\n「焚き火の熱: "
+          "text": "[まだまだ物足りない人へ]\n\n「焚き火の熱: "
         },
         {
-          "text": "2",
+          "text": "3",
           "color": "red"
         },
         {
-          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.5倍になります\n防具を着る敵の防具の質が妙に良くなります\n敵はありえないエンチャントのついた武器を平気で使用します\nついでに、敵は身につけている武器や防具をドロップしません\nそしてやっぱり、ベッドで寝ても朝になりません",
+          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.25倍になります\n敵の装備が少し強くなります\nベッドで寝ても朝になりません",
           "color": "white"
         }
       ],
@@ -48,13 +48,17 @@
     },
     "action": {
       "type": "minecraft:run_command",
-      "command": "tp @s ~ ~10 ~"
+      "command": "trigger Trigger.Difficulty add 4"
     }
   },
   "no": {
     "label": {
       "translate": "gui.true_crafter_mode.no",
       "fallback": "やめとく"
+    },
+    "action": {
+      "type": "minecraft:run_command",
+      "command": "trigger Trigger.Difficulty add -1"
     }
   }
 }
