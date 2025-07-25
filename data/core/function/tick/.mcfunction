@@ -14,7 +14,7 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        execute as @e[type=#lib:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] at @s run function mob_manager:init/
+        execute as @e[type=#lib:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
 
