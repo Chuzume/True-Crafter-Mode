@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "enter": {
+      "trigger": "minecraft:location"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "asset:ominous_campfire"
+    ]
+  }
+}

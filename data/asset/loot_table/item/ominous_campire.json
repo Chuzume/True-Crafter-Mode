@@ -32,7 +32,6 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:custom_data": {},
                                 "minecraft:item_model": "minecraft:campfire",
                                 "minecraft:enchantment_glint_override": true,
                                 "minecraft:entity_data": {
