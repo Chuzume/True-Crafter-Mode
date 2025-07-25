@@ -20,4 +20,4 @@
     execute if entity @a[distance=..6] run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~ 1.5 1
 
 # これが3回目の爆発だった場合、虚空へと消える
-    execute if score @s 1011.AttackCount matches 3.. run function true_crafter_mode:entity/mob/common_moveset/void_kill
+    execute if score @s 1011.AttackCount matches 3.. run tp @s ~ -1000 ~
