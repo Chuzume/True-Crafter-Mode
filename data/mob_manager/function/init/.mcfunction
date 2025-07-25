@@ -4,56 +4,55 @@
 #
 # @within function core:tick
 
-# ゾンビ
-    execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value enemy.zombie
-# ハスク
-    execute if entity @s[type=husk] run data modify storage api: Argument.ID set value enemy.husk
-# ドラウンド
-    execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value enemy.drowned
-# ゾンビピグリン
-    execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value enemy.zombified_piglin
-# ゾンビ村人
-    execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value enemy.zombie_villager
-# スケルトン
-    execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.skeleton"
-# ストレイ
-    execute if entity @s[type=stray] run data modify storage api: Argument.ID set value 1007
-# ボグド
-    execute if entity @s[type=bogged] run data modify storage api: Argument.ID set value 1008
-# ウィザースケルトン
-    execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value 1009
-# ウィッチ
-    execute if entity @s[type=witch] run data modify storage api: Argument.ID set value 1010
-# クリーパー
-    execute if entity @s[type=creeper] run data modify storage api: Argument.ID set value 1011
-# エンダーマン
-    execute if entity @s[type=enderman] run data modify storage api: Argument.ID set value 1012
-# クモ
-    execute if entity @s[type=spider] run data modify storage api: Argument.ID set value 1013
-# 洞窟グモ
-    execute if entity @s[type=cave_spider] run data modify storage api: Argument.ID set value 1014
-# ピグリン(剣)
-    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:golden_sword"}]}] run data modify storage api: Argument.ID set value 1015
-# ピグリン(クロスボウ)
-    execute if entity @s[type=piglin,nbt={HandItems:[{id:"minecraft:crossbow"}]}] run data modify storage api: Argument.ID set value 1016
-# ヴィンディケーター
-    execute if entity @s[type=vindicator] run data modify storage api: Argument.ID set value 1017
-# ピリジャー
-    execute if entity @s[type=pillager] run data modify storage api: Argument.ID set value 1018
-# エヴォーカー
-    execute if entity @s[type=evoker] run data modify storage api: Argument.ID set value 1019
-# スライム
-    execute if entity @s[type=slime] run data modify storage api: Argument.ID set value 1020
-# マグマキューブ
-    execute if entity @s[type=magma_cube] run data modify storage api: Argument.ID set value 1021
+# フツーの敵
+    # ゾンビ
+        execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value enemy.zombie
+    # ハスク
+        execute if entity @s[type=husk] run data modify storage api: Argument.ID set value enemy.husk
+    # ドラウンド
+        execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value enemy.drowned
+    # ゾンビピグリン
+        execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value enemy.zombified_piglin
+    # ゾンビ村人
+        execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value enemy.zombie_villager
+    # スケルトン
+        execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.skeleton"
+    # ストレイ
+        execute if entity @s[type=stray] run data modify storage api: Argument.ID set value "enemy.stray"
+    # ボグド
+        execute if entity @s[type=bogged] run data modify storage api: Argument.ID set value "enemy.bogged"
+    # ウィザースケルトン
+        execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value "enemy.wither_skeleton"
+    # ウィッチ
+        execute if entity @s[type=witch] run data modify storage api: Argument.ID set value "enemy.witch"
+    # クリーパー
+        execute if entity @s[type=creeper] run data modify storage api: Argument.ID set value "enemy.creeper"
+    # エンダーマン
+        execute if entity @s[type=enderman] run data modify storage api: Argument.ID set value "enemy.enderman"
+    # クモ
+        execute if entity @s[type=spider] run data modify storage api: Argument.ID set value "enemy.spider"
+    # 洞窟グモ
+        execute if entity @s[type=cave_spider] run data modify storage api: Argument.ID set value "enemy.cave_spider"
+    # ピグリン(剣)
+        execute if entity @s[type=piglin,nbt={equipment:{mainhand:{id:"minecraft:golden_sword"}}}] run data modify storage api: Argument.ID set value "enemy.piglin_sword"
+    # ピグリン(クロスボウ)
+        execute if entity @s[type=piglin,nbt={equipment:{mainhand:{id:"minecraft:crossbow"}}}] run data modify storage api: Argument.ID set value "enemy.piglin_crossbow"
+    # ヴィンディケーター
+        execute if entity @s[type=vindicator] run data modify storage api: Argument.ID set value "enemy.vindicator"
+    # ピリジャー
+        execute if entity @s[type=pillager] run data modify storage api: Argument.ID set value "enemy.pillager"
+    # エヴォーカー
+        execute if entity @s[type=evoker] run data modify storage api: Argument.ID set value "enemy.evoker"
+    # スライム
+        execute if entity @s[type=slime] run data modify storage api: Argument.ID set value "enemy.slime"
+    # マグマキューブ
+        execute if entity @s[type=magma_cube] run data modify storage api: Argument.ID set value "enemy.magma_cube"
 
-# エンダードラゴン
-    execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value 1024
-# ウィザー
-    execute if entity @s[type=wither] run data modify storage api: Argument.ID set value 1025
-
-# ウィザースケルトン
-    execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value 1026
+# ボスキャラ
+    # エンダードラゴン
+        execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value "enemy.ender_dragon"
+    # ウィザー
+        execute if entity @s[type=wither] run data modify storage api: Argument.ID set value "enemy.wither"
 
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
