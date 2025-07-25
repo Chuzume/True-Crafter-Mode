@@ -35,7 +35,7 @@
 #    execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
 
 # ワールドイベント
-#    function world_manager:event/tick
+    function world_manager:event/tick
 
 # asset:contextの明示的な全削除
 #    function asset_manager:common/reset_all_context
