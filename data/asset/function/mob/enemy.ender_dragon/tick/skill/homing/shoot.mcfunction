@@ -21,7 +21,7 @@
 # 召喚
     data modify storage api: Argument.FieldOverride set value {Speed:1,Range:150,MovePerStep:0.5}
     execute store result storage api: Argument.FieldOverride.OwnerID int 1 run scoreboard players get @s MobUUID
-    execute facing entity @n[type=marker,tag=SpreadMarker,distance=..128] eyes run function api:object/summon.m {ID:2008}
+    execute facing entity @n[type=marker,tag=SpreadMarker,distance=..128] eyes run function api:object/summon.m {ID:projectile.dragon_homing_shot}
 
 # リセット
     kill @n[type=marker,tag=SpreadMarker,distance=..128]

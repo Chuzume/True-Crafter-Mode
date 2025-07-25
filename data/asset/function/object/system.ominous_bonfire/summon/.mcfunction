@@ -5,5 +5,4 @@
 # @within asset_manager:object/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon interaction ~ ~ ~ {width:1.0f,height:1.0f,Tags:["ObjectInit"]}
-
+    summon interaction ~ ~ ~ {width:0.6f,height:1.0f,Tags:["ObjectInit"]}

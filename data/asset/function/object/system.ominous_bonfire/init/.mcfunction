@@ -5,7 +5,7 @@
 # @within asset_manager:object/init/init.m
 
 # ビジュアルその1を召喚して乗せる
-    summon item_display ~ ~ ~ {Tags:["system.ominous_bonfire.Sword","Init","AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[-0.16f,0.112f,0.803f,0.563f],right_rotation:[0f,0f,0f,1f],translation:[0.3f,0.7f,-0.1f],scale:[1.25f,1.25f,1.25f]},item:{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantment_glint_override":true}}}
+    summon item_display ~ ~ ~ {Tags:["system.ominous_bonfire.Sword","Init","AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[-0.16f,0.112f,0.803f,0.563f],right_rotation:[0f,0f,0f,1f],translation:[0.3f,-0.3f,-0.1f],scale:[1.25f,1.25f,1.25f]},item:{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantment_glint_override":true}}}
     ride @n[type=item_display,tag=Init,distance=..0.5] mount @s
     execute on passengers run tag @s remove Init
 

@@ -24,7 +24,7 @@
     execute if score @s 1011.Tick matches 31.. run function asset:mob/enemy.creeper/in_hostile/explosion/end
 
 # 起爆中なら近くのエンティティを逃がす
-    #execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#true_crafter_mode:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
+    #execute if entity @s[tag=t.hardIgnited] as @e[distance=0.1..6,type=#lib:hostiles] at @s facing entity @e[type=creeper,limit=1,sort=nearest] eyes run function true_crafter_mode:enemy/common/dodge_creeper
 
 # 着火されちゃった場合はFuseを30にし、スコアを常時リセットする
     data modify entity @s[nbt={ignited:1b}] Fuse set value 30

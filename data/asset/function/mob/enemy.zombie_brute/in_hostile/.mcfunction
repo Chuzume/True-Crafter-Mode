@@ -25,6 +25,3 @@
         execute if score @s General.Mob.Tick matches 80..160 run function asset:mob/enemy.zombie_brute/in_hostile/strong_walk/tick
     # 終了
         execute if score @s General.Mob.Tick matches 160 run function asset:mob/enemy.zombie_brute/in_hostile/strong_walk/reset
-
-# 立ち往生したらブロック設置
-    function true_crafter_mode:entity/mob/common_moveset/place_block/check

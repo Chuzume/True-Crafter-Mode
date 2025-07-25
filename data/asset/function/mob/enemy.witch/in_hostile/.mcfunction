@@ -12,7 +12,7 @@
     execute as @e[type=creeper,nbt=!{powered:1b},distance=..16] at @s run function asset:mob/enemy.witch/in_hostile/charge_creeper
 
 # 付近の自分以外の敵対モブにバフを配る
-    execute as @e[type=#true_crafter_mode:enemy,type=!witch,distance=0.1..16] at @s run function asset:mob/enemy.witch/in_hostile/buff
+    execute as @e[type=#lib:enemy,type=!witch,distance=0.1..16] at @s run function asset:mob/enemy.witch/in_hostile/buff
 
 # 付近に敵がいるならワープのスコアを加算しだす
     execute if entity @p[distance=..16] run scoreboard players add @s TMCM.Tick 1

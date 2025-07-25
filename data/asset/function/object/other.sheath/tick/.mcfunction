@@ -17,4 +17,4 @@
     execute on vehicle run tag @s remove TMCM.SheathOwner
 
 # 誰にも乗ってなかったら消える
-    execute unless predicate true_crafter_mode:on_vehicle run kill @s
+    execute unless predicate lib:on_vehicle run kill @s

@@ -11,8 +11,8 @@
         execute if score @s General.Mob.Tick matches 30 run function asset:mob/enemy.zombie/in_hostile/windup
         execute if score @s General.Mob.Tick matches 30.. run scoreboard players add @s General.Mob.Tick 1
     # 前方にブロックがあるならスコアをリセット
-        execute rotated ~ 0 unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s General.Mob.Tick
-        execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #true_crafter_mode:no_collision run scoreboard players reset @s General.Mob.Tick
+        execute rotated ~ 0 unless block ^ ^ ^1 #lib:no_collision run scoreboard players reset @s General.Mob.Tick
+        execute rotated ~ 0 positioned ~ ~1 ~ unless block ^ ^ ^1 #lib:no_collision run scoreboard players reset @s General.Mob.Tick
     # 実行
         execute if entity @s[scores={General.Mob.Tick=40}] rotated ~ 0 run function asset:mob/enemy.zombie/in_hostile/leap
     # 着地時しばらくこっちを見失うので、それを考慮した数値でリセット

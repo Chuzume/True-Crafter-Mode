@@ -24,11 +24,11 @@
     function true_crafter_mode:entity/mob/common_moveset/place_block/check
 
 # 泳ぐ。ただし泳ぎがヘタクソなので水泳中には攻撃ができない
-#    execute if entity @a[distance=..30,tag=!PlayerShouldInvulnerable] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim
+#    execute if entity @a[distance=..30,tag=!PlayerShouldInvulnerable] if entity @s[nbt={HurtTime:0s}] if block ~ ~0.5 ~ #lib:liquid run function true_crafter_mode:enemy/piglin/swim
 
 # 泳ぎ中に殴られた場合。前述の通りヘタクソなので情けない声になる
 #    execute if entity @s[tag=TMCM.Piglin.Silent,nbt={HurtTime:9s}] run playsound minecraft:entity.piglin.retreat hostile @a ~ ~ ~ 2 1
 #    execute if entity @s[tag=TMCM.Piglin.Silent,nbt={HurtTime:9s}] run playsound minecraft:entity.piglin.hurt hostile @a ~ ~ ~ 2 1
 
 # 泳ぎ解除
-#    execute unless block ~ ~0.25 ~ #true_crafter_mode:liquid run function true_crafter_mode:enemy/piglin/swim_cancel
+#    execute unless block ~ ~0.25 ~ #lib:liquid run function true_crafter_mode:enemy/piglin/swim_cancel
