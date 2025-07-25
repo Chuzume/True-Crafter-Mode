@@ -1,9 +1,28 @@
 {
     "type": "minecraft:dialog_list",
     "title": {
-        "translate": "gui.true_crafter_mode.difficulty_setting",
-        "fallback": "難易度設定"
+        "translate": "item.true_crafter_mode.ominous_campfire",
+        "fallback": "不吉な焚き火"
     },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "難易度設定",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "高い難易度でプレイしても、特にごほうびはありません",
+                    "color": "white"
+                }
+            ],
+            "width": 320
+        }
+    ],
     "exit_action": {
         "label": {
             "translate": "gui.back",

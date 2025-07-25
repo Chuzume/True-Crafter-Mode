@@ -7,7 +7,7 @@
   "external_title": [
     {
       "translate": "gui.true_crafter_mode.fire_power",
-      "fallback": "焚き火の熱量:"
+      "fallback": "焚き火の熱量: "
     },
     {
       "text": "4",
@@ -16,15 +16,9 @@
   ],
   "body": [
     {
-      "type": "minecraft:item",
-      "item": {
-        "id": "campfire"
-      }
-    },
-    {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "火勢は留まることを知らない…",
+        "text": "火勢は留まることを知らない…！",
         "color": "dark_purple"
       }
     },
@@ -32,14 +26,14 @@
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "text": "[あんまり調整してません]\n\n「熱量: "
+          "text": "[どうなっても知らないぞ]\n\n「熱量: "
         },
         {
           "text": "2",
           "color": "red"
         },
         {
-          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.5倍になります\n敵の装備が妙に強くなります\nベッドで寝ても朝になりません",
+          "text": "」までの内容に加え…\nボスを除いたほとんどの敵のヘルスが1.5倍になります\n防具を着る敵の防具の質が妙に良くなります\n敵はありえないエンチャントのついた武器を平気で使用します\nついでに、敵は身につけている武器や防具をドロップしません\nそしてやっぱり、ベッドで寝ても朝になりません",
           "color": "white"
         }
       ],

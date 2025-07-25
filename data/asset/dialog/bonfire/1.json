@@ -7,7 +7,7 @@
   "external_title": [
     {
       "translate": "gui.true_crafter_mode.fire_power",
-      "fallback": "焚き火の熱量:"
+      "fallback": "焚き火の熱量: "
     },
     {
       "text": "1",
@@ -15,12 +15,6 @@
     }
   ],
   "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "campfire"
-      }
-    },
     {
       "type": "minecraft:plain_message",
       "contents": {
@@ -31,7 +25,7 @@
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "[少し刺激がほしい人向け]\n\n大半の敵が強化され、特殊な行動を行ったりします。\n一部の敵がたまにちょっと強いエリート版になります"
+        "text": "[少し刺激がほしい人へ]\n\n大半の敵が強化され、特殊な行動を行ったりします。\n移動速度やヘルスといったステータスが強化される敵もいます"
       },
         "width": 320
     }

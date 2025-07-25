@@ -16,22 +16,16 @@
   ],
   "body": [
     {
-      "type": "minecraft:item",
-      "item": {
-        "id": "campfire"
-      }
-    },
-    {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "火は静かに燃えている…",
+        "text": "炎は静かに揺らめいている…",
         "color": "green"
       }
     },
     {
       "type": "minecraft:plain_message",
       "contents": {
-        "text": "[ゆっくりと落ち着きたい人向け]\n\n敵は全く強化されません。いつもと同じ世界です。"
+        "text": "[一旦落ち着きたい場合などに]\n\n今後出現する敵は強化されません。いつもと同じ世界です。"
       },
         "width": 320
     }

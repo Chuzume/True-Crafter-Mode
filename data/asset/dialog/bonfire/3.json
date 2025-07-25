@@ -7,7 +7,7 @@
   "external_title": [
     {
       "translate": "gui.true_crafter_mode.fire_power",
-      "fallback": "焚き火の熱量:"
+      "fallback": "焚き火の熱量: "
     },
     {
       "text": "3",
@@ -15,12 +15,6 @@
     }
   ],
   "body": [
-    {
-      "type": "minecraft:item",
-      "item": {
-        "id": "campfire"
-      }
-    },
     {
       "type": "minecraft:plain_message",
       "contents": {
@@ -32,7 +26,7 @@
       "type": "minecraft:plain_message",
       "contents": [
         {
-          "text": "[まだまだ物足りない人向け]\n\n「熱量: "
+          "text": "[まだまだ物足りない人へ]\n\n「熱量: "
         },
         {
           "text": "2",
