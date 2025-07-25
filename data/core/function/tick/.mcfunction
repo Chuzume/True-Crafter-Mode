@@ -14,7 +14,7 @@
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
     # データ初期化部
-        execute as @e[type=#true_crafter_mode:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] at @s run function mob_manager:init/
+        execute as @e[type=#lib:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
 
@@ -23,6 +23,10 @@
 
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
+
+# TODO: こういう設置型のアイテムが増えるようなら、何かいい案を考えるべきだ
+# まともな案がない…不吉な焚き火はとりあえずベタ書きだ…
+    execute as @e[type=armor_stand,tag=OminousCampfirePlace] at @s run function core:tick/ominous_campifire_place
 
 # UserID割り振り
     execute as @a unless score @s UserID matches 0.. run function core:give_user_id
@@ -37,7 +41,7 @@
 #    function asset_manager:common/reset_all_context
 
 # tick処理後のプレイヤー処理部
-    execute as @a at @s run function core:tick/player/post
+#    execute as @a at @s run function core:tick/player/post
 
 # 攻撃元/先の紐づけをリセット
 #    execute if entity @a[scores={AttackingEntity=0..}] run function mob_manager:entity_finder/attacking_entity/reset
