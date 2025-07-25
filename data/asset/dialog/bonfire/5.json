@@ -57,8 +57,8 @@
       "fallback": "やめとく"
     },
     "action": {
-      "type": "minecraft:run_command",
-      "command": "trigger Trigger.Difficulty add -1"
+      "type": "minecraft:show_dialog",
+      "dialog": "asset:bonfire/main"
     }
   }
 }
