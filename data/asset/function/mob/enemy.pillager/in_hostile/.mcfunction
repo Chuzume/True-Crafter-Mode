@@ -3,6 +3,3 @@
 # 継承先などから実行される処理
 #
 # @within asset:mob/alias/enemy.in_hostile
-
-# 立ち往生したらブロック設置
-    function true_crafter_mode:entity/mob/common_moveset/place_block/check
