@@ -8,7 +8,7 @@
     execute if score @s General.Mob.Tick matches 0 run function asset:mob/enemy.ender_dragon/tick/skill/landing/start
 
 # DragonPhaseが6になったらTick加算を再開
-    tag @s[nbt={DragonPhase:6}] remove 1024.TickLock
+    tag @s[nbt={DragonPhase:6}] remove enemy.ender_dragon.TickLock
 
 # 着地中の処理
     execute if score @s General.Mob.Tick matches 2..100 run function asset:mob/enemy.ender_dragon/tick/skill/landing/landed/tick
@@ -20,5 +20,5 @@
 #    execute if score @s General.Mob.Tick matches 180.. run scoreboard players set @s General.Mob.Tick -10
 
 # リセット
-    execute if score @s General.Mob.Tick matches 160 run tag @s remove 1024.CycleReset
+    execute if score @s General.Mob.Tick matches 160 run tag @s remove enemy.ender_dragon.CycleReset
     execute if score @s General.Mob.Tick matches 160 run function asset:mob/enemy.ender_dragon/tick/reset

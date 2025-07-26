@@ -18,4 +18,4 @@
     data remove storage asset:context this.Skill.Get
 
 # 最後の一個だった場合、サイクルリセット
-    execute if data storage asset:context this.Skill{List:[]} run tag @s add 1024.CycleReset
+    execute if data storage asset:context this.Skill{List:[]} run tag @s add enemy.ender_dragon.CycleReset

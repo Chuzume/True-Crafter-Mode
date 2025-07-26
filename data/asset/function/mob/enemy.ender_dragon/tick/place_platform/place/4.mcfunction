@@ -12,7 +12,7 @@
     execute as @n[type=marker,tag=SpreadMarker] positioned 0 88 0 run function lib:spread_entity/
 
 # 召喚
-    execute at @n[type=marker,tag=SpreadMarker,distance=..128] run function api:object/summon.m {ID:2006}
+    execute at @n[type=marker,tag=SpreadMarker,distance=..128] run function api:object/summon.m {ID:"gimmick.dragon_platform"}
 
 # リセット
     kill @n[type=marker,tag=SpreadMarker,distance=..128]

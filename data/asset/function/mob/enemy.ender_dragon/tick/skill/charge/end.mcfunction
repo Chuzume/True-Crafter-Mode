@@ -5,7 +5,7 @@
 # @within function asset:mob/enemy.ender_dragon/tick/skill/charge/
 
 # キル
-    kill @n[type=marker,tag=1024.Marker.Rotater]
+    kill @n[type=marker,tag=enemy.ender_dragon.Marker.Rotater]
 
 # DragonPhase変更
     data modify entity @s DragonPhase set value 0

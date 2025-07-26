@@ -1,4 +1,4 @@
-#> asset:object/2006.dragon_platform/register
+#> asset:object/gimmick.dragon_platform/register
 #
 # Objectのデータを指定
 #
@@ -13,6 +13,6 @@
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value 2006
+    data modify storage asset:object ID set value "gimmick.dragon_platform"
 # フィールド(オプション)
     # data modify storage asset:object Field.myValue set value 

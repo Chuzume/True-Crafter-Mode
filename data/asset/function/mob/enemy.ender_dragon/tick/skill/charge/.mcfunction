@@ -15,10 +15,10 @@
 #    execute if score @s General.Mob.Tick matches 0..60 on vehicle at @s run tp @s ^ ^ ^1
 
 # 自分にくっついてるマーカーにタグ付与
-    tag @n[type=marker,tag=1024.Marker.Rotater] add this
+    tag @n[type=marker,tag=enemy.ender_dragon.Marker.Rotater] add this
 
 # マーカーをくっつける
-    execute at @s as @n[type=marker,tag=1024.Marker.Rotater] run tp @s ~ ~ ~
+    execute at @s as @n[type=marker,tag=enemy.ender_dragon.Marker.Rotater] run tp @s ~ ~ ~
 
 # 移動処理
     execute if score @s General.Mob.Tick matches 0..70 run function asset:mob/enemy.ender_dragon/tick/skill/charge/move

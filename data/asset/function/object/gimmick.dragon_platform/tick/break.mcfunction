@@ -1,8 +1,8 @@
-#> asset:object/2006.dragon_platform/tick/break
+#> asset:object/gimmick.dragon_platform/tick/break
 #
 # 足場消える
 #
-# @within function asset:object/2006.dragon_platform/tick/
+# @within function asset:object/gimmick.dragon_platform/tick/
 
 # fill
     fill ~-2 ~-2 ~-2 ~2 ~3 ~2 air replace minecraft:end_stone

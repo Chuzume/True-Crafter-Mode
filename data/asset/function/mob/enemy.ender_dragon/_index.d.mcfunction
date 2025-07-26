@@ -3,11 +3,11 @@
 
 #> tag
 # @within function asset:mob/enemy.ender_dragon/**
-    #declare tag 1024.InAction
-    #declare tag 1024.1024.CycleReset
-    #declare tag 1024.Skill.AimingEye
-    #declare tag 1024.Skill.Thunder
-    #declare tag 1024.Skill.HomingPillar
-    #declare tag 1024.Skill.HomingFireball
-    #declare tag 1024.Skill.Charge
-    #declare tag 1024.Skill.
+    #declare tag enemy.ender_dragon.InAction
+    #declare tag enemy.ender_dragon.enemy.ender_dragon.CycleReset
+    #declare tag enemy.ender_dragon.Skill.AimingEye
+    #declare tag enemy.ender_dragon.Skill.Thunder
+    #declare tag enemy.ender_dragon.Skill.HomingPillar
+    #declare tag enemy.ender_dragon.Skill.HomingFireball
+    #declare tag enemy.ender_dragon.Skill.Charge
+    #declare tag enemy.ender_dragon.Skill.

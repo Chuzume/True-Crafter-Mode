@@ -11,7 +11,7 @@
     data modify entity @s Invulnerable set value true
 
 # Tick固定
-    tag @s add 1024.TickLock
+    tag @s add enemy.ender_dragon.TickLock
 
 # この行動をループしないようにスコアを1だけ増やす
     scoreboard players add @s General.Mob.Tick 1

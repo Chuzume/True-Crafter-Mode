@@ -1,4 +1,4 @@
-#> asset:object/2006.dragon_platform/summon/
+#> asset:object/gimmick.dragon_platform/summon/
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #

@@ -1,8 +1,8 @@
-#> asset:object/2006.dragon_platform/tick/place/place.m
+#> asset:object/gimmick.dragon_platform/tick/place/place.m
 #
 # 足場を置く
 #
-# @within function asset:object/2006.dragon_platform/tick/place/
+# @within function asset:object/gimmick.dragon_platform/tick/place/
 
 $execute if data storage asset:temp Platform{Rotation:1} run place template asset:end_platform/$(Type) ~-2 ~-2 ~-2 none
 $execute if data storage asset:temp Platform{Rotation:2} run place template asset:end_platform/$(Type) ~2 ~-2 ~-2 clockwise_90

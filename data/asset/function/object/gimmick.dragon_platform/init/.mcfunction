@@ -1,4 +1,4 @@
-#> asset:object/2006.dragon_platform/init/
+#> asset:object/gimmick.dragon_platform/init/
 #
 # Objectのinit時の処理
 #

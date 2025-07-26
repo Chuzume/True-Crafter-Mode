@@ -12,10 +12,10 @@
     playsound minecraft:entity.ender_dragon.growl hostile @a ~ ~ ~ 3 0.8
 
 # 通常行動停止タグ付与
-    tag @s add 1024.InAction
+    tag @s add enemy.ender_dragon.InAction
 
 # タグ付与
-    tag @s add 1024.Skill.Landing
+    tag @s add enemy.ender_dragon.Skill.Landing
 
 # スキルリストを再生
     data modify storage asset:context this.Skill.List set value [0,1,2]

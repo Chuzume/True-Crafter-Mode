@@ -19,7 +19,7 @@
     spreadplayers ~ ~ 20 20 under 100 false @n[type=marker,tag=SpreadMarker,distance=..64]
 
 # マーカーの位置に召喚してキル
-    execute at @n[type=marker,tag=SpreadMarker,distance=..64] run function api:object/summon.m {ID:2010}
+    execute at @n[type=marker,tag=SpreadMarker,distance=..64] run function api:object/summon.m {ID:"projectile.dragon_light_pillar"}
     kill @n[type=marker,tag=SpreadMarker,distance=..64]
 
 # リセット
