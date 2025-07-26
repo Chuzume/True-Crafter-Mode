@@ -16,6 +16,13 @@
     scoreboard players add @s 1020.Size 1 
     execute store result entity @s Size int 1 run scoreboard players get @s 1020.Size
 
+# サイズ変更時に回復しちまう！
+    execute if entity @s[nbt={Size:1}] run function asset:mob/enemy.slime/inflate/size_change/1
+    execute if entity @s[nbt={Size:2}] run function asset:mob/enemy.slime/inflate/size_change/2
+    execute if entity @s[nbt={Size:3}] run function asset:mob/enemy.slime/inflate/size_change/3
+    execute if entity @s[nbt={Size:4}] run function asset:mob/enemy.slime/inflate/size_change/4
+    effect give @s instant_health 1 100 true
+
 # 演出
     particle explosion ~ ~0.8 ~ 0 0 0 0 1
     particle instant_effect ~ ~0.8 ~ 0 0 0 0.1 5
