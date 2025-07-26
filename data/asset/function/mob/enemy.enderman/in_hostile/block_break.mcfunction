@@ -16,4 +16,4 @@
     execute rotated ~ 0 positioned ~ ~2 ~ unless block ^ ^ ^1 #lib:no_dig run setblock ^ ^ ^1 air destroy 
 
 # リセット
-    scoreboard players reset @s 1012.Tick
+    scoreboard players reset @s General.Mob.Tick

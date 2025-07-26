@@ -8,13 +8,10 @@
         "asset:mob/enemy.vindicator/load",
         "asset:mob/enemy.piglin_sword/load",
         "asset:mob/enemy.spider/load",
-        "asset:mob/enemy.enderman/load",
-        "asset:mob/enemy.creeper/load",
         "asset:mob/enemy.creeper/load",
         "asset:mob/enemy.skeleton/load",
         "asset:mob/enemy.wither_knight/load",
         "asset:mob/abstract.ranged_switcher_ai/load",
         "asset:mob/abstract.chaser_ai/load"
-
     ]
 }
