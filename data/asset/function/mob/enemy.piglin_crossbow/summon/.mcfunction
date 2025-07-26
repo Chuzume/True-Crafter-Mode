@@ -5,4 +5,4 @@
 # @within function asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon piglin ~ ~ ~ {Tags:["MobInit"]}
+    summon piglin ~ ~ ~ {Tags:["MobInit"],equipment:{mainhand:{id:"minecraft:crossbow",count:1}}}
