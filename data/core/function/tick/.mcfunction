@@ -32,7 +32,7 @@
     execute as @a unless score @s UserID matches 0.. run function core:give_user_id
 
 # エフェクト処理
-#    execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
+    execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
 
 # ワールドイベント
     function world_manager:event/tick
