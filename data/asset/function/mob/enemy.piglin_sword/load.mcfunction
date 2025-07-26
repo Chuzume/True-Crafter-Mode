@@ -7,3 +7,4 @@
 #> 定義類はここに
 # @within function asset:mob/enemy.piglin_sword/**
     scoreboard objectives add enemy.piglin_sword.Tick dummy
+    scoreboard objectives add enemy.piglin_sword.Health dummy
