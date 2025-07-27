@@ -8,3 +8,4 @@
 # @within function asset:mob/enemy.ender_dragon/**
     scoreboard objectives add enemy.ender_dragon.Tick.Platform dummy
     scoreboard objectives add enemy.ender_dragon.RotaterID dummy
+    scoreboard objectives add enemy.ender_dragon.Phase dummy
