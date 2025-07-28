@@ -5,6 +5,4 @@
 # @within asset:mob/alias/2/reset
 
 # スコアリセット
-    scoreboard players reset @s TMCM.Tick
-    scoreboard players reset @s TMCM.PosCheck.Y
-    scoreboard players reset @s TMCM.SubAction
+    scoreboard players reset @s General.Mob.Tick
