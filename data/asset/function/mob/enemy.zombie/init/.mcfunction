@@ -6,7 +6,6 @@
 
 # ステータス
     attribute @s[nbt=!{IsBaby:1b}] minecraft:movement_speed base set 0.32
-    attribute @s minecraft:fall_damage_multiplier base set 0
     attribute @s minecraft:step_height base set 1
 
 # 帽子被る
@@ -16,3 +15,6 @@
         execute if score $ArmorCheck Temporary matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
         scoreboard players reset $ArmorCheck Temporary
+
+# Super
+    function asset:mob/super.init
