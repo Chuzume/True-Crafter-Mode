@@ -6,15 +6,15 @@
 
 # フツーの敵
     # ゾンビ
-        execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value enemy.zombie
+        execute if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie"
     # ハスク
-        execute if entity @s[type=husk] run data modify storage api: Argument.ID set value enemy.husk
+        execute if entity @s[type=husk] run data modify storage api: Argument.ID set value "enemy.husk"
     # ドラウンド
-        execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value enemy.drowned
+        execute if entity @s[type=drowned] run data modify storage api: Argument.ID set value "enemy.drowned"
     # ゾンビピグリン
-        execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value enemy.zombified_piglin
+        execute if entity @s[type=zombified_piglin] run data modify storage api: Argument.ID set value "enemy.zombified_piglin"
     # ゾンビ村人
-        execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value enemy.zombie_villager
+        execute if entity @s[type=zombie_villager] run data modify storage api: Argument.ID set value "enemy.zombie_villager"
     # スケルトン
         execute if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.skeleton"
     # ストレイ
@@ -55,6 +55,12 @@
         execute if entity @s[type=ender_dragon] run data modify storage api: Argument.ID set value "enemy.ender_dragon"
     # ウィザー
         execute if entity @s[type=wither] run data modify storage api: Argument.ID set value "enemy.wither"
+
+# 難易度3以降でエリート化
+    execute if score $Difficulty Global matches 3.. store result score $EliteChance Temporary run random value 1..5
+    execute if score $EliteChance Temporary matches 1 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
+    execute if score $EliteChance Temporary matches 1 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
+    scoreboard players reset $EliteChance Temporary
 
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
