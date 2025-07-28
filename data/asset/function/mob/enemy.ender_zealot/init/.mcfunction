@@ -13,9 +13,12 @@
 # リセット
     tag @s remove this
 
-# 体力設定
+# 体力設定: どういうわけかsummonに直接書くと反映されない…
     attribute @s minecraft:max_health base set 30
     effect give @s instant_health 1 100 true
+
+# どういうわけか召喚後すぐ埋まってると即死するので、最初は無敵
+    effect give @s resistance 1 4 true
 
 # 出現演出
     particle explosion ~ ~ ~ 0 0 0 0 1 force @a[distance=..32]
@@ -24,6 +27,7 @@
 
 # ステータス
     data modify entity @s CustomName set value {"fallback":"エンダージーロット","translate":"entity.true_crafter_mode.ender_zealot"}
+
 
 # チーム設定
     team join TrueCrafterEnemy
