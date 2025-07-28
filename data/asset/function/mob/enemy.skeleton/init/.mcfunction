@@ -6,11 +6,11 @@
 
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外
-        execute store result score @s Armor_Check run data get entity @s equipment.head
+        execute store result score $ArmorCheck Temporary run data get entity @s equipment.head
     # 装備
-        execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
+        execute if score $ArmorCheck Temporary matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
-        scoreboard players reset @s Armor_Check
+        scoreboard players reset $ArmorCheck Temporary
 
 # ステータス
     attribute @s minecraft:step_height base set 1
@@ -20,7 +20,8 @@
 
 # 鞘の処理
     # データ指定
-        data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:iron_axe",count:1}
+        data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:stone_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand"}]}}
+
         data modify storage api: Argument.FieldOverride.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]}
     # 召喚
         function api:object/summon.m {ID:other.sheath}
