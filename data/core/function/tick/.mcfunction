@@ -13,8 +13,8 @@
 # Mob処理部
     # AssetMobのグローバル処理
         function asset_manager:mob/tick/global
-    # データ初期化部
-        execute as @e[type=#lib:enemy,type=!vex,type=!ravager,type=!illusioner,type=!player,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
+    # データ初期化部: 難易度1ではやらない
+        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy_has_special,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
 
