@@ -16,6 +16,13 @@
 # フェイズ2以降、確率でサイドダッシュなどの動作を挟む
 #    execute if score @s[tag=!1025.InAction] 1025.Phase matches 2.. if score @s General.Mob.Tick matches 0 run function asset:mob/enemy.wither/tick/dash/select
 
+# フェイズ2以降の処理
+    #execute if score @s enemy.ender_dragon.Phase matches 2.. run function asset:mob/enemy.ender_dragon/tick/phase_2/tick
+
+# TODO: 後で消すこと
+# 無条件でフェイズ2の動作をやる
+    function asset:mob/enemy.ender_dragon/tick/phase_2/tick
+
 # スキル発動、ただし技が一周してない場合
     execute if score @s[tag=!enemy.ender_dragon.InAction,tag=!enemy.ender_dragon.CycleReset] General.Mob.Tick matches 60 run function asset:mob/enemy.ender_dragon/tick/skill/select/
 
