@@ -9,3 +9,6 @@
     attribute @s minecraft:step_height base set 1
     attribute @s max_health base set 30
     effect give @s instant_health 1 100 true
+
+# Super
+    function asset:mob/super.init

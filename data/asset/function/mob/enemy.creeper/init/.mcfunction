@@ -10,3 +10,6 @@
 
 # 爆発出来ないようにする
     data modify entity @s Fuse set value 9999
+
+# Super
+    function asset:mob/super.init
