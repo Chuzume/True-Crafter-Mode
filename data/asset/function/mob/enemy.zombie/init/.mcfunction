@@ -11,8 +11,8 @@
 
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外
-        execute store result score @s Armor_Check run data get entity @s equipment.head
+        execute store result score $ArmorCheck Temporary run data get entity @s equipment.head
     # 装備
-        execute if score @s Armor_Check matches 0 run function asset:mob/call.m {method:equip_helmet}
+        execute if score $ArmorCheck Temporary matches 0 run function asset:mob/call.m {method:equip_helmet}
     # スコアリセット
-        scoreboard players reset @s Armor_Check
+        scoreboard players reset $ArmorCheck Temporary
