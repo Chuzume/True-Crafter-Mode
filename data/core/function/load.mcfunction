@@ -81,9 +81,6 @@
         team modify TrueCrafterEnemy seeFriendlyInvisibles true
         team modify TrueCrafterEnemy nametagVisibility never
         team modify TrueCrafterEnemy friendlyFire false
-        team modify TrueCrafterEnemy color red
-
-
 
 # フォースロード
     forceload add 0 0 0 0
