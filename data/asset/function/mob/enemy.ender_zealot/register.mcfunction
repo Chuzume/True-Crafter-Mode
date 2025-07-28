@@ -14,4 +14,4 @@
 # ID (int)
     data modify storage asset:mob ID set value "enemy.ender_zealot"
 # フィールド(オプション)
-    # data modify storage asset:mob Field.myValue set value 
+    data modify storage asset:mob Field.Damage.Projectile set value 6

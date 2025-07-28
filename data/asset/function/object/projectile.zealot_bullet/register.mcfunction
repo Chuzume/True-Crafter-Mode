@@ -14,4 +14,4 @@
 # ID (int)
     data modify storage asset:object ID set value "projectile.zealot_bullet"
 # フィールド(オプション)
-    data modify storage asset:object Field set value {Speed:1,Range:300,MovePerStep:0.2}
+    data modify storage asset:object Field set value {Speed:2,Range:200,MovePerStep:0.2}
