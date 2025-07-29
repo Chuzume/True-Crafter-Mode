@@ -13,6 +13,9 @@
     execute if score $Difficulty Global matches 4 store result entity @s Health float 1 run data get entity @s Health 1.25
     execute if score $Difficulty Global matches 5 store result entity @s Health float 1 run data get entity @s Health 1.5
 
+# 確率でエフェクト付与
+    execute if score $Difficulty Global matches 4.. run function mob_manager:init/alternative_multiply/effect
+
 # タグ付与
     tag @s add AlreadyEnhancedMob
 
