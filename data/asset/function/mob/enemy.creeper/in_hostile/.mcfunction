@@ -15,7 +15,8 @@
         scoreboard players reset @s[scores={1011.Tick=..0}] 1011.Tick
 
 # 20tick未満の場合は離れられるとスコアリセットする
-        execute unless entity @a[distance=..7] if score @s 1011.Tick matches 1..19 run scoreboard players remove @s 1011.Tick 1
+    execute unless entity @a[distance=..7] if score @s 1011.Tick matches 1..19 run attribute @s knockback_resistance base set 0
+    execute unless entity @a[distance=..7] if score @s 1011.Tick matches 1..19 run scoreboard players remove @s 1011.Tick 1
 
 # 爆発を起こす
     execute if score @s 1011.Tick matches 30 run function asset:mob/enemy.creeper/in_hostile/explosion/

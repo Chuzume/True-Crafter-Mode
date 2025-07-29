@@ -7,3 +7,6 @@
 # 起爆準備時のモクモク！
     particle minecraft:smoke ~ ~0.5 ~ 0.3 0.5 0.3 0 5
     particle minecraft:electric_spark ~ ~0.5 ~ 0.2 0.5 0.2 0.5 2
+
+# ノックバックに強い！！
+    attribute @s knockback_resistance base set 1
