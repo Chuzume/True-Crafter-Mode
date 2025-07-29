@@ -16,4 +16,4 @@
     tag @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128] remove Init
 
 # タグ付与
-    tag @s add HealthAddException
+    tag @s add NoEnchance

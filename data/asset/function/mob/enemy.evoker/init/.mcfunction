@@ -11,6 +11,3 @@
 # 体力
     attribute @s max_health base set 50
     effect give @s instant_health 1 100 true
-
-# タグ付与
-    tag @s add HealthAddException

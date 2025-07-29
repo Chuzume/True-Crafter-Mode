@@ -24,4 +24,4 @@
     team join TrueCrafterEnemy
 
 # タグ付与
-    tag @s add HealthAddException
+    tag @s add NoEnchance
