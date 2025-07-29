@@ -27,5 +27,14 @@
     attribute @s max_health base set 30
     effect give @s instant_damage 1 100 true
 
+# 一定の難易度以下では子供にならない
+    execute if score $Difficulty Global matches ..4 run data modify entity @s IsBaby set value false
+
 # 頭の一個上を壊しちゃう
     setblock ~ ~3 ~ air destroy
+
+# チームに所属
+    team join TrueCrafterEnemy @s
+
+# タグ付与
+    

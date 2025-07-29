@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon zombie ~ ~ ~ {Tags:["MobInit","Chuz.NonVanillaMob"]}
+    summon zombie ~ ~ ~ {Tags:["MobInit"]}

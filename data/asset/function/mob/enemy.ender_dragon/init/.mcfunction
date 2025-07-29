@@ -14,3 +14,6 @@
     summon marker 0 128 0 {Tags:["enemy.ender_dragon.Marker.Origin","Init"]}
     execute as @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128] at @s run function asset:mob/enemy.ender_dragon/init/search_ground
     tag @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128] remove Init
+
+# タグ付与
+    tag @s add HealthAddException

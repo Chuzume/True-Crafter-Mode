@@ -22,3 +22,6 @@
 
 # チーム設定
     team join TrueCrafterEnemy
+
+# タグ付与
+    tag @s add HealthAddException

@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon skeleton ~ ~ ~ {Tags:["MobInit","Chuz.NonVanillaMob"]}
+    summon skeleton ~ ~ ~ {Tags:["MobInit"]}

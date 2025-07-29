@@ -30,7 +30,7 @@
     attribute @s minecraft:step_height base set 1
     attribute @s knockback_resistance base set 0.5
     attribute @s scale base set 1.15
-    attribute @s max_health base set 40
+    attribute @s max_health base set 30
     effect give @s instant_damage 1 100 true
 
 # デフォルトでは遠距離モードでスタート
