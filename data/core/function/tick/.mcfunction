@@ -17,6 +17,8 @@
         execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy_has_special,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
+    # 難易度による別枠の強化
+        execute if score $Difficulty Global matches 4.. as @e[type=#lib:enemy_has_special,tag=!AIMob,tag=!AlreadyEnhancedMob] run function mob_manager:init/alternative_multiply/
 
 # Mob処理
     execute as @e[tag=AssetMob] at @s run function asset_manager:mob/tick/
