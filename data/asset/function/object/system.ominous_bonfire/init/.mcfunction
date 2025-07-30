@@ -8,7 +8,10 @@
     setblock ~ ~ ~ air destroy
 
 # ビジュアルその1を召喚して乗せる
-    summon item_display ~ ~ ~ {Tags:["system.ominous_bonfire.Sword","Init","AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[-0.16f,0.112f,0.803f,0.563f],right_rotation:[0f,0f,0f,1f],translation:[0.3f,-0.3f,-0.1f],scale:[1.25f,1.25f,1.25f]},item:{id:"minecraft:stone_sword",count:1,components:{"minecraft:enchantment_glint_override":true}}}
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/system.ominous_bonfire/init/m with storage asset:temp Args
+    data remove storage asset:temp Args
     ride @n[type=item_display,tag=Init,distance=..0.5] mount @s
     execute on passengers run tag @s remove Init
 
