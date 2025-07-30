@@ -60,6 +60,10 @@
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
 
+# その他特殊なもの
+    # エンドラが付近にいる場合、エンダーマンは弱いバージョンになる
+        execute if entity @s[type=enderman] if entity @n[type=ender_dragon,distance=..128] run data modify storage api: Argument.ID set value "enemy.enderman_weak"
+
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
 
