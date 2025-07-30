@@ -7,6 +7,8 @@
 # 高難易度時、確率で手になんか装備する
     # 火の熱4
         execute if score $Difficulty Global matches 4 if predicate lib:random_pass_per/40 unless data entity @s equipment.mainhand.components run loot replace entity @s weapon.mainhand loot asset:enhance/heat_4/bow
+    # 火の熱5
+        execute if score $Difficulty Global matches 5.. if predicate lib:random_pass_per/60 unless data entity @s equipment.mainhand.components run loot replace entity @s weapon.mainhand loot asset:enhance/heat_5/bow
 
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外

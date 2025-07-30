@@ -7,6 +7,8 @@
 # 高難易度時、手持ちのアイテムにコンポーネントがないなら、確率で手になんか装備する
     # 火の熱4
         execute if score $Difficulty Global matches 4 if predicate lib:random_pass_per/40 unless data entity @s equipment.mainhand.components run loot replace entity @s weapon.mainhand loot asset:enhance/heat_4/crossbow
+    # 火の熱5
+        execute if score $Difficulty Global matches 5.. if predicate lib:random_pass_per/60 unless data entity @s equipment.mainhand.components run loot replace entity @s weapon.mainhand loot asset:enhance/heat_5/crossbow
 
 # 能力強化など
     data modify entity @s IsImmuneToZombification set value true
@@ -17,9 +19,8 @@
 # ノックバックに強くしてみる
     attribute @s knockback_resistance base set 0.15
 
-# 手持ちにフレイムと高速装填を付与
+# 手持ちにフレイムを付与
     item modify entity @s weapon.mainhand {function:set_enchantments,enchantments:{"minecraft:flame":1}}
-    item modify entity @s weapon.mainhand {function:set_enchantments,enchantments:{"minecraft:quick_charge":2}}
 
 # 鞘の処理
 #    # データ指定
