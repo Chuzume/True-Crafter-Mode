@@ -1,0 +1,79 @@
+{
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "conditions": [],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": {
+                                    "type": "minecraft:uniform",
+                                    "min": 2,
+                                    "max": 4
+                                }
+                            },
+                            "add": true
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_sword",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:knockback": 3
+                            },
+                            "add": true,
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_axe",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "fire_aspect": 1
+                            },
+                            "add": true
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "conditions": [],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_axe",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_sword",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": {
+                                    "type": "minecraft:uniform",
+                                    "min": 0,
+                                    "max": 5
+                                }
+                            },
+                            "add": true,
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ],
+                    "conditions": []
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_axe",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:knockback": {
+                                    "type": "minecraft:uniform",
+                                    "min": 0,
+                                    "max": 2
+                                }
+                            },
+                            "add": true,
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ],
+                    "conditions": []
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}
