@@ -12,7 +12,7 @@
 
 # メッセージ
     tellraw @a [{"color":"dark_purple","text":"火勢は留まることを知らない…！"}]
-    tellraw @a [{"color":"white","translate":"現在の難易度は[焚き火の熱: "},{"color":"dark_purple","text":"5"},{"color":"white","text":"]です"}]
+    tellraw @a [{"color":"white","translate":"現在の難易度は[火の熱: "},{"color":"dark_purple","text":"5"},{"color":"white","text":"]です"}]
 
 # 閉じたときの共通処理
     function world_manager:event/difficulty/close
