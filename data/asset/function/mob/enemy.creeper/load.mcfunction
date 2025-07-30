@@ -6,5 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.creeper/**
-    scoreboard objectives add 1011.AttackCount dummy
-    scoreboard objectives add 1011.Tick dummy
+    scoreboard objectives add enemy.creeper.AttackCount dummy
+    scoreboard objectives add enemy.creeper.Tick dummy

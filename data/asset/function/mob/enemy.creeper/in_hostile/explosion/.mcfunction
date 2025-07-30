@@ -14,10 +14,10 @@
     tp @e[type=creeper,tag=AIMob,limit=1] ~ ~ ~
 
 # 爆発回数加算
-    scoreboard players add @s 1011.AttackCount 1
+    scoreboard players add @s enemy.creeper.AttackCount 1
 
 # 爆発しても誰かいるなら起爆開始サウンド
     execute if entity @a[distance=..6] run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~ 1.5 1
 
 # これが3回目の爆発だった場合、虚空へと消える
-    execute if score @s 1011.AttackCount matches 3.. run tp @s ~ -1000 ~
+    execute if score @s enemy.creeper.AttackCount matches 3.. run tp @s ~ -1000 ~
