@@ -17,6 +17,9 @@
 # メインハンド装備
     item replace entity @s weapon.mainhand with iron_axe
 
+# ドロップ無効化(頭を取られると困る)
+    data modify entity @s drop_chances.head set value 0.0
+
 # ステータス
     data modify entity @s CustomName set value {"fallback":"ゾンビブルート","translate":"entity.true_crafter_mode.zombie_brute"}
     attribute @s minecraft:movement_speed base set 0.25
