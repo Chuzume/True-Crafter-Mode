@@ -57,10 +57,8 @@
         execute if entity @s[type=wither] run data modify storage api: Argument.ID set value "enemy.wither"
 
 # 難易度3以降でエリート化
-    execute if score $Difficulty Global matches 3.. store result score $EliteChance Temporary run random value 1..5
-    execute if score $EliteChance Temporary matches 1 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
-    execute if score $EliteChance Temporary matches 1 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
-    scoreboard players reset $EliteChance Temporary
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
 
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]

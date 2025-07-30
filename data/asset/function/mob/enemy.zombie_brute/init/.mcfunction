@@ -35,6 +35,3 @@
 
 # チームに所属
     team join TrueCrafterEnemy @s
-
-# タグ付与
-    
