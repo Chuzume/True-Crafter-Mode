@@ -8,7 +8,7 @@
     # かぼちゃ被って無い時
         execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..16] run data modify entity @s AngryAt set from entity @p[nbt=!{equipment:{head:{id:"minecraft:carved_pumpkin"}}},distance=..16] UUID
     # かぼちゃ被ってる時
-        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..4] run data modify entity @s AngryAt set from entity @p[nbt=!{equipment:{head:{id:"minecraft:carved_pumpkin"}}},distance=..4] UUID
+        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..4] run data modify entity @s AngryAt set from entity @p[nbt={equipment:{head:{id:"minecraft:carved_pumpkin"}}},distance=..4] UUID
 
 # Super
     function asset:mob/super.tick
