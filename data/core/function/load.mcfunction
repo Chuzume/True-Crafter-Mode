@@ -91,3 +91,6 @@
 # その他初期化が必要なもの
     function #asset:mob/load
     #function #asset:object/load
+
+# Romを一回だけ初期化
+    execute unless data storage rom: _ run function rom:init
