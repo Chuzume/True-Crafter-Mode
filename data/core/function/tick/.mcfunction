@@ -15,6 +15,8 @@
         function asset_manager:mob/tick/global
     # データ初期化部: 難易度1ではやらない
         execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy_has_special,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
+    # まだAsset側で強化してないモブへ、ボート破壊はできるようにする
+        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy,tag=!AssetMob,tag=!AIMob] run tag @s add ProcessCommonTag
     # MobAsset処理
         execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
     # 難易度による別枠の強化
