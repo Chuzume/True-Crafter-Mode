@@ -21,5 +21,5 @@
     scoreboard players reset @s[scores={abstract.chaser_ai.PlaceCoolTime=..0}] abstract.chaser_ai.PlaceCoolTime
 
 # リセット
-    #scoreboard players reset @s abstract.chaser_ai.PosCheckY
+    scoreboard players reset @s abstract.chaser_ai.PosCheckY
     scoreboard players reset $EnemyPosY Temporary
