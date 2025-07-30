@@ -4,8 +4,6 @@
 #
 # @within asset_manager:object/init/init.m
 
-# 頭装備
-    item replace entity @s armor.head with netherite_helmet[trim={material:"minecraft:quartz",pattern:"minecraft:rib"}] 1
 # メインハンド装備
     item replace entity @s weapon.mainhand with netherite_sword
 
@@ -13,6 +11,9 @@
     data modify entity @s CustomName set value {"fallback":"ウィザーのしもべ","translate":"entity.true_crafter_mode.wither_minion"}
     attribute @s minecraft:step_height base set 1
     attribute @s scale base set 0.85
+
+# ドロップ無効化(頭を取られると困る)
+    data modify entity @s drop_chances.head set value 0.0
 
 # ふわりと降りてくる
     effect give @s slow_falling 2
