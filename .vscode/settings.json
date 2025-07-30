@@ -1175,9 +1175,6 @@
     "githubIssues.ignoreUserCompletionTrigger": [
         "mcfunction"
     ],
-    "git.branchProtection": [
-        "master"
-    ],
     "git.branchProtectionPrompt": "alwaysCommitToNewBranch",
     "gitmoji.addCustomEmoji": [
         {
