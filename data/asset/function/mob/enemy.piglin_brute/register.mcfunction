@@ -15,5 +15,5 @@
 # ID (int)
     data modify storage asset:mob ID set value "enemy.piglin_brute"
 # フィールド(オプション)
-    data modify storage asset:mob Field.Damage.Shockwave set value 8
-    data modify storage asset:mob Field.Damage.ShockwaveMelee set value 15
+    data modify storage asset:mob Field.Damage.Shockwave set value 12
+    data modify storage asset:mob Field.Damage.ShockwaveMelee set value 19
