@@ -5,7 +5,7 @@
 # @within asset_manager:object/init/init.m
 
 # ステータス
-    data modify entity @s CustomName set value '{"fallback":"エリートスケルトン","translate":"entity.true_crafter_mode.elite_skeleton"}'
+    data modify entity @s CustomName set value {"fallback":"エリートスケルトン","translate":"entity.true_crafter_mode.elite_skeleton"}
     attribute @s minecraft:step_height base set 1
     attribute @s max_health base set 30
     effect give @s instant_damage 1 100 true
