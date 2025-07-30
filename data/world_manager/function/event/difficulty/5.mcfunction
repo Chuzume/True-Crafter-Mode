@@ -4,6 +4,9 @@
 #
 # @within function world_manager:event/difficulty/4
 
+# ベッドの時間スキップを無効化
+    function world_manager:event/difficulty/disable_time_skip
+
 # 難易度を変更
     scoreboard players set $Difficulty Global 5
 
