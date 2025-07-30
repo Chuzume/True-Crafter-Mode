@@ -4,6 +4,9 @@
 #
 # @within asset_manager:object/init/init.m
 
+# 高難易度時、手持ちのアイテムにコンポーネントがないなら、確率で手になんか装備する
+    # 火の熱4
+        execute if score $Difficulty Global matches 4 if predicate lib:random_pass_per/40 unless data entity @s equipment.mainhand.components run loot replace entity @s weapon.mainhand loot asset:enhance/heat_4/bow
 # 帽子被る
     # 頭装備がすでに存在しているのなら除外
         execute store result score $ArmorCheck Temporary run data get entity @s equipment.head

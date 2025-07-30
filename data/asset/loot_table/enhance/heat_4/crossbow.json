@@ -1,0 +1,53 @@
+{
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "conditions": [],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "quick_charge": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "piercing": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "multishot": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

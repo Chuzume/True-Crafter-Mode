@@ -1,0 +1,95 @@
+{
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "conditions": [],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "power": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "flame": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "punch": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "power": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "flame": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 2,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "punch": 2
+                            },
+                            "add": true
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}
