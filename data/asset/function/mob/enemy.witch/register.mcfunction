@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/enemy.register
 
 # 継承(オプション)
-    data modify storage asset:mob Extends append value "abstract.attacker_ai"
+    data modify storage asset:mob Extends append value "abstract.chaser_ai"
     function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value 
