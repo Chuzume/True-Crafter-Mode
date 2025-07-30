@@ -35,8 +35,8 @@
 # 定期的にDragonPhaseを宣言してもらう
 #    execute if score @s General.Mob.Tick matches 40 run tellraw @p {"entity":"@s","nbt":"DragonPhase"}
 
-# 第一形態にて、クリスタルがその辺になければ、無敵解除
-    execute if score @s enemy.ender_dragon.Phase matches 1 unless entity @e[type=minecraft:end_crystal,distance=..128] run function asset:mob/enemy.ender_dragon/tick/to_phase_2
+# 第一形態にて、現在地点が読み込まれているかつ、クリスタルがその辺になければ、無敵解除
+    execute if score @s enemy.ender_dragon.Phase matches 1 if loaded ~ ~ ~ unless entity @e[type=minecraft:end_crystal,distance=..128] run function asset:mob/enemy.ender_dragon/tick/to_phase_2
 
 # TODO: いつか死亡処理を作ってそっちに担当させるべき
 # 死亡時、マーカーを片付ける
