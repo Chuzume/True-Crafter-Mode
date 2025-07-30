@@ -7,7 +7,7 @@
 # エフェクト付与確率を抽選
     execute store result score $Effect Temporary run random value 1..10
     execute if score $Difficulty Global matches 4 if score $Effect Temporary matches 4.. run return fail
-    execute if score $Difficulty Global matches 5 if score $Effect Temporary matches 7.. run return fail
+    execute if score $Difficulty Global matches 5 if score $Effect Temporary matches 6.. run return fail
 
 # エフェクトを選ぶ
     execute store result score $Effect Temporary run random value 0..7
