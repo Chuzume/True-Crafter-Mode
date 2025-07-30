@@ -23,6 +23,10 @@
 # メインハンド装備
     item replace entity @s weapon.mainhand with bow
 
+# 高難易度時、手持ちのアイテムにコンポーネントがないなら、確率で手になんか装備する
+    # 火の熱4
+        execute if score $Difficulty Global matches 4 if predicate lib:random_pass_per/40 run loot replace entity @s weapon.mainhand loot asset:enhance/heat_4/bow
+
 # 鞘の処理
     # データ指定
         data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:iron_axe",count:1}
