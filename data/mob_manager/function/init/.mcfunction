@@ -57,8 +57,8 @@
         execute if entity @s[type=wither] run data modify storage api: Argument.ID set value "enemy.wither"
 
 # 難易度3以降でエリート化
-    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
-    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/20 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/10 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/10 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
 
 # その他特殊なもの
     # エンドラが付近にいる場合、エンダーマンは弱いバージョンになる
