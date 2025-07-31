@@ -11,10 +11,10 @@
     scoreboard players add @s[tag=!enemy.ender_dragon.TickLock] General.Mob.Tick 1
 
 # 足場設置行動
-    execute at @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128] run function asset:mob/enemy.ender_dragon/tick/place_platform/
+    execute if entity @s[tag=!enemy.ender_dragon.Death] at @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128] run function asset:mob/enemy.ender_dragon/tick/place_platform/
 
 # フェイズ2以降の処理
-    execute if score @s enemy.ender_dragon.Phase matches 2.. run function asset:mob/enemy.ender_dragon/tick/phase_2/tick
+    execute if score @s[tag=!enemy.ender_dragon.Death] enemy.ender_dragon.Phase matches 2.. run function asset:mob/enemy.ender_dragon/tick/phase_2/tick
 
 # TODO: デバッグ用なのでオフにすること
 # 無条件でフェイズ2の動作をやる
@@ -30,8 +30,9 @@
     execute if entity @s[tag=enemy.ender_dragon.InAction] run function asset:mob/enemy.ender_dragon/tick/skill/branch
 
 # DragonPhaseをこっちで制御しようかな
-    data modify entity @s[tag=!enemy.ender_dragon.InAction] DragonPhase set value 0
+    execute if entity @s[tag=!enemy.ender_dragon.Death] run data modify entity @s[tag=!enemy.ender_dragon.InAction] DragonPhase set value 0
 
+# デバッグ用の処理
 # 定期的にDragonPhaseを宣言してもらう
 #    execute if score @s General.Mob.Tick matches 40 run tellraw @p {"entity":"@s","nbt":"DragonPhase"}
 
@@ -40,7 +41,7 @@
 
 # TODO: いつか死亡処理を作ってそっちに担当させるべき
 # 死亡時、マーカーを片付ける
-    execute if entity @s[nbt={DragonPhase:9}] run kill @n[type=marker,tag=enemy.ender_dragon.Marker.Origin,distance=..128]
+    execute if entity @s[nbt={DragonPhase:9},tag=!enemy.ender_dragon.Death] run function asset:mob/enemy.ender_dragon/tick/death
 
 # ターゲット解除
     execute on target run tag @s[distance=..64] remove TMCM.Target
