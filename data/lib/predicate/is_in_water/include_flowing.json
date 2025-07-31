@@ -1,11 +1,14 @@
 {
-    "condition": "entity_properties",
-    "entity": "this",
-    "predicate": {
-        "location": {
-            "fluid": {
-                "tag": "water"
-            }
-        }
+  "condition": "entity_properties",
+  "entity": "this",
+  "predicate": {
+    "location": {
+      "fluid": {
+        "fluids": [
+          "minecraft:water",
+          "minecraft:flowing_water"
+        ]
+      }
     }
+  }
 }
