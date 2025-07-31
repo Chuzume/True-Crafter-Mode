@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "asset:item/shield_crasher_hatchet",
+                    "value": "asset:item/shabby_hatchet",
                     "weight": 2,
                     "functions": [
                         {
@@ -31,7 +31,7 @@
                 },
                                 {
                     "type": "minecraft:loot_table",
-                    "value": "asset:item/shield_crasher_hatchet",
+                    "value": "asset:item/shabby_hatchet",
                     "weight": 1,
                     "functions": [
                         {
