@@ -8,7 +8,7 @@
     data modify entity @s DragonPhase set value 3
 
 # ちょっとずるい気もするけど着地まで無敵になる
-    data modify entity @s Invulnerable set value true
+    data modify entity @s[scores={enemy.ender_dragon.Phase=2}] Invulnerable set value true
 
 # Tick固定
     tag @s add enemy.ender_dragon.TickLock
