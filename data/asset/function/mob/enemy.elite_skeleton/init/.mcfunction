@@ -34,7 +34,9 @@
 
 # 鞘の処理
     # データ指定
-        data modify storage api: Argument.FieldOverride.Item set value {mainhand:{id:"minecraft:stone_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand",display:{type:"hidden"}},{id:"attack_speed",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand",display:{type:"hidden"}}],"minecraft:custom_name":{"fallback":"ぼろい斧","translate":"item.true_crafter_mode.shabby_axe"}}}}
+        data modify storage api: Argument.FieldOverride.LootTable set value "asset:item/shield_crasher_hatchet"
+        execute if score $Difficulty Global matches 4 if predicate lib:random_pass_per/40 run data modify storage api: Argument.FieldOverride.LootTable set value "asset:enhance/heat_4/skeleton_elite_melee"
+        execute if score $Difficulty Global matches 5.. if predicate lib:random_pass_per/60 run data modify storage api: Argument.FieldOverride.LootTable set value "asset:enhance/heat_5/skeleton_elite_melee"
         data modify storage api: Argument.FieldOverride.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]}
     # 召喚
         function api:object/summon.m {ID:other.sheath}
