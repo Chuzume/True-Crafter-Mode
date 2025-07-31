@@ -13,6 +13,10 @@
     execute if score $Difficulty Global matches 4 store result entity @s Health float 1 run data get entity @s Health 1.25
     execute if score $Difficulty Global matches 5 store result entity @s Health float 1 run data get entity @s Health 1.5
 
+# 泳ぎが得意なんだ
+    execute if score $Difficulty Global matches 4 run attribute @s water_movement_efficiency base set 0.35
+    execute if score $Difficulty Global matches 5.. run attribute @s water_movement_efficiency base set 0.5
+
 # 確率でエフェクト付与
     execute if score $Difficulty Global matches 4.. run function mob_manager:init/alternative_multiply/effect
 

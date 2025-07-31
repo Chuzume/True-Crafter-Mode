@@ -11,6 +11,8 @@
         execute if entity @s[tag=TMCM.Leaping,tag=!OnGround] run tag @s add TMCM.CanEndLeap
     # 地面から離れた後、もう一度着地でリセット
         execute if entity @s[tag=TMCM.CanEndLeap,tag=OnGround] run function asset:mob/enemy.zombie/tick/leap/end
+    # 地面から離れた後、着水でもリセット
+        execute if entity @s[tag=TMCM.CanEndLeap,predicate=lib:is_in_water/include_flowing] run function asset:mob/enemy.zombie/tick/leap/end
 
 # 継承元の処理を実行する
     function asset:mob/super.tick
