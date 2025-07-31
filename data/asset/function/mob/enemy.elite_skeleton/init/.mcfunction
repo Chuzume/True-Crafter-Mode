@@ -7,7 +7,7 @@
 # ステータス
     data modify entity @s CustomName set value {"fallback":"エリートスケルトン","translate":"entity.true_crafter_mode.elite_skeleton"}
     attribute @s minecraft:step_height base set 1
-    attribute @s max_health base set 30
+    attribute @s max_health base set 24
     effect give @s instant_damage 1 100 true
 
 # ドロップ無効化(頭を取られると困る)
