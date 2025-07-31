@@ -26,17 +26,11 @@
                                     "type": "minecraft:uniform",
                                     "min": 0,
                                     "max": 5
-                                }
+                                },
+                                "vanishing_curse": 1
                             },
                             "add": true,
                             "conditions": []
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "vanishing_curse": 1
-                            },
-                            "add": true
                         }
                     ],
                     "conditions": []
@@ -53,17 +47,11 @@
                                     "type": "minecraft:uniform",
                                     "min": 0,
                                     "max": 2
-                                }
+                                },
+                                "vanishing_curse": 1
                             },
                             "add": true,
                             "conditions": []
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "vanishing_curse": 1
-                            },
-                            "add": true
                         }
                     ],
                     "conditions": []

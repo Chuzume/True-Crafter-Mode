@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_axe",
+          "functions": [
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:attack_damage",
+                  "id": "attack_damage",
+                  "amount": 6,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                },
+                {
+                  "attribute": "minecraft:attack_speed",
+                  "id": "attack_speed",
+                  "amount": -2.8,
+                  "operation": "add_value",
+                  "slot": "mainhand"
+                }
+              ],
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.true_crafter_mode.shabby_hatchet",
+                "fallback": "盾砕の手斧",
+                "italic": false
+              }
+            }
+          ],
+          "conditions": []
+        }
+      ]
+    }
+  ]
+}

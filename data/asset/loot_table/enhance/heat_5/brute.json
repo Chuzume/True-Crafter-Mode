@@ -12,25 +12,12 @@
                         {
                             "function": "minecraft:set_enchantments",
                             "enchantments": {
-                                "minecraft:knockback": 3
-                            },
-                            "add": true,
-                            "conditions": []
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
-                                "minecraft:fire_aspect": 1
-                            },
-                            "add": true,
-                            "conditions": []
-                        },
-                        {
-                            "function": "minecraft:set_enchantments",
-                            "enchantments": {
+                                "minecraft:knockback": 3,
+                                "minecraft:fire_aspect": 1,
                                 "vanishing_curse": 1
                             },
-                            "add": true
+                            "add": true,
+                            "conditions": []
                         }
                     ]
                 }
