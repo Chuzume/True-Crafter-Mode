@@ -15,3 +15,6 @@
 
 # リセット
     execute if entity @s[tag=!enemy.wither.Transition.Phase3] unless predicate lib:in_hostile run function asset:mob/enemy.wither/tick/reset/
+
+# 付近に誰もいないな…と思った場合、元のアイテムに戻ってしまう
+    execute if entity @s[tag=!enemy.wither.Transition.Phase3,nbt={Invul:0}] unless predicate lib:in_hostile run function asset:mob/enemy.wither/tick/out_off_combat/tick

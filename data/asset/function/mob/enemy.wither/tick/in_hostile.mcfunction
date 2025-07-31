@@ -40,5 +40,8 @@
 # めり込んでたら登ってくる
     execute on vehicle at @s unless block ~ ~ ~ #lib:no_collision_without_fluid run tp @s ~ ~0.1 ~
 
+# 戦闘中は戦闘外用のスコアをリセット
+    scoreboard players reset @s enemy.wither.OutOfCombat
+
 # ターゲット解除
     execute on target run tag @s[distance=..64] remove TMCM.Target
