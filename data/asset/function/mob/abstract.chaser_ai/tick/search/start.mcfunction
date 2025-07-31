@@ -8,7 +8,7 @@
     tag @s add This
 
 # 頭に置く用のちいちゃいモブを呼ぶ。動作中はコイツがAIを担当するようになる
-    summon piglin_brute ~ ~ ~ {IsImmuneToZombification:true,Silent:1b,Invulnerable:1b,Tags:["TMCM.CustomAI","Init","AIMob","ProcessCommonTag","AutoKillWhenDieVehicle"],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:scale",base:0.0625}]}
+    summon piglin_brute ~ ~ ~ {IsImmuneToZombification:true,Silent:1b,Invulnerable:1b,Tags:["TMCM.CustomAI","Init","AIMob","ProcessCommonTag","AutoKillWhenDieVehicle"],active_effects:[{id:"minecraft:invisibility",amplifier:0,duration:-1,show_particles:0b}],attributes:[{id:"minecraft:scale",base:0.0625},{id:"attack_damage",base:0.0}]}
 
 # 先に乗っているものを全部降ろす
     execute on passengers run tag @s add TemporaryDismount
