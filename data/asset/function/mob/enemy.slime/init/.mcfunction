@@ -22,4 +22,4 @@
     effect give @s instant_health 1 100 true
 
 # サイズをキープしておく
-    execute store result score @s 1020.Size run data get entity @s Size
+    execute store result score @s enemy.slime.Size run data get entity @s Size

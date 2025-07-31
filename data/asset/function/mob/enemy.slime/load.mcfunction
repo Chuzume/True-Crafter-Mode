@@ -6,5 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.slime/**
-    scoreboard objectives add 1020.Size dummy
-    scoreboard objectives add 1020.Count dummy
+    scoreboard objectives add enemy.slime.Size dummy
+    scoreboard objectives add enemy.slime.Count dummy

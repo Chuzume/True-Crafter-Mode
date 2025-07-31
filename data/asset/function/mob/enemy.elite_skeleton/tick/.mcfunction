@@ -8,8 +8,8 @@
     execute if predicate lib:in_hostile run function asset:mob/enemy.elite_skeleton/tick/shot_detect
 
 # クールタイムに入ってたらスコアを減らす
-    scoreboard players remove @s[scores={1022.CoolTime=0..}] 1022.CoolTime 1
-    scoreboard players reset @s[scores={1022.CoolTime=..0}] 1022.CoolTime
+    scoreboard players remove @s[scores={enemy.elite_skeleton.CoolTime=0..}] enemy.elite_skeleton.CoolTime 1
+    scoreboard players reset @s[scores={enemy.elite_skeleton.CoolTime=..0}] enemy.elite_skeleton.CoolTime
 
 # Super
     function asset:mob/super.tick

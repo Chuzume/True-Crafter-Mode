@@ -14,4 +14,4 @@
     attribute @s minecraft:movement_speed base set 0.35
 
 # スコアリセット
-    scoreboard players reset @s 1017.Tick
+    scoreboard players reset @s General.Mob.Tick

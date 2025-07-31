@@ -6,4 +6,4 @@
 
 #> 定義類はここに
 # @within function asset:mob/enemy.vindicator/**
-    scoreboard objectives add 1017.Tick dummy
+    scoreboard objectives add General.Mob.Tick dummy

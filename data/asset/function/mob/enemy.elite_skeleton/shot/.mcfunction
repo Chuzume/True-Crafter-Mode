@@ -15,13 +15,13 @@
 
 # 射撃間隔縮めるためにデータ書き換え: FallFlyingは勝手に戻るので都合がいい
 # ただしクールタイム中はやらない
-    execute unless score @s 1022.CoolTime matches 0.. run function asset:mob/enemy.elite_skeleton/shot/step
+    execute unless score @s enemy.elite_skeleton.CoolTime matches 0.. run function asset:mob/enemy.elite_skeleton/shot/step
 # クールタイムに入ってなければクールタイムのカウントを増やす
-    execute unless score @s 1022.CoolTime matches 0.. run scoreboard players add @s 1022.ShotCount 1
+    execute unless score @s enemy.elite_skeleton.CoolTime matches 0.. run scoreboard players add @s enemy.elite_skeleton.ShotCount 1
 
 # 数回ごとに休憩する
-    scoreboard players set @s[scores={1022.ShotCount=2}] 1022.CoolTime 100
-    scoreboard players reset @s[scores={1022.ShotCount=2}] 1022.ShotCount
+    scoreboard players set @s[scores={enemy.elite_skeleton.ShotCount=2}] enemy.elite_skeleton.CoolTime 100
+    scoreboard players reset @s[scores={enemy.elite_skeleton.ShotCount=2}] enemy.elite_skeleton.ShotCount
 
 # リセット
     tag @n[tag=TMCM.Target,distance=..32] remove TMCM.Target
