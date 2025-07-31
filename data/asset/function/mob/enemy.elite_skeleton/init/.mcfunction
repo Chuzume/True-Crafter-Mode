@@ -34,7 +34,7 @@
 
 # 鞘の処理
     # データ指定
-        data modify storage api: Argument.FieldOverride.Item set value {id:"minecraft:iron_axe",count:1}
+        data modify storage api: Argument.FieldOverride.Item set value {mainhand:{id:"minecraft:stone_axe",count:1,components:{"minecraft:attribute_modifiers":[{id:"attack_damage",type:"attack_damage",amount:2.5,operation:"add_value",slot:"mainhand",display:{type:"hidden"}},{id:"attack_speed",type:"attack_speed",amount:-2,operation:"add_value",slot:"mainhand",display:{type:"hidden"}}],"minecraft:custom_name":{"fallback":"ぼろい斧","translate":"item.true_crafter_mode.shabby_axe"}}}}
         data modify storage api: Argument.FieldOverride.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,-2.4f,1f],translation:[0f,-1.1f,-0.3f],scale:[1f,1f,1f]}
     # 召喚
         function api:object/summon.m {ID:other.sheath}
