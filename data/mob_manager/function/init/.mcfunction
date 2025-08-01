@@ -57,15 +57,17 @@
         execute if entity @s[type=wither] run data modify storage api: Argument.ID set value "enemy.wither"
 
 # 難易度3以降でエリート化
-    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/10 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
-    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/10 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/15 if entity @s[type=zombie] run data modify storage api: Argument.ID set value "enemy.zombie_brute"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/15 if entity @s[type=skeleton] run data modify storage api: Argument.ID set value "enemy.elite_skeleton"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/15 if entity @s[type=stray] run data modify storage api: Argument.ID set value "enemy.stray_elite"
+    execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/15 if entity @s[type=bogged] run data modify storage api: Argument.ID set value "enemy.bogged_elite"
 # 難易度3以降で増援
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/25 if entity @s[type=spider] run summon cave_spider ~ ~ ~
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/25 if entity @s[type=guardian] run summon drowned ~ ~ ~
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/50 if entity @s[type=witch] run summon minecraft:vindicator
 # 難易度4以降で怪しい増援
-    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/10 if entity @s[type=evoker] run summon illusioner ~ ~ ~
-    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/10 if entity @s[type=piglin] run summon minecraft:piglin_brute ~ ~ ~
+    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=evoker] run summon illusioner ~ ~ ~
+    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=piglin] run summon minecraft:piglin_brute ~ ~ ~
 
 # その他特殊なもの
     # エンドラが付近にいる場合、エンダーマンは弱いバージョンになる
