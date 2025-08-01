@@ -12,7 +12,7 @@
     execute store result score $Random Temporary run random value 0..5
 
 # デバッグ用
-    scoreboard players set $Random Temporary 5
+    #scoreboard players set $Random Temporary 5
 
 # 乱数に応じて敵が登場
     execute if score $Random Temporary matches 0..1 run function asset:mob/enemy.evoker/in_hostile/final_summon/vindicator/
