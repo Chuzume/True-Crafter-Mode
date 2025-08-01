@@ -14,4 +14,4 @@
     effect give @s invisibility 4 0
 
 # 召喚
-    function asset:mob/enemy.evoker/in_hostile/final_summon/illusioner/summon.m with storage chuz:storage Temporary
+    function asset:mob/enemy.evoker/in_hostile/final_summon/illusioner/summon.m with storage asset:temp Temporary

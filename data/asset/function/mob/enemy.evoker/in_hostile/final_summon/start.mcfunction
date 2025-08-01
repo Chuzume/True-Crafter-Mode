@@ -24,18 +24,18 @@
     particle explosion ~ ~1 ~
 
 # 乱数取得
-    execute store result score $Random Chuz.Temporary run random value 0..5
+    execute store result score $Random Temporary run random value 0..5
 
 # デバッグ用
-    #scoreboard players set $Random Chuz.Temporary 2
+    #scoreboard players set $Random Temporary 2
 
 # 乱数に応じてセリフを言う
-    execute if score $Random Chuz.Temporary matches 0 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Cover me!"}]
-    execute if score $Random Chuz.Temporary matches 1 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Distract them!"}]
-    execute if score $Random Chuz.Temporary matches 2 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Strength for illagers!"}]
-    execute if score $Random Chuz.Temporary matches 3 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Not yet!"}]
-    execute if score $Random Chuz.Temporary matches 4 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Come, my friends!"}]
-    execute if score $Random Chuz.Temporary matches 5 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"I'm not alone!"}]
+    execute if score $Random Temporary matches 0 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Cover me!"}]
+    execute if score $Random Temporary matches 1 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Distract them!"}]
+    execute if score $Random Temporary matches 2 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Strength for illagers!"}]
+    execute if score $Random Temporary matches 3 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Not yet!"}]
+    execute if score $Random Temporary matches 4 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"Come, my friends!"}]
+    execute if score $Random Temporary matches 5 run tellraw @a[distance=..16] [{"color":"white","text":"<"},{"color":"#95a0a0","text":"Evoker"},{"color":"white","text":"> "},{"color":"white","font":"illageralt","text":"I'm not alone!"}]
 
 # タグ付与
     tag @s add enemy.evoker.Using.Summon

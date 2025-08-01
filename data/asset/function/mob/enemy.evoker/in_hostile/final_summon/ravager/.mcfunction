@@ -11,7 +11,7 @@
     playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 2
 
 # 召喚
-    function asset:mob/enemy.evoker/in_hostile/final_summon/ravager/summon.m with storage chuz:storage Temporary
+    function asset:mob/enemy.evoker/in_hostile/final_summon/ravager/summon.m with storage asset:temp Temporary
 
 # 乗る
     ride @s mount @n[type=ravager]
