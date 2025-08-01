@@ -7,6 +7,7 @@
 # ステータス
     data modify entity @s CustomName set value {"fallback":"エリートストレイ","translate":"entity.true_crafter_mode.stray_elite"}
     attribute @s minecraft:step_height base set 1
+    attribute @s fall_damage_multiplier base set 0
     attribute @s max_health base set 24
     effect give @s instant_damage 1 100 true
 
