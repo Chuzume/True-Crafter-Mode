@@ -5,7 +5,7 @@
 # @within function asset:mob/alias/enemy.register
 
 # 継承: 「火の熱」によって変わる。流石に火の熱3でもチェイサーAIなのはカスすぎる気がした
-    execute if score $Difficulty Global matches 4 run data modify storage asset:mob Extends append value "enemy.zombie"
+    execute if score $Difficulty Global matches 4.. run data modify storage asset:mob Extends append value "enemy.zombie"
     execute if score $Difficulty Global matches 4.. run function asset:mob/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:mob ExtendsSafe set value 
