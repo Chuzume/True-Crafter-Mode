@@ -13,10 +13,10 @@
     function asset_manager:mob/summon/register.m with storage asset:context
 
 # データチェック
-    execute unless data storage asset:mob ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"次のIDのObjectは存在しません: "},{"storage":"asset:context","nbt":"id"}]
-    execute unless data storage asset:mob {ExtendsSafe:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"次のIDのObjectを継承することは出来ません: "},{"storage":"asset:context","nbt":"id"}]
-    execute if data storage asset:mob IsFirstExtend[-1]._{_:false} unless data storage asset:mob {IsAbstract:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"二つ目以降の Extends には抽象 Object のみ指定することができます。"},{"storage":"asset:context","nbt":"id"}]
-    execute if data storage asset:mob IsFirstExtend[-1]._{_:false} unless data storage asset:mob {IsAbstract:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"原因: ID "},{"storage":"asset:context","nbt":"id"},{"text":" を継承する Object"}]
+    execute unless data storage asset:mob ID run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"次のIDのMobは存在しません: "},{"storage":"asset:context","nbt":"id"}]
+    execute unless data storage asset:mob {ExtendsSafe:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"次のIDのMobを継承することは出来ません: "},{"storage":"asset:context","nbt":"id"}]
+    execute if data storage asset:mob IsFirstExtend[-1]._{_:false} unless data storage asset:mob {IsAbstract:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"二つ目以降の Extends には抽象 Mob のみ指定することができます。"},{"storage":"asset:context","nbt":"id"}]
+    execute if data storage asset:mob IsFirstExtend[-1]._{_:false} unless data storage asset:mob {IsAbstract:true} run tellraw @a [{"storage":"global","nbt":"Prefix.ERROR"},{"text":"原因: ID "},{"storage":"asset:context","nbt":"id"},{"text":" を継承する Mob"}]
 
 # リセット
     data remove storage asset:mob ExtendsSafe
