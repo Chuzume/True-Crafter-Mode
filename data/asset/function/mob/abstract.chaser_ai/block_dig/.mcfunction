@@ -14,10 +14,10 @@
     function asset:mob/abstract.chaser_ai/block_dig/facing
 
 # サウンド
-    execute if score @s abstract.chaser_ai.Dig matches 20 run playsound minecraft:entity.zombie.attack_wooden_door hostile @a ~ ~ ~ 1 2
-    execute if score @s abstract.chaser_ai.Dig matches 25 run playsound minecraft:entity.zombie.attack_wooden_door hostile @a ~ ~ ~ 1 2
-    execute if score @s abstract.chaser_ai.Dig matches 30 run playsound minecraft:entity.zombie.attack_wooden_door hostile @a ~ ~ ~ 1 2
-    execute if score @s abstract.chaser_ai.Dig matches 35 run playsound minecraft:entity.zombie.attack_wooden_door hostile @a ~ ~ ~ 1 2
+    execute if score @s abstract.chaser_ai.Dig matches 20 run function asset:mob/abstract.chaser_ai/block_dig/dig_sound
+    execute if score @s abstract.chaser_ai.Dig matches 25 run function asset:mob/abstract.chaser_ai/block_dig/dig_sound
+    execute if score @s abstract.chaser_ai.Dig matches 30 run function asset:mob/abstract.chaser_ai/block_dig/dig_sound
+    execute if score @s abstract.chaser_ai.Dig matches 35 run function asset:mob/abstract.chaser_ai/block_dig/dig_sound
 
 # 破壊
     execute if score @s abstract.chaser_ai.Dig matches 40 at @s run function asset:mob/abstract.chaser_ai/block_dig/break

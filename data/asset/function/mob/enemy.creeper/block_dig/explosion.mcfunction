@@ -21,3 +21,6 @@
 
 # ステルス解除
     tag @s remove TMCM.Creeper.Stealth
+
+# この処理に成功してます
+    scoreboard players set $Success Temporary 1
