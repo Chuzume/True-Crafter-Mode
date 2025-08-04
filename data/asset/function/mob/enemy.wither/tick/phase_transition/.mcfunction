@@ -23,7 +23,7 @@
     data remove storage asset:temp Pos
 
 # 付近の下っ端がいなくなったら行動を再開
-    execute if score @s General.Mob.Tick matches 90..839 unless entity @e[type=wither_skeleton,distance=..64,tag=Mob.enemy.wither_knight] run function asset:mob/enemy.wither/tick/phase_transition/minion_cleared
+    execute if score @s General.Mob.Tick matches 90..839 unless entity @e[type=wither_skeleton,distance=..48,tag=Mob.enemy.wither_knight] run function asset:mob/enemy.wither/tick/phase_transition/minion_cleared
 
 # あんまり時間をかけると下っ端そのままにして動き出す
     execute if score @s General.Mob.Tick matches 900 run function asset:mob/enemy.wither/tick/phase_transition/restart

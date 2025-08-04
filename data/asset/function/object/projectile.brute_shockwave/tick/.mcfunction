@@ -12,7 +12,7 @@
     scoreboard players add @s General.Object.Tick 1
 
 # プレイヤーをなんとなく追尾
-    execute facing entity @p[gamemode=!spectator,distance=..64] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
+    execute facing entity @p[gamemode=!spectator,distance=..48] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
 
 # 移動
     tp @s ^ ^ ^0.5
@@ -25,8 +25,8 @@
 
 
 # パーティクル
-    particle minecraft:crit ~ ~ ~ 0.2 0.1 0.2 0.05 5 force @a[distance=..64]
-    particle minecraft:electric_spark ~ ~ ~ 0.2 0.1 0.2 0.05 10 force @a[distance=..64]
+    particle minecraft:crit ~ ~ ~ 0.2 0.1 0.2 0.05 5 force @a[distance=..48]
+    particle minecraft:electric_spark ~ ~ ~ 0.2 0.1 0.2 0.05 10 force @a[distance=..48]
 
 # 一定間隔で爆発
     # 実行時間を移す

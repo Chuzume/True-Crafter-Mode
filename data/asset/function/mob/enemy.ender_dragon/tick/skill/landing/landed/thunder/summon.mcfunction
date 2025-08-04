@@ -16,11 +16,11 @@
 
 # 拡散
     #function asset:mob/enemy.ender_dragon/tick/skill/landing/landed/thunder/spread.m with storage asset:temp Pos
-    spreadplayers ~ ~ 20 20 under 100 false @n[type=marker,tag=SpreadMarker,distance=..64]
+    spreadplayers ~ ~ 20 20 under 100 false @n[type=marker,tag=SpreadMarker,distance=..48]
 
 # マーカーの位置に召喚してキル
-    execute at @n[type=marker,tag=SpreadMarker,distance=..64] run function api:object/summon.m {ID:"projectile.dragon_light_pillar"}
-    kill @n[type=marker,tag=SpreadMarker,distance=..64]
+    execute at @n[type=marker,tag=SpreadMarker,distance=..48] run function api:object/summon.m {ID:"projectile.dragon_light_pillar"}
+    kill @n[type=marker,tag=SpreadMarker,distance=..48]
 
 # リセット
     data remove storage asset:temp Pos

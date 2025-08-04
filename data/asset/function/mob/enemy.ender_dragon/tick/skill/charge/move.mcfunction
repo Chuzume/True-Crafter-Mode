@@ -13,10 +13,10 @@
     execute at @n[type=marker,tag=this] run summon marker ^ ^ ^0.5 {Tags:["enemy.ender_dragon.Marker.Move"]}
 
 # 移動用マーカーを回転担当と同じ向きに変える
-    execute as @n[type=marker,tag=enemy.ender_dragon.Marker.Move,distance=..16] at @s rotated as @n[type=marker,tag=this,distance=..64] run tp @s ~ ~ ~ ~ ~
+    execute as @n[type=marker,tag=enemy.ender_dragon.Marker.Move,distance=..16] at @s rotated as @n[type=marker,tag=this,distance=..48] run tp @s ~ ~ ~ ~ ~
 
 # 移動用マーカーの位置に移動
-    execute at @n[tag=enemy.ender_dragon.Marker.Move,distance=..64] run tp @s ~ ~ ~ ~-180 ~
+    execute at @n[tag=enemy.ender_dragon.Marker.Move,distance=..48] run tp @s ~ ~ ~ ~-180 ~
 
 # 移動用マーカーキル
-    kill @n[tag=enemy.ender_dragon.Marker.Move,distance=..64]
+    kill @n[tag=enemy.ender_dragon.Marker.Move,distance=..48]

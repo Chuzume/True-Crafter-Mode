@@ -5,7 +5,7 @@
 # @within function asset:mob/enemy.wither/tick/
 
 # ターゲット特定
-    execute on target run tag @s[distance=..64] add TMCM.Target
+    execute on target run tag @s[distance=..48] add TMCM.Target
 
 # スコア加算
     scoreboard players add @s General.Mob.Tick 1
@@ -44,4 +44,4 @@
     scoreboard players reset @s enemy.wither.OutOfCombat
 
 # ターゲット解除
-    execute on target run tag @s[distance=..64] remove TMCM.Target
+    execute on target run tag @s[distance=..48] remove TMCM.Target

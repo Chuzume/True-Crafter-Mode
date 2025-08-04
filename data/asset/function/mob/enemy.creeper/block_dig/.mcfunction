@@ -8,7 +8,7 @@
     # 付近にプレイヤーがいて、かつ縦軸が近いようなら壁を爆破
         execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..16] positioned ~-16 ~-2 ~-16 if entity @p[tag=!PlayerShouldInvulnerable,dx=31,dy=4,dz=31] at @s run function asset:mob/enemy.creeper/block_dig/explosion
     # 上のに失敗しているようなら
-        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..64] unless score $Success Temporary matches 1.. run function asset:mob/enemy.creeper/block_dig/dig
+        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..48] unless score $Success Temporary matches 1.. run function asset:mob/enemy.creeper/block_dig/dig
 
 # リセット
     scoreboard players reset $Success Temporary

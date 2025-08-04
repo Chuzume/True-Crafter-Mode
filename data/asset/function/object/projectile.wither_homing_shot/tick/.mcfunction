@@ -17,7 +17,7 @@
     execute if score @s General.Object.Tick matches 35 run data modify storage asset:context this.Speed set value 5
 
 # 誘導！
-    execute unless score @s General.Object.Tick matches 35.. facing entity @p[distance=..64] eyes positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
+    execute unless score @s General.Object.Tick matches 35.. facing entity @p[distance=..48] eyes positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s run tp @s ~ ~ ~ ~ ~
 
 # Super!
     function asset:object/super.tick

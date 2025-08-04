@@ -10,7 +10,7 @@
 # 数Tickごとに召喚だ～
     execute if score @s enemy.wither.Phase matches 1 run scoreboard players operation $Interval Temporary %= $20 Const
     execute if score @s enemy.wither.Phase matches 2.. run scoreboard players operation $Interval Temporary %= $10 Const
-    execute if score @s General.Mob.Tick matches 0..100 if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ facing entity @n[tag=TMCM.Target,distance=..64] feet run function asset:mob/enemy.wither/tick/skill/trap_laser/summon
+    execute if score @s General.Mob.Tick matches 0..100 if score $Interval Temporary matches 0 anchored eyes positioned ^ ^ ^ facing entity @n[tag=TMCM.Target,distance=..48] feet run function asset:mob/enemy.wither/tick/skill/trap_laser/summon
     scoreboard players reset $Interval Temporary
 
 # リセット
