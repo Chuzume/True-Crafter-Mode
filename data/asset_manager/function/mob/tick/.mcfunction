@@ -11,7 +11,7 @@
     tag @s[tag=!Standstill,nbt={Motion:[0.0,-0.0784000015258789d,0.0]}] add Standstill
 
 # スライムかつ、分裂後のやつだったらもっかいInitしなおす
-    execute if entity @s[type=#lib:slime,nbt={attributes:[{id:"minecraft:fall_damage_multiplier",base:0d}]}] run tag @s remove AlreadyInitMob
+    execute if entity @s[type=#lib:slime,nbt=!{attributes:[{id:"minecraft:fall_damage_multiplier",base:0.0d}]}] run tag @s remove AssetMob
 
 # 汎用タグの処理
     function asset_manager:mob/common_tag/
