@@ -6,7 +6,7 @@
 
 # プレイヤーを見る
     execute if score @s General.Mob.Tick matches 0..15 on vehicle facing entity @n[tag=TMCM.Target,distance=..8] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^-0.05 ~ ~
-    execute if score @s General.Mob.Tick matches 0..15 facing entity @n[tag=TMCM.Target,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run rotate @s ~ ~
+    execute if score @s General.Mob.Tick matches 0..15 facing entity @n[tag=TMCM.Target,distance=..48] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-20 facing entity @s feet positioned as @s rotated ~ ~ run rotate @s ~ ~
 
 # ちょっと後ろに下がりつつチャージ
     execute if score @s General.Mob.Tick matches 0..5 if entity @n[tag=TMCM.Target,distance=..32] on vehicle at @s run tp @s ^ ^ ^-0.5
@@ -23,4 +23,4 @@
     execute if score @s General.Mob.Tick matches 60 run function asset:mob/enemy.wither/tick/reset/
 
 # 本体の向き変更
-#    execute facing entity @n[tag=TMCM.Target,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run rotate @s ~ ~
+#    execute facing entity @n[tag=TMCM.Target,distance=..48] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-40 facing entity @s feet positioned as @s rotated ~ ~ run rotate @s ~ ~

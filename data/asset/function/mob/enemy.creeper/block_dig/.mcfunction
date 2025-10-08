@@ -4,20 +4,11 @@
 #
 # @within asset:mob/alias/enemy.block_dig
 
-# サウンド
-    execute if score @s abstract.chaser_ai.Dig matches 20 run playsound minecraft:entity.creeper.primed hostile @a ~ ~ ~ 1 1
+# 条件によって爆発で採掘するかどうかが変わる
+    # 付近にプレイヤーがいて、かつ縦軸が近いようなら壁を爆破
+        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..16] positioned ~-16 ~-2 ~-16 if entity @p[tag=!PlayerShouldInvulnerable,dx=31,dy=4,dz=31] at @s run function asset:mob/enemy.creeper/block_dig/explosion
+    # 上のに失敗しているようなら
+        execute if entity @a[tag=!PlayerShouldInvulnerable,distance=..48] unless score $Success Temporary matches 1.. run function asset:mob/enemy.creeper/block_dig/dig
 
-# 足を止める
-    effect give @s slowness 1 10 true
-
-# スコア加算
-    scoreboard players add @s abstract.chaser_ai.Dig 1
-
-# 爆発
-    execute if score @s abstract.chaser_ai.Dig matches 50 at @s run function asset:mob/enemy.creeper/in_hostile/explosion/
-
-# 爆発が終わったあとに無敵を解除し、スコアリセット
-    execute if score @s abstract.chaser_ai.Dig matches 51.. run function asset:mob/enemy.creeper/in_hostile/explosion/end
-
-# ステルス解除
-    tag @s remove TMCM.Creeper.Stealth
+# リセット
+    scoreboard players reset $Success Temporary

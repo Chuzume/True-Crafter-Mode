@@ -9,7 +9,7 @@
     execute if score @s[tag=enemy.wither.Dash.Right] General.Mob.Tick matches 0 on vehicle run rotate @s ~75 ~
 
 # 本体の向き変更
-    execute facing entity @n[tag=TMCM.Target,distance=..64] feet run rotate @s ~ ~
+    execute facing entity @n[tag=TMCM.Target,distance=..48] feet run rotate @s ~ ~
 
 # プレイヤーの方へ誘導する
     execute if score @s General.Mob.Tick matches ..15 run function asset:mob/enemy.wither/tick/dash/side/move

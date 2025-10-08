@@ -8,22 +8,20 @@
     execute as @a at @s run function core:tick/player/
 
 # asset:contextの明示的な全削除
-#    function asset_manager:common/reset_all_context
+    function asset_manager:common/reset_all_context
 
 # Mob処理部
-    # AssetMobのグローバル処理
-        function asset_manager:mob/tick/global
     # データ初期化部: 難易度1ではやらない
-        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy_has_special,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s run function mob_manager:init/
+        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy_has_special,tag=!AssetMob,tag=!AIMob] unless entity @s[type=piglin,nbt={IsBaby:1b}] at @s if entity @p[distance=..64] run function mob_manager:init/
     # まだAsset側で強化してないモブへ、ボート破壊はできるようにする
-        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy,tag=!AssetMob,tag=!AIMob] run tag @s add ProcessCommonTag
+        execute if score $Difficulty Global matches 2.. as @e[type=#lib:enemy,tag=!AssetMob,tag=!AIMob] at @s if entity @p[distance=..64] run tag @s add ProcessCommonTag
     # MobAsset処理
-        execute as @e[tag=ProcessCommonTag] at @s run function asset_manager:mob/common_tag/
+        execute as @e[tag=ProcessCommonTag] at @s if entity @p[distance=..64] run function asset_manager:mob/common_tag/
     # 難易度による別枠の強化
-        execute if score $Difficulty Global matches 4.. as @e[type=#lib:enemy,tag=!AIMob,tag=!AlreadyEnhancedMob,tag=!NoEnchance] run function mob_manager:init/alternative_multiply/
+        execute if score $Difficulty Global matches 4.. as @e[type=#lib:enemy,tag=!AIMob,tag=!AlreadyEnhancedMob,tag=!NoEnchance] at @s if entity @p[distance=..64] run function mob_manager:init/alternative_multiply/
 
 # Mob処理
-    execute as @e[tag=AssetMob] at @s run function asset_manager:mob/tick/
+    execute as @e[tag=AssetMob] at @s if entity @p[distance=..64] run function asset_manager:mob/tick/
 
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
@@ -42,7 +40,7 @@
     function world_manager:event/tick
 
 # asset:contextの明示的な全削除
-#    function asset_manager:common/reset_all_context
+    function asset_manager:common/reset_all_context
 
 # tick処理後のプレイヤー処理部
 #    execute as @a at @s run function core:tick/player/post

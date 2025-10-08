@@ -6,8 +6,8 @@
 
 # 演出(ビーム)
     particle explosion ~ ~20 ~ 0 0 0 0 1 force @a[distance=..32]
-    particle dust_color_transition{from_color:[0.878,0.969,0.576],scale:1,to_color:[0.2,0.2,0.2]} ~ ~10 ~ 0.2 5 0.2 1 200 force @a[distance=..64]
-    particle smoke ~ ~10 ~ 0.4 5 0.4 0 200 force @a[distance=..64]
+    particle dust_color_transition{from_color:[0.878,0.969,0.576],scale:1,to_color:[0.2,0.2,0.2]} ~ ~10 ~ 0.2 5 0.2 1 200 force @a[distance=..48]
+    particle smoke ~ ~10 ~ 0.4 5 0.4 0 200 force @a[distance=..48]
 
 # 演出(爆発)
     particle minecraft:large_smoke ~ ~ ~ 0.2 0.2 0.2 0.1 5

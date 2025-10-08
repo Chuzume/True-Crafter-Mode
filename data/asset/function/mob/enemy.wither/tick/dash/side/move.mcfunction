@@ -9,7 +9,7 @@
     execute on vehicle at @s if function asset:mob/enemy.wither/tick/dash/side/check_collide run scoreboard players set @s General.Mob.Tick 30
 
 # 横に移動
-    execute on vehicle at @s facing entity @p[gamemode=!spectator,distance=..64] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^0.5 ~ ~
+    execute on vehicle at @s facing entity @p[gamemode=!spectator,distance=..48] feet positioned ^ ^ ^-10 rotated as @s positioned ^ ^ ^-150 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ^ ^ ^0.5 ~ ~
 
 # 実行時間を移す
     scoreboard players operation $Interval Temporary = @s General.Mob.Tick

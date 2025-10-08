@@ -12,7 +12,7 @@
     execute as @n[type=marker,tag=SpreadMarker] run function lib:spread_entity/
 
 # 召喚
-    execute at @n[type=marker,tag=SpreadMarker,distance=..128] facing entity @p[distance=..64] feet run function api:mob/summon.m {ID:"enemy.wither_knight"}
+    execute at @n[type=marker,tag=SpreadMarker,distance=..128] facing entity @p[distance=..48] feet run function api:mob/summon.m {ID:"enemy.wither_knight"}
     execute at @n[type=marker,tag=SpreadMarker,distance=..128] run function asset:mob/enemy.wither/tick/phase_transition/summon_minion/vfx
     execute at @n[type=marker,tag=SpreadMarker,distance=..128] run function asset:mob/enemy.wither/tick/phase_transition/summon_minion/break
 

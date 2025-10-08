@@ -19,8 +19,8 @@
     execute if score @s abstract.chaser_ai.TillBridgeEnd matches 30.. run function asset:mob/abstract.chaser_ai/tick/place_block/place_bridge/end
 
 # 自身と対象のY座標の差を取得
-    execute if entity @p[distance=..64] store result score @s abstract.chaser_ai.PosCheckY run data get entity @s Pos[1] 1
-    execute store result score $EnemyPosY Temporary run data get entity @p[distance=..64] Pos[1] 1
+    execute if entity @p[distance=..48] store result score @s abstract.chaser_ai.PosCheckY run data get entity @s Pos[1] 1
+    execute store result score $EnemyPosY Temporary run data get entity @p[distance=..48] Pos[1] 1
     scoreboard players operation @s abstract.chaser_ai.PosCheckY -= $EnemyPosY Temporary
 
 # 差がプラス、つまり自分のほうが高いなら、足元壊して落ちてくる

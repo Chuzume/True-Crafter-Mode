@@ -5,7 +5,7 @@
 # @within asset_manager:object/tick/tick.m
 
 # ターゲット特定
-    execute on target run tag @s[distance=..64] add TMCM.Target
+    execute on target run tag @s[distance=..48] add TMCM.Target
 
 # Tick加算
     scoreboard players add @s[tag=!enemy.ender_dragon.TickLock] General.Mob.Tick 1
@@ -44,4 +44,4 @@
     execute if entity @s[nbt={DragonPhase:9},tag=!enemy.ender_dragon.Death] run function asset:mob/enemy.ender_dragon/tick/death
 
 # ターゲット解除
-    execute on target run tag @s[distance=..64] remove TMCM.Target
+    execute on target run tag @s[distance=..48] remove TMCM.Target

@@ -35,6 +35,3 @@
 
 # 頭の一個上を壊しちゃう
     setblock ~ ~3 ~ air destroy
-
-# チームに所属
-    team join TrueCrafterEnemy @s

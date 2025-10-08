@@ -10,5 +10,5 @@
     data modify entity @s Invulnerable set value 0b
 
 # リセット
-    scoreboard players reset @s enemy.creeper.Tick
+    scoreboard players reset @s General.Mob.Tick
     scoreboard players reset @s abstract.chaser_ai.Dig
