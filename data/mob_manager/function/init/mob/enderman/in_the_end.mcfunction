@@ -1,4 +1,4 @@
-#> mob_manager:init/mob/enderman/outer
+#> mob_manager:init/mob/enderman/in_the_end
 #
 # 
 #
