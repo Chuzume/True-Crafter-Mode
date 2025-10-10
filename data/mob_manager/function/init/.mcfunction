@@ -28,7 +28,7 @@
     # クリーパー
         execute if entity @s[type=creeper] run data modify storage api: Argument.ID set value "enemy.creeper"
     # エンダーマン
-        execute if entity @s[type=enderman] run data modify storage api: Argument.ID set value "enemy.enderman"
+        execute if entity @s[type=enderman] run function mob_manager:init/mob/enderman/
     # クモ
         execute if entity @s[type=spider] run data modify storage api: Argument.ID set value "enemy.spider"
     # 洞窟グモ
@@ -68,10 +68,6 @@
 # 難易度4以降で怪しい増援
     execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=evoker] run summon illusioner ~ ~ ~
     execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=piglin] run summon minecraft:piglin_brute ~ ~ ~
-
-# その他特殊なもの
-    # エンドラが付近にいる場合、エンダーマンは弱いバージョンになる
-        execute if entity @s[type=enderman] if entity @n[type=ender_dragon,distance=..128] run data modify storage api: Argument.ID set value "enemy.enderman_weak"
 
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
