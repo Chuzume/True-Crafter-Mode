@@ -4,6 +4,9 @@
 #
 # @within asset_manager:object/init/init.m
 
+# チームに参加
+    team join TrueCrafterEnemy @s
+
 # ステータス
     data modify entity @s CustomName set value {"fallback":"エリートスケルトン","translate":"entity.true_crafter_mode.elite_skeleton"}
     attribute @s minecraft:step_height base set 1
