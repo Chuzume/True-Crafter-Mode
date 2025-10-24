@@ -7,6 +7,7 @@
 # ステータス
     attribute @s minecraft:step_height base set 1
     attribute @s knockback_resistance base set 1
+    attribute @s movement_speed base set 0.3
 
 # 体力
     attribute @s max_health base set 50
