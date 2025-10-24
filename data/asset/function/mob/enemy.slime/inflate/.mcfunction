@@ -5,9 +5,9 @@
 # @within asset:mob/alias/enemy.inflate
 
 # 周囲のスライムの数を数えて、限界以上だったら膨張はやめる
-    execute store result score @s enemy.slime.Count run execute if entity @e[type=slime,distance=..16]
-    execute if score @s enemy.slime.Count matches 10.. run scoreboard players reset @s General.Mob.Tick
-    execute if score @s enemy.slime.Count matches 10.. run return fail
+#    execute store result score @s enemy.slime.Count run execute if entity @e[type=slime,distance=..16]
+#    execute if score @s enemy.slime.Count matches 10.. run scoreboard players reset @s General.Mob.Tick
+#    execute if score @s enemy.slime.Count matches 10.. run return fail
 
 # 自分がデカすぎたらやめる
     execute if entity @s[nbt={Size:4}] run return fail
