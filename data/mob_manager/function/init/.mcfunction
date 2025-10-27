@@ -66,8 +66,8 @@
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/25 if entity @s[type=guardian] run summon drowned ~ ~ ~
     execute if score $Difficulty Global matches 3.. if predicate lib:random_pass_per/50 if entity @s[type=witch] run summon minecraft:vindicator
 # 難易度4以降で怪しい増援
-    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=evoker] run summon illusioner ~ ~ ~
-    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/15 if entity @s[type=piglin] run summon minecraft:piglin_brute ~ ~ ~
+    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/10 if entity @s[type=evoker] run summon illusioner ~ ~ ~
+    execute if score $Difficulty Global matches 4.. if predicate lib:random_pass_per/10 if entity @s[type=piglin] run summon minecraft:piglin_brute ~ ~ ~
 
 # エラー
     execute unless data storage api: Argument.ID run tellraw @a [{"color":"red","text":"エラー! :"},{"color":"white","text":"実行しちゃいけない対象にInit処理がかかっている:" },{"color":"red","selector":"@s"}]
