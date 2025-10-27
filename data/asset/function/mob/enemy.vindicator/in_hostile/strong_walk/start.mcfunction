@@ -10,6 +10,6 @@
     particle entity_effect{color:[1.0,0.5,0.0,1.0]} ~ ~1 ~ 0.3 0.5 0.3 0 25
 
 # 能力値強化
-    effect give @s strength 1 1 true
+    effect give @s strength 2 0 true
     attribute @s knockback_resistance base set 1
     attribute @s movement_speed base set 0.25
