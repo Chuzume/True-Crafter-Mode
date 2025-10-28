@@ -7,7 +7,7 @@
 # ワープ
     execute if entity @p[distance=..5] unless predicate lib:is_passenger run scoreboard players add @s General.Mob.Tick 1
 # 前後が塞がれていないならワープ実行
-    execute if entity @s[scores={General.Mob.Tick=60..}] facing entity @n[tag=TMCM.Target,distance=..16] eyes rotated ~ 0 run function asset:mob/enemy.evoker/in_hostile/teleport/
+    execute if entity @s[scores={General.Mob.Tick=40..}] facing entity @n[tag=TMCM.Target,distance=..16] eyes rotated ~ 0 run function asset:mob/enemy.evoker/in_hostile/teleport/
 
 # ヘルス半分での行動
     # 体力をスコア化
