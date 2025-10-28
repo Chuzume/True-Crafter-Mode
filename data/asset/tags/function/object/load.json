@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/projectile.elite_arrow/load",
         "asset:object/enemy_part.ender_zealot_eye/load"
     ]
 }

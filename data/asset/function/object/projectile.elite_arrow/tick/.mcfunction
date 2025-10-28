@@ -10,5 +10,8 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
+# 盾に当たったら止まる
+    execute positioned ~-0.5 ~-0.5 ~-0.5 if score @p[dx=0] projectile.elite_arrow.block matches 1.. run function asset:object/projectile.elite_arrow/tick/get_blocked
+
 # しばらくすると落下する
     execute if score @s General.Object.Tick matches 100 run data modify entity @s NoGravity set value false
