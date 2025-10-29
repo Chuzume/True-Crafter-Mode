@@ -8,7 +8,7 @@
     tag @s add This
 
 # ダメージ
-    $execute as @a[distance=..2] run damage @s $(ShockwaveMelee) mob_attack by @n[type=piglin_brute,tag=This,distance=..16]
+    $execute as @e[type=#lib:enemy_of_piglin,distance=..2] run damage @s $(ShockwaveMelee) mob_attack by @n[type=piglin_brute,tag=This,distance=..16]
 
 # リセット
     tag @s remove This

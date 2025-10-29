@@ -13,4 +13,4 @@
 # ショックウェ～ブ！
     execute store result storage api: Argument.FieldOverride.OwnerID int 1 run scoreboard players get @s MobUUID
     data modify storage api: Argument.FieldOverride.Damage set from storage asset:context this.Damage.Shockwave
-    execute facing entity @p[tag=TMCM.Target,distance=..32] eyes rotated ~ 0 run function api:object/summon.m {ID:"projectile.brute_shockwave"}
+    execute facing entity @n[tag=TMCM.Target,distance=..32] eyes rotated ~ 0 run function api:object/summon.m {ID:"projectile.brute_shockwave"}

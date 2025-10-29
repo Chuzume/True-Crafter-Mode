@@ -11,8 +11,8 @@
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
 
-# プレイヤーをなんとなく追尾
-    execute facing entity @p[gamemode=!spectator,distance=..48] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
+# 対象をなんとなく追尾
+    execute facing entity @n[type=#lib:enemy_of_piglin,tag=!PlayerShouldInvulnerable,distance=..48] eyes positioned ^ ^ ^-1 rotated as @s positioned ^ ^ ^-10 facing entity @s feet positioned as @s rotated ~ ~ run tp @s ~ ~ ~ ~ 0
 
 # 移動
     tp @s ^ ^ ^0.5

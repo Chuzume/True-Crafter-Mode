@@ -5,7 +5,7 @@
 # @within function asset:object/projectile.brute_shockwave/tick/
 
 # ダメージ
-    $execute positioned ~-0.75 ~ ~-0.75 as @a[tag=!PlayerShouldInvulnerable,distance=..8,dx=1.5,dy=2,dz=1.5] at @s run damage @s $(Damage) minecraft:mob_projectile by @n[scores={MobUUID=$(OwnerID)}]
+    $execute positioned ~-0.75 ~ ~-0.75 as @e[type=#lib:enemy_of_piglin,tag=!PlayerShouldInvulnerable,distance=..8,dx=1.5,dy=2,dz=1.5] at @s run damage @s $(Damage) minecraft:mob_projectile by @n[scores={MobUUID=$(OwnerID)}]
 
 # パーティクル
     particle entity_effect{color:[1.000,0.5,0.0,1.00]} ~ ~0.5 ~ 0.3 1 0.3 0.0 35 force @a[distance=..32]
