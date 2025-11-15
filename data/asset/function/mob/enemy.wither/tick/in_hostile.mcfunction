@@ -13,6 +13,9 @@
 # 接近されたウィザーヘッド射出が別の技になる
     execute if entity @n[tag=TMCM.Target,distance=..5] run function asset:mob/enemy.wither/tick/thunder/
 
+# ウィザーヘッドにタグ付与
+    execute as @n[type=wither_skull,distance=..8] run tag @s add enemy.wither.HostileSkull
+
 # 通常時の動作
     execute if entity @s[tag=!enemy.wither.StopBaseMove,tag=!enemy.wither.InDash] run function asset:mob/enemy.wither/tick/base_move
 
