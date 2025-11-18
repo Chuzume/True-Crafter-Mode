@@ -10,7 +10,10 @@
 # スコア加算
     scoreboard players add @s General.Mob.Tick 1
 
-# 接近されたウィザーヘッド射出が別の技になる
+# ダメージ時、ヘルスチェック
+    execute if predicate lib:is_legacy_hurt run function asset:mob/enemy.wither/hurt/check_health
+
+# 接近された場合、ウィザーヘッド射出が別の技になる
     execute if entity @n[tag=TMCM.Target,distance=..5] run function asset:mob/enemy.wither/tick/thunder/
 
 # ウィザーヘッドにタグ付与
