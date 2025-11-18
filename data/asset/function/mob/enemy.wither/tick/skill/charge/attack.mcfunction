@@ -25,7 +25,7 @@
     execute if score @s General.Mob.Tick matches 45..50 if entity @n[tag=TMCM.Target,distance=..32] on vehicle at @s run tp @s ^ ^ ^0.1
 
 # ダメージ
-    execute positioned ^ ^ ^1 positioned ~-1 ~-1 ~-1 as @a[dx=1,dy=1,dz=1] run damage @s 10 minecraft:mob_attack by @n[type=wither,tag=This,distance=..48]
+    execute positioned ^ ^ ^1 positioned ~-1 ~-1 ~-1 as @a[dx=1,dy=1,dz=1] run damage @s 18 minecraft:mob_attack by @n[type=wither,tag=This,distance=..48]
 
 # リセット
     tag @s remove This
