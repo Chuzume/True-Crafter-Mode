@@ -20,7 +20,10 @@
     playsound minecraft:entity.wither_skeleton.hurt neutral @a ~ ~ ~ 1 0.7
 
 # ダメージ
-    execute as @a[distance=..2] run function asset:object/projectile.wither_thunder/tick/damage.m with storage asset:context this
-
+    execute positioned ~-1 ~-1 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=10,dz=1] add Hit
+    tag @a[distance=..2] add Hit
+    execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable] run function asset:object/projectile.wither_thunder/tick/damage.m with storage asset:context this
+    tag @a[tag=Hit,distance=..32] remove Hit
+    
 # 消失
     kill @s
