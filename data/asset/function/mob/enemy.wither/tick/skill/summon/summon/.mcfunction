@@ -8,8 +8,8 @@
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
 # 拡散
-    data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0d],[16d,16d]]
-    execute as @n[type=marker,tag=SpreadMarker] at @r[distance=..48] run function lib:spread_entity/
+    data modify storage lib: Argument.Bounds set value [[10d,10d],[0d,0d],[10d,10d]]
+    execute as @n[type=marker,tag=SpreadMarker] run function lib:spread_entity/
 
 # 召喚
     execute at @n[type=marker,tag=SpreadMarker,distance=..128] facing entity @p[distance=..48] feet run function api:mob/summon.m {ID:"enemy.wither_minion"}

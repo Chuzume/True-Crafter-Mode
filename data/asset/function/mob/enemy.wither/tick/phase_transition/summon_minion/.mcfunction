@@ -8,7 +8,7 @@
     summon marker ~ ~ ~ {Tags:["SpreadMarker"]}
 
 # 拡散
-    data modify storage lib: Argument.Bounds set value [[24d,24d],[0d,0d],[24d,24d]]
+    data modify storage lib: Argument.Bounds set value [[16d,16d],[0d,0d],[16d,16d]]
     execute as @n[type=marker,tag=SpreadMarker] run function lib:spread_entity/
 
 # 召喚
