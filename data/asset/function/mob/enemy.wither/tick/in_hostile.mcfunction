@@ -19,8 +19,8 @@
 # 通常時の動作
     execute if entity @s[tag=!enemy.wither.StopBaseMove,tag=!enemy.wither.InDash] run function asset:mob/enemy.wither/tick/base_move
 
-# フェイズ3以降、確率でサイドダッシュなどの動作を挟む
-    execute if score @s[tag=!enemy.wither.InAction] enemy.wither.Phase matches 3.. if score @s General.Mob.Tick matches 0 run function asset:mob/enemy.wither/tick/dash/select
+# フェイズ2以降、確率でサイドダッシュなどの動作を挟む
+    execute if score @s[tag=!enemy.wither.InAction] enemy.wither.Phase matches 2.. if score @s General.Mob.Tick matches 0 run function asset:mob/enemy.wither/tick/dash/select
 
 # スキル発動、ただし技が一周してない場合
     execute if score @s[tag=!enemy.wither.InAction,tag=!enemy.wither.CycleReset] General.Mob.Tick matches 60 run function asset:mob/enemy.wither/tick/skill/select/
