@@ -14,8 +14,7 @@
 # 乱数によるスキル選択
     data modify storage lib: Args.key set value "enemy.wither.Dash"
     data modify storage lib: Args.max set value 3
-    execute if score @s enemy.wither.Phase matches 2 run data modify storage lib: Args.max set value 3
-    execute if score @s enemy.wither.Phase matches 3 run data modify storage lib: Args.max set value 4
+    execute if score @s enemy.wither.Phase matches 2.. run data modify storage lib: Args.max set value 3
     data modify storage lib: Args.scarcity_history_size set value 3
     execute store result score $Random Temporary run function lib:random/with_biased/manual.m with storage lib: Args
 
@@ -27,7 +26,6 @@
     execute if score $Random Temporary matches 1..2 run tag @s add enemy.wither.Dash.Side
     execute if score $Random Temporary matches 1 run tag @s add enemy.wither.Dash.Left
     execute if score $Random Temporary matches 2 run tag @s add enemy.wither.Dash.Right
-    execute if score $Random Temporary matches 3 run tag @s add enemy.wither.Dash.Teleport
 
 # リセット
     scoreboard players reset $Random Temporary
