@@ -10,4 +10,4 @@
     playsound minecraft:entity.wither.hurt hostile @a ~ ~ ~ 2 0.8
 
 # スコアを調整
-    scoreboard players set @s General.Mob.Tick 840
+    scoreboard players set @s General.Mob.Tick 900
