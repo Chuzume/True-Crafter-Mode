@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"]}
+    summon wither_skeleton ~ ~ ~ {Tags:["MobInit"],NoAI:true,Invulnerable:true}

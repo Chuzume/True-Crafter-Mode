@@ -8,3 +8,4 @@
 # @within function asset:mob/enemy.wither_knight/**
     scoreboard objectives add enemy.wither_knight.CoolTime dummy
     scoreboard objectives add enemy.wither_knight.ShotCount dummy
+    scoreboard objectives add enemy.wither_knight.SpawnTime dummy

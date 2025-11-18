@@ -4,6 +4,9 @@
 #
 # @within asset_manager:object/init/init.m
 
+# 最初は透明
+    effect give @s invisibility 99999 0 true
+
 # 頭装備
     item replace entity @s armor.head with player_head[profile={id:[I;-1106828496,580862062,-1089587396,-1448779372],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjRiZmVkZWM0YWU1NDM5MTVmMTlkZDU1OTE1MzkwZDJlNjUzYjAwNTc5MWVmYjQwZDFmYjNjNzQ5MjYyOWQwYyJ9fX0="}]}]
 # 胴装備
