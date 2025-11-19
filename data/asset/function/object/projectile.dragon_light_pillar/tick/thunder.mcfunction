@@ -20,7 +20,10 @@
     playsound minecraft:block.respawn_anchor.deplete neutral @a ~ ~ ~ 2 2
 
 # ダメージ
-    execute as @a[distance=..3] run function asset:object/projectile.dragon_light_pillar/tick/damage.m with storage asset:context this
+    execute positioned ~-1 ~-1 ~-1 run tag @a[tag=!PlayerShouldInvulnerable,dx=1,dy=10,dz=1] add Hit
+    tag @a[distance=..3] add Hit
+    execute as @a[tag=Hit,tag=!PlayerShouldInvulnerable] run function asset:object/projectile.dragon_light_pillar/tick/damage.m with storage asset:context this
+    tag @a[tag=Hit,distance=..32] remove Hit
 
 # 消失
     kill @s
