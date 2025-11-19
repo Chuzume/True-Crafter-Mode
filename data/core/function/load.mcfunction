@@ -99,5 +99,5 @@
     execute unless data storage rom: _ run function rom:init
 
 # データチェックとアプデ処理
-    execute unless data storage version: {Version:"3.0.0_Beta.6"} run function rom:init
-    execute unless data storage version: {Version:"3.0.0_Beta.6"} run data modify storage version: Version set value "3.0.0_Beta.6"
+    execute unless data storage version: {Version:"3.0.0_Beta.8"} run function rom:init
+    execute unless data storage version: {Version:"3.0.0_Beta.8"} run data modify storage version: Version set value "3.0.0_Beta.8"
