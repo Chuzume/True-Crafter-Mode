@@ -5,4 +5,4 @@
 # @within function core:tick/
 
 # 難易度周り
-    function world_manager:event/difficulty/
+    execute as @a[scores={Trigger.Difficulty=-1..5}] run function world_manager:event/difficulty/

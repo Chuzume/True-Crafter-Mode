@@ -10,4 +10,4 @@
 
 # スコアボードリセット
     scoreboard players reset $sendCommandFeedback Global
-    scoreboard players reset @p Trigger.Difficulty
+    scoreboard players reset @s Trigger.Difficulty
