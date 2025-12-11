@@ -83,7 +83,7 @@
         team modify TrueCrafterEnemy friendlyFire false
 
 # 簡単にコマンドの限界に達するだろうから
-    gamerule maxCommandChainLength 2147483647
+    gamerule max_command_sequence_length 2147483647
 
 # フォースロード
     forceload add 0 0 0 0

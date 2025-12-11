@@ -7,5 +7,5 @@
 #   world_manager:event/difficulty/5
 
 # 現在のplayersSleepingPercentageの状況を保存した後、666に
-    execute store result score $playersSleepingPercentage Global run gamerule playersSleepingPercentage
-    gamerule playersSleepingPercentage 666
+    execute store result score $playersSleepingPercentage Global run gamerule players_sleeping_percentage
+    gamerule players_sleeping_percentage 666
