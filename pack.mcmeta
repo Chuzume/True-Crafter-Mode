@@ -1,8 +1,8 @@
 {
   "pack": {
-    "pack_format": 88,
-    "min_format": 88,
-	"max_format": 88,
-    "description": "3.0.0-beta.9 [by Chuzume]"
+    "pack_format": 94,
+    "min_format": 94,
+	"max_format": 94,
+    "description": "3.0.0-beta.10 [by Chuzume]"
   }
 }
