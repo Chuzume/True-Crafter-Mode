@@ -17,7 +17,7 @@
     data remove storage asset:object Extends
 
 # 継承先を一つ一つ辿っていく
-    function asset:object/extends/foreach
+    function asset:object/_extends/foreach
 
 # リセット
     data remove storage asset:object IsFirstExtend[-1]
