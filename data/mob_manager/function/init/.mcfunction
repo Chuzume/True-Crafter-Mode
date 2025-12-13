@@ -21,6 +21,8 @@
         execute if entity @s[type=stray] run data modify storage api: Argument.ID set value "enemy.stray"
     # ボグド
         execute if entity @s[type=bogged] run data modify storage api: Argument.ID set value "enemy.bogged"
+    # パーチド
+        execute if entity @s[type=parched] run data modify storage api: Argument.ID set value "enemy.parched"
     # ウィザースケルトン
         execute if entity @s[type=wither_skeleton] run data modify storage api: Argument.ID set value "enemy.wither_skeleton"
     # ウィッチ
