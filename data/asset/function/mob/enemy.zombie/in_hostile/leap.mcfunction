@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function asset:mob/enemy.zombie/in_hostile/
+# @within function asset:mob/enemy.zombie/in_hostile/main_attack
 
 # 演出
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
@@ -20,6 +20,3 @@
 
 # 攻撃のノックバック増加
     attribute @s minecraft:attack_knockback base set 1.5
-
-# リセット
-    scoreboard players reset @s Chuz.Speed

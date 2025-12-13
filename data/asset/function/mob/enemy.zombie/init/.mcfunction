@@ -8,6 +8,8 @@
     attribute @s[nbt=!{IsBaby:1b}] minecraft:movement_speed base set 0.32
     attribute @s minecraft:step_height base set 1
 
+# 槍持ってたら追加の処理
+    execute if items entity @s weapon.mainhand #minecraft:spears run function asset:mob/enemy.zombie/init/spear
 
 # 高難易度時、素手だったら確率で手になんか装備する
     # 火の熱4

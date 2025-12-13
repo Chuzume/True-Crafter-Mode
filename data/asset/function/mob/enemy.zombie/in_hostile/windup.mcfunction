@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function asset:mob/enemy.zombie/in_hostile/
+# @within function asset:mob/enemy.zombie/in_hostile/main_attack
 
 # サウンド
     playsound minecraft:entity.breeze.idle_ground hostile @a ~ ~ ~ 1 2

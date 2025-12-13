@@ -3,4 +3,4 @@
 
 #> tag
 # @within function asset:mob/enemy.zombie/**
-    #declare
+    #declare tag enemy.zombie.spear
