@@ -1,0 +1,46 @@
+{
+    "pools": [
+        {
+            "bonus_rolls": 0,
+            "conditions": [],
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_spear",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:sharpness": {
+                                    "type": "minecraft:uniform",
+                                    "min": 2,
+                                    "max": 4
+                                },
+                                "vanishing_curse": 1
+                            },
+                            "add": true
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_spear",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_enchantments",
+                            "enchantments": {
+                                "minecraft:knockback": 3,
+                                "vanishing_curse": 1
+                            },
+                            "add": true,
+                            "conditions": []
+                        }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}

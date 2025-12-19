@@ -7,9 +7,6 @@
 # 演出
     playsound minecraft:entity.piglin.jealous hostile @a ~ ~ ~ 1 1.5
     playsound minecraft:entity.goat.long_jump hostile @a ~ ~ ~ 1 1.2
-    
-# 勢いを設定
-    scoreboard players set $Temporary Chuz.Speed 7
 
 # 速度を設定して、後ろ向きに飛ばす
     data modify storage lib: Argument.VectorMagnitude set value 0.7

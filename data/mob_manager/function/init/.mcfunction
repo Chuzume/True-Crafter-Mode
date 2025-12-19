@@ -39,6 +39,8 @@
         execute if entity @s[type=piglin,nbt={equipment:{mainhand:{id:"minecraft:golden_sword"}}}] run data modify storage api: Argument.ID set value "enemy.piglin_sword"
     # ピグリン(クロスボウ)
         execute if entity @s[type=piglin,nbt={equipment:{mainhand:{id:"minecraft:crossbow"}}}] run data modify storage api: Argument.ID set value "enemy.piglin_crossbow"
+    # ピグリン(槍)
+        execute if entity @s[type=piglin,nbt={equipment:{mainhand:{id:"minecraft:golden_spear"}}}] run data modify storage api: Argument.ID set value "enemy.piglin_spear"
     # ピグリンブルート
         execute if entity @s[type=piglin_brute] run data modify storage api: Argument.ID set value "enemy.piglin_brute"
     # ヴィンディケーター
