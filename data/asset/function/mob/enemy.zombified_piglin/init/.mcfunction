@@ -4,9 +4,6 @@
 #
 # @within asset_manager:mob/triggers/init/init.m
 
-# 怒ってるな～
-    data modify entity @s AngerTime set value 2147483647
-
 # ちょっと足が早すぎる気がする
     attribute @s minecraft:movement_speed base set 0.23
 
