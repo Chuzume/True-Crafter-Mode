@@ -21,7 +21,10 @@
         execute if score $Difficulty Global matches 4.. as @e[type=#lib:enemy,tag=!AIMob,tag=!AlreadyEnhancedMob,tag=!NoEnhance] at @s if entity @p[distance=..64] run function mob_manager:init/alternative_multiply/
 
 # Mob処理
-    execute as @e[tag=AssetMob] at @s if entity @p[distance=..64] run function asset_manager:mob/tick/
+    execute as @e[type=!ender_dragon,tag=AssetMob] at @s if entity @p[distance=..64] run function asset_manager:mob/tick/
+
+# エンダードラゴンは遠くに飛んでいくので例外とする
+    execute as @e[type=ender_dragon,tag=AssetMob] at @s if entity @p[distance=..256] run function asset_manager:mob/triggers/
 
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
